@@ -1,5 +1,45 @@
 <b:resource src="item.css" />
-<b:resource src="item_sp.css" />
+
+<div class="serp-hotel serp-hotel-available-few serp-hotel-never-booked">
+  <div class="serp-hotel-desc">
+    <div class="serp-hotel-amenities">
+      <div class="serp-hotel-amenity serp-hotel-amenity-wifi">
+        <p class="serp-hotel-amenity-tip">Wi-Fi в номерах</p>
+      </div>
+      <div class="serp-hotel-amenity serp-hotel-amenity-parking">
+        <p class="serp-hotel-amenity-tip">Парковка</p>
+      </div>
+    </div>
+    <span class="stars stars-val-50 serp-hotel-stars"><span class="stars-val"></span></span>
+    <a class="serp-hotel-link external" href="#/hotel?id={id}" target="_blank">
+      <div class="serp-hotel-thumb-container">
+        <img class="serp-hotel-thumb" src="{thumbnail_url}" alt="{name}" />
+      </div>
+      <img class="serp-hotel-image hidden" src="{thumbnail_url_220}" />
+      <div class="serp-hotel-image-arrow hidden" style="background-image: url({thumbnail_url_220});"></div>
+      <h3 class="serp-hotel-title">{name}</h3>
+    </a>
+    <div class="serp-hotel-info">
+      <span class="serp-hotel-location pseudo">На карте:</span>  
+      <span class="serp-hotel-location-address"><span class="serp-hotel-self">в центре Амстердама</span></span>
+    </div>
+    <div class="serp-hotel-rating">
+      Отличный отель, <b class="serp-hotel-rating-value">9.5 из 10</b>
+    </div>
+  </div>
+  <div class="serp-hotel-price-container">
+    <div class="serp-hotel-price">
+      <span class="serp-hotel-price-value">{price}</span>  <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">руб.</span><span class="serp-hotel-nights">за 4 ночи</span></span>
+    </div>
+    <a class="button button-blue serp-hotel-button external" href="#/hotel?id={id}" target="_blank">
+      Забронировать
+    </a>
+  </div>
+  <div class="serp-hotel-like"></div>
+</div>
+
+
+<!--
 
 <div class="serp-hotel serp-hotel-available-few serp-hotel-{is_golden}">
   <div class="serp-hotel-desc clearfix">
@@ -52,3 +92,5 @@
   </div>
   <div class="serp-hotel-like"></div>
 </div>
+
+-->

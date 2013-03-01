@@ -27,7 +27,17 @@
         price: 'data:',
         is_golden: 'data:is_golden ? "golden" : ""',
         address: 'data:',
-        thumbnail_url: 'data:',
+        thumbnail_url: {
+          events: 'update',
+          getter: function(node){
+            if (node.data.thumbnail_tmpl)
+              return node.data.thumbnail_tmpl.format({
+                size: '170x154'
+              });
+            else
+              return node.data.thumbnail_url;
+          }
+        },
         thumbnail_url_220: 'data:'
       }
     },

@@ -13,6 +13,7 @@
       },
       is_golden: Boolean,
       thumbnail_url: String,
+      thumbnail_tmpl: String,
       thumbnail_url_220: String,
       address: String,
       hotel: Hotel

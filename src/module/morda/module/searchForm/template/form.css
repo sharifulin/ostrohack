@@ -9,3 +9,332 @@
     margin: 2px;
     border: 1px solid green;
   }
+
+  /***********************/
+
+  button::-moz-focus-inner {
+    border-color:transparent;
+    border-width:0
+  }
+  .button {
+    border:1px solid;
+    border-radius:3px;
+    cursor:pointer;
+    display:inline-block;
+    font:bold 14px/28px Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:0 12px;
+    position:relative;
+    text-decoration:none;
+    text-transform:uppercase;
+    white-space:nowrap;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none
+  }
+  .button:before {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0
+  }
+  .button:active {
+    line-height:26px;
+    padding-top:2px
+  }
+  .button-orange {
+    border-color:#d79d50;
+    border-bottom-color:#b7711a;
+    border-top-color:#e7b46b;
+    box-shadow:0 1px 0 rgba(104, 44, 0, 0.25), inset 0 3px 0 -2px white, inset 0 0 0 1px rgba(255, 222, 0, 0.53);
+    color:#5f1d00;
+    text-shadow:0 1px rgba(255, 255, 255, 0.6);
+    background-image:-webkit-linear-gradient(top, #ffc900, #f28d00);
+    background-image:-moz-linear-gradient(top, #ffc900, #f28d00);
+    background-image:-o-linear-gradient(top, #ffc900, #f28d00);
+    background-image:linear-gradient(to bottom, #ffc900, #f28d00)
+  }
+  .button-orange:hover {
+    box-shadow:0 1px 0 rgba(53, 22, 0, 0.25), inset 0 3px 0 -2px white, inset 0 0 0 1px rgba(255, 222, 0, 0.53);
+    background-image:-webkit-linear-gradient(top, #ffca00, #f8aa00);
+    background-image:-moz-linear-gradient(top, #ffca00, #f8aa00);
+    background-image:-o-linear-gradient(top, #ffca00, #f8aa00);
+    background-image:linear-gradient(to bottom, #ffca00, #f8aa00)
+  }
+  .button-orange:active {
+    border-color:#9d5300;
+    border-top-color:#742f00;
+    box-shadow:inset 0 3px 0 -2px rgba(95, 29, 0, 0.26);
+    background-image:-webkit-linear-gradient(top, #f59900, #de6400);
+    background-image:-moz-linear-gradient(top, #f59900, #de6400);
+    background-image:-o-linear-gradient(top, #f59900, #de6400);
+    background-image:linear-gradient(to bottom, #f59900, #de6400)
+  }
+  .button-big {
+    font-size:19px;
+    height:44px;
+    line-height:43px;
+    padding:0 18px
+  }
+  .button-big:active {
+    height:43px;
+    line-height:41px
+  }
+  .button-big.button-orange {
+    border-color:#2d3841;
+    border-bottom-color:#1f262d;
+    border-top-color:#364450;
+    box-shadow:0 1px 0 rgba(104, 44, 0, 0.25), inset 0 3px 0 -2px white, inset 0 0 0 1px rgba(255, 222, 0, 0.53), 0 0 0 4px rgba(255, 108, 0, 0.24)
+  }
+  .button-big.button-orange:hover {
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 0 -2px white, inset 0 0 0 1px rgba(255, 222, 0, 0.53), 0 0 0 4px rgba(255, 108, 0, 0.24)
+  }
+  .button-big.button-orange:active {
+    border-bottom-color:#9b9ba1;
+    box-shadow:0 0 0 4px rgba(255, 108, 0, 0.24), inset 0 2px 4px rgba(73, 14, 0, 0.5)
+  }
+  * {
+    border:0;
+    margin:0;
+    padding:0
+  }
+  html, body {
+    background:#fafafa;
+    color:#999;
+    height:100%;
+    margin:0;
+    padding:0
+  }
+  body {
+    font:13px/1.231 Arial, sans-serif
+  }
+  .pseudo {
+    border-bottom:dotted 1px;
+    cursor:pointer
+  }
+  .hidden {
+    display:none
+  }
+  .giantform-form {
+    background:#2a66a1 url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png);
+    background:-webkit-radial-gradient(50% 10%, transparent, rgba(0, 0, 0, 0.24)), url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png) #2a66a1;
+    background:-moz-radial-gradient(50% 10%, transparent, rgba(0, 0, 0, 0.24)), url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png) #2a66a1;
+    background:-ms-radial-gradient(50% 10%, transparent, rgba(0, 0, 0, 0.24)), url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png) #2a66a1;
+    background:-o-radial-gradient(50% 10%, transparent, rgba(0, 0, 0, 0.24)), url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png) #2a66a1;
+    background:radial-gradient(50% 10%, transparent, rgba(0, 0, 0, 0.24)), url(http://ostrovok.ru/st/gm/img/main-page-search-form-90a358feb17b855ac435b408322af0e2c501c610.png) #2a66a1;
+    border-radius:6px;
+    color:#96bad5;
+    font-family:Arial, sans-serif;
+    font-size:11px;
+    padding:26px 30px 0;
+    position:relative
+  }
+  .giantform-destination {
+    margin-bottom:20px;
+    position:relative
+  }
+  .giantform-label {
+    display:inline-block;
+    margin:5px 0 0 9px
+  }
+  .giantform-input {
+    background-clip:padding-box;
+    border:1px double rgba(0, 0, 0, 0.22);
+    border-radius:4px;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.41), inset 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    color:#303030;
+    display:inline-block;
+    font-family:Arial, sans-serif;
+    font-size:22px;
+    -webkit-font-smoothing:antialiased;
+    font-weight:bold;
+    margin:0;
+    padding:6px 8px 5px;
+    width:100%
+  }
+  .giantform-destination-input::-webkit-input-placeholder {
+    color:#adbcc7;
+    font-weight:bold;
+    font-style:italic
+  }
+  .giantform-destination-input:-moz-placeholder {
+    color:#adbcc7;
+    font-weight:bold;
+    font-style:italic
+  }
+  .giantform-destination-example-apply {
+    border-bottom:dotted 1px;
+    margin-left:4px
+  }
+  .giantform-destination-clear {
+    position:absolute;
+    right:10px;
+    top:12px;
+    background:url(http://ostrovok.ru/st/gm/img/sprite_controls-9764afa45a2c3008a183a6c9eb05243467741d53.png) no-repeat 0 0;
+    width:16px;
+    height:16px;
+    cursor:pointer
+  }
+  .giantform-dates {
+    margin-bottom:20px
+  }
+  .giantform-check-in {
+    display:inline-block;
+    width:168px
+  }
+  .giantform-check-in-input {
+    position:relative;
+    z-index:4
+  }
+  .giantform-dates-separator {
+    display:inline-block;
+    font-size:21px;
+    margin:6px 9px 0;
+    vertical-align:top
+  }
+  .giantform-check-out {
+    display:inline-block;
+    width:168px
+  }
+  .giantform-check-out-input {
+    position:relative;
+    z-index:4
+  }
+  .giantform-number {
+    display:inline-block;
+    margin-bottom:20px
+  }
+  .giantform-adults {
+    display:inline-block;
+    position:relative;
+    width:69px
+  }
+  .giantform-adults-input {
+    text-align:center
+  }
+  .giantform-number-separator {
+    display:inline-block;
+    vertical-align:top;
+    font-size:21px;
+    margin:7px 9px 0
+  }
+  .giantform-children {
+    display:inline-block;
+    position:relative;
+    width:69px
+  }
+  .giantform-children-input {
+    text-align:center
+  }
+  .giantform-children-input-disabled {
+    margin:-1px 0 -1px;
+    color:#3d7dad;
+    background:0;
+    border:2px dotted;
+    box-shadow:none;
+    cursor:pointer
+  }
+  .giantform-ages {
+    display:inline-block;
+    margin-left:3px;
+    margin-top:6px;
+    margin-bottom:20px
+  }
+  .giantform-ages-separator {
+    display:inline-block;
+    font-size:21px;
+    margin:3px 2px 0 0;
+    vertical-align:top
+  }
+  .giantform-age-input {
+    font-size:17px;
+    margin-right:2px;
+    padding:6px 0 4px;
+    text-align:center;
+    width:25px
+  }
+  .giantform-age-label {
+    display:block;
+    margin:5px 0 0 1.4em
+  }
+  .giantform-submit {
+    float:right;
+    margin-top:-2px;
+    vertical-align:top
+  }
+  .numcontrol {
+    display:inline-block;
+    position:relative
+  }
+  .numcontrol-decrease, .numcontrol-increase {
+    color:#000;
+    cursor:pointer;
+    font-size:17px;
+    height:36px;
+    line-height:36px;
+    overflow:hidden;
+    position:absolute;
+    top:2px;
+    text-shadow:0 1px rgba(255, 255, 255, 0.7);
+    text-align:center;
+    width:0;
+    z-index:3
+  }
+  .numcontrol-decrease {
+    font-size:22px;
+    right:100%;
+    margin-right:-2px
+  }
+  .numcontrol-decrease-inner {
+    background:#e2e2e2;
+    background:-webkit-linear-gradient(right, #e2e2e2 0, #c0c0bf 100%);
+    background:-moz-linear-gradient(right, #e2e2e2 0, #c0c0bf 100%);
+    background:-ms-linear-gradient(right, #e2e2e2 0, #c0c0bf 100%);
+    background:-o-linear-gradient(right, #e2e2e2 0, #c0c0bf 100%);
+    background:linear-gradient(right, #e2e2e2 0, #c0c0bf 100%);
+    box-shadow:-1px 1px 1px rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    left:0;
+    text-align:center
+  }
+  .numcontrol-increase {
+    left:100%;
+    margin-left:-2px
+  }
+  .numcontrol-increase-inner {
+    background:#e2e2e2;
+    background:-webkit-linear-gradient(left, #e2e2e2 0, #c0c0bf 100%);
+    background:-moz-linear-gradient(left, #e2e2e2 0, #c0c0bf 100%);
+    background:-ms-linear-gradient(left, #e2e2e2 0, #c0c0bf 100%);
+    background:-o-linear-gradient(left, #e2e2e2 0, #c0c0bf 100%);
+    background:linear-gradient(left, #e2e2e2 0, #c0c0bf 100%);
+    box-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    text-align:center;
+    right:0
+  }
+  .numcontrol-decrease-inner, .numcontrol-increase-inner {
+    border-radius:3px;
+    position:absolute;
+    top:0;
+    width:30px
+  }
+  .numcontrol-disabled {
+    color:#999;
+    cursor:default
+  }
+  .giantform-form:after {
+    border-radius:6px;
+    box-shadow:0 0 37px rgba(0, 60, 108, 0.8);
+    content:"";
+    display:block;
+    height:236px;
+    position:absolute;
+    top:20px;
+    width:90%;
+    z-index:-1
+  }

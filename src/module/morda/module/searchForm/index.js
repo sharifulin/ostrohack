@@ -91,6 +91,7 @@
   });
 
   var submitButton = new basis.ui.button.Button({
+    template: resource('template/submitButton.tmpl'),
     caption: basis.l10n.getToken(namespace, 'submitButton'),
     click: function(){
       form.submit();
@@ -104,6 +105,11 @@
       arrivalField: arrivalField,
       departureField: departureField,
       submitButton: submitButton
+    },
+    action: {
+      kill: function(event){
+        event.preventDefault();
+      }
     },
 
     event_datasetChanged: basis.event.create('datasetChanged'),
