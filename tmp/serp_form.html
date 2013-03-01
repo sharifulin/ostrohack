@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ostrovok.ru Serp Form</title>
+  <meta charset="utf-8"> 
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page serpPage serpPage-state-list">
+	<div class="giantform" style="top: 112.5px; left: 720px; opacity: 1; -webkit-transform: scale(1);">
+	  <h1 class="giantform-title">Поиск отелей</h1><span class="giantform-close">×</span>
+	  <form class="giantform-form" method="GET">
+	    <div class="giantform-destination">
+	      <input name="destination" class="giantform-input giantform-destination-input" id="destination" type="text" value="Амстердам, Нидерланды" placeholder="Город или отель" autocomplete="off" spellcheck="false" aria-haspopup="true"><span class="giantform-destination-clear"></span>
+	      <label class="giantform-label giantform-destination-example" for="destination">Куда вы хотите отправиться?</label>
+	    </div>
+	    <div class="giantform-dates">
+	      <div class="giantform-check-in">
+	        <input name="checkin" class="giantform-input giantform-check-in-input" id="check-in" type="text" value="" autocomplete="off">
+	        <label class="giantform-label giantform-check-in-label" for="check-in">Заезд</label>
+	      </div>
+	      <div class="giantform-dates-separator">–</div>
+	      <div class="giantform-check-out">
+	        <input name="checkout" class="giantform-input giantform-check-out-input" id="check-out" type="text" value="" autocomplete="off">
+	        <label class="giantform-label giantform-check-out-label" for="check-out">Выезд</label>
+	      </div>
+	    </div>
+	    <div class="giantform-number">
+	      <div class="giantform-adults"><span class="numcontrol"><span class="numcontrol-decrease" style="-webkit-user-select: none; width: 0px; margin-right: -1px; padding-right: 0px;"><span class="numcontrol-decrease-inner">-</span></span>
+	        <input class="giantform-input giantform-adults-input"
+	        id="adults" name="adults" type="text" value="2" autocomplete="off"><span class="numcontrol-increase" style="-webkit-user-select: none; width: 0px; margin-left: -1px; padding-left: 0px;"><span class="numcontrol-increase-inner">+</span></span>
+	        </span>
+	        <label class="giantform-label giantform-adults-label" for="adults">Взрослых</label>
+	      </div>
+	      <div class="giantform-number-separator">и</div>
+	      <div class="giantform-children"><span class="numcontrol"><span class="numcontrol-decrease" style="-webkit-user-select: none; width: 0px; margin-right: -1px; padding-right: 0px;"><span class="numcontrol-decrease-inner">-</span></span>
+	        <input class="giantform-input giantform-children-input"
+	        id="children" name="children" type="text" value="1" autocomplete="off"><span class="numcontrol-increase" style="-webkit-user-select: none; width: 0px; margin-left: -1px; padding-left: 0px;"><span class="numcontrol-increase-inner">+</span></span>
+	        </span>
+	        <label class="giantform-label giantform-children-label" for="children">Детей</label>
+	      </div>
+	    </div>
+	    <div class="giantform-ages" style="">
+	      <div class="giantform-ages-separator">:</div>
+	      <input class="giantform-input giantform-age-input" type="text" name="age1" value="5" autocomplete="off" style="">
+	      <input class="giantform-input giantform-age-input" type="text" name="age2" value="7" autocomplete="off" style="display: none;" disabled="">
+	      <input class="giantform-input giantform-age-input" type="text" name="age3" value="7" autocomplete="off" style="display: none;" disabled="">
+	      <input class="giantform-input giantform-age-input" type="text" name="age4" value="7" autocomplete="off" style="display: none;" disabled="">
+	      <label class="giantform-label giantform-age-label" for="age1">полный возраст</label>
+	    </div>
+	    <button class="button button-orange button-big giantform-submit" type="submit">Найти отели</button>
+	    <div class="datepicker giantform-calendar datepicker-no-left datepicker-has-holidays" style="visibility: hidden; display: none;" tabindex="0">
+	      <table cellspacing="0" cellpadding="0">
+	        <thead>
+	          <tr class="datepicker-head">
+	            <td colspan="2">
+	              <button class="datepicker-btn datepicker-btn-left"></button>
+	            </td>
+	            <td colspan="5" class="datepicker-monthyear">Март 2013</td>
+	            <td>
+	              <button class="datepicker-btn datepicker-btn-right"></button>
+	            </td>
+	          </tr>
+	        </thead>
+	        <tbody role="grid" tabindex="0" aria-activedescendant=":hg">
+	          <tr style="">
+	            <th></th>
+	            <th class="datepicker-wday" role="columnheader">пн</th>
+	            <th class="datepicker-wday" role="columnheader">вт</th>
+	            <th class="datepicker-wday" role="columnheader">ср</th>
+	            <th class="datepicker-wday" role="columnheader">чт</th>
+	            <th class="datepicker-wday" role="columnheader">пт</th>
+	            <th class="datepicker-wday" role="columnheader">сб</th>
+	            <th class="datepicker-wday" role="columnheader">вс</th>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":h9" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">25</td>
+	            <td id=":ha" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">26</td>
+	            <td id=":hb" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">27</td>
+	            <td id=":hc" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">28</td>
+	            <td id=":hd" role="gridcell" class="datepicker-date datepicker-today">1</td>
+	            <td id=":he" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">2</td>
+	            <td id=":hf" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">3</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":hg" role="gridcell" class="datepicker-date datepicker-selected">4</td>
+	            <td id=":hh" role="gridcell" class="datepicker-date">5</td>
+	            <td id=":hi" role="gridcell" class="datepicker-date">6</td>
+	            <td id=":hj" role="gridcell" class="datepicker-date">7</td>
+	            <td id=":hk" role="gridcell" class="datepicker-date datepicker-holiday">8</td>
+	            <td id=":hl" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">9</td>
+	            <td id=":hm" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">10</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":hn" role="gridcell" class="datepicker-date">11</td>
+	            <td id=":ho" role="gridcell" class="datepicker-date">12</td>
+	            <td id=":hp" role="gridcell" class="datepicker-date">13</td>
+	            <td id=":hq" role="gridcell" class="datepicker-date">14</td>
+	            <td id=":hr" role="gridcell" class="datepicker-date">15</td>
+	            <td id=":hs" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">16</td>
+	            <td id=":ht" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">17</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":hu" role="gridcell" class="datepicker-date">18</td>
+	            <td id=":hv" role="gridcell" class="datepicker-date">19</td>
+	            <td id=":hw" role="gridcell" class="datepicker-date">20</td>
+	            <td id=":hx" role="gridcell" class="datepicker-date">21</td>
+	            <td id=":hy" role="gridcell" class="datepicker-date">22</td>
+	            <td id=":hz" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">23</td>
+	            <td id=":i0" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">24</td>
+	          </tr>
+	          <tr style="">
+	            <th class="" role="rowheader"></th>
+	            <td id=":i1" role="gridcell" class="datepicker-date">25</td>
+	            <td id=":i2" role="gridcell" class="datepicker-date">26</td>
+	            <td id=":i3" role="gridcell" class="datepicker-date">27</td>
+	            <td id=":i4" role="gridcell" class="datepicker-date">28</td>
+	            <td id=":i5" role="gridcell" class="datepicker-date">29</td>
+	            <td id=":i6" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">30</td>
+	            <td id=":i7" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">31</td>
+	          </tr>
+	          <tr style="">
+	            <th class="" role="rowheader"></th>
+	            <td id=":i8" role="gridcell" class="datepicker-date datepicker-other-month">1</td>
+	            <td id=":i9" role="gridcell" class="datepicker-date datepicker-other-month">2</td>
+	            <td id=":ia" role="gridcell" class="datepicker-date datepicker-other-month">3</td>
+	            <td id=":ib" role="gridcell" class="datepicker-date datepicker-other-month">4</td>
+	            <td id=":ic" role="gridcell" class="datepicker-date datepicker-other-month">5</td>
+	            <td id=":id" role="gridcell" class="datepicker-date datepicker-other-month datepicker-wkend-start datepicker-holiday">6</td>
+	            <td id=":ie" role="gridcell" class="datepicker-date datepicker-other-month datepicker-wkend-end datepicker-holiday">7</td>
+	          </tr>
+	        </tbody>
+	        <tfoot style="display: none;">
+	          <tr class="datepicker-foot">
+	            <td colspan="2" class="datepicker-today-cont">
+	              <button class="datepicker-btn" style="display: none;">Today</button>
+	            </td>
+	            <td colspan="4"></td>
+	            <td colspan="2" class="datepicker-none-cont">
+	              <button class="datepicker-btn" style="display: none;">None</button>
+	            </td>
+	          </tr>
+	        </tfoot>
+	      </table>
+	    </div>
+	    <div class="datepicker giantform-calendar datepicker-no-left datepicker-has-holidays" style="visibility: hidden; display: none;" tabindex="0">
+	      <table cellspacing="0" cellpadding="0">
+	        <thead>
+	          <tr class="datepicker-head">
+	            <td colspan="2">
+	              <button class="datepicker-btn datepicker-btn-left"></button>
+	            </td>
+	            <td colspan="5" class="datepicker-monthyear">Март 2013</td>
+	            <td>
+	              <button class="datepicker-btn datepicker-btn-right"></button>
+	            </td>
+	          </tr>
+	        </thead>
+	        <tbody role="grid" tabindex="0" aria-activedescendant=":is">
+	          <tr style="">
+	            <th></th>
+	            <th class="datepicker-wday" role="columnheader">пн</th>
+	            <th class="datepicker-wday" role="columnheader">вт</th>
+	            <th class="datepicker-wday" role="columnheader">ср</th>
+	            <th class="datepicker-wday" role="columnheader">чт</th>
+	            <th class="datepicker-wday" role="columnheader">пт</th>
+	            <th class="datepicker-wday" role="columnheader">сб</th>
+	            <th class="datepicker-wday" role="columnheader">вс</th>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":ih" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">25</td>
+	            <td id=":ii" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">26</td>
+	            <td id=":ij" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">27</td>
+	            <td id=":ik" role="gridcell" class="datepicker-date datepicker-other-month datepicker-out-of-range">28</td>
+	            <td id=":il" role="gridcell" class="datepicker-date datepicker-today datepicker-out-of-range">1</td>
+	            <td id=":im" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">2</td>
+	            <td id=":in" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">3</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":io" role="gridcell" class="datepicker-date">4</td>
+	            <td id=":ip" role="gridcell" class="datepicker-date">5</td>
+	            <td id=":iq" role="gridcell" class="datepicker-date">6</td>
+	            <td id=":ir" role="gridcell" class="datepicker-date">7</td>
+	            <td id=":is" role="gridcell" class="datepicker-date datepicker-selected datepicker-holiday">8</td>
+	            <td id=":it" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">9</td>
+	            <td id=":iu" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">10</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":iv" role="gridcell" class="datepicker-date">11</td>
+	            <td id=":iw" role="gridcell" class="datepicker-date">12</td>
+	            <td id=":ix" role="gridcell" class="datepicker-date">13</td>
+	            <td id=":iy" role="gridcell" class="datepicker-date">14</td>
+	            <td id=":iz" role="gridcell" class="datepicker-date">15</td>
+	            <td id=":j0" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">16</td>
+	            <td id=":j1" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">17</td>
+	          </tr>
+	          <tr>
+	            <th class="" role="rowheader"></th>
+	            <td id=":j2" role="gridcell" class="datepicker-date">18</td>
+	            <td id=":j3" role="gridcell" class="datepicker-date">19</td>
+	            <td id=":j4" role="gridcell" class="datepicker-date">20</td>
+	            <td id=":j5" role="gridcell" class="datepicker-date">21</td>
+	            <td id=":j6" role="gridcell" class="datepicker-date">22</td>
+	            <td id=":j7" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">23</td>
+	            <td id=":j8" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">24</td>
+	          </tr>
+	          <tr style="">
+	            <th class="" role="rowheader"></th>
+	            <td id=":j9" role="gridcell" class="datepicker-date">25</td>
+	            <td id=":ja" role="gridcell" class="datepicker-date">26</td>
+	            <td id=":jb" role="gridcell" class="datepicker-date">27</td>
+	            <td id=":jc" role="gridcell" class="datepicker-date">28</td>
+	            <td id=":jd" role="gridcell" class="datepicker-date">29</td>
+	            <td id=":je" role="gridcell" class="datepicker-date datepicker-wkend-start datepicker-holiday">30</td>
+	            <td id=":jf" role="gridcell" class="datepicker-date datepicker-wkend-end datepicker-holiday">31</td>
+	          </tr>
+	          <tr style="">
+	            <th class="" role="rowheader"></th>
+	            <td id=":jg" role="gridcell" class="datepicker-date datepicker-other-month">1</td>
+	            <td id=":jh" role="gridcell" class="datepicker-date datepicker-other-month">2</td>
+	            <td id=":ji" role="gridcell" class="datepicker-date datepicker-other-month">3</td>
+	            <td id=":jj" role="gridcell" class="datepicker-date datepicker-other-month">4</td>
+	            <td id=":jk" role="gridcell" class="datepicker-date datepicker-other-month">5</td>
+	            <td id=":jl" role="gridcell" class="datepicker-date datepicker-other-month datepicker-wkend-start datepicker-holiday">6</td>
+	            <td id=":jm" role="gridcell" class="datepicker-date datepicker-other-month datepicker-wkend-end datepicker-holiday">7</td>
+	          </tr>
+	        </tbody>
+	        <tfoot style="display: none;">
+	          <tr class="datepicker-foot">
+	            <td colspan="2" class="datepicker-today-cont">
+	              <button class="datepicker-btn" style="display: none;">Today</button>
+	            </td>
+	            <td colspan="4"></td>
+	            <td colspan="2" class="datepicker-none-cont">
+	              <button class="datepicker-btn" style="display: none;">None</button>
+	            </td>
+	          </tr>
+	        </tfoot>
+	      </table>
+	    </div>
+	  </form>
+	</div>
+</div>
+</body>
+</html>
