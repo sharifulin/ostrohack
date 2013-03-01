@@ -6077,6 +6077,10 @@
   .b-photos-reviews-wrapper_has_rating .hp-rv-sidebar-rating-detailed, .b-photos-reviews-wrapper_has_reviews .hp-rv-sidebar-header:hover .hp-rv-sidebar-rating-detailed {
     display:none
   }
+  .b-photos-reviews-wrapper_has_rating .l-photos-reviews-right
+  {
+    display: block;
+  }
   .hp-rv-sidebar-header:hover .hp-rv-sidebar-rating-detailed {
     display:block
   }
@@ -6171,7 +6175,8 @@
   }
   .l-photos-reviews-right {
     width:210px;
-    float:right
+    float:right;
+    display: none;
   }
   .b-hotel-reviews-full {
     display:none
@@ -7583,7 +7588,7 @@
   .b-photogallery {
     cursor:pointer;
     position:relative;
-    height:289px;
+    height:230px;
     background-color:#dcdcdc
   }
   .b-photogallery__left, .b-photogallery__right {

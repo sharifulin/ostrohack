@@ -1,0 +1,6 @@
+.hotel-slider-imageList,
+.hotel-slider-imageList .Basis-ScrollPanel-Content
+{
+  white-space: nowrap;
+  height: 100%;
+}
