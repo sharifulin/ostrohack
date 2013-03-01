@@ -1,0 +1,8 @@
+{
+  "app.module.search.toolbar.sorting": {
+    "popularity": "Популярность",
+    "rating": "Рейтинг",
+    "price": "Цена",
+    "distance": "Удаленность"
+  }
+}

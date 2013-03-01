@@ -10,10 +10,6 @@
   position:relative;
   padding:4px 5px
 }
-.serpControls-sort {
-  float:left;
-  margin-top:2px
-}
 .serpControls-tabs {
   float:right
 }
@@ -71,44 +67,7 @@
   color:#999;
   cursor:auto
 }
-.sortbutton {
-  background:0;
-  border:0;
-  color:#2a5894;
-  cursor:pointer;
-  display:inline-block;
-  font-family:'Open Sans', Verdana, sans-serif;
-  font-size:10px;
-  margin:0 7px 0 0;
-  outline:0;
-  padding:4px 6px 5px 6px;
-  position:relative;
-  text-transform:uppercase
-}
-.sortbutton-content {
-  border-bottom:1px dotted
-}
-.sortbutton-actionable-after-check {
-  padding-right:14px
-}
-.sortbutton-checked {
-  background:#5f8bc8;
-  border-radius:2px;
-  color:#fff;
-  cursor:default
-}
-.sortbutton-checked .sortbutton-content {
-  border:0;
-  position:relative;
-  top:1px
-}
-.sortbutton-checked.sortbutton-actionable-after-check {
-  cursor:pointer
-}
-.sortbutton-checked.sortbutton-actionable-after-check .sortbutton-content {
-  border-bottom:1px dotted;
-  position:static
-}
+
 .tabbutton {
   background:#f9f9f9;
   border:0;
