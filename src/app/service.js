@@ -1,6 +1,18 @@
 
   basis.require('basis.net.service');
 
+  var defaultService = new basis.net.service.Service({
+    transportClass: function(super_){
+      return {
+        requestClass: {
+          getResponseData: function(){
+            return this.data.responseText.toObject();
+          }
+        }
+      };
+    }
+  });  
+
   var searchService = new basis.net.service.Service({
     transportClass: function(super_){
       return {
@@ -18,5 +30,6 @@
   });
 
   module.exports = {
+    'default': defaultService,
     'search': searchService
   };

@@ -1,0 +1,724 @@
+{
+    "status": "OK", 
+    "hotel": {
+        "rating": {
+            "detailed": {}, 
+            "count": 0, 
+            "exists": false, 
+            "total_verbose": "", 
+            "review_best": null, 
+            "our_reviews_count": 0, 
+            "other_reviews_count": 0
+        }, 
+        "kind": "Hotel", 
+        "star_rating": 0, 
+        "description": "<h4>Location</h4>\n\n<p>Park-Hotel Hotel is located in the center of Orenburg. Orenburg Railway Station is a 1-minute walk from the hotel, and closet Cosmos Cinema is a 10-minute walk away. It will take 15 minutes to get to the city center. </p>\n\n<h4>Hotel features</h4>\n\n<p>Guests can have breakfast, lunch and dinner in Park-Hotel Hotel�s restaurant with a selection of delicious Russian dishes. The hotel�s neighborhood includes numerous cafes and restaurants. In warm weather guests can use the well-equipped barbecue ground. In the evening you can enjoy a game of pool with friends.  </p>\n\n<p>The front desk is open 24 hours. If you travel by car, you can use the <em>free parking area</em> in the territory of the hotel. Free Wi-Fi is available throughout the hotel. </p>\n\n<h4>Rooms</h4>\n\n<p>The hotel has <em>32 rooms</em>. Each room is equipped with a fridge, a desk and a TV set. </p>\n", 
+        "hotel_amenities": [
+            "internet", 
+            "parkovka"
+        ], 
+        "city": "Orenburg", 
+        "tz_name": "Asia/Yekaterinburg", 
+        "longitude": 55.07527, 
+        "name": "Park-Hotel Hotel ", 
+        "ostrovok_id": 179845, 
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/23474d8113c84e75a47f62340edfc907.jpg", 
+        "city_ru": "��������", 
+        "rooms": [
+            {
+                "name": "Standard Twin Room", 
+                "room_type_id": 9045, 
+                "room_type": {
+                    "description": null, 
+                    "room_type_size": "15", 
+                    "room_type_id": 9045, 
+                    "extra_value_adds": [], 
+                    "original_name": "����������� ����������� ����� � 2 ������������� ���������", 
+                    "room_type_image_list": [
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b1110fcf27dc4c77aaad3746a26bc02d.jpg"
+                    ], 
+                    "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg", 
+                    "amenities": {
+                        "Features and information": [
+                            "Satellite TV", 
+                            "Toiletries", 
+                            "Bathroom", 
+                            "Carpeted floor", 
+                            "Toilet", 
+                            "Mosquito net", 
+                            "Cable TV", 
+                            "Wake-up call"
+                        ], 
+                        "Features": [
+                            "Telephone", 
+                            "TV", 
+                            "Shower", 
+                            "Heating", 
+                            "Desk"
+                        ], 
+                        "Bedding": [
+                            "2 x Single"
+                        ], 
+                        "Meals": [
+                            "Breakfast: 150 ���.."
+                        ]
+                    }, 
+                    "provider": 2, 
+                    "room_type_name": "Standard Twin Room", 
+                    "pk": 200374724, 
+                    "bed_types": null, 
+                    "size": "15.0", 
+                    "translation_names": {
+                        "en": "Standard Twin Room"
+                    }, 
+                    "name": "Standard Twin Room"
+                }, 
+                "min_rate_rub": "1950.0", 
+                "rooms": [
+                    {
+                        "promo_description": null, 
+                        "cancellation_policy": {
+                            "text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "multi_text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "title": "Non-refundable"
+                        }, 
+                        "currency": "RUB", 
+                        "can_pay_by_cash": false, 
+                        "reserve_url": "/orders/reserve/5ae75eca-201b-5b17-9cad-f8efc4994775/", 
+                        "value_adds": [
+                            {
+                                "code": "has_wifi_access", 
+                                "description": "Free Wi-Fi"
+                            }
+                        ], 
+                        "rate_description": "Standard Twin Room", 
+                        "room_rate_hash": "4c32f", 
+                        "amenities": [], 
+                        "is_prepay": false, 
+                        "non_refundable": true, 
+                        "payment_choices": {
+                            "CreditCardPostpay": "CreditCardPostpay"
+                        }, 
+                        "hash": "5ae75eca-201b-5b17-9cad-f8efc4994775", 
+                        "price": {
+                            "surcharge_rub": "0", 
+                            "discounted": "1950.0", 
+                            "total_rub": "1950.0", 
+                            "details": [
+                                {
+                                    "date": "2013-03-01", 
+                                    "rate": "1950.0", 
+                                    "rate_rub": "1950.0"
+                                }
+                            ], 
+                            "total_discount": "0", 
+                            "total": "1950.0", 
+                            "currency_code": "RUB", 
+                            "surcharge": "0"
+                        }, 
+                        "total_rate": "1950.0", 
+                        "bed_types": [
+                            {
+                                "id": "9099", 
+                                "description": "2 x Single"
+                            }
+                        ], 
+                        "full_rate_rub": null, 
+                        "name": "Standard Twin Room", 
+                        "free_cancellation_period": 0, 
+                        "room_type": {
+                            "description": null, 
+                            "room_type_size": "15", 
+                            "room_type_id": 9045, 
+                            "extra_value_adds": [], 
+                            "original_name": "����������� ����������� ����� � 2 ������������� ���������", 
+                            "room_type_image_list": [
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b1110fcf27dc4c77aaad3746a26bc02d.jpg"
+                            ], 
+                            "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg", 
+                            "amenities": {
+                                "Features and information": [
+                                    "Satellite TV", 
+                                    "Toiletries", 
+                                    "Bathroom", 
+                                    "Carpeted floor", 
+                                    "Toilet", 
+                                    "Mosquito net", 
+                                    "Cable TV", 
+                                    "Wake-up call"
+                                ], 
+                                "Features": [
+                                    "Telephone", 
+                                    "TV", 
+                                    "Shower", 
+                                    "Heating", 
+                                    "Desk"
+                                ], 
+                                "Bedding": [
+                                    "2 x Single"
+                                ], 
+                                "Meals": [
+                                    "Breakfast: 150 ���.."
+                                ]
+                            }, 
+                            "provider": 2, 
+                            "room_type_name": "Standard Twin Room", 
+                            "pk": 200374724, 
+                            "bed_types": null, 
+                            "size": "15.0", 
+                            "translation_names": {
+                                "en": "Standard Twin Room"
+                            }, 
+                            "name": "Standard Twin Room"
+                        }, 
+                        "current_allotment": 4, 
+                        "full_rate": null, 
+                        "total_rate_rub": "1950.0"
+                    }
+                ], 
+                "has_golden_rooms": false
+            }, 
+            {
+                "name": "Standard Twin Room", 
+                "room_type_id": 8867, 
+                "room_type": {
+                    "description": null, 
+                    "room_type_size": "15", 
+                    "room_type_id": 8867, 
+                    "extra_value_adds": [], 
+                    "original_name": "����������� ����������� �����", 
+                    "room_type_image_list": [
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/6d5b30b25d7c428991a3772e0f674487.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/54cebdb0841a4ce7b068e68414bafc0a.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b66732bf973448be9cf80b8a81d03e67.JPG"
+                    ], 
+                    "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/6d5b30b25d7c428991a3772e0f674487.jpg", 
+                    "amenities": {
+                        "Features and information": [
+                            "Satellite TV", 
+                            "Toiletries", 
+                            "Bathroom", 
+                            "Carpeted floor", 
+                            "Toilet", 
+                            "Cable TV", 
+                            "Wake-up call", 
+                            "Wardrobe", 
+                            "Mosquito net"
+                        ], 
+                        "Features": [
+                            "Telephone", 
+                            "TV", 
+                            "Shower", 
+                            "Heating", 
+                            "Fan", 
+                            "Desk"
+                        ], 
+                        "Bedding": [
+                            "Double"
+                        ], 
+                        "Meals": [
+                            "Breakfast: 150 ���.."
+                        ]
+                    }, 
+                    "provider": 2, 
+                    "room_type_name": "Standard Twin Room", 
+                    "pk": 200374722, 
+                    "bed_types": null, 
+                    "size": "15.0", 
+                    "translation_names": {
+                        "en": "Standard Twin Room"
+                    }, 
+                    "name": "Standard Twin Room"
+                }, 
+                "min_rate_rub": "2100.0", 
+                "rooms": [
+                    {
+                        "promo_description": null, 
+                        "cancellation_policy": {
+                            "text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "multi_text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "title": "Non-refundable"
+                        }, 
+                        "currency": "RUB", 
+                        "can_pay_by_cash": false, 
+                        "reserve_url": "/orders/reserve/f28acfd4-dd72-5255-9ed8-195d85e9dc68/", 
+                        "value_adds": [
+                            {
+                                "code": "has_wifi_access", 
+                                "description": "Free Wi-Fi"
+                            }
+                        ], 
+                        "rate_description": "Standard Twin Room", 
+                        "room_rate_hash": "237a0", 
+                        "amenities": [], 
+                        "is_prepay": false, 
+                        "non_refundable": true, 
+                        "payment_choices": {
+                            "CreditCardPostpay": "CreditCardPostpay"
+                        }, 
+                        "hash": "f28acfd4-dd72-5255-9ed8-195d85e9dc68", 
+                        "price": {
+                            "surcharge_rub": "0", 
+                            "discounted": "2100.0", 
+                            "total_rub": "2100.0", 
+                            "details": [
+                                {
+                                    "date": "2013-03-01", 
+                                    "rate": "2100.0", 
+                                    "rate_rub": "2100.0"
+                                }
+                            ], 
+                            "total_discount": "0", 
+                            "total": "2100.0", 
+                            "currency_code": "RUB", 
+                            "surcharge": "0"
+                        }, 
+                        "total_rate": "2100.0", 
+                        "bed_types": [
+                            {
+                                "id": "8862", 
+                                "description": "Double"
+                            }
+                        ], 
+                        "full_rate_rub": null, 
+                        "name": "Standard Twin Room", 
+                        "free_cancellation_period": 0, 
+                        "room_type": {
+                            "description": null, 
+                            "room_type_size": "15", 
+                            "room_type_id": 8867, 
+                            "extra_value_adds": [], 
+                            "original_name": "����������� ����������� �����", 
+                            "room_type_image_list": [
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/6d5b30b25d7c428991a3772e0f674487.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/54cebdb0841a4ce7b068e68414bafc0a.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b66732bf973448be9cf80b8a81d03e67.JPG"
+                            ], 
+                            "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/6d5b30b25d7c428991a3772e0f674487.jpg", 
+                            "amenities": {
+                                "Features and information": [
+                                    "Satellite TV", 
+                                    "Toiletries", 
+                                    "Bathroom", 
+                                    "Carpeted floor", 
+                                    "Toilet", 
+                                    "Cable TV", 
+                                    "Wake-up call", 
+                                    "Wardrobe", 
+                                    "Mosquito net"
+                                ], 
+                                "Features": [
+                                    "Telephone", 
+                                    "TV", 
+                                    "Shower", 
+                                    "Heating", 
+                                    "Fan", 
+                                    "Desk"
+                                ], 
+                                "Bedding": [
+                                    "Double"
+                                ], 
+                                "Meals": [
+                                    "Breakfast: 150 ���.."
+                                ]
+                            }, 
+                            "provider": 2, 
+                            "room_type_name": "Standard Twin Room", 
+                            "pk": 200374722, 
+                            "bed_types": null, 
+                            "size": "15.0", 
+                            "translation_names": {
+                                "en": "Standard Twin Room"
+                            }, 
+                            "name": "Standard Twin Room"
+                        }, 
+                        "current_allotment": 4, 
+                        "full_rate": null, 
+                        "total_rate_rub": "2100.0"
+                    }
+                ], 
+                "has_golden_rooms": false
+            }, 
+            {
+                "name": "Suite", 
+                "room_type_id": 8868, 
+                "room_type": {
+                    "description": null, 
+                    "room_type_size": "20", 
+                    "room_type_id": 8868, 
+                    "extra_value_adds": [], 
+                    "original_name": "����", 
+                    "room_type_image_list": [
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/21f3de45d08a4e699a00c2ea3d8160b9.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/6ac98d8e2c4b408b938e292824774fbf.JPG", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/c3fe71551b0647039409fc06da8bfd04.JPG", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ab6e9e1690f443f1b0054f533307e62b.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/06e346baf9464a5dae44bf3cdee72b0e.JPG"
+                    ], 
+                    "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/21f3de45d08a4e699a00c2ea3d8160b9.jpg", 
+                    "amenities": {
+                        "Features and information": [
+                            "Satellite TV", 
+                            "Bath or shower", 
+                            "Wake-up call", 
+                            "Bathroom", 
+                            "Toilet", 
+                            "Air conditioner", 
+                            "Cable TV", 
+                            "Plasma/LCD/flat-screen TV", 
+                            "Wardrobe", 
+                            "Mosquito net", 
+                            "Parquet/Wooden floor"
+                        ], 
+                        "Features": [
+                            "Telephone", 
+                            "Slippers", 
+                            "Fan", 
+                            "Heating", 
+                            "Desk"
+                        ], 
+                        "Bedding": [
+                            "Queen size"
+                        ], 
+                        "Meals": [
+                            "Breakfast: 150 ���.."
+                        ]
+                    }, 
+                    "provider": 2, 
+                    "room_type_name": "Suite", 
+                    "pk": 200374723, 
+                    "bed_types": null, 
+                    "size": "20.0", 
+                    "translation_names": {
+                        "en": "Suite"
+                    }, 
+                    "name": "Suite"
+                }, 
+                "min_rate_rub": "3300.0", 
+                "rooms": [
+                    {
+                        "promo_description": null, 
+                        "cancellation_policy": {
+                            "text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "multi_text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "title": "Non-refundable"
+                        }, 
+                        "currency": "RUB", 
+                        "can_pay_by_cash": false, 
+                        "reserve_url": "/orders/reserve/e79156a7-9706-56e0-8946-cf9eb2941142/", 
+                        "value_adds": [
+                            {
+                                "code": "has_wifi_access", 
+                                "description": "Free Wi-Fi"
+                            }
+                        ], 
+                        "rate_description": "Suite", 
+                        "room_rate_hash": "ce84a", 
+                        "amenities": [], 
+                        "is_prepay": false, 
+                        "non_refundable": true, 
+                        "payment_choices": {
+                            "CreditCardPostpay": "CreditCardPostpay"
+                        }, 
+                        "hash": "e79156a7-9706-56e0-8946-cf9eb2941142", 
+                        "price": {
+                            "surcharge_rub": "0", 
+                            "discounted": "3300.0", 
+                            "total_rub": "3300.0", 
+                            "details": [
+                                {
+                                    "date": "2013-03-01", 
+                                    "rate": "3300.0", 
+                                    "rate_rub": "3300.0"
+                                }
+                            ], 
+                            "total_discount": "0", 
+                            "total": "3300.0", 
+                            "currency_code": "RUB", 
+                            "surcharge": "0"
+                        }, 
+                        "total_rate": "3300.0", 
+                        "bed_types": [
+                            {
+                                "id": "8976", 
+                                "description": "Queen size"
+                            }
+                        ], 
+                        "full_rate_rub": null, 
+                        "name": "Suite", 
+                        "free_cancellation_period": 0, 
+                        "room_type": {
+                            "description": null, 
+                            "room_type_size": "20", 
+                            "room_type_id": 8868, 
+                            "extra_value_adds": [], 
+                            "original_name": "����", 
+                            "room_type_image_list": [
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/21f3de45d08a4e699a00c2ea3d8160b9.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/6ac98d8e2c4b408b938e292824774fbf.JPG", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/c3fe71551b0647039409fc06da8bfd04.JPG", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ab6e9e1690f443f1b0054f533307e62b.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/06e346baf9464a5dae44bf3cdee72b0e.JPG"
+                            ], 
+                            "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/21f3de45d08a4e699a00c2ea3d8160b9.jpg", 
+                            "amenities": {
+                                "Features and information": [
+                                    "Satellite TV", 
+                                    "Bath or shower", 
+                                    "Wake-up call", 
+                                    "Bathroom", 
+                                    "Toilet", 
+                                    "Air conditioner", 
+                                    "Cable TV", 
+                                    "Plasma/LCD/flat-screen TV", 
+                                    "Wardrobe", 
+                                    "Mosquito net", 
+                                    "Parquet/Wooden floor"
+                                ], 
+                                "Features": [
+                                    "Telephone", 
+                                    "Slippers", 
+                                    "Fan", 
+                                    "Heating", 
+                                    "Desk"
+                                ], 
+                                "Bedding": [
+                                    "Queen size"
+                                ], 
+                                "Meals": [
+                                    "Breakfast: 150 ���.."
+                                ]
+                            }, 
+                            "provider": 2, 
+                            "room_type_name": "Suite", 
+                            "pk": 200374723, 
+                            "bed_types": null, 
+                            "size": "20.0", 
+                            "translation_names": {
+                                "en": "Suite"
+                            }, 
+                            "name": "Suite"
+                        }, 
+                        "current_allotment": 2, 
+                        "full_rate": null, 
+                        "total_rate_rub": "3300.0"
+                    }
+                ], 
+                "has_golden_rooms": false
+            }, 
+            {
+                "name": "Superior Suite", 
+                "room_type_id": 8869, 
+                "room_type": {
+                    "description": null, 
+                    "room_type_size": "20", 
+                    "room_type_id": 8869, 
+                    "extra_value_adds": [], 
+                    "original_name": "���������� ����", 
+                    "room_type_image_list": [
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/8c5018d2913d48b0a3a8603b286bef86.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/c3047f2605ea44fe8820eac55afdfcae.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/a1fc74a3d0be405eba80815d621b0310.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/2adf84d4d49047738813a3ec9aa0f8b8.JPG", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/a1f2355c6a714df7b7be87197ea6a920.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/629e4cc8d3df4f63ac556ff760f796b8.jpg", 
+                        "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ac747e707a824ca1be74fa9ec919f9d3.JPG"
+                    ], 
+                    "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/8c5018d2913d48b0a3a8603b286bef86.jpg", 
+                    "amenities": {
+                        "Features and information": [
+                            "Kitchen", 
+                            "Tea/coffee making facilities", 
+                            "Patio", 
+                            "Sitting room", 
+                            "Toilet", 
+                            "Air conditioner", 
+                            "Mosquito net", 
+                            "Cable TV", 
+                            "Plasma/LCD/flat-screen TV", 
+                            "Satellite TV", 
+                            "Iron", 
+                            "Connecting rooms", 
+                            "Electric kettle", 
+                            "Bath or shower", 
+                            "Bathroom", 
+                            "Carpeted floor", 
+                            "Wake-up service /Alarm clock", 
+                            "Jet tub", 
+                            "Wardrobe"
+                        ], 
+                        "Features": [
+                            "Refrigerator", 
+                            "Desk", 
+                            "Hairdryer", 
+                            "Sofa", 
+                            "DVD player", 
+                            "Telephone", 
+                            "Heating", 
+                            "Fan"
+                        ], 
+                        "Bedding": [
+                            "Queen size"
+                        ], 
+                        "Meals": [
+                            "Breakfast: 150 ���.."
+                        ]
+                    }, 
+                    "provider": 2, 
+                    "room_type_name": "Superior Suite", 
+                    "pk": 200374725, 
+                    "bed_types": null, 
+                    "size": "20.0", 
+                    "translation_names": {
+                        "en": "Superior Suite"
+                    }, 
+                    "name": "Superior Suite"
+                }, 
+                "min_rate_rub": "3700.0", 
+                "rooms": [
+                    {
+                        "promo_description": null, 
+                        "cancellation_policy": {
+                            "text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "multi_text": "Please note that if you cancel or modify this booking, or in case of no show, the hotel will charge you the full booking value.<br>", 
+                            "title": "Non-refundable"
+                        }, 
+                        "currency": "RUB", 
+                        "can_pay_by_cash": false, 
+                        "reserve_url": "/orders/reserve/50777a8e-10e0-5ef5-998b-35079e067e0e/", 
+                        "value_adds": [
+                            {
+                                "code": "has_wifi_access", 
+                                "description": "Free Wi-Fi"
+                            }
+                        ], 
+                        "rate_description": "Superior Suite", 
+                        "room_rate_hash": "9447a", 
+                        "amenities": [], 
+                        "is_prepay": false, 
+                        "non_refundable": true, 
+                        "payment_choices": {
+                            "CreditCardPostpay": "CreditCardPostpay"
+                        }, 
+                        "hash": "50777a8e-10e0-5ef5-998b-35079e067e0e", 
+                        "price": {
+                            "surcharge_rub": "0", 
+                            "discounted": "3700.0", 
+                            "total_rub": "3700.0", 
+                            "details": [
+                                {
+                                    "date": "2013-03-01", 
+                                    "rate": "3700.0", 
+                                    "rate_rub": "3700.0"
+                                }
+                            ], 
+                            "total_discount": "0", 
+                            "total": "3700.0", 
+                            "currency_code": "RUB", 
+                            "surcharge": "0"
+                        }, 
+                        "total_rate": "3700.0", 
+                        "bed_types": [
+                            {
+                                "id": "8863", 
+                                "description": "Queen size"
+                            }
+                        ], 
+                        "full_rate_rub": null, 
+                        "name": "Superior Suite", 
+                        "free_cancellation_period": 0, 
+                        "room_type": {
+                            "description": null, 
+                            "room_type_size": "20", 
+                            "room_type_id": 8869, 
+                            "extra_value_adds": [], 
+                            "original_name": "���������� ����", 
+                            "room_type_image_list": [
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/8c5018d2913d48b0a3a8603b286bef86.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/c3047f2605ea44fe8820eac55afdfcae.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/a1fc74a3d0be405eba80815d621b0310.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/2adf84d4d49047738813a3ec9aa0f8b8.JPG", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/a1f2355c6a714df7b7be87197ea6a920.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/629e4cc8d3df4f63ac556ff760f796b8.jpg", 
+                                "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ac747e707a824ca1be74fa9ec919f9d3.JPG"
+                            ], 
+                            "thumbnail": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/8c5018d2913d48b0a3a8603b286bef86.jpg", 
+                            "amenities": {
+                                "Features and information": [
+                                    "Kitchen", 
+                                    "Tea/coffee making facilities", 
+                                    "Patio", 
+                                    "Sitting room", 
+                                    "Toilet", 
+                                    "Air conditioner", 
+                                    "Mosquito net", 
+                                    "Cable TV", 
+                                    "Plasma/LCD/flat-screen TV", 
+                                    "Satellite TV", 
+                                    "Iron", 
+                                    "Connecting rooms", 
+                                    "Electric kettle", 
+                                    "Bath or shower", 
+                                    "Bathroom", 
+                                    "Carpeted floor", 
+                                    "Wake-up service /Alarm clock", 
+                                    "Jet tub", 
+                                    "Wardrobe"
+                                ], 
+                                "Features": [
+                                    "Refrigerator", 
+                                    "Desk", 
+                                    "Hairdryer", 
+                                    "Sofa", 
+                                    "DVD player", 
+                                    "Telephone", 
+                                    "Heating", 
+                                    "Fan"
+                                ], 
+                                "Bedding": [
+                                    "Queen size"
+                                ], 
+                                "Meals": [
+                                    "Breakfast: 150 ���.."
+                                ]
+                            }, 
+                            "provider": 2, 
+                            "room_type_name": "Superior Suite", 
+                            "pk": 200374725, 
+                            "bed_types": null, 
+                            "size": "20.0", 
+                            "translation_names": {
+                                "en": "Superior Suite"
+                            }, 
+                            "name": "Superior Suite"
+                        }, 
+                        "current_allotment": 1, 
+                        "full_rate": null, 
+                        "total_rate_rub": "3700.0"
+                    }
+                ], 
+                "has_golden_rooms": false
+            }
+        ], 
+        "provider": 2, 
+        "latitude": 51.775427, 
+        "supplier_type": "EXT", 
+        "description_short": "Park-Hotel Hotel is located in the center of Orenburg. Orenburg Railway Station is a 1-minute walk from the hotel, and closet Cosmos Cinema is a ...", 
+        "address": "Privokzalnaya ploschad, 1 A, Orenburg", 
+        "is_postpay": true
+    }, 
+    "_meta": {
+        "nights": 1, 
+        "visits": 2, 
+        "rates": {
+            "RUB": "1", 
+            "USD": "30.65", 
+            "EUR": "40.0184881498"
+        }, 
+        "hotels_total": 9, 
+        "latest_booking": "1359621061.27", 
+        "default_currency": "RUB"
+    }
+}

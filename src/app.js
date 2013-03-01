@@ -33,8 +33,8 @@
       },
       childNodes: [
         resource('module/morda/index.js').fetch(),
-        resource('module/search/index.js').fetch()
-        //resource('module/hotel/index.js').fetch(),
+        resource('module/search/index.js').fetch(),
+        resource('module/hotel/index.js').fetch()
         //resource('module/room/index.js').fetch()
       ]
     });
