@@ -2,15 +2,20 @@
   basis.require('app.type');
   basis.require('basis.ui');
   basis.require('basis.ui.button');
-  basis.require('basis.data.dataset');
+  basis.require('basis.router');
 
   var templates = basis.template.define('searchResult', resource('template/index.js'));
   basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js'));
+
+  var form = resource('module/searchForm/index.js');
 
   var list = new basis.ui.Node({
     active: true, 
 
     template: templates.list,
+    binding: {
+      form: form()
+    },
 
     selection: true,
 
@@ -29,6 +34,12 @@
     setData: function(data){
       this.setDelegate(data);
       this.setDataSource(data);      
+    }
+  });
+
+  form().addHandler({
+    datasetChanged: function(sender){
+      list.setData(sender.dataset);
     }
   });
   
