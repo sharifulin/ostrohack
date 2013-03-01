@@ -18,10 +18,15 @@
       address: String,
       hotel: Hotel,
       rating: Number,
-      rating_verbose: String
+      rating_verbose: String,
+      city: String,
+      amenities: function(value){
+        return value && value.length ? value : null;
+      }
     },
     aliases: {
-      ostrovok_id: 'id'
+      ostrovok_id: 'id',
+      hotel_amenities: 'amenities'
     }
   });
 
