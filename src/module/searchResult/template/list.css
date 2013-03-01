@@ -1,0 +1,18 @@
+
+  #searchResult
+  {
+    width: 800px;
+  }
+  
+  #searchResult .loading-label
+  {
+    background: gold;
+    border-radius: 3px;
+    display: none;
+    padding: 2px 1em;
+  }
+
+  #searchResult.state-processing .loading-label
+  {
+    display: inline-block;
+  }

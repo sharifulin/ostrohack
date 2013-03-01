@@ -1,0 +1,3602 @@
+{
+    "_next_page": 2,
+    "status": "OK",
+    "_meta": {
+        "default_currency": "RUB",
+        "nights": 1,
+        "region": {
+            "name_ru": "Москва",
+            "region_id": 2395,
+            "country_en": "Russia",
+            "locative_where_en": "Moscow",
+            "locative_in_ru": "в Москве",
+            "locative_where_ru": "Москвы",
+            "country_code": "RU",
+            "locative_in_en": "in Moscow",
+            "country_ru": "Россия",
+            "name_en": "Moscow",
+            "type": "City",
+            "center": {
+                "lat": 55.7568,
+                "lng": 37.6152
+            }
+        },
+        "visits": 46,
+        "rates": {
+            "RUB": "1",
+            "USD": "30.2255",
+            "EUR": "40.4145278632"
+        },
+        "hotels_total": 362,
+        "latest_booking": "1358598632.0",
+        "use_ya_maps": true
+    },
+    "_hotels_cnt": 46,
+    "_total_pages": 8,
+    "hotels": [{
+        "booking_stats": {
+            "latest_booking": "1358443499.06",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 8.0,
+                "personnel": 6.0,
+                "price": 8.1,
+                "comfort": 8.0,
+                "location": 5.3,
+                "services": 6.0
+            },
+            "count": 82,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": {
+                "user_id": 440397760,
+                "review_minus": "",
+                "is_showed": "Номер бизнес-класс нам достался по акции. В ванной - унитаз, биде, ванна. Все принадлежности, даже зубные щетки. Телевизор ЖК на стене. Очень уютно. На столике вода питьевая минеральная, салфетки. Вобщем все есть. Завтрак включен - шведский стол - полно всего. На любой вкус. Все понравилось очень! Контингент тоже приличный.",
+                "author": "Marina",
+                "is_best": true,
+                "created": "2012-10-28T12:33:55.572358",
+                "review_plus": "Номер бизнес-класс нам достался по акции. В ванной - унитаз, биде, ванна. Все принадлежности, даже зубные щетки. Телевизор ЖК на стене. Очень уютно. На столике вода питьевая минеральная, салфетки. Вобщем все есть. Завтрак включен - шведский стол - полно всего. На любой вкус. Все понравилось очень! Контингент тоже приличный.",
+                "summary_rate": 10.0,
+                "review_title": "Номер бизнес-класс нам достался по акции. В ванной - унитаз, биде, ванна. Все принадлежности, даже зубные щетки. Телевизор ЖК на стене. Очень уютно. На столике вода питьевая минеральная, салфетки. Вобщем все есть. Завтрак включен - шведский стол - полно всего. На любой вкус. Все понравилось очень! Контингент тоже приличный.",
+                "is_published": true,
+                "id": 1174389,
+                "created_delta": 7102277.122415,
+                "review_id": 1174389
+            },
+            "total": 6.2
+        },
+        "uid": "x513215875",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/7d27c667c2b8444c9103dc247aaeee0c.jpg",
+        "ostrovok_id": 163667,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер с 2 кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "3995.00",
+            "currency": "RUB",
+            "current_allotment": 23,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер бизнес-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4420.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Комфорт",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4675.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/7d27c667c2b8444c9103dc247aaeee0c.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7736768,
+        "description_short": "Роскошный  четырехзвездочный отель «Кассадо Плаза» предлагает своим гостям все, что нужно для комфортного отдыха: элегантный интерьер, великолепную кухню, изысканный ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Мневники, д. 3, стр. 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Кассадо Плаза",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=513215875&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.499292,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/7d27c667c2b8444c9103dc247aaeee0c.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358403832.6",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.7,
+                "personnel": 7.5,
+                "price": 6.7,
+                "comfort": 6.4,
+                "location": 6.0,
+                "services": 6.7
+            },
+            "count": 15,
+            "exists": true,
+            "total_verbose": "Хороший отель",
+            "review_best": {
+                "user_id": 255407108,
+                "review_minus": "Железная дорога прямо под окном, электрические поезда очень напрягают. ",
+                "is_showed": "Уютно, чисто, приятно, не дорого. В итак небольшую стоимость включен даже завтрак.",
+                "author": "Sergei",
+                "is_best": true,
+                "created": "2012-05-31T09:44:36.902924",
+                "review_plus": "Уютно, чисто, приятно, не дорого. В итак небольшую стоимость включен даже завтрак.",
+                "summary_rate": 8.0,
+                "review_title": "Уютно, чисто, приятно, не дорого. В итак небольшую стоимость включен даже завтрак.. Железная дорога прямо под окном, электрические поезда очень напрягают. ",
+                "is_published": true,
+                "id": 244686,
+                "created_delta": 20119170.216209,
+                "review_id": 244686
+            },
+            "total": 6.9
+        },
+        "uid": "x172123382",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/91c3ebd149354b278ce6baca3aa0597e.jpg",
+        "ostrovok_id": 163591,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2310.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2310.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2780.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер эконом-класса с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2930.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "3930.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер-студио",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4450.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/91c3ebd149354b278ce6baca3aa0597e.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.8460724,
+        "description_short": "Трехзвездочный отель «Шерстон», предлагающий своим гостям удобное расположение в зеленом районе недалеко от 2 станций метро, продуманную инфраструктуру и широкий ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Гостиничный пр-д, д. 8, стр. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Отель Шерстон",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=172123382&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.5760317,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/91c3ebd149354b278ce6baca3aa0597e.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358453472.27",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 24,
+            "review_best": {
+                "user_id": 960235559,
+                "review_minus": "видимо отель работает недавно и некоторые моменты типо кондиционера и банальной мусорки отсутствуют. т.е. у нас был номер под крышей, окон нет, и было очень душно. мы попросили включить кондиционер, нам сказали, что он еще не подключен. наш поезд был вечером, выселение в 12.00, мы просили оставить чемодан, т.к. с собой его таскать до вечера не представляли возможным, но нам ни в какую не позволили. ",
+                "is_showed": "мини-отель - это а-ля 2-этажная квартира. приятная, чистенькая, светленькая. номер был небольшой: большая кровать, 2 стула, телевизор, халаты, полотенца и душ прям в комнате за небольшой стенкой. туалет был на этаже. в отеле практически не было постояльцев, поэтому было очень тихо и спокойно. очереди в туалет нет! ",
+                "author": "Iuliia",
+                "is_best": true,
+                "created": "2012-06-20T19:10:30.600130",
+                "review_plus": "мини-отель - это а-ля 2-этажная квартира. приятная, чистенькая, светленькая. номер был небольшой: большая кровать, 2 стула, телевизор, халаты, полотенца и душ прям в комнате за небольшой стенкой. туалет был на этаже. в отеле практически не было постояльцев, поэтому было очень тихо и спокойно. очереди в туалет нет! ",
+                "summary_rate": 5.0,
+                "review_title": "мини-отель - это а-ля 2-этажная квартира. приятная, чистенькая, светленькая. номер был небольшой: большая кровать, 2 стула, телевизор, халаты, полотенца и душ прям в комнате за небольшой стенкой. туалет был на этаже. в отеле практически не было постояльцев, поэтому было очень тихо и спокойно. очереди в туалет нет! . видимо отель работает недавно и некоторые моменты типо кондиционера и банальной мусорки отсутствуют. т.е. у нас был номер под крышей, окон нет, и было очень душно. мы попросили включить кондиционер, нам сказали, что он еще не подключен. наш поезд был вечером, выселение в 12.00, мы просили оставить чемодан, т.к. с собой его таскать до вечера не представляли возможным, но нам ни в какую не позволили. ",
+                "is_published": true,
+                "id": 735984,
+                "created_delta": 18320465.881213,
+                "review_id": 735984
+            },
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x297762252",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/96597e63881246fa8e1397e22ce9a8dd.jpg",
+        "ostrovok_id": 171121,
+        "city_ru": "Москва",
+        "rooms": [{
+            "is_golden": true,
+            "value_adds": [],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null,
+            "name": "Улучшенный двухместный номер с общим туалетом"
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [],
+            "total_rate": "2500.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс",
+            "value_adds": [],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/96597e63881246fa8e1397e22ce9a8dd.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.778628,
+        "description_short": "Удобный мини-отель «Шаманка» отличается чрезвычайно выгодным расположением всего в нескольких остановках от Красной площади и 2 минутах ходьбы от Белорусского вокзала ...",
+        "is_postpay": true,
+        "hotel_amenities": [],
+        "address": "Ленинградский проспект, 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Мини-отель",
+        "star_rating": 0,
+        "name": "Мини-отель Шаманка",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=297762252&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.582745,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/96597e63881246fa8e1397e22ce9a8dd.jpg",
+        "has_golden_rooms": true
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358598632.0",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 6.8,
+                "personnel": 6.6,
+                "price": null,
+                "comfort": 5.1,
+                "location": 7.4,
+                "services": 4.9
+            },
+            "count": 68,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": null,
+            "total": 6.2
+        },
+        "uid": "x863982519",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/98c308a3a3bc4d52abc42a85a02b8b08.JPG",
+        "ostrovok_id": 171962,
+        "city_ru": "Москва",
+        "rooms": [{
+            "is_golden": true,
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "3009.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null,
+            "name": "Стандартный двухместный номер"
+        }, {
+            "is_golden": true,
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5525.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null,
+            "name": "Люкс"
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "3500.00",
+            "currency": "RUB",
+            "current_allotment": 9,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5900.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/98c308a3a3bc4d52abc42a85a02b8b08.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.798146,
+        "description_short": "Уютный отель  «Сокол», расположенный на тихой зеленой улице в престижном районе Москвы, - это прекрасный выбор для комфортного отдыха без лишних затрат. Гостей ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka"],
+        "address": "Чапаевский переулок, 12, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Отель Сокол",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=863982519&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.518048,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/98c308a3a3bc4d52abc42a85a02b8b08.JPG",
+        "has_golden_rooms": true
+    }, {
+        "booking_stats": {
+            "latest_booking": "1355571497.31",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": null,
+                "personnel": null,
+                "price": null,
+                "comfort": null,
+                "location": null,
+                "services": null
+            },
+            "count": 13,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": {
+                "user_id": 931870169,
+                "review_minus": "",
+                "is_showed": "Всё было на хорошем уровне, уютный и в то же время просторный номер, хорошая звукоизоляция:) что не мало важно для тех кто хочет просто выспаться после напряжённого дня. Замечательная кухня! отдельное спасибо поварам. Для себя решил,что этот отель максимально подходит для подобных командировок. Цена очень порадовала ... и место расположения 7 минутная прогулка и метро...это замечательно. \r\nСпасибо. буду рекомендовать своим друзьям и коллегам.!",
+                "author": "Aleksei",
+                "is_best": true,
+                "created": "2012-12-04T09:00:28.632341",
+                "review_plus": "Всё было на хорошем уровне, уютный и в то же время просторный номер, хорошая звукоизоляция:) что не мало важно для тех кто хочет просто выспаться после напряжённого дня. Замечательная кухня! отдельное спасибо поварам. Для себя решил,что этот отель максимально подходит для подобных командировок. Цена очень порадовала ... и место расположения 7 минутная прогулка и метро...это замечательно. \r\nСпасибо. буду рекомендовать своим друзьям и коллегам.!",
+                "summary_rate": 9.0,
+                "review_title": "Всё было на хорошем уровне, уютный и в то же время просторный номер, хорошая звукоизоляция:) что не мало важно для тех кто хочет просто выспаться после напряжённого дня. Замечательная кухня! отдельное спасибо поварам. Для себя решил,что этот отель максимально подходит для подобных командировок. Цена очень порадовала ... и место расположения 7 минутная прогулка и метро...это замечательно. \r\nСпасибо. буду рекомендовать своим друзьям и коллегам.!",
+                "is_published": true,
+                "id": 1179888,
+                "created_delta": 3974951.22185,
+                "review_id": 1179888
+            },
+            "total": 5.5
+        },
+        "uid": "x817709345",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/15735fd8f25d43c1a394ec286856a89b.jpg",
+        "ostrovok_id": 165611,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5800.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5800.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/15735fd8f25d43c1a394ec286856a89b.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.784369,
+        "description_short": "Роскошный четырехзвездочный отель и бизнес-центр «Бородино Plaza» - это гармоничное сочетание современной архитектуры и интерьера в стиле французского Ренессанса ...",
+        "is_postpay": true,
+        "hotel_amenities": ["fitnes", "internet"],
+        "address": "ул. Русаковская, д. 13, стр. 5, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Отель Бородино",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=817709345&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.672244,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/15735fd8f25d43c1a394ec286856a89b.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358265793.99",
+            "total_bookings": 21
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x962696517",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/4ad19a0547574b2e9d7663d0cef341f8.JPG",
+        "ostrovok_id": 233100,
+        "city_ru": "Москва",
+        "rooms": [{
+            "is_golden": true,
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null,
+            "name": "Стандартный двухместный номер"
+        }, {
+            "is_golden": true,
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4500.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null,
+            "name": "Полулюкс"
+        }, {
+            "name": "Улучшенный полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/4ad19a0547574b2e9d7663d0cef341f8.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.8095427714938,
+        "description_short": "Отель &quot;Алексеевский&quot; располагается в 15 минутах езды от центра Москвы, недалеко от проспекта Мира. Каждое утро в кафе отеля подается вкусный завтрак. В ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "Новоалексеевская ул., д. 20 а, стр. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Отель Алексеевский",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=962696517&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6529837585986,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/4ad19a0547574b2e9d7663d0cef341f8.JPG",
+        "has_golden_rooms": true
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358385898.55",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 9.0,
+                "personnel": 8.5,
+                "price": null,
+                "comfort": 8.0,
+                "location": 7.0,
+                "services": 8.5
+            },
+            "count": 14,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": null,
+            "total": 8.3
+        },
+        "uid": "x111965096",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/08d0c5ef905a493c96f80a0f660ea6ba.jpg",
+        "ostrovok_id": 179688,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "3660.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Комфорт",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "6080.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/08d0c5ef905a493c96f80a0f660ea6ba.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.656925,
+        "description_short": "Трехзвездочный отель «Аструс - Центральный Дом Туриста» находится в высотном здании на юго-западе Москвы, в 15 минутах езды от аэропорта Внуково. До станции метро ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka", "fitnes"],
+        "address": "Ленинский пр-т, д. 146, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Аструс - Центральный Дом Туриста",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=111965096&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.496219,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/08d0c5ef905a493c96f80a0f660ea6ba.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358492553.74",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 8.7,
+                "personnel": 7.5,
+                "price": null,
+                "comfort": 7.4,
+                "location": 7.6,
+                "services": 7.5
+            },
+            "count": 161,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": {
+                "user_id": 311072649,
+                "review_minus": "",
+                "is_showed": "Удобное расположение, рядом с метром, с Измайловским парком. Обслуживание супер. Есть интернет. Цена очень приемлимая",
+                "author": "Tania",
+                "is_best": true,
+                "created": "2012-06-28T01:04:43.931176",
+                "review_plus": "Удобное расположение, рядом с метром, с Измайловским парком. Обслуживание супер. Есть интернет. Цена очень приемлимая",
+                "summary_rate": 10.0,
+                "review_title": "Удобное расположение, рядом с метром, с Измайловским парком. Обслуживание супер. Есть интернет. Цена очень приемлимая",
+                "is_published": true,
+                "id": 878907,
+                "created_delta": 17733476.98629,
+                "review_id": 878907
+            },
+            "total": 7.7
+        },
+        "uid": "x384070504",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/620f3cc59d0d4687b85af26b5d3016dd.jpg",
+        "ostrovok_id": 163800,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 16,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 13,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3600.00",
+            "currency": "RUB",
+            "current_allotment": 11,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3600.00",
+            "currency": "RUB",
+            "current_allotment": 15,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Делюкс с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4200.00",
+            "currency": "RUB",
+            "current_allotment": 15,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Делюкс с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4200.00",
+            "currency": "RUB",
+            "current_allotment": 14,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/620f3cc59d0d4687b85af26b5d3016dd.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7893833,
+        "description_short": "Отель Best Western Вега (Измайлово Вега) находится на востоке Москвы, недалеко от Измайловского парка. Буквально за 3 минуты вы сможете дойти пешком до станции метро ...",
+        "is_postpay": true,
+        "hotel_amenities": ["fitnes", "internet"],
+        "address": "Измайловское ш., д. 71, стр. 3В, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Best Western Вега",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=384070504&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.748287,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/620f3cc59d0d4687b85af26b5d3016dd.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358593489.07",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.8,
+                "personnel": 7.2,
+                "price": 7.4,
+                "comfort": 7.3,
+                "location": 8.2,
+                "services": 7.1
+            },
+            "count": 145,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": {
+                "user_id": 123107466,
+                "review_minus": "",
+                "is_showed": "Спасибо, осталась довольна сервисом и обслуживанием!!! все вопросы решались оперативно",
+                "author": "Oksana",
+                "is_best": true,
+                "created": "2012-06-13T08:14:37.478288",
+                "review_plus": "Спасибо, осталась довольна сервисом и обслуживанием!!! все вопросы решались оперативно",
+                "summary_rate": 8.0,
+                "review_title": "Спасибо, осталась довольна сервисом и обслуживанием!!! все вопросы решались оперативно",
+                "is_published": true,
+                "id": 593367,
+                "created_delta": 19018217.414292,
+                "review_id": 593367
+            },
+            "total": 7.5
+        },
+        "uid": "x205215904",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/15611b27ca9e4da1b79ea236692aa376.jpg",
+        "ostrovok_id": 163561,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер эконом-класса с 2 односпальными кроватями",
+            "value_adds": [],
+            "total_rate": "2400.00",
+            "currency": "RUB",
+            "current_allotment": 6,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер бизнес-класса с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "3200.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер бизнес-класса с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "3200.00",
+            "currency": "RUB",
+            "current_allotment": 6,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/15611b27ca9e4da1b79ea236692aa376.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7893833,
+        "description_short": "Трехзвездочная гостиница «Измайлово Бета» расположена рядом с Измайловским парком и дворцовой усадьбой Измайлово. От станции метро «Партизанская», которая находится в ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "Измайловское ш., 71, стр. 2Б, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Отель Измайлово Бета",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=205215904&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.748287,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/15611b27ca9e4da1b79ea236692aa376.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358439438.41",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 9.0,
+                "personnel": 8.0,
+                "price": 8.1,
+                "comfort": 8.0,
+                "location": 8.0,
+                "services": 8.0
+            },
+            "count": 38,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": {
+                "user_id": 943830190,
+                "review_minus": "Мало телевизионных каналов.Горячая вода не очень то горячая. Курить можно только на улице. В одной смене был не очень дружелюбный администратор.",
+                "is_showed": "Очень приличный отель. В номере чисто и есть всё что нужно. Холодильник с мини-баром, большой телевизор, кондиционер. Вкусный и плотный завтрак. Рядом метро ВДНХ и Алексеевская. С общественным транспортом тоже нет проблем, всё рядом. В общем понравилось.Цена соответствует качеству.",
+                "author": "Maksim",
+                "is_best": true,
+                "created": "2012-08-01T18:40:17.553535",
+                "review_plus": "Очень приличный отель. В номере чисто и есть всё что нужно. Холодильник с мини-баром, большой телевизор, кондиционер. Вкусный и плотный завтрак. Рядом метро ВДНХ и Алексеевская. С общественным транспортом тоже нет проблем, всё рядом. В общем понравилось.Цена соответствует качеству.",
+                "summary_rate": 8.0,
+                "review_title": "Очень приличный отель. В номере чисто и есть всё что нужно. Холодильник с мини-баром, большой телевизор, кондиционер. Вкусный и плотный завтрак. Рядом метро ВДНХ и Алексеевская. С общественным транспортом тоже нет проблем, всё рядом. В общем понравилось.Цена соответствует качеству.. Мало телевизионных каналов.Горячая вода не очень то горячая. Курить можно только на улице. В одной смене был не очень дружелюбный администратор.",
+                "is_published": true,
+                "id": 1168671,
+                "created_delta": 14679432.626269,
+                "review_id": 1168671
+            },
+            "total": 8.0
+        },
+        "uid": "x688634420",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/67038203a2c649258a0718f3860c3db5.jpg",
+        "ostrovok_id": 163533,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2600.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2600.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5400.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/67038203a2c649258a0718f3860c3db5.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.8154617,
+        "description_short": "Отель &quot;ТИПО&quot; находится недалеко от Останкинской телебашни, Всероссийского выставочного центра и музея-усадьбы графа Шереметева. В 800 метрах от отеля ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Проспект Мира, д. 105, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "ТИПО Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=688634420&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.637465,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/67038203a2c649258a0718f3860c3db5.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358582611.5",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 49,
+            "review_best": {
+                "user_id": 405137211,
+                "review_minus": "Советское наследство - два панельных 9-этажных корпуса с характерной общежитской планировкой (это уже не исправишь). Деревянные старые окна (трудно открывать), но если окно выходит на улицу - вообще невозможно (шум). В начале октября не было отопления, в комнатах было холодно. Телевизор - с выломанными кнопками; хорошо, что пульт работал.",
+                "is_showed": "Легко добираться на метро, умеренная цена, хороший завтрак (включен в стоимость комнаты), приличные санузлы (в блоке 1+2) и постельные принадлежности. Комната хотя и небольшая, но вполне достаточная - кровать, стол, стул, стенной шкаф. Относительно чисто. Телефон в номере есть, хотя и практически не нужен.",
+                "author": "Aleksandr",
+                "is_best": true,
+                "created": "2012-10-07T05:56:55.592123",
+                "review_plus": "Легко добираться на метро, умеренная цена, хороший завтрак (включен в стоимость комнаты), приличные санузлы (в блоке 1+2) и постельные принадлежности. Комната хотя и небольшая, но вполне достаточная - кровать, стол, стул, стенной шкаф. Относительно чисто. Телефон в номере есть, хотя и практически не нужен.",
+                "summary_rate": 6.0,
+                "review_title": "Легко добираться на метро, умеренная цена, хороший завтрак (включен в стоимость комнаты), приличные санузлы (в блоке 1+2) и постельные принадлежности. Комната хотя и небольшая, но вполне достаточная - кровать, стол, стул, стенной шкаф. Относительно чисто. Телефон в номере есть, хотя и практически не нужен.. Советское наследство - два панельных 9-этажных корпуса с характерной общежитской планировкой (это уже не исправишь). Деревянные старые окна (трудно открывать), но если окно выходит на улицу - вообще невозможно (шум). В начале октября не было отопления, в комнатах было холодно. Телевизор - с выломанными кнопками; хорошо, что пульт работал.",
+                "is_published": true,
+                "id": 1169385,
+                "created_delta": 8993204.065182,
+                "review_id": 1169385
+            },
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x939982606",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/8e42b76ee9f841649591e450500d5f37.jpg",
+        "ostrovok_id": 173583,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2400.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Трехместный номер эконом-класса с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "2400.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4000.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/8e42b76ee9f841649591e450500d5f37.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.836994,
+        "description_short": "При весьма демократичных ценах гостиница «Байкал» отличается выгодным расположением на тихой улице в экологически чистом районе, по соседству с крупнейшим московским ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka"],
+        "address": "ул. Сельскохозяйственная, д. 15, корп. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 20,
+        "name": "Гостиница Байкал",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=939982606&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.638404,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/8e42b76ee9f841649591e450500d5f37.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358531862.02",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 5.0,
+                "personnel": 4.8,
+                "price": 6.4,
+                "comfort": 4.7,
+                "location": 8.8,
+                "services": 4.5
+            },
+            "count": 32,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": null,
+            "total": 5.6
+        },
+        "uid": "x701955964",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/6ce25dd578524973b870c318930afeec.jpg",
+        "ostrovok_id": 163662,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер эконом-класса с общей ванной комнатой и туалетом",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "1300.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/6ce25dd578524973b870c318930afeec.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.764299,
+        "description_short": "Отель &quot;На Петровке&quot; находится в самом центре Москвы, примерно в 15 минутах ходьбы от Красной площади и в 600 метрах от Большого театра. В 500 ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Петровка, д. 17, стр. 4, подъезд 1, кв. 54, Москва",
+        "supplier_type": "EXT",
+        "kind": "Мини-отель",
+        "star_rating": 0,
+        "name": "Мини-отель на Петровке",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=701955964&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6153655,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/6ce25dd578524973b870c318930afeec.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358588140.61",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 5.5,
+                "personnel": 5.4,
+                "price": 6.6,
+                "comfort": 4.8,
+                "location": 8.4,
+                "services": 5.0
+            },
+            "count": 354,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": null,
+            "total": 5.8
+        },
+        "uid": "x586061691",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/951a866928f9400f9d0642bc9cf97dbb.jpg",
+        "ostrovok_id": 163661,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "1500.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/951a866928f9400f9d0642bc9cf97dbb.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7683296,
+        "description_short": "Небольшой отель «На Цветном Бульваре» расположен в историческом  центре Москвы, в нескольких минутах ходьбы от знаменитого цирка.  Рядом с отелем находятся 2 станции ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "1-ый Колобовский пер., д. 16, стр. 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Хостел",
+        "star_rating": 0,
+        "name": "Отель на Цветном Бульваре",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=586061691&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.618648,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/951a866928f9400f9d0642bc9cf97dbb.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358505636.81",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": null,
+                "personnel": null,
+                "price": null,
+                "comfort": null,
+                "location": null,
+                "services": null
+            },
+            "count": 16,
+            "exists": true,
+            "total_verbose": "Отличный отель",
+            "review_best": null,
+            "total": 8.7
+        },
+        "uid": "x523030918",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/40a69f1b8553484fb5308525015e53fa.jpg",
+        "ostrovok_id": 163782,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Номер эконом-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Континентальный завтрак"
+            }],
+            "total_rate": "2900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Континентальный завтрак"
+            }],
+            "total_rate": "3100.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Континентальный завтрак"
+            }],
+            "total_rate": "3100.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/40a69f1b8553484fb5308525015e53fa.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7776484,
+        "description_short": "Новый частный отель «Ривас» располагается в восточной части Москвы, напротив парка, в 13 минутах ходьбы от станции метро «Электрозаводская». Поездка до Красной ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka"],
+        "address": "Семеновский Вал, д. 10Б, Москва",
+        "supplier_type": "EXT",
+        "kind": "Мини-отель",
+        "star_rating": 0,
+        "name": "Мини-отель Ривас",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=523030918&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.713653,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/40a69f1b8553484fb5308525015e53fa.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358596839.06",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.0,
+                "personnel": 6.9,
+                "price": null,
+                "comfort": 6.6,
+                "location": 7.6,
+                "services": 6.3
+            },
+            "count": 70,
+            "exists": true,
+            "total_verbose": "Хороший отель",
+            "review_best": {
+                "user_id": null,
+                "review_minus": "Уборку в номере и смену постельного белья не делали ежедневно (хотя в любой гостинице это обязательная процедура) и что вместо указанной при бронировании требуемой 1 двуспальной кровати нам предоставили 2 односпальные. Бронировали заранее, и нам никто не сообщил, что не могут предоставить именно требуемое. Иначе мы бы заменили гостиницу. А по факту менять что-либо было уже поздно. Неприятно,когда ожидания не соответствуют действительности, администратор даже не извинился. Посоветовали ли бы отель своим друзьям? Не уверена на 100%. Если у людей нет подходящего др.варианта - то в принципе, сойдет. Кстати,это общежитие гостиничного типа",
+                "is_showed": "Месторасположение рядом с метро, тихое место, круглосуточно есть горячая вода, работают сплит, холодильник и телевизор и даже исправны все розетки :-)",
+                "author": "",
+                "is_best": true,
+                "created": "2012-07-19T10:21:10",
+                "review_plus": "Месторасположение рядом с метро, тихое место, круглосуточно есть горячая вода, работают сплит, холодильник и телевизор и даже исправны все розетки :-)",
+                "summary_rate": 7.0,
+                "review_title": "Месторасположение рядом с метро, тихое место, круглосуточно есть горячая вода, работают сплит, холодильник и телевизор и даже исправны все розетки :-). Уборку в номере и смену постельного белья не делали ежедневно (хотя в любой гостинице это обязательная процедура) и что вместо указанной при бронировании требуемой 1 двуспальной кровати нам предоставили 2 односпальные. Бронировали заранее, и нам никто не сообщил, что не могут предоставить именно требуемое. Иначе мы бы заменили гостиницу. А по факту менять что-либо было уже поздно. Неприятно,когда ожидания не соответствуют действительности, администратор даже не извинился. Посоветовали ли бы отель своим друзьям? Не уверена на 100%. Если у людей нет подходящего др.варианта - то в принципе, сойдет. Кстати,это общежитие гостиничного типа",
+                "is_published": true,
+                "id": 1168291,
+                "created_delta": 15903576.042808,
+                "review_id": 1168291
+            },
+            "total": 6.9
+        },
+        "uid": "x695154300",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/255c153456cb4a8ca6980affcceeeb45.jpg",
+        "ostrovok_id": 168361,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [],
+            "total_rate": "1600.00",
+            "currency": "RUB",
+            "current_allotment": 7,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс",
+            "value_adds": [],
+            "total_rate": "2300.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/255c153456cb4a8ca6980affcceeeb45.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.838086,
+        "description_short": "Гостиница  АПК и ППРО находится на севере Москвы рядом с Ленинградским шоссе, в 30 минутах езды от международного аэропорта Шереметьево. В нескольких минутах ходьбы ...",
+        "is_postpay": true,
+        "hotel_amenities": [],
+        "address": "Головинское ш., д. 8, корп. 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Гостиница АПК и ППРО",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=695154300&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.492742,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/255c153456cb4a8ca6980affcceeeb45.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358545333.86",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.0,
+                "personnel": 6.6,
+                "price": 6.5,
+                "comfort": 6.5,
+                "location": 6.4,
+                "services": 6.6
+            },
+            "count": 237,
+            "exists": true,
+            "total_verbose": "Хороший отель",
+            "review_best": {
+                "user_id": 450878415,
+                "review_minus": "не было чайников совсем, даже у персонала. а фен можно и в каждый номер сделать, необходимая вещь. ",
+                "is_showed": "на ресепшене сидели отзывчивые девушки. помогали, если были вопросы. уборка в номерах хорошая. все чистенько, уютненько. гостиница в 15 минутах от станции метро ВДНХ. минусов практически нет",
+                "author": "Svetlana",
+                "is_best": true,
+                "created": "2012-09-04T13:07:50.549945",
+                "review_plus": "на ресепшене сидели отзывчивые девушки. помогали, если были вопросы. уборка в номерах хорошая. все чистенько, уютненько. гостиница в 15 минутах от станции метро ВДНХ. минусов практически нет",
+                "summary_rate": 10.0,
+                "review_title": "на ресепшене сидели отзывчивые девушки. помогали, если были вопросы. уборка в номерах хорошая. все чистенько, уютненько. гостиница в 15 минутах от станции метро ВДНХ. минусов практически нет. не было чайников совсем, даже у персонала. а фен можно и в каждый номер сделать, необходимая вещь. ",
+                "is_published": true,
+                "id": 1169124,
+                "created_delta": 11781264.923587,
+                "review_id": 1169124
+            },
+            "total": 6.6
+        },
+        "uid": "x109163055",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ff5b7d7ae47245d0ad668467bd85285b.jpg",
+        "ostrovok_id": 163532,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер с общей ванной комнатой и туалетом",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "1800.00",
+            "currency": "RUB",
+            "current_allotment": 8,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2600.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3200.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3800.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер-студио",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5000.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/ff5b7d7ae47245d0ad668467bd85285b.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.8132544,
+        "description_short": "Уютная гостиница «Звездная», расположенная в центральной части Москвы по соседству с ВВЦ и Ботаническим садом, - это идеальный выбор для комфортного отдыха без лишних ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Аргуновская, д. 2, стр. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Гостиница Звездная",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=109163055&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.620399,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/ff5b7d7ae47245d0ad668467bd85285b.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358419544.45",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 12,
+            "review_best": {
+                "user_id": 904890650,
+                "review_minus": "",
+                "is_showed": "Мне очень понравилось в этой гостинице! Доступно,чисто,уютно и комфортно!!! ",
+                "author": "Karina",
+                "is_best": true,
+                "created": "2012-10-02T09:48:26.002383",
+                "review_plus": "Мне очень понравилось в этой гостинице! Доступно,чисто,уютно и комфортно!!! ",
+                "summary_rate": 8.0,
+                "review_title": "Мне очень понравилось в этой гостинице! Доступно,чисто,уютно и комфортно!!! ",
+                "is_published": true,
+                "id": 1169361,
+                "created_delta": 9421046.578458,
+                "review_id": 1169361
+            },
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x486713679",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/85db65a8cbe44ae9af9d5cc0da96def7.jpg",
+        "ostrovok_id": 166334,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер эконом-класса с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 40,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Одноместный номер эконом-класса с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "2700.00",
+            "currency": "RUB",
+            "current_allotment": 50,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Одноместный номер с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "3100.00",
+            "currency": "RUB",
+            "current_allotment": 6,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный одноместный номер с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "3200.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с общей ванной комнатой",
+            "value_adds": [],
+            "total_rate": "3300.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/85db65a8cbe44ae9af9d5cc0da96def7.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.70486,
+        "description_short": "Двузвездочный отель Москвич расположен на юго-востоке Москвы, в 700 метрах от станции метро и железной дороги «Текстильщики», рядом с зеленым парком и прудом Садки ...",
+        "is_postpay": true,
+        "hotel_amenities": [],
+        "address": "11-ая ул. Текстильщиков, д. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 20,
+        "name": "Гостиница Москвич",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=486713679&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.7361295,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/85db65a8cbe44ae9af9d5cc0da96def7.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358436897.76",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 6.3,
+                "personnel": 6.8,
+                "price": 6.6,
+                "comfort": 5.2,
+                "location": 9.0,
+                "services": 5.5
+            },
+            "count": 189,
+            "exists": true,
+            "total_verbose": "Хороший отель",
+            "review_best": {
+                "user_id": 815248387,
+                "review_minus": "Однако должна сказать, что то ли по невниманию, то ли по незнанию забронированный номер оказался без туалета и душа. Но и это было решено достаточно быстро: доплатили и был номер примерно на две звезды, т.к. телевизор был, но его включать было достаточно сложно: не было пульта. Унитаз (пишу для работников гостиницы, чтобы починили, иначе он у них в итоге сломается)  в номере № 25 на первом этаже качался.",
+                "is_showed": "Первое, что хотелось отметить, так это расположение! Просто супер! Большой плюс - наличие внутреннего дворика, который придаёт особый шарм гостинице. Персонал приветливый, спокойный! Даже все их вечерние посиделки во внутреннем дворике не нарушали спокойствия. И, наверное, главное для туристов - соотношение цены и качества. Цены приятно радуют.",
+                "author": "Liudmila",
+                "is_best": true,
+                "created": "2012-06-12T17:27:20.723789",
+                "review_plus": "Первое, что хотелось отметить, так это расположение! Просто супер! Большой плюс - наличие внутреннего дворика, который придаёт особый шарм гостинице. Персонал приветливый, спокойный! Даже все их вечерние посиделки во внутреннем дворике не нарушали спокойствия. И, наверное, главное для туристов - соотношение цены и качества. Цены приятно радуют.",
+                "summary_rate": 10.0,
+                "review_title": "Первое, что хотелось отметить, так это расположение! Просто супер! Большой плюс - наличие внутреннего дворика, который придаёт особый шарм гостинице. Персонал приветливый, спокойный! Даже все их вечерние посиделки во внутреннем дворике не нарушали спокойствия. И, наверное, главное для туристов - соотношение цены и качества. Цены приятно радуют.. Однако должна сказать, что то ли по невниманию, то ли по незнанию забронированный номер оказался без туалета и душа. Но и это было решено достаточно быстро: доплатили и был номер примерно на две звезды, т.к. телевизор был, но его включать было достаточно сложно: не было пульта. Унитаз (пишу для работников гостиницы, чтобы починили, иначе он у них в итоге сломается)  в номере № 25 на первом этаже качался.",
+                "is_published": true,
+                "id": 593345,
+                "created_delta": 19001257.853112,
+                "review_id": 593345
+            },
+            "total": 6.6
+        },
+        "uid": "x930449347",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/979d6e774dd54ab89849df8216a40515.JPG",
+        "ostrovok_id": 163711,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3000.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Одноместный номер с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3200.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный одноместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4000.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/979d6e774dd54ab89849df8216a40515.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7575205,
+        "description_short": "Отель «А ля Рюс» находится в самом центре Москвы, всего в 2 минутах ходьбы от станций метро «Охотный ряд» и «Библитека им. Ленина». Также поблизости ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Вознесенский пер., д. 5, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Отель А ля Рюс",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=930449347&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6036755,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/979d6e774dd54ab89849df8216a40515.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358529601.45",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 15,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x913339518",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/db599cd7cb134390976b473ff2974bfc.jpg",
+        "ostrovok_id": 179339,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Трехместный номер эконом-класса",
+            "value_adds": [],
+            "total_rate": "1200.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер эконом-класса",
+            "value_adds": [],
+            "total_rate": "1400.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный трехместный номер",
+            "value_adds": [],
+            "total_rate": "1400.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер",
+            "value_adds": [],
+            "total_rate": "1500.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/db599cd7cb134390976b473ff2974bfc.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.816733,
+        "description_short": "Гостиница &quot;ВВЦ&quot; расположена в Москве, в 15 минутах ходьбы от Всероссийского выставочного центра. Всего за 5 минут вы сможете дойти до станции метро “ВДНХ ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka"],
+        "address": "ул. Кибальчича, д. 9, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Гостиница ВВЦ",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=913339518&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.646148,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/db599cd7cb134390976b473ff2974bfc.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357982394.56",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 6.3,
+                "personnel": 7.1,
+                "price": 7.1,
+                "comfort": 5.6,
+                "location": 8.2,
+                "services": null
+            },
+            "count": 228,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": {
+                "user_id": 942773500,
+                "review_minus": "Одним утром на кухне не было кружек выпить кофе, все растащили по комнатам,\r\n:)), через час все разрешилось",
+                "is_showed": "Нашли гостиницу быстро, 5 мин от метро, расположена на 4 этаже, но лифт все 5 дней что мы там жили работал, проблем не возникло,были в номере с 2-спалкой, отлично высыпались, несмотря на дорогу за окном, порадовал wifi, чисто, без претензий,дружелюбные администраторы, особенно отмечу Ольгу!",
+                "author": "Vlada",
+                "is_best": true,
+                "created": "2012-09-16T17:30:51.403315",
+                "review_plus": "Нашли гостиницу быстро, 5 мин от метро, расположена на 4 этаже, но лифт все 5 дней что мы там жили работал, проблем не возникло,были в номере с 2-спалкой, отлично высыпались, несмотря на дорогу за окном, порадовал wifi, чисто, без претензий,дружелюбные администраторы, особенно отмечу Ольгу!",
+                "summary_rate": 7.0,
+                "review_title": "Нашли гостиницу быстро, 5 мин от метро, расположена на 4 этаже, но лифт все 5 дней что мы там жили работал, проблем не возникло,были в номере с 2-спалкой, отлично высыпались, несмотря на дорогу за окном, порадовал wifi, чисто, без претензий,дружелюбные администраторы, особенно отмечу Ольгу!. Одним утром на кухне не было кружек выпить кофе, все растащили по комнатам,\r\n:)), через час все разрешилось",
+                "is_published": true,
+                "id": 1169261,
+                "created_delta": 10770590.672401,
+                "review_id": 1169261
+            },
+            "total": 6.3
+        },
+        "uid": "x281427329",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/cb418d2b74674451868c8a3c67340eb9.jpg",
+        "ostrovok_id": 163666,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер с 2 односпальными кроватями с общей ванной комнатой и туалетом",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "1600.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/cb418d2b74674451868c8a3c67340eb9.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.77151,
+        "description_short": "Мини-гостиница «Сухаревка» расположена в историческом здании в центре Москвы недалеко от Чистых Прудов. Гости отеля смогут легко дойти до станции метро «Сухаревская ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Большая Сухаревская площадь, 16/18 стр. 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Хостел",
+        "star_rating": 0,
+        "name": "Мини-гостиница Сухаревка",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=281427329&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.638207,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/cb418d2b74674451868c8a3c67340eb9.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357792335.58",
+            "total_bookings": 4
+        },
+        "rating": {
+            "detailed": {},
+            "count": 1,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x763859601",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/ec2719bdbbb54e7a99c6bfca548e4ca4.jpg",
+        "ostrovok_id": 238780,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты Делюкс с 1 спальней и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс с 2 спальнями и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "6900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/ec2719bdbbb54e7a99c6bfca548e4ca4.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7318373473871,
+        "description_short": "Апартаменты LikeHome Павелецкая расположены по разным адресам в центре Москвы, в пределах 10 минутах ходьбы от станций метро «Павелецкая» или «Новокузнецкая ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "р-н ст. метро Павелецкая и Новокузнецкая, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Апартаменты LikeHome Павелецкая",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=763859601&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6350850425661,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/ec2719bdbbb54e7a99c6bfca548e4ca4.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357330751.03",
+            "total_bookings": 1
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x853251678",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/576918be6924412d9bad14b5b229f812.jpg",
+        "ostrovok_id": 238784,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты Делюкс с 2 спальнями и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "6900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/576918be6924412d9bad14b5b229f812.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7642237931683,
+        "description_short": "Апартаменты LikeHome Тверская расположены по разным адресам в центре Москвы, в пределах 15 минутах ходьбы от станций метро «Маяковская», «Тверская» или «Пушкинская ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka"],
+        "address": "р-н ст. метро Тверская, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Апартаменты LikeHome Тверская",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=853251678&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.605038266629,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/576918be6924412d9bad14b5b229f812.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358406067.92",
+            "total_bookings": 5
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x320123933",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/717ec7b370ed4123b883a94240d041cc.jpg",
+        "ostrovok_id": 238754,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер Комфорт с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/717ec7b370ed4123b883a94240d041cc.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.743796,
+        "description_short": "Хостел Seasons расположен в центре Москвы, в  5 минутах ходьбы от станций метро «Третьяковская» и «Новокузнецкая». Недалеко от хостела находится Болотая площадь и ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "ул. Большая Ордынка, д. 13/9, Москва",
+        "supplier_type": "EXT",
+        "kind": "Хостел",
+        "star_rating": 0,
+        "name": "Seasons Hostel",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=320123933&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.625487,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/717ec7b370ed4123b883a94240d041cc.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358079577.36",
+            "total_bookings": 6
+        },
+        "rating": {
+            "detailed": {},
+            "count": 1,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x932828712",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/f616debd978c4a5a827c846c53cb31fb.JPG",
+        "ostrovok_id": 238096,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2200.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Трехместный номер с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2700.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Четырехместный номер с общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3500.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/f616debd978c4a5a827c846c53cb31fb.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.756528,
+        "description_short": "Хостел City Loft Rooms расположен в центре Москвы, рядом с Никитским бульваром, в 10 минутах ходьбы от станции метро «Арбатская». Главные достопримечательности ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Мерзляковский пер., д. 15, Москва",
+        "supplier_type": "EXT",
+        "kind": "Хостел",
+        "star_rating": 20,
+        "name": "City Loft Rooms",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=932828712&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.596435,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/f616debd978c4a5a827c846c53cb31fb.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1356615213.52",
+            "total_bookings": 1
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x503119048",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/3abd8168f5ad4cb6b4140d6957f708c6.jpg",
+        "ostrovok_id": 238760,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2300.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/3abd8168f5ad4cb6b4140d6957f708c6.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.765119,
+        "description_short": "Хостел «iVAN» расположен в самом центре Москве рядом с Пушкинской площадью. Всего за несколько минут гости смогут дойти до станций метро «Чеховская», «Тверская» и ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Петровский переулок, 1/30с1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Хостел",
+        "star_rating": 0,
+        "name": "Хостел iVAN",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=503119048&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.611518,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/3abd8168f5ad4cb6b4140d6957f708c6.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358517974.55",
+            "total_bookings": 3
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x969145951",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/d5d2146e2b064718acbf76e784995779.jpg",
+        "ostrovok_id": 238787,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты-студио Делюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "3800.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс с 1 спальней и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс с 2 спальнями и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "6900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/d5d2146e2b064718acbf76e784995779.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.727886,
+        "description_short": "Апартаменты LikeHome Фрунзенская расположены по разным адресам в центре Москвы, в пределах 15 минутах ходьбы от станции метро «Фрунзенская». Недалеко от апартаментов ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "р-н ст. метро Фрунзенская, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Апартаменты LikeHome Фрунзенская",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=969145951&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.585404,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/d5d2146e2b064718acbf76e784995779.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": null,
+            "total_bookings": null
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x498908087",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/e2662838ced54dad97bbbdd0b4070487.jpg",
+        "ostrovok_id": 238977,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты-студио",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5690.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухкомнатные апартаменты",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5790.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/e2662838ced54dad97bbbdd0b4070487.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7720782155568,
+        "description_short": "Апартаменты Apart Express Арбат расположены по разным адресам в центре Москвы, в 10 минутах ходьбы от станций метро «Смоленская», «Арбатская» или «Театральная ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Каретный Ряд, д.5, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Apart Express Арбат Апартаменты",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=498908087&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6090193353594,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/e2662838ced54dad97bbbdd0b4070487.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": null,
+            "total_bookings": null
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x167841975",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/060b6e901e9b4fcb8fb83e837789093d.jpg",
+        "ostrovok_id": 238750,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер с 2 односпальными кроватями и общей ванной комнатой",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "2900.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4000.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4200.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/060b6e901e9b4fcb8fb83e837789093d.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.770021,
+        "description_short": "Мини-отель «Апельсин» на Тишинской расположен в центре Москвы, в 15 минутах ходьбы от станции метро «Белорусская» и Белорусского вокзала. Недалеко от отеля находится ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Средний Тишинский переулок, д.10, Москва",
+        "supplier_type": "EXT",
+        "kind": "Мини-отель",
+        "star_rating": 0,
+        "name": "Мини-отель Апельсин на Тишинской",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=167841975&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.579439,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/060b6e901e9b4fcb8fb83e837789093d.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1356878082.09",
+            "total_bookings": 1
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x730696633",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/2aabc59b756848d2aa1740992c3fe5c6.jpg",
+        "ostrovok_id": 238971,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Однокомнатные апартаменты",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3790.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/2aabc59b756848d2aa1740992c3fe5c6.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.772077,
+        "description_short": "Апартаменты Apart Express расположены по разным адресам в центре, в 20 минутах ходьбы от станций метро «Цветной бульвар» или «Павелецкая». До Красной площади и Кремля ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Каретный Ряд, д.5, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Apart Express Апартаменты",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=730696633&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.608966,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/2aabc59b756848d2aa1740992c3fe5c6.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358155436.38",
+            "total_bookings": 5
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x647965328",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/5a6b8fefa4f3499fb294bd8a66d39015.jpg",
+        "ostrovok_id": 238823,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты-студио Делюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "3800.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс с 1 спальней и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/5a6b8fefa4f3499fb294bd8a66d39015.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7367693094717,
+        "description_short": "Апартаменты LikeHome Полянка расположены в самом центре Москвы, в пределах 15 минут ходьбы от станций метро «Октябрьская» и «Полянка». Недалеко от апартаментов ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "р-н ст. метро Полянка, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Апартаменты LikeHome Полянка",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=647965328&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.61928582564,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/5a6b8fefa4f3499fb294bd8a66d39015.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358188873.21",
+            "total_bookings": 3
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x85040224",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/68d13d317c7d43c69c4bcb7bcfdbdffb.jpg",
+        "ostrovok_id": 238825,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты-студио Делюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "3800.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс с 1 спальней и гостиной",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/68d13d317c7d43c69c4bcb7bcfdbdffb.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.749481,
+        "description_short": "Апартаменты LikeHome Арбат расположены по разным адресам в центре Москвы, в 10 минутах ходьбы от станций метро «Арбатская», «Баррикадная» или «Смоленская». Недалеко ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "р-н ст. метро Арбат, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 0,
+        "name": "Апартаменты LikeHome Арбат",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=85040224&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.591458,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/68d13d317c7d43c69c4bcb7bcfdbdffb.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358330637.55",
+            "total_bookings": 1
+        },
+        "rating": {
+            "detailed": {},
+            "count": 0,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x263965270",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/5b757ec0750f4493b2231af0198a0cb2.jpg",
+        "ostrovok_id": 239871,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер премиум",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Комфорт",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "5900.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Делюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "5900.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/5b757ec0750f4493b2231af0198a0cb2.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.721402,
+        "description_short": "Четырехзвездочный парк-отель «Галерея» расположен в 10 минутах езды от исторического центра Москвы, недалеко от берега Москвы-реки. Расстояние до станции метро ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "ул. Дербеневская, д. 11а стр 17, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Галерея Парк Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=263965270&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.650064,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/5b757ec0750f4493b2231af0198a0cb2.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358006907.88",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.0,
+                "personnel": 5.3,
+                "price": 7.0,
+                "comfort": 6.3,
+                "location": 6.0,
+                "services": 5.3
+            },
+            "count": 20,
+            "exists": true,
+            "total_verbose": "Неплохой отель",
+            "review_best": null,
+            "total": 6.1
+        },
+        "uid": "x774801780",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/09fa35ffa4ac41c0b78e7de58ec9437b.JPG",
+        "ostrovok_id": 163657,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4800.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4800.00",
+            "currency": "RUB",
+            "current_allotment": 10,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Представительский двухместный номер",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/09fa35ffa4ac41c0b78e7de58ec9437b.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7942294,
+        "description_short": "Четырехзвездочный отель «Аэростар» расположен в нескольких минутах ходьбы от станции метро «Динамо», напротив зеленого парка. Вы сможете добраться до центра Москвы от ...",
+        "is_postpay": true,
+        "hotel_amenities": ["fitnes", "internet"],
+        "address": "Ленинградский пр-т, д. 37, стр. 9, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Отель Аэростар",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=774801780&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.5434775,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/09fa35ffa4ac41c0b78e7de58ec9437b.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358064081.33",
+            "total_bookings": 16
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 8.3,
+                "personnel": 7.5,
+                "price": null,
+                "comfort": 8.0,
+                "location": 8.7,
+                "services": 7.4
+            },
+            "count": 110,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": null,
+            "total": 8.0
+        },
+        "uid": "x36246793",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b25c134dc11e4e74a1004283842faedf.jpg",
+        "ostrovok_id": 165674,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный номер",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "8100.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер бизнес-класса",
+            "value_adds": [{
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "10100.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/b25c134dc11e4e74a1004283842faedf.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.739154,
+        "description_short": "Уютный и комфортабельный отель «Парк Инн Саду» расположился в центре Москвы, недалеко от Третьяковской галереи и памятника Петру I. Cтанция метро «Полянка» находится ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "улица Большая Полянка, д. 17с1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Park Inn by Radisson SADU",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=36246793&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.618039,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/b25c134dc11e4e74a1004283842faedf.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1354436875.21",
+            "total_bookings": 10
+        },
+        "rating": {
+            "detailed": {},
+            "count": 4,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x144846280",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/a747c53ab0e34717aed63d942db5ec4c.jpg",
+        "ostrovok_id": 232537,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "6000.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/a747c53ab0e34717aed63d942db5ec4c.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.761041,
+        "description_short": "Отель Kyznetskiy Inn расположен в самом центре Москвы, примерно в 10 минутах ходьбы от Кремля. Отель находится в окружении самых известных достопримечательностей ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Кузнецкий мост, д.6/3, корп.3, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 0,
+        "name": "Kyznetskiy Inn Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=144846280&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.617231,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/a747c53ab0e34717aed63d942db5ec4c.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358459151.31",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 9.3,
+                "personnel": 8.6,
+                "price": 7.5,
+                "comfort": 8.8,
+                "location": 9.7,
+                "services": 8.7
+            },
+            "count": 382,
+            "exists": true,
+            "total_verbose": "Отличный отель",
+            "review_best": null,
+            "total": 9.0
+        },
+        "uid": "x582625636",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/d39c3635377944df8e21e3c0f2c0e47e.JPG",
+        "ostrovok_id": 163643,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Представительский номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "9664.20",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Классический номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "10266.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "11316.20",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс бизнес-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "12968.20",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/d39c3635377944df8e21e3c0f2c0e47e.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7615186,
+        "description_short": "Пятизвездочный отель «Савой» расположился в самом центре Москвы, примерно в 10 минутах ходьбы от Кремля. Отель находится в окружении самых известных музыкальных и ...",
+        "is_postpay": true,
+        "hotel_amenities": ["fitnes", "internet"],
+        "address": "ул. Рождественка, д.3/6, стр.1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 50,
+        "name": "Отель Савой",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=582625636&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6237866,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/d39c3635377944df8e21e3c0f2c0e47e.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357855968.18",
+            "total_bookings": 16
+        },
+        "rating": {
+            "detailed": {},
+            "count": 1,
+            "review_best": {
+                "user_id": 358848238,
+                "review_minus": "Тапочки есть только в номерах Премьер, а полы не везде теплые",
+                "is_showed": "Большое спасибо персоналу отеля за радушие и теплый прием. Проживала в отеле почти месяц, довольна практически всем! Очень вкусно кормят в ресторане, не раз ужинала и обедала, всегда оставалась довольна! \r\nПорадовало, что в одно из выселений оставила джемпер в номере, черезе несколько дней, когда вновь заехала, мне его вернули ))",
+                "author": "Irina",
+                "is_best": true,
+                "created": "2012-12-10T06:32:49.173472",
+                "review_plus": "Большое спасибо персоналу отеля за радушие и теплый прием. Проживала в отеле почти месяц, довольна практически всем! Очень вкусно кормят в ресторане, не раз ужинала и обедала, всегда оставалась довольна! \r\nПорадовало, что в одно из выселений оставила джемпер в номере, черезе несколько дней, когда вновь заехала, мне его вернули ))",
+                "summary_rate": 10.0,
+                "review_title": "Большое спасибо персоналу отеля за радушие и теплый прием. Проживала в отеле почти месяц, довольна практически всем! Очень вкусно кормят в ресторане, не раз ужинала и обедала, всегда оставалась довольна! \r\nПорадовало, что в одно из выселений оставила джемпер в номере, черезе несколько дней, когда вновь заехала, мне его вернули )). Тапочки есть только в номерах Премьер, а полы не везде теплые",
+                "is_published": true,
+                "id": 1180789,
+                "created_delta": 3426077.693744,
+                "review_id": 1180789
+            },
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x396828480",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/9417ad846caa493d8776d1f481a95e35.jpg",
+        "ostrovok_id": 177443,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Апартаменты",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "6500.00",
+            "currency": "RUB",
+            "current_allotment": 43,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты бизнес-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "7300.00",
+            "currency": "RUB",
+            "current_allotment": 33,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Премьер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "7800.00",
+            "currency": "RUB",
+            "current_allotment": 15,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Апартаменты Делюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "12500.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/9417ad846caa493d8776d1f481a95e35.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.774446,
+        "description_short": "Трехзвездочный апарт-отель &quot;Волга&quot; расположен в центре Москвы, в 10 минутах от станции метро &quot;Сухаревская&quot;. Неподалеку от отеля находятся ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet"],
+        "address": "ул. Большая Спасская, д. 4, стр. 1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Апартаменты",
+        "star_rating": 30,
+        "name": "Апарт-отель Волга",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=396828480&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.640964,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/9417ad846caa493d8776d1f481a95e35.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358513877.22",
+            "total_bookings": 11
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.5,
+                "personnel": 6.9,
+                "price": null,
+                "comfort": 6.6,
+                "location": 6.9,
+                "services": 6.8
+            },
+            "count": 166,
+            "exists": true,
+            "total_verbose": "Хороший отель",
+            "review_best": null,
+            "total": 6.9
+        },
+        "uid": "x638925191",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/0c388386525f499d97667c57b85cfdab.jpg",
+        "ostrovok_id": 166324,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Двухместный номер бизнес-класса с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4890.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер бизнес-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "4890.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "8420.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/0c388386525f499d97667c57b85cfdab.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.6514519,
+        "description_short": "Трехзвёздочный гостиничный комплекс «Салют» находится на юго-западе Москвы, в 15 минутах ходьбы от Тропаревского лесопарка и станции метро «Юго-Западная», на котором ...",
+        "is_postpay": true,
+        "hotel_amenities": ["fitnes", "internet"],
+        "address": "Ленинский пр. 158, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Салют Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=638925191&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.483087,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/0c388386525f499d97667c57b85cfdab.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1355748210.16",
+            "total_bookings": 23
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 9.5,
+                "personnel": 8.8,
+                "price": 7.9,
+                "comfort": 9.2,
+                "location": 8.6,
+                "services": 9.1
+            },
+            "count": 423,
+            "exists": true,
+            "total_verbose": "Отличный отель",
+            "review_best": null,
+            "total": 9.0
+        },
+        "uid": "x602607952",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/60f6585c2f2146b68d14094b08007626.jpg",
+        "ostrovok_id": 163633,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "11000.00",
+            "currency": "RUB",
+            "current_allotment": 8,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер-студио",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "14000.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/60f6585c2f2146b68d14094b08007626.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7748106,
+        "description_short": "Отель &quot;Садовое Кольцо&quot; расположен в Москве, недалеко от станции метро &quot;Сухаревская&quot; и Ботанического сада МГУ. За 10 минут вы сможете добраться на ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Пр-т Мира, д. 14, стр. 2, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Отель Садовое Кольцо",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=602607952&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6326025,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/60f6585c2f2146b68d14094b08007626.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357551532.96",
+            "total_bookings": 11
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 8.2,
+                "personnel": 7.4,
+                "price": null,
+                "comfort": 6.9,
+                "location": 9.1,
+                "services": 7.2
+            },
+            "count": 411,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": null,
+            "total": 7.8
+        },
+        "uid": "x748088246",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b581b129e70347f19daa09487c08cbe7.jpg",
+        "ostrovok_id": 179122,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "8400.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "8400.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/b581b129e70347f19daa09487c08cbe7.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.755753,
+        "description_short": "Трехзвездочная гостиница Arbat House находится в центре Москвы, в 2 км от Софийской набережной и Кремля. В 500 метрах от гостиницы находится станция метро «Арбатская ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet", "parkovka"],
+        "address": "Скатертный пер., д. 13, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Гостиница Arbat House (бывшая Мелодия)",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=748088246&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.594647,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/b581b129e70347f19daa09487c08cbe7.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1356393164.37",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 7.5,
+                "personnel": 7.6,
+                "price": 7.0,
+                "comfort": 7.2,
+                "location": 9.7,
+                "services": null
+            },
+            "count": 93,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": null,
+            "total": 7.6
+        },
+        "uid": "x615788604",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/b7735d24c6c349c7bc576ee0946f36ab.jpg",
+        "ostrovok_id": 163537,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4500.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "6100.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/b7735d24c6c349c7bc576ee0946f36ab.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7602339,
+        "description_short": "Трехзвездочный отель «Камергерский» расположен в центре Москвы, всего в 10 минутах ходьбы от Красной площади и в 500 метрах от Большого театра. Всего за 5 ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Камергерский переулок, д. 6, стр. 3, Москва",
+        "supplier_type": "EXT",
+        "kind": "Мини-отель",
+        "star_rating": 30,
+        "name": "Отель Камергерский",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=615788604&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.613397,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/b7735d24c6c349c7bc576ee0946f36ab.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1357654688.86",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 5,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x893779878",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/dac587147c0847e0a28b4405a51c698f.jpg",
+        "ostrovok_id": 170076,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "5650.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "6200.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак \"шведский стол\""
+            }],
+            "total_rate": "7000.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/dac587147c0847e0a28b4405a51c698f.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.740694,
+        "description_short": "Трехзвездочный отель «Багратион» расположен в самом центре Москвы, рядом со станциями метро «Кропоткинская» и «Парк культуры». Всего за несколько минут вы сможете ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Сеченовский переулок, д. 7а, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Гостиница Багратион",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=893779878&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.594692,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/dac587147c0847e0a28b4405a51c698f.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358500328.48",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 2,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x327066489",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/2c295e9e6db3476489a1c7470626a251.jpg",
+        "ostrovok_id": 233169,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "4500.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер премиум",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "4900.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Двухместный номер Комфорт",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }, {
+                "code": "has_meal",
+                "description": "Завтрак"
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/2c295e9e6db3476489a1c7470626a251.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.778558,
+        "description_short": "Четырехзвездочный отель &quot;Галерея Гранд&quot; расположен в центральном районе Москвы, в 5 минутах ходьбы от Белорусского вокзала и станции метро &quot;Белорусская ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Бутырский Вал, д.5, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Галерея Гранд Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=327066489&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.584568,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/2c295e9e6db3476489a1c7470626a251.jpg"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1356258432.85",
+            "total_bookings": 14
+        },
+        "rating": {
+            "detailed": {},
+            "count": 3,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x182079317",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/21f9343c12444f2b88e96d8c44174776.JPG",
+        "ostrovok_id": 165618,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "6500.00",
+            "currency": "RUB",
+            "current_allotment": 4,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "7300.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер-студио",
+            "value_adds": [{
+                "code": "has_internet_access",
+                "description": "Бесплатный проводной интернет в номере"
+            }],
+            "total_rate": "9300.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/21f9343c12444f2b88e96d8c44174776.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.8041993,
+        "description_short": "Трехзвёздочный отель «Авиалюкс» находится на Ленинградском проспекте – одной из главных магистралей Москвы. Примерно в 10 минутах от отеля расположены 2 станции метро ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "Ленинградский пр-т, д. 68/1, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Отель Авиалюкс",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=182079317&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.5241154,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/21f9343c12444f2b88e96d8c44174776.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358558306.97",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {
+                "cleanness": 9.0,
+                "personnel": 7.6,
+                "price": 7.9,
+                "comfort": 7.8,
+                "location": 8.3,
+                "services": 7.6
+            },
+            "count": 178,
+            "exists": true,
+            "total_verbose": "Очень хороший отель",
+            "review_best": null,
+            "total": 8.1
+        },
+        "uid": "x596017626",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/70f7d18537364bc09ce0d8f3b3347873.JPG",
+        "ostrovok_id": 163728,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3570.00",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "3570.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4292.50",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4292.50",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер бизнес-класса",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4802.50",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Номер-студио",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "4802.50",
+            "currency": "RUB",
+            "current_allotment": 2,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Полулюкс",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "6970.00",
+            "currency": "RUB",
+            "current_allotment": 1,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/70f7d18537364bc09ce0d8f3b3347873.JPG",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.7084995530738,
+        "description_short": "Отель «Максима Панорама» расположен в деловой части Москвы, всего в двух шагах от станции метро &quot;Автозаводская&quot;. От этой станции вы сможете добраться до ...",
+        "is_postpay": true,
+        "hotel_amenities": ["internet"],
+        "address": "ул. Мастеркова, д. 4, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 40,
+        "name": "Максима Панорама Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=596017626&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.6561651937664,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/70f7d18537364bc09ce0d8f3b3347873.JPG"
+    }, {
+        "booking_stats": {
+            "latest_booking": "1358329870.21",
+            "total_bookings": 26
+        },
+        "rating": {
+            "detailed": {},
+            "count": 7,
+            "review_best": null,
+            "total_verbose": "",
+            "exists": false
+        },
+        "uid": "x817357115",
+        "is_prepay": false,
+        "tz_name": "Europe/Moscow",
+        "thumbnail_url_220": "http://ostrovok-st.ngenix.net/t/x220/extranet/media/667a8d78792a4eba895827e43f11c0f4.jpg",
+        "ostrovok_id": 177926,
+        "city_ru": "Москва",
+        "rooms": [{
+            "name": "Стандартный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [],
+            "total_rate": "3300.00",
+            "currency": "RUB",
+            "current_allotment": 3,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер с 2 односпальными кроватями",
+            "value_adds": [],
+            "total_rate": "3900.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Улучшенный двухместный номер",
+            "value_adds": [],
+            "total_rate": "3900.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }, {
+            "name": "Люкс с двуспальной кроватью",
+            "value_adds": [{
+                "code": "has_wifi_access",
+                "description": "Бесплатный беспроводной интернет в номере"
+            }],
+            "total_rate": "5500.00",
+            "currency": "RUB",
+            "current_allotment": 5,
+            "non_refundable": true,
+            "full_rate": null
+        }],
+        "thumbnail_url_154x105": "http://ostrovok-st.ngenix.net/t/154x105/extranet/media/667a8d78792a4eba895827e43f11c0f4.jpg",
+        "city": "Москва",
+        "provider": 2,
+        "latitude": 55.721894,
+        "description_short": "Трехзвездочный отель &quot;Юность&quot; расположен к юго-западу от центра Москвы, буквально в паре шагов от станции метро &quot;Спортивная&quot;. В 5 минутах ходьбы ...",
+        "is_postpay": true,
+        "hotel_amenities": ["parkovka", "internet", "fitnes"],
+        "address": "улица Хамовнический Вал, 34, Москва",
+        "supplier_type": "EXT",
+        "kind": "Отель",
+        "star_rating": 30,
+        "name": "Юность Отель",
+        "url": "/hotels/special/rooms/?arrivalDate=2013-01-19&hotelId=817357115&departureDate=2013-01-20&room1_numberOfAdults=2&room1_numberOfChildren=0",
+        "longitude": 37.563476,
+        "thumbnail_url": "http://ostrovok-st.ngenix.net/t/100x100/extranet/media/667a8d78792a4eba895827e43f11c0f4.jpg"
+    }]
+}
