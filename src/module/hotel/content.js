@@ -31,13 +31,29 @@ var hotelObject = new basis.data.DataObject({
 //
 var rooms = new basis.ui.Node({
   childClass: {
+    visible: false,
     template: templates.Room,
     binding: {
       name: 'data:',
       current_allotment: 'data:',
       description: 'data:',
-      total_rate: 'data:',
-      size: 'data.room_type.data.size'
+      size: 'data.room_type.data.size',
+      total_rate: {
+        events: 'update',
+        getter: function(object){
+          return object.data.total_rate.format(0, '\x0A', '', '', '.');
+
+        }
+      },
+      visible: function(object){
+        return object.visible ? 'b-hotel-room-details_state_visible' : '';
+      }
+    },
+    action: {
+      toggle: function(){
+        this.visible = !this.visible;
+        this.updateBind('visible');
+      }
     }
   }
 });
@@ -51,7 +67,9 @@ var hotelView = new basis.ui.Node({
     slider: resource('module/slider/index.js').fetch(),
     rooms: rooms,
     name: 'data:',
-    address: 'data:'
+    address: 'data:',
+    low_rate: 'data:low_rate || 0',
+    descr: 'data:description'
   }
 });
 

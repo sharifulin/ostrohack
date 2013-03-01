@@ -3,10 +3,12 @@
     <tr class="b-hotel-room__row">
       <td class="b-hotel-room__desc" rowspan="1">
           <div class="b-hotel-room__desc-inner">
-              <div class="b-hotel-room__desc-popup clearfix">
+              <div class="b-hotel-room__desc-popup clearfix" event-click="toggle">
+                  <img class="b-hotel-room__thumbnail" src="http://ostrovok-st.ngenix.net/t/100x100/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg" alt="{name}"/>                 
                   <h4 class="b-hotel-room__title">
-                    Улучшенный двухместный номер/номер Твин
+                    {name}
                   </h4>
+                  <div class="b-hotel-room__area">{size} м<sup class="b-hotel-room__area-square">2</sup></div>
               </div>
           </div>
       </td>
@@ -57,7 +59,7 @@
         <div class="b-hotel-room-price b-hotel-room__cell">
           <div class="b-hotel-room-price__inner">
               <div class="b-hotel-room-price__value-wrapper">
-                <b class="b-hotel-room-price__value">43<span class="b-thinsp"></span>220</b>
+                <b class="b-hotel-room-price__value">{total_rate}</b>
                 <b class="b-hotel-room-price__currency b-hotel-room-price__currency_small">руб.</b>
               </div>
 
@@ -127,9 +129,9 @@
       </td>
     </tr>
     <tr>
-      <td class="b-hotel-room-details" colspan="2">
+      <td class="b-hotel-room-details {visible}" colspan="2">
         <div class="b-hotel-room-details__wrapper">
-          <span class="b-hotel-room-details__toggle">
+          <span class="b-hotel-room-details__toggle" event-click="toggle">
             <span class="b-hotel-room-details__toggle-inner">в номере</span>
           </span>
 
