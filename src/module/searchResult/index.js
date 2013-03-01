@@ -4,25 +4,18 @@
   basis.require('basis.ui.button');
   basis.require('basis.data.dataset');
 
-   var template = basis.template.define('searchResult', {
-    list: resource('template/list.tmpl'),
-    item: resource('template/item.tmpl')
-  });
-
-  basis.template.theme('mobile').define('searchResult', {
-    list: resource('template/list.mobile.tmpl'),
-    item: resource('template/item.mobile.tmpl')
-  });
+  var templates = basis.template.define('searchResult', resource('template/index.js'));
+  basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js'));
 
   var list = new basis.ui.Node({
     active: true, 
 
-    template: template.list,
+    template: templates.list,
 
     selection: true,
 
     childClass: {
-      template: template.item,
+      template: templates.item,
       binding: {
         name: 'data:',
         price: 'data:',

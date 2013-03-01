@@ -15,13 +15,8 @@
   // definitions
   //
 
-  var templates = basis.template.define(namespace, {
-    DatePicker: resource('template/DatePicker.tmpl')
-  });
-
-  basis.template.theme('mobile').define(namespace, {
-    DatePicker: resource('template/DatePicker.mobile.tmpl')
-  });
+  var templates = basis.template.define(namespace, resource('template/index.js'));
+  basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js'));
 
   basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
     submitButton: 'Search'
