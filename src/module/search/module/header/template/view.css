@@ -1,0 +1,65 @@
+@-moz-document url-prefix() {
+  }
+button::-moz-focus-inner {
+  border-color:transparent;
+  border-width:0
+}
+* {
+  border:0;
+  margin:0;
+  padding:0
+}
+html, body {
+  background:#fafafa;
+  color:#999;
+  height:100%;
+  margin:0;
+  padding:0
+}
+body {
+  font:13px/1.231 Arial, sans-serif
+}
+.pseudo {
+  border-bottom:dotted 1px;
+  cursor:pointer
+}
+.serpinfo {
+  background:#e2e8eb;
+  background-image:-webkit-linear-gradient(top, #e2e8eb, #d1dae0);
+  background-image:-moz-linear-gradient(top, #e2e8eb, #d1dae0);
+  background-image:-ms-linear-gradient(top, #e2e8eb, #d1dae0);
+  background-image:-o-linear-gradient(top, #e2e8eb, #d1dae0);
+  background-image:linear-gradient(top, #e2e8eb, #d1dae0);
+  height:63px
+}
+.serpinfo-content {
+  margin:0 auto;
+  position:relative;
+  width:960px
+}
+.serptitle-region {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:515px;
+  white-space:nowrap;
+  color:#000;
+  font-size:20px;
+  font-weight:bold;
+  line-height:26px;
+  padding-top:8px
+}
+.serptitle-details {
+  color:#5c5c5c;
+  font-size:14px
+}
+.serptitle-details-change {
+  color:#0851a3;
+  font-size:12px
+}
+.serptitle-details-change:hover {
+  color:#006de8
+}
+.serptitle-details-query {
+  font-weight:bold;
+  margin-right:1ex
+}
