@@ -1,7 +1,9 @@
 basis.require('basis.l10n');
 basis.require('basis.ui');
+basis.require('basis.data.dataset');
 
-basis.l10n.createDictionary('app.module.hotelCities', __dirname + 'l10n', {
+basis.l10n.createDictionary('app.module.search.filters.cities', __dirname + 'l10n', {
+  title: 'City of region'
 });
 
 module.exports = new basis.ui.Node({
@@ -11,16 +13,21 @@ module.exports = new basis.ui.Node({
     template: resource('template/item.tmpl'),
     binding: {
       title: 'data:',
-      count: 'data:'
+      count: function(node){
+        return node.delegate.itemCount;
+      }
+    },
+    listen: {
+      delegate: {
+        datasetChanged: function(){
+          this.updateBind('count');
+        }
+      }
     }
   },
 
-  childNodes: basis.array.create(5, function(idx){
-    return {
-      data: {
-        title: 'Название города ' + idx,
-        count: parseInt(Math.random()*(idx+100))
-      }
-    }
+  dataSource: new basis.data.dataset.Split({
+    source: app.type.Suggestion.all,
+    rule: 'data.city'
   })
 });
