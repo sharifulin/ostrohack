@@ -4,9 +4,9 @@
   var filters = new basis.ui.Node({
     template: resource('template/filters.tmpl'),
     binding: {
-      hotelExtra: resource('module/hotelExtra/index.js').fetch(),
-      hotelType: resource('module/hotelType/index.js').fetch(),
-      hotelCities: resource('module/hotelCities/index.js').fetch()
+      hotelExtra: resource('module/extra/index.js').fetch(),
+      hotelType: resource('module/type/index.js').fetch(),
+      hotelCities: resource('module/cities/index.js').fetch()
     }
   });
 
