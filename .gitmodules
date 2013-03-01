@@ -1,0 +1,3 @@
+[submodule "lib/basisjs"]
+	path = lib/basisjs
+	url = https://github.com/basisjs/basisjs.git

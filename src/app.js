@@ -8,15 +8,14 @@
 
   basis.dom.event.addHandler(window, 'resize', function(){
     if (document.body.offsetWidth < 400)
-      basis.template.theme('mobile').apply();
+      basis.template.setTheme('mobile');
     else
-      basis.template.theme('base').apply();
+      basis.template.setTheme('base');
   });
 
   basis.ready(function(){
-    var form = resource('module/searchForm/view.js').fetch();
-    var list = resource('module/searchResult/view.js').fetch();
-    var debugPanel = resource('module/debugPanel/view.js').fetch();
+    var form = resource('module/searchForm/index.js').fetch();
+    var list = resource('module/searchResult/index.js').fetch();
 
     form.addHandler({
       datasetChanged: function(sender){
@@ -29,8 +28,7 @@
       template: resource('app/template/layout.tmpl'),
       binding: {
         form: form,
-        list: list,
-        debugPanel: debugPanel
+        list: list
       }
     });
   });
