@@ -1,7 +1,9 @@
 
   basis.require('basis.entity');
+  basis.require('app.service');
 
   var Hotel = new basis.entity.EntityType({
+    name: 'Hotel',
     fields: {
       id: basis.entity.IntId,
       name: String,

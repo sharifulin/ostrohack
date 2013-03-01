@@ -1,9 +1,9 @@
 basis.require('basis.ui');
 basis.require('app.type');  
 
-basis.l10n.createDictionary('app.module.hotel', __dirname + 'l10n', {
+// basis.l10n.createDictionary('app.module.hotel', __dirname + 'l10n', {
 
-});
+// });
 
 var templates = basis.template.define('app.module.hotel', {
   View: resource('template/view.tmpl'),
@@ -11,19 +11,26 @@ var templates = basis.template.define('app.module.hotel', {
   Room: resource('template/room.tmpl')
 });
 
-basis.template.theme('mobile').define({
+/*basis.template.theme('mobile').define({
   View: resource('template/module/view.tmpl'),
   Hotel: resource('template/mobile/hotel.tmpl'),
   Room: resource('template/mobile/room.tmpl')
-});
+});*/
+
 
 //
-// hotel Info
+// hotel images
+//
+
+
+//
+// hotel 
 //
 var hotel = new basis.ui.Node({
   template: templates.Hotel,
 
   binding: {
+    slider: resource('module/slider/index.js').fetch(),
     name: 'data:',
     address: 'data:',
     low_rate: 'data:'

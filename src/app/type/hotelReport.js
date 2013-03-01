@@ -48,7 +48,8 @@
         var rooms = [];
         for (var i = 0, room_type; room_type = hotel.rooms[i]; i++) 
           rooms = rooms.concat(room_type.rooms);
-
+        
+        data.hotel.id = this.data.hotelId;
         this.update({
           hotel: Hotel.reader(data.hotel),
           rooms: rooms.map(Room.reader)

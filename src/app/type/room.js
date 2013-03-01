@@ -1,7 +1,7 @@
 basis.require('basis.entity');
 
 var RoomType = new basis.entity.EntityType({
-  name: 'Room',
+  name: 'RoomType',
   fields: {
     id: basis.entity.IntId,
     name: String,
