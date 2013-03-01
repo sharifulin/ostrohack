@@ -11,7 +11,7 @@
       price: function(value){
         return parseInt(value, 10);
       },
-      is_golden: Boolean,
+      kind: String,
       thumbnail_url: String,
       thumbnail_tmpl: String,
       thumbnail_url_220: String,
@@ -41,7 +41,6 @@
         this.set((data && data.hotels).map(function(raw){
           var data = Suggestion.reader(raw);
           data.price = raw.rooms[0].total_rate;
-          data.is_golden = raw.rooms[0].is_golden;
 
           var rating = data.rating;
           delete data.rating;          
