@@ -77,7 +77,7 @@ basis.router.add('/hotel?*params', function(params){
     var pare = params_pares[i].split('=');
     hotelData[pare[0]] = pare[1];
   }
-  
+
   hotelView.setDelegate(app.type.HotelReport(app.type.HotelReport.reader(hotelData)));
 });
 

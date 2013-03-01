@@ -12,10 +12,10 @@
     fields: {
       id: basis.entity.IntId,
       hotelId: Number,
-      arrivalDate: Number,
-      departureDate: Number,
-      adultsCount: Number,
-      childrenCount: Number,
+      arrivalDate: String,
+      departureDate: String,
+      room1_numberOfAdults: Number,
+      room1_numberOfChildren: Number,
       hotel: Hotel,
       rooms: RoomList
     }
@@ -24,7 +24,7 @@
   HotelReport.entityType.entityClass.extend({
     state: basis.data.STATE.UNDEFINED,
     syncAction: app.service.default.createAction({
-      url: '/data/hotel.json',
+      url: '/api/v1/rooms/x:hotelId/',
       method: 'GET',
       request: function(){
         return {
@@ -32,7 +32,13 @@
             arrivalDate: this.data.arrivalDate,
             hotelId: this.data.hotelId,
             departureDate: this.data.departureDate,
-            adultsCount: this.data.adultsCount
+            room1_numberOfAdults: this.data.room1_numberOfAdults,
+            room1_numberOfChildren: this.data.room1_numberOfChildren,
+            lang: basis.l10n.getCulture().split('-').shift(),
+            grouped: true
+          },
+          routerParams: {
+            hotelId: this.data.hotelId
           }
         }
       },
