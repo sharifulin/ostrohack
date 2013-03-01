@@ -1,24 +1,3 @@
-@-moz-document url-prefix() {
-  }
-button::-moz-focus-inner {
-  border-color:transparent;
-  border-width:0
-}
-* {
-  border:0;
-  margin:0;
-  padding:0
-}
-html, body {
-  background:#fafafa;
-  color:#999;
-  height:100%;
-  margin:0;
-  padding:0
-}
-body {
-  font:13px/1.231 Arial, sans-serif
-}
 .footer {
   background:#013e6d url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) 0 0;
   min-width:980px;

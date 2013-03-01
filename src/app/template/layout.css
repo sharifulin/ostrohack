@@ -17,3 +17,7 @@ body
 {
   font: 13px/1.231 Arial, sans-serif;
 }
+button::-moz-focus-inner {
+  border-color:transparent;
+  border-width:0
+}

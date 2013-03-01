@@ -1,24 +1,3 @@
-@-moz-document url-prefix() {
-  }
-button::-moz-focus-inner {
-  border-color:transparent;
-  border-width:0
-}
-* {
-  border:0;
-  margin:0;
-  padding:0
-}
-html, body {
-  background:#fafafa;
-  color:#999;
-  height:100%;
-  margin:0;
-  padding:0
-}
-body {
-  font:13px/1.231 Arial, sans-serif
-}
 .pseudo {
   border-bottom:dotted 1px;
   cursor:pointer
