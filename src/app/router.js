@@ -14,3 +14,5 @@
   basis.ui.Node.prototype.routerCallback = function(){
     this.select();
   };
+
+  module.exports = basis.router.exports;

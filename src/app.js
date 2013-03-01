@@ -3,7 +3,7 @@
   basis.require('basis.devpanel');
   basis.require('basis.ui');
   basis.require('basis.ui.tabs');
-  basis.require('app.ext.router');
+  basis.require('app.router');
 
   // settings for l10n
   basis.l10n.setCultureList('ru-RU en-US');
@@ -39,7 +39,7 @@
       ]
     });
 
-    basis.router.start();
+    app.router.start();
 
     // if no selected page - select first one
     if (!pages.selection.pick())
