@@ -1,0 +1,1939 @@
+  .unfold a.controls {
+    font-size:12px;
+    border-bottom:1px dotted;
+    text-decoration:none
+  }
+  .unfold .full {
+    display:none
+  }
+  .payment_opt .step1, .payment_opt .step2 {
+    display:none
+  }
+  .step_backpedal {
+    margin-bottom:20px;
+    position:relative
+  }
+  .step_backpedal_link {
+    border-bottom:1px solid;
+    text-decoration:none;
+    margin-left:16px
+  }
+  .step_backpedal_link:before {
+    border-bottom:0;
+    position:absolute;
+    left:0;
+    top:1px;
+    content:'◄ '
+  }
+  .payment_opt .hotel_info .hotel_dates {
+    padding-bottom:0;
+    border-bottom:0
+  }
+  .payment_opt .hotel_info .hotel_header {
+    width:160px;
+    float:right
+  }
+  .payment_opt .hotel_info .hotel_header strong {
+    display:block;
+    color:#3a5571;
+    font-weight:bold;
+    font-size:16px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, .8)
+  }
+  .payment_opt .hotel_info .hotel_header strong a {
+    color:inherit
+  }
+  .payment_opt .hotel_info .hotel_header .hotel_address {
+    margin-top:4px;
+    display:block;
+    font-size:11px;
+    color:#8e8e8e
+  }
+  .payment_opt .hotel_info .details {
+    margin-top:4px;
+    display:block;
+    font-size:12px;
+    color:#747d89
+  }
+  .payment_opt .hotel_info .hotel_dates strong {
+    font-weight:bold
+  }
+  .payment_opt .price_calculation label {
+    color:#3a5571;
+    font-size:12px;
+    display:inline
+  }
+  .payment_opt .price_calculation label {
+    margin-left:5px
+  }
+  .payment_opt .price_calculation .price-original {
+    margin-bottom:10px;
+    color:#535353
+  }
+  .payment_opt .original_amount .asymp_sign {
+    color:#666;
+    font-weight:normal!important
+  }
+  .payment_opt .original_amount strong, .payment_opt .price_calculation .price-original .amount strong.compared {
+    font-size:19px!important
+  }
+  .payment_opt .price_breakdown .p-breakdown {
+    margin-top:10px;
+    padding:0;
+    background:transparent;
+    border:0
+  }
+  .showcaption {
+    text-decoration:none;
+    border-bottom:1px dotted;
+    position:relative;
+    display:inline-block
+  }
+  .showcaption .form-error {
+    display:none;
+    left:10%;
+    font-size:11px!important
+  }
+  .showcaption .form-error.left {
+    left:auto;
+    right:100%
+  }
+  .payment_opt .well_done .showcaption:hover .form-error, .showcaption:hover .form-error {
+    display:block
+  }
+  .form-error-pointer-wrap {
+    position:absolute;
+    top:-18px;
+    width:100%;
+    height:18px
+  }
+  .form-error.bottom .form-error-pointer-wrap .form-error-pointer {
+    top:9px
+  }
+  .submit_step {
+    margin-bottom:20px
+  }
+  #spinnerbig {
+    margin:10px auto 50px auto;
+    background:url(http://ostrovok.ru/st/gm/img/spinner_big-6a2cdcfc6604db7b3c431733b52f896d49372ff6.gif);
+    height:70px;
+    width:70px
+  }
+  .eula-container {
+    margin-top:30px
+  }
+  .eula-container .text {
+    margin:20px 0;
+    display:none;
+    font-size:11px
+  }
+  .eula-text-in {
+    padding:0 20px 20px
+  }
+  .eula-container.collapse .eula-text-in {
+    overflow:auto;
+    height:300px;
+    position:relative;
+    border:1px solid #e2e5e8;
+    background:#fff
+  }
+  .eula-container.full .text {
+    max-width:600px;
+    margin:0 auto;
+    display:block;
+    font-size:14px;
+    line-height:17px;
+    color:#3e3e3e
+  }
+  .eula-container .close {
+    position:absolute;
+    right:5px;
+    top:5px;
+    color:#333;
+    line-height:14px;
+    text-decoration:none;
+    border-bottom:1px dotted
+  }
+  .eula-container .close:hover {
+    color:#4f0303
+  }
+  .eula-container .close span {
+    position:relative;
+    top:2px;
+    font-size:16px
+  }
+  .eula-container.full .close {
+    display:none
+  }
+  .eula-container.full .bestprice {
+    line-height:145%
+  }
+  .layout-content .eula-container .text h2, .layout-content .eula-container .text h3, .layout-content .eula-container .text h4 {
+    margin:1.5em 0 .5em;
+    padding:0;
+    color:#111;
+    background:0;
+    font-weight:bold;
+    text-align:center
+  }
+  .layout-content .eula-container .text h2 {
+    font-size:22px
+  }
+  .layout-content .eula-container .text h3 {
+    font-size:18px
+  }
+  .layout-content .eula-container .text h4 {
+    font-size:16px;
+    text-align:left
+  }
+  .eula-container .text p {
+    margin-top:1em
+  }
+  .eula-container .text .sep {
+    display:block;
+    margin-bottom:2em;
+    border-bottom:1px solid
+  }
+  .eula-container .text ul, .eula-container .text ol {
+    margin:.5em 0;
+    font-size:inherit
+  }
+  .eula-container .text li {
+    list-style:disc;
+    margin:.5em 0
+  }
+  .eula-container .text strong {
+    font-weight:bold
+  }
+  .eula-container .text em {
+    font-style:italic
+  }
+  .eula-container .text sup {
+    position:relative;
+    top:-3px
+  }
+  .eula-container label {
+    color:#3c5775;
+    font-size:12px
+  }
+  .eula-container label a {
+    border-bottom:1px dotted;
+    text-decoration:none;
+    color:inherit
+  }
+  .eula-container .form-error {
+    left:-10px
+  }
+  .b-phone-input_booking .b-phone-input__input {
+    width:246px
+  }
+  .b-booking-phones {
+    margin:20px 0 20px
+  }
+  .b-booking-phones__items {
+    float:left
+  }
+  .b-booking-phones__item {
+    margin-bottom:20px
+  }
+  .b-booking-phones__desc {
+    float:left;
+    padding-top:10px
+  }
+  .b-booking-phones__add {
+    clear:both
+  }
+  .b-booking-phones__add-link {
+    font-size:9px;
+    cursor:pointer;
+    text-transform:uppercase;
+    border-bottom:1px dotted
+  }
+  .b-booking-loading {
+    display:none;
+    padding:50px 0;
+    font-family:Open Sans, Verdana, sans-serif;
+    text-align:center
+  }
+  .b-booking-loading:before {
+    content:"";
+    height:80px;
+    display:block;
+    width:80px;
+    margin:10px auto 39px;
+    background:url(http://ostrovok.ru/st/gm/img/spinners/big-spinner-a5c6121c764b96242128fa31682da6a4f6f114ee.gif)
+  }
+  .b-booking-loading_end:before {
+    visibility:hidden
+  }
+  .l-booking-loading .b-booking-loading_progress {
+    -webkit-animation:bookingLoadingShow 1.5s linear;
+    -moz-animation:bookingLoadingShow 1.5s linear;
+    animation:bookingLoadingShow 1.5s linear
+  }
+  @-webkit-keyframes bookingLoadingShow {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1
+    }
+  }
+  @-moz-keyframes bookingLoadingShow {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1
+    }
+  }
+  @keyframes bookingLoadingShow {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1
+    }
+  }
+  .l-booking-loading .b-booking-loading {
+    display:block
+  }
+  .l-booking-loading .layout-content {
+    display:none
+  }
+  .b-booking-loading__title {
+    margin-bottom:37px;
+    font-size:23px;
+    font-weight:600;
+    color:#082a60
+  }
+  .b-booking-loading__desc {
+    width:530px;
+    margin:0 auto 6px;
+    line-height:20px;
+    font-size:15px;
+    color:#505f6b
+  }
+  .b-booking-loading__phone {
+    font-size:24px;
+    color:#505f6b
+  }
+  .b-bookingpayment-cash__address {
+    font-size:14px;
+    line-height:1.35
+  }
+  .b-bookingpayment-cash__id-wrap {
+    margin-bottom:18px
+  }
+  .b-bookingpayment-cash__address {
+    margin-bottom:20px
+  }
+  .b-bookingpayment-cash__print-map {
+    margin:30px 0 8px
+  }
+  .b-bookingpayment-cash__remark {
+    font-size:12px;
+    color:#888
+  }
+  .booking_page {
+    padding-top:30px
+  }
+  .l-booking__content {
+    position:relative;
+    width:610px;
+    float:left
+  }
+  .bookingform {
+    color:#333;
+    font-size:14px;
+    position:relative
+  }
+  .bookingform-value, input.bookingform-input, input.bookingform-firstname-input, input.bookingform-lastname-input, input.bookingform-email-input, input.b-phone-input__input {
+    font-size:16px;
+    font-weight:bold;
+    color:#333
+  }
+  input.bookingform-input, input.bookingform-firstname-input, input.bookingform-lastname-input, input.bookingform-email-input, input.b-phone-input__input {
+    padding:7px 10px 7px 10px
+  }
+  input.bookingform-input::-webkit-input-placeholder, input.bookingform-firstname-input::-webkit-input-placeholder, input.bookingform-lastname-input::-webkit-input-placeholder, input.bookingform-email-input::-webkit-input-placeholder, input.b-phone-input__input::-webkit-input-placeholder {
+    color:#888
+  }
+  input.bookingform-input:-moz-placeholder, input.bookingform-firstname-input:-moz-placeholder, input.bookingform-lastname-input:-moz-placeholder, input.bookingform-email-input:-moz-placeholder, input.b-phone-input__input:-moz-placeholder {
+    color:#888
+  }
+  input.bookingform-input:-ms-input-placeholder, input.bookingform-firstname-input:-ms-input-placeholder, input.bookingform-lastname-input:-ms-input-placeholder, input.bookingform-email-input:-ms-input-placeholder, input.b-phone-input__input:-ms-input-placeholder {
+    color:#888
+  }
+  .b-placeholder__text {
+    font-size:16px;
+    font-weight:bold;
+    padding:7px 10px
+  }
+  .bookingform-label {
+    margin-bottom:5px;
+    display:block;
+    font-size:10px;
+    color:#535353;
+    text-transform:uppercase
+  }
+  .bookingform-desc, .bookingform-name-desc, .bookingform-email-desc, .b-booking-phones__desc, .b-booking__guests-desc {
+    font-size:11px;
+    color:#888;
+    padding-left:10px
+  }
+  .b-booking__cloud {
+    padding:20px;
+    margin-bottom:23px;
+    background:#fff;
+    -webkit-box-shadow:0 2px 2px #ccc;
+    -moz-box-shadow:0 2px 2px #ccc;
+    -o-box-shadow:0 2px 2px #ccc;
+    box-shadow:0 2px 2px #ccc
+  }
+  .b-booking__cloud-title {
+    color:#2a5894;
+    font-size:16px;
+    font-weight:normal;
+    margin-bottom:11px;
+    -webkit-font-smoothing:antialiased
+  }
+  .b-booking__rooms_is_many .b-booking__room {
+    border-left:3px solid #d8d8d9;
+    padding-left:17px
+  }
+  .b-booking__room-title {
+    color:#535353;
+    font-size:24px;
+    font-weight:300;
+    font-family:'Open Sans', Verdana, sans-serif;
+    margin-bottom:6px
+  }
+  .b-booking__room-amenities {
+    color:#5b9f31;
+    font-size:13px;
+    margin-bottom:6px
+  }
+  .b-booking__room-amenity {
+    margin-bottom:2px
+  }
+  .b-booking__room-hr {
+    border-top:1px solid #dadadb;
+    margin:0 -20px 20px
+  }
+  .bookingform-firstname-out, .bookingform-lastname-out {
+    display:inline-block;
+    position:relative
+  }
+  input.bookingform-firstname-input {
+    width:78px
+  }
+  input.bookingform-lastname-input {
+    width:122px
+  }
+  .bookingform-lastname-out {
+    padding-left:24px
+  }
+  .bookingform-name {
+    white-space:nowrap;
+    margin-bottom:20px
+  }
+  .bookingform-name-desc {
+    display:inline-block;
+    width:290px;
+    vertical-align:middle
+  }
+  .bookingform-email {
+    margin-bottom:20px
+  }
+  .bookingform-email-desc {
+    color:#5b9f31;
+    display:inline-block;
+    width:268px;
+    margin-right:-10px;
+    vertical-align:middle
+  }
+  .bookingform-email-input {
+    width:246px
+  }
+  .b-booking-phones__desc {
+    vertical-align:middle
+  }
+  .bookingform-guests {
+    margin:-8px 0
+  }
+  .bookingform-showguest-link {
+    font-size:12px;
+    border-bottom:1px dotted;
+    text-decoration:none
+  }
+  .b-booking__guest-inputs {
+    display:none
+  }
+  .b-booking__guest-inputs-list {
+    float:left;
+    margin-right:10px
+  }
+  .b-booking__guest {
+    margin:20px 0
+  }
+  .b-booking__guest:first-child {
+    margin-top:5px
+  }
+  .b-booking__guest:last-child {
+    margin-bottom:5px
+  }
+  .b-booking__guests-desc {
+    margin-top:20px
+  }
+  .b-booking-options__items {
+    margin-bottom:10px
+  }
+  .b-booking-options__item {
+    width:50%;
+    float:left
+  }
+  .b-booking-options__item+.b-booking-options__item {
+    margin:0 -5px 0 5px
+  }
+  .b-booking-options__info {
+    display:inline-block;
+    margin:0 0 -2px 4px;
+    position:relative;
+    width:14px;
+    height:14px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/sprites/hotelpage-79d5567f9e238beacf6b8e744a137322cc52d181.png") no-repeat 0 -22px;
+    -webkit-background-size:139px 254px;
+    background-size:139px 254px
+  }
+  .b-booking-options__info:hover .b-booking-options__info-popup {
+    display:block
+  }
+  .b-booking-options__info-popup {
+    font-size:11px;
+    width:412px;
+    display:none;
+    position:absolute;
+    left:-52px;
+    top:100%;
+    margin-top:8px;
+    padding:8px 7px;
+    line-height:14px;
+    color:#605f5f;
+    cursor:default;
+    background:#fff;
+    border:1px solid #c5c5c5;
+    -moz-box-shadow:0 2px 3px -1px #bfbfbf;
+    box-shadow:0 2px 3px -1px #bfbfbf;
+    z-index:1
+  }
+  .b-booking-options__info-popup:before {
+    content:"";
+    position:absolute;
+    top:-7px;
+    left:52px
+  }
+  .b-booking-options__info-popup:after {
+    content:"";
+    position:absolute;
+    top:-7px;
+    left:52px
+  }
+  .b-booking-options__info-popup:before, .b-booking-options__info-popup:after {
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    left:52px;
+    font-size:0;
+    border:6px solid rgba(255, 255, 255, 0.01)
+  }
+  .b-booking-options__info-popup:before {
+    top:-12px;
+    border-bottom-color:#c5c5c5
+  }
+  .b-booking-options__info-popup:after {
+    top:-11px;
+    border-bottom-color:#fff
+  }
+  .b-booking-options__option {
+    margin-bottom:6px;
+    font-size:16px
+  }
+  .b-booking-options__option-checkbox {
+    float:left;
+    margin-top:1px
+  }
+  .b-booking-options__option-label {
+    padding-left:4px
+  }
+  .b-booking__wish-other {
+    font-size:12px
+  }
+  .b-booking__wish-no-guaranteed, .b-booking__wish-other-title {
+    font-size:11px;
+    color:#848e96
+  }
+  .b-booking__wish-hide {
+    margin-bottom:5px
+  }
+  .b-booking__wish-other-textarea {
+    margin:5px 0;
+    width:350px;
+    height:50px
+  }
+  .l-booking__sidebar {
+    width:320px;
+    float:right;
+    background:#f5f5f6;
+    position:relative;
+    z-index:2
+  }
+  .bookingsidebar-info {
+    padding:4px 0 4px 16px;
+    margin-bottom:20px;
+    font-size:12px;
+    border-left:3px solid #dcdcdd;
+    color:#535353
+  }
+  .bookingsidebar-info-title {
+    font-weight:bold;
+    font-size:14px;
+    color:#333
+  }
+  .bookingsidebar-info-desc.m-cancel strong {
+    font-weight:normal
+  }
+  .bookingsidebar-info-desc, .bookingsidebar-info p {
+    margin-top:8px
+  }
+  .bookingsidebar-info strong {
+    font-weight:bold
+  }
+  .bookingsidebar-price {
+    margin-bottom:20px
+  }
+  .bookingbestprice, .bookingbestprice:hover, .bookingsafepay, .bookingsafepay:hover {
+    margin-left:18px;
+    position:relative;
+    font-size:11px;
+    color:#639548;
+    border-bottom:1px dotted #639548;
+    text-decoration:none
+  }
+  .bookingbestprice, .bookingbestprice:hover {
+    border-bottom-style:solid
+  }
+  .bookingbestprice:before, .bookingsafepay:before {
+    position:absolute;
+    left:-18px;
+    top:0;
+    display:block;
+    content:"";
+    width:12px;
+    height:11px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -34px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .bookingsafepay:before {
+    top:-1px;
+    width:10px;
+    height:13px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -524px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .bookingbestprice .form-error, .bookingsafepay .form-error {
+    display:none
+  }
+  .bookingbestprice:hover .form-error, .bookingsafepay:hover .form-error {
+    display:block
+  }
+  .booking-errors {
+    display:none;
+    position:relative;
+    border:2px solid #ff7676;
+    background:#fffbfb;
+    color:#535353;
+    padding:10px;
+    margin-bottom:20px
+  }
+  .booking-errors-title {
+    margin:0 10px 10px 0;
+    padding-bottom:10px;
+    font-size:14px;
+    color:#de3c42;
+    border-bottom:1px solid #fce8e8
+  }
+  .booking-errors-item {
+    font-weight:bold;
+    font-size:12px
+  }
+  .booking-errors-help {
+    margin-top:18px
+  }
+  .booking-errors-help-item {
+    font-size:14px;
+    margin-top:6px;
+    padding-left:12px
+  }
+  .booking-errors-help-item:before {
+    content:"";
+    display:block;
+    position:absolute;
+    margin:4px 0 0 -12px;
+    width:5px;
+    height:5px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -334px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .booking-errors-close {
+    position:absolute;
+    top:-2px;
+    right:-2px;
+    display:block;
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -339px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    background-color:#ff7676;
+    border:5px solid #ff7676
+  }
+  .b-booking-go2 {
+    margin:112px 0 20px;
+    min-height:100px;
+    position:relative;
+    text-align:center
+  }
+  .b-booking-go2:before {
+    content:"";
+    display:block;
+    position:absolute;
+    height:0;
+    width:100%;
+    border-top:1px solid #e4e4e5;
+    border-bottom:1px solid #fbfbfb;
+    top:-82px;
+    padding-right:350px
+  }
+  .b-booking-go2__in {
+    position:relative;
+    display:inline-block;
+    margin:0 auto
+  }
+  .b-booking-go2__desc {
+    position:absolute;
+    right:0;
+    bottom:100%;
+    font-size:16px;
+    color:#535353;
+    white-space:nowrap;
+    padding-bottom:14px
+  }
+  .b-booking-go2__endprice {
+    position:absolute;
+    left:100%;
+    bottom:100%;
+    color:#5b9f31;
+    white-space:nowrap;
+    text-align:left;
+    font-size:11px;
+    padding:0 0 15px 20px
+  }
+  .b-booking-go2__system {
+    text-align:left;
+    position:absolute;
+    left:100%;
+    bottom:-1px;
+    margin-top:8px;
+    padding-left:20px
+  }
+  .b-booking-go2__system-item {
+    white-space:nowrap;
+    margin-bottom:4px
+  }
+  .b-booking-go2 .bookingprice-total {
+    padding-left:6px
+  }
+  .stageprogress {
+    overflow:hidden;
+    margin-bottom:20px
+  }
+  .stageprogress-item {
+    width:25%;
+    position:relative;
+    float:left;
+    padding-top:25px;
+    text-align:center;
+    color:#b3b3b3
+  }
+  .stageprogress-item.m-done {
+    color:#6d96ca
+  }
+  .stageprogress-item.m-current {
+    color:#5b9f31
+  }
+  .stageprogress-item a {
+    text-decoration:none;
+    color:inherit
+  }
+  .stageprogress-item a {
+    cursor:default
+  }
+  .stageprogress-item.m-done a {
+    cursor:pointer
+  }
+  .stageprogress-item:first-child .stageprogress-item-desc {
+    text-align:left;
+    padding-left:4px
+  }
+  .stageprogress-item.m-last .stageprogress-item-desc {
+    text-align:right;
+    padding-right:4px
+  }
+  .stageprogress-item-in:before, .stageprogress-item-in:after {
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:0;
+    left:0;
+    content:"";
+    width:50%;
+    height:23px;
+    background:url(http://ostrovok.ru/st/gm/img/booking/out-7408a76fbfbaf8730de5496d502d707985867e87.png) no-repeat right -23px
+  }
+  .stageprogress-item-in:after {
+    background-position:0 -23px;
+    left:50%
+  }
+  .stageprogress-item:first-child .stageprogress-item-in:before {
+    background-position:0 0
+  }
+  .stageprogress-item.m-last .stageprogress-item-in:after {
+    background-position:right 0
+  }
+  .stageprogress-item.m-last .stageprogress-item-in:before, .stageprogress-item:first-child .stageprogress-item-in:after {
+    background-position:center 0
+  }
+  .stageprogress-item:before {
+    content:"";
+    background-color:#e1e3e4;
+    position:absolute;
+    height:23px;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:hidden
+  }
+  .stageprogress-item.m-done:after {
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:2px;
+    left:50%;
+    margin-left:-10px;
+    width:20px;
+    height:20px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -292px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    zoom:1
+  }
+  .stageprogress-item.m-current:after {
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:2px;
+    left:50%;
+    margin-left:-10px;
+    width:20px;
+    height:20px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -272px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    zoom:1
+  }
+  .stageprogress-item:first-child.m-done:after, .stageprogress-item:first-child.m-current:after {
+    left:11px
+  }
+  .stageprogress-item.m-last.m-done:after, .stageprogress-item.m-last.m-current:after {
+    right:1px;
+    left:auto
+  }
+  .stageprogress-item.m-current:before {
+    height:50px;
+    top:-14px;
+    z-index:2;
+    padding:0 10%;
+    left:-5%;
+    clip:rect(auto, auto, 37px, auto);
+    background:-moz-radial-gradient(center, ellipse cover, #d4e6cc 0, #e1e3e4 100%);
+    background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d4e6cc), color-stop(100%, #e1e3e4));
+    background:-webkit-radial-gradient(center, ellipse cover, #d4e6cc 0, #e1e3e4 100%);
+    background:-o-radial-gradient(center, ellipse cover, #d4e6cc 0, #e1e3e4 100%);
+    background:-ms-radial-gradient(center, ellipse cover, #d4e6cc 0, #e1e3e4 100%);
+    background:radial-gradient(center, ellipse cover, #d4e6cc 0, #e1e3e4 100%)
+  }
+  .ie7 .stageprogress-item.m-current:before, .ie8 .stageprogress-item.m-current:before {
+    padding:0;
+    left:0
+  }
+  .prebooking-complete {
+    margin:6px 0 36px
+  }
+  .prebooking-complete__title {
+    font-size:24px;
+    font-weight:bold;
+    color:#0851a3;
+    margin-bottom:10px
+  }
+  .prebooking-complete__desc {
+    font-weight:bold
+  }
+  .bookingpayments-desc {
+    margin:-4px 0 24px
+  }
+  .bookingpayments-when {
+    position:relative;
+    min-height:60px;
+    border-bottom:1px solid transparent
+  }
+  .b-bookingpayments_when_now .bookingpayments-when, .b-bookingpayments_when_later .bookingpayments-when {
+    border-bottom-color:#e6e6e7;
+    margin-bottom:26px;
+    padding-bottom:20px
+  }
+  .b-bookingpayments_when_now .bookingpayments-when:before, .b-bookingpayments_when_later .bookingpayments-when:before {
+    position:absolute;
+    content:"";
+    top:100%;
+    display:block;
+    margin-top:-9px;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #e3e3e6
+  }
+  .b-bookingpayments_when_now .bookingpayments-when:after, .b-bookingpayments_when_later .bookingpayments-when:after {
+    position:absolute;
+    content:"";
+    top:100%;
+    display:block;
+    margin-top:-8px;
+    margin-left:1px;
+    border-left:9px solid transparent;
+    border-right:9px solid transparent;
+    border-bottom:9px solid #fff
+  }
+  .b-bookingpayments_when_now .bookingpayments-when:before, .b-bookingpayments_when_now .bookingpayments-when:after {
+    left:93px
+  }
+  .b-bookingpayments_when_later .bookingpayments-when:before, .b-bookingpayments_when_later .bookingpayments-when:after {
+    left:387px
+  }
+  .b-bookingpayments__now-link {
+    margin-left:-3px;
+    vertical-align:top
+  }
+  .b-bookingpayments__now-link i {
+    height:auto;
+    line-height:17px;
+    padding-top:11px;
+    padding-bottom:11px;
+    font-weight:normal
+  }
+  .b-bookingpayments__now-link:active i {
+    height:auto;
+    line-height:17px;
+    padding-top:13px;
+    padding-bottom:11px
+  }
+  .b-bookingpayments__now-link-desc {
+    display:block;
+    font-size:14px;
+    text-transform:lowercase
+  }
+  .bookingpayments-when__or {
+    padding:0 10px
+  }
+  .b-bookingpayments__later {
+    position:relative;
+    padding-top:8px;
+    display:inline-block
+  }
+  .b-bookingpayments__later-link {
+    cursor:pointer;
+    border-bottom-style:dotted;
+    border-bottom-width:1px
+  }
+  .b-bookingpayments__later-desc {
+    position:absolute;
+    top:110%;
+    display:block;
+    font-size:12px;
+    color:#888;
+    white-space:nowrap
+  }
+  .b-bookingpayments_when_now .b-bookingpayment, .b-bookingpayments_when_now .bookingpayment-ccard__step-pay-text {
+    display:none
+  }
+  .b-bookingpayments_when_now .b-bookingpayments__gates_many, .b-bookingpayments_when_now .b-bookingpayment_ccard {
+    display:block
+  }
+  .b-bookingpayments_when_later .b-bookingpayments__gates, .b-bookingpayments_when_later .b-bookingpayments-nav {
+    display:block
+  }
+  .b-bookingpayments-nav {
+    display:none
+  }
+  .b-bookingpayments-nav__item {
+    position:relative;
+    width:130px;
+    height:30px;
+    float:left;
+    font-size:10px;
+    padding:58px 6px 0;
+    text-align:center;
+    cursor:pointer;
+    color:#0851a3
+  }
+  .b-bookingpayments-nav__item:after {
+    margin-left:50%;
+    content:"";
+    top:0;
+    display:block;
+    position:absolute;
+    opacity:.5
+  }
+  .b-bookingpayments-nav__item_active {
+    color:#333
+  }
+  .b-bookingpayments-nav__item_active:after {
+    opacity:1
+  }
+  .b-bookingpayments-nav__item_cash:after {
+    left:-38px;
+    width:73px;
+    height:40px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking/tabs-728ec9fe372ee6c441227de72319ba19fb7fad1b.png") no-repeat 0 0;
+    -webkit-background-size:92px 120px;
+    background-size:92px 120px
+  }
+  .b-bookingpayments-nav__item_euroset:after {
+    top:-5px;
+    left:-35px;
+    width:63px;
+    height:56px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking/tabs-728ec9fe372ee6c441227de72319ba19fb7fad1b.png") no-repeat 0 -40px;
+    -webkit-background-size:92px 120px;
+    background-size:92px 120px
+  }
+  .b-bookingpayments-nav__item_svyaznoy:after {
+    top:12px;
+    left:-46px;
+    width:92px;
+    height:24px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking/tabs-728ec9fe372ee6c441227de72319ba19fb7fad1b.png") no-repeat 0 -96px;
+    -webkit-background-size:92px 120px;
+    background-size:92px 120px
+  }
+  .b-bookingpayments-nav__item_active .b-bookingpayments-nav__pointer {
+    margin-left:50%;
+    left:-10px;
+    bottom:-11px;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #e3e3e6;
+    content:"";
+    display:block;
+    position:absolute
+  }
+  .b-bookingpayments-nav__item_active .b-bookingpayments-nav__pointer:after {
+    position:absolute;
+    content:"";
+    top:1px;
+    left:-9px;
+    display:block;
+    border-left:9px solid transparent;
+    border-right:9px solid transparent;
+    border-bottom:9px solid #fafafa
+  }
+  .b-bookingpayments__gates_many {
+    display:none
+  }
+  .b-bookingpayments__gates_many .b-bookingpayment {
+    display:none
+  }
+  .b-bookingpayments_when_now .b-bookingpayments__gates_many, .b-bookingpayments_when_later .b-bookingpayments__gates_many {
+    display:block
+  }
+  .b-bookingpayments_when_later .b-bookingpayment {
+    margin:10px -10px -10px -10px;
+    padding:18px 20px 10px;
+    border:1px solid #e3e3e6;
+    background:#fafafa
+  }
+  .b-bookingpayment {
+    color:#535353
+  }
+  .b-bookingpayment__title {
+    color:#3a5571;
+    font-weight:bold;
+    margin-bottom:16px
+  }
+  .b-bookingpayment__remark {
+    font-size:12px;
+    color:#888
+  }
+  .b-bookingpayment__instruction {
+    margin-bottom:14px
+  }
+  .b-bookingpayment__instruction-item {
+    margin:0 0 9px 10px
+  }
+  .b-bookingpayment__instruction-item:before {
+    content:"•";
+    position:absolute;
+    margin-left:-10px;
+    color:#2a5894
+  }
+  .b-bookingpayment__instruction-item_with-order-id:before {
+    line-height:34px
+  }
+  .b-bookingpayment__end {
+    margin-top:24px
+  }
+  .b-bookingpayment__end-desc {
+    font-size:16px
+  }
+  .b-bookingpayment__end-desc:after {
+    content:" ";
+    font-size:30px
+  }
+  .b-bookingpayment__id {
+    font-size:24px;
+    font-weight:bold
+  }
+  .b-bookingpayment__go {
+    float:right;
+    margin-top:12px
+  }
+  .b-bookingpayment-ccard__card {
+    margin:25px 0 54px 0
+  }
+  .bookingpayment-ccard__step-pay-text {
+    margin-bottom:10px
+  }
+  .bookingpayment-ccard-3ds-desc {
+    position:relative;
+    padding:16px 300px 0 0;
+    color:#adadad;
+    font-size:11px
+  }
+  .bookingpayment-ccard-3ds-desc:before {
+    position:absolute;
+    content:"";
+    display:block;
+    top:0;
+    left:0;
+    right:0;
+    border-top:1px solid #ebebeb;
+    border-bottom:1px solid #fcfcfc
+  }
+  .bookingpayment-ccard-3ds-desc:after {
+    position:absolute;
+    content:"";
+    display:block;
+    top:26px;
+    right:0;
+    width:242px;
+    height:34px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 0;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .b-bookingpayment__end_ccard {
+    position:relative;
+    margin:34px 0 22px
+  }
+  .b-bookingpayment-ccard__go {
+    margin-top:-8px;
+    float:right
+  }
+  .bookingpayment-legend__item {
+    margin:6px 0
+  }
+  .b-booking_card-error {
+    padding-top:40px
+  }
+  .b-booking__postpay-card-error-head {
+    background:#f0dcdd;
+    padding:14px 14px 8px 14px;
+    margin:0 -14px;
+    position:relative;
+    z-index:1
+  }
+  .b-booking__postpay-card-error-title {
+    font-size:18px;
+    font-weight:normal;
+    color:#0851a3;
+    margin-bottom:5px
+  }
+  .b-booking__postpay-card-error-desc {
+    font-size:15px;
+    color:#c80000
+  }
+  .b-booking__cloud_postpay-card-error {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:1px solid #c80000;
+    outline:14px solid #f0dcdd
+  }
+  .b-booking__grats {
+    margin:5px 0 15px
+  }
+  .b-booking__grats-header {
+    margin-bottom:5px;
+    font-size:16px;
+    font-weight:normal;
+    -webkit-font-smoothing:antialiased;
+    color:#2b5a97
+  }
+  .b-booking__grats-message {
+    font-size:13px;
+    line-height:17px
+  }
+  .b-booking__grats-message_color_green {
+    color:#5b9f31
+  }
+  .b-booking__grats-message_color_red {
+    color:#881503
+  }
+  .bookingsidebar-info-title-green, .credit-card-booking-enshurance {
+    color:#5b9f31
+  }
+  input.formvalidate-error {
+    border-color:#efa8a8;
+    outline-color:#efa8a8
+  }
+  input.formvalidate-error:hover, input.formvalidate-error:focus {
+    border-color:#f99;
+    outline-color:#f99
+  }
+  input.formvalidate-valid {
+    border-color:#add59d;
+    outline-color:#add59d
+  }
+  input.formvalidate-valid:hover, input.formvalidate-valid:focus {
+    border-color:#9c9;
+    outline-color:#9c9
+  }
+  .formvalidate-error ~ .formvalidate-after-content {
+    display:block;
+    position:absolute;
+    top:-10px;
+    bottom:-10px;
+    left:-10px;
+    right:-10px;
+    border:1px solid #efa8a8;
+    z-index:-1;
+    border-radius:4px
+  }
+  .bookinghotel {
+    font-size:14px;
+    color:#333
+  }
+  .bookinghotel strong {
+    font-weight:bold
+  }
+  .bookinghotel-figure {
+    float:left
+  }
+  .bookinghotel-pic {
+    margin-bottom:10px;
+    width:90px;
+    height:90px
+  }
+  .bookinghotel-desc {
+    margin-left:110px
+  }
+  .bookinghotel-header {
+    margin-bottom:3px
+  }
+  .bookinghotel-name {
+    font-size:18px;
+    font-weight:bold
+  }
+  .bookinghotel-address {
+    margin-bottom:21px;
+    color:#888;
+    font-size:11px
+  }
+  .bookinghotel-roomdescription, .bookinghotel-date {
+    margin-bottom:6px
+  }
+  .bookinghotel-date-details {
+    font-size:12px;
+    color:#535353
+  }
+  .bookinghotel-roomamenitie {
+    font-size:13px;
+    margin-top:6px;
+    color:#5b9f31
+  }
+  .b-booking-creditcard {
+    position:relative;
+    width:534px;
+    height:227px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -45px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    width:534px;
+    height:227px
+  }
+  .b-booking-creditcard__label, .b-booking-creditcard__cvv-label {
+    text-shadow:#223e67 0 -1px 0;
+    height:15px;
+    margin-bottom:4px;
+    color:#fff;
+    font-size:12px
+  }
+  .b-booking-creditcard__fakewrap {
+    position:relative
+  }
+  .b-booking-creditcard__fakeinput, .b-booking-creditcard__expired-fakeinput, input.b-booking-creditcard__cvv-fake {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    height:22px;
+    padding:5px 0 1px 5px;
+    background:#f5f5f7;
+    border:solid 1px #405f88!important;
+    outline:inherit;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px 0 #ccc inset;
+    display:inline-block;
+    color:#9f9f9f
+  }
+  .b-booking-creditcard__fakeinput_transparent, input.b-booking-creditcard__expired-month-fake, input.b-booking-creditcard__expired-year-fake {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    padding:5px 0 1px 5px;
+    position:absolute;
+    background:transparent;
+    border:1px solid transparent!important;
+    outline:0;
+    box-shadow:none;
+    display:inline-block;
+    color:#9f9f9f
+  }
+  .b-booking-creditcard__errors-wrap {
+    position:relative
+  }
+  .b-booking-creditcard__number-wrap {
+    position:absolute;
+    top:22px;
+    left:33px
+  }
+  .b-booking-creditcard__numbers {
+    position:relative;
+    margin-left:-21px
+  }
+  .b-booking-creditcard__numbers .form-error {
+    top:-1px
+  }
+  input.b-booking-creditcard__number {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    height:22px;
+    padding:5px 0 1px 5px;
+    background:#f5f5f7;
+    border:solid 1px #405f88!important;
+    outline:inherit;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px 0 #ccc inset;
+    width:51px;
+    float:left;
+    margin-left:21px
+  }
+  .b-booking-creditcard__number-server {
+    display:none
+  }
+  input.b-booking-creditcard__number-server_visible {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    height:22px;
+    padding:5px 0 1px 5px;
+    background:#f5f5f7;
+    border:solid 1px #405f88!important;
+    outline:inherit;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px 0 #ccc inset;
+    display:block;
+    margin-left:21px;
+    width:215px
+  }
+  .b-booking-creditcard__expired {
+    position:absolute;
+    right:261px;
+    top:87px;
+    text-align:right
+  }
+  .b-booking-creditcard__expired-fakeinput {
+    width:70px;
+    text-align:center
+  }
+  input.b-booking-creditcard__expired-month, input.b-booking-creditcard__expired-month-fake {
+    top:0;
+    right:35px;
+    width:35px
+  }
+  input.b-booking-creditcard__expired-month {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    padding:5px 0 1px 5px;
+    position:absolute;
+    background:transparent;
+    border:1px solid transparent!important;
+    outline:0;
+    box-shadow:none
+  }
+  input.b-booking-creditcard__expired-year, input.b-booking-creditcard__expired-year-fake {
+    top:0;
+    right:0;
+    width:28px
+  }
+  input.b-booking-creditcard__expired-year {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    padding:5px 0 1px 5px;
+    position:absolute;
+    background:transparent;
+    border:1px solid transparent!important;
+    outline:0;
+    box-shadow:none
+  }
+  .b-booking-creditcard__expired .form-error {
+    width:126px
+  }
+  .b-booking-creditcard__expired .form-error strong {
+    min-width:0
+  }
+  .b-booking-creditcard__cvv-wrap {
+    text-align:right
+  }
+  .b-booking-creditcard__lastnumber-with-cvv {
+    font:italic 18px'Courier New', Courier, sans-serif;
+    color:#333;
+    width:46px;
+    display:inline-block;
+    text-align:left;
+    opacity:.35
+  }
+  .b-booking-creditcard__cvv-wrap {
+    top:106px;
+    right:42px;
+    position:absolute
+  }
+  .b-booking-creditcard__cvv-wrap .form-error {
+    top:-1px
+  }
+  input.b-booking-creditcard__cvv {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    padding:5px 0 1px 5px;
+    position:absolute;
+    background:transparent;
+    border:1px solid transparent!important;
+    outline:0;
+    box-shadow:none
+  }
+  .b-booking-creditcard__cvv-label {
+    position:absolute;
+    top:80px;
+    right:35px
+  }
+  input.b-booking-creditcard__cvv, .b-booking-creditcard__cvv-fake {
+    width:39px
+  }
+  .b-booking-creditcard__holder-wrap {
+    position:absolute;
+    top:154px;
+    left:33px
+  }
+  input.b-booking-creditcard__holder {
+    height:22px;
+    text-transform:uppercase;
+    font:bold 18px'Courier New', Courier, sans-serif;
+    color:#434343;
+    height:22px;
+    padding:5px 0 1px 5px;
+    background:#f5f5f7;
+    border:solid 1px #405f88!important;
+    outline:inherit;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px 0 #ccc inset;
+    width:288px;
+    padding-right:5px
+  }
+  .b-booking-creditcard__front-label, .b-booking-creditcard__back-label {
+    font-size:11px;
+    position:absolute;
+    color:#adadad
+  }
+  .b-booking-creditcard__front-label {
+    bottom:-15px;
+    left:34px
+  }
+  .b-booking-creditcard__back-label {
+    bottom:-5px;
+    right:34px
+  }
+  .b-booking-creditcard__type_disabled {
+    opacity:.1
+  }
+  .b-booking-creditcard__type_visa {
+    position:absolute;
+    right:90px;
+    bottom:35px;
+    width:50px;
+    height:15px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -555px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .b-booking-creditcard__type_mastercard {
+    position:absolute;
+    right:35px;
+    bottom:30px;
+    width:44px;
+    height:26px;
+    background:transparent url("http://ostrovok.ru/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png") no-repeat 0 -452px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .bookingprice {
+    position:relative;
+    margin-left:-7px;
+    width:334px;
+    padding-top:8px
+  }
+  .bookingprice:before {
+    content:'';
+    position:absolute;
+    width:228px;
+    height:22px;
+    background:transparent url('/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png') no-repeat 0 -312px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    left:92px;
+    top:-33px
+  }
+  .lang-en .bookingprice:before {
+    width:121px;
+    height:33px;
+    background:transparent url('/st/gm/img/sprites/booking-fe4fb75acc17197d2d1832b6252e5e309d4c1b84.png') no-repeat 0 0;
+    -webkit-background-size:121px 33px;
+    background-size:121px 33px;
+    top:-36px
+  }
+  .bookingprice:after {
+    content:'';
+    position:absolute;
+    width:6px;
+    height:29px;
+    background:transparent url('/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png') no-repeat 0 -378px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px;
+    top:-6px;
+    right:0
+  }
+  .b-booking-price__hole {
+    position:absolute;
+    top:-6px;
+    left:0
+  }
+  .b-booking-price__hole:before {
+    content:'';
+    display:block;
+    width:328px;
+    height:29px;
+    background:transparent url('/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png') no-repeat 0 -349px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .bookingprice-lightbulb {
+    opacity:0;
+    border-top:1px solid #68e341;
+    border-bottom:1px solid #43c12a;
+    width:6px;
+    position:absolute;
+    top:-4px;
+    left:9px;
+    -webkit-box-shadow:#43c12a 0 0 3px;
+    -moz-box-shadow:#43c12a 0 0 3px;
+    -o-box-shadow:#43c12a 0 0 3px;
+    box-shadow:#43c12a 0 0 3px
+  }
+  .bookingprice-in {
+    position:relative;
+    padding:0 7px;
+    overflow:hidden;
+    padding-bottom:18px
+  }
+  .bookingprice-in:before {
+    position:absolute;
+    z-index:2;
+    display:block;
+    content:'';
+    left:7px;
+    right:7px;
+    top:0;
+    height:4px;
+    background:-moz-linear-gradient(top, rgba(140, 140, 140, 0.65) 0, rgba(0, 0, 0, 0) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(140, 140, 140, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background:-webkit-linear-gradient(top, rgba(140, 140, 140, 0.65) 0, rgba(0, 0, 0, 0) 100%);
+    background:-o-linear-gradient(top, rgba(140, 140, 140, 0.65) 0, rgba(0, 0, 0, 0) 100%);
+    background:-ms-linear-gradient(top, rgba(140, 140, 140, 0.65) 0, rgba(0, 0, 0, 0) 100%);
+    background:linear-gradient(top, rgba(140, 140, 140, 0.65) 0, rgba(0, 0, 0, 0) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a68c8c8c', endColorstr='#00000000', GradientType=0)
+  }
+  .bookingprice-in-in {
+    -webkit-box-shadow:#ccc -1px 0 2px;
+    -moz-box-shadow:#ccc -1px 0 2px;
+    -o-box-shadow:#ccc -1px 0 2px;
+    box-shadow:#ccc -1px 0 2px;
+    background:#fff;
+    top:-500px;
+    position:relative;
+    padding:14px 8px 18px 20px
+  }
+  .bookingprice-in-in:after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:-18px;
+    width:320px;
+    height:18px;
+    background:transparent url('/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png') no-repeat 0 -537px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .bookingprice-total {
+    color:#0851a3
+  }
+  .b-booking-price__original {
+    margin-bottom:10px;
+    color:#535353
+  }
+  .b-booking-price__original-sum {
+    color:#0851a3
+  }
+  .bookingprice-price {
+    font-size:30px;
+    font-weight:bold
+  }
+  .bookingprice-price small {
+    font-size:14px;
+    font-weight:normal
+  }
+  .bookingprice-info-footnote {
+    color:#909090
+  }
+  .bookingprice-bonus {
+    margin-bottom:10px
+  }
+  .bookingprice-bonus-link {
+    text-decoration:none;
+    border-bottom:1px dotted
+  }
+  .b-booking-price__detail-discount {
+    display:none
+  }
+  .b-booking-price__original_discounts {
+    color:#848e96;
+    text-decoration:line-through
+  }
+  .b-booking-price__original_discounts .bookingprice-price, .b-booking-price__original_discounts .bookingprice-price small, .b-booking-price__original_discounts .b-booking-price__original-sum {
+    font-size:13px
+  }
+  .b-booking-price__original_discounts .b-booking-price__due-text {
+    color:#535353
+  }
+  .b-booking-discounts__title {
+    margin-bottom:10px;
+    color:#55962d;
+    font-size:12px
+  }
+  .b-booking-discounts__due {
+    margin-bottom:10px;
+    font-size:16px
+  }
+  .b-booking-discounts__price {
+    color:#0851a3
+  }
+  .b-booking-discounts__bonuses {
+    margin-bottom:10px
+  }
+  .b-booking-discounts__bonuses-choose {
+    padding-left:15px;
+    margin-bottom:10px
+  }
+  .b-booking-discounts__bonus {
+    margin-bottom:4px
+  }
+  .b-booking-discounts__percent, .b-booking-discounts__used-bonus {
+    margin:10px 0;
+    color:#3a5571;
+    font-size:12px
+  }
+  .b-booking-discounts__bonus-value, .b-booking-discounts__percent-value, .b-booking-discounts__used-bonus-value {
+    font-weight:bold;
+    font-size:14px
+  }
+  .b-booking-discounts__bonus-name, .b-booking-discounts__percent-name, .b-booking-discounts__used-bonus-name {
+    font-size:11px;
+    color:#848e96
+  }
+  .b-booking__free-cancellation_loc_price {
+    color:#5b9f31;
+    margin-bottom:5px;
+    text-transform:uppercase
+  }
+  .b-booking-alfabank-promo {
+    display:none
+  }
+  .b-booking-alfabank-promo__logo {
+    display:block;
+    width:150px;
+    height:45px;
+    background:transparent url('/st/gm/img/booking-fab58d66535f13c709eb061b68549e7ff1e6e33a.png') no-repeat 0 -407px;
+    -webkit-background-size:534px 570px;
+    background-size:534px 570px
+  }
+  .b-stars, .b-stars__val {
+    height:10px;
+    display:inline-block
+  }
+  .b-stars {
+    width:50px;
+    position:relative;
+    vertical-align:top
+  }
+  .b-stars__val {
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png) 0 -30px
+  }
+  .b-stars_val_10 .b-stars__val {
+    width:10px
+  }
+  .b-stars_val_20 .b-stars__val {
+    width:20px
+  }
+  .b-stars_val_30 .b-stars__val {
+    width:30px
+  }
+  .b-stars_val_40 .b-stars__val {
+    width:40px
+  }
+  .b-stars_val_50 .b-stars__val {
+    width:50px
+  }
+  .b-stars_size_med, .b-stars_size_med .b-stars__val {
+    height:14px;
+    background:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png)
+  }
+  .b-stars_size_med {
+    width:70px;
+    vertical-align:middle;
+    background-position:-57px -34px
+  }
+  .b-stars_size_med .b-stars__val {
+    background-position:-57px -18px
+  }
+  .b-stars_val_10.b-stars_size_med .b-stars__val {
+    width:14px
+  }
+  .b-stars_val_20.b-stars_size_med .b-stars__val {
+    width:28px
+  }
+  .b-stars_val_30.b-stars_size_med .b-stars__val {
+    width:42px
+  }
+  .b-stars_val_40.b-stars_size_med .b-stars__val {
+    width:56px
+  }
+  .b-stars_val_50.b-stars_size_med .b-stars__val {
+    width:70px
+  }
+  .b-stars_size_min {
+    background:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png) -200px -37px;
+    width:49px
+  }
+  .b-stars_size_min, .b-stars_size_min .b-stars__val {
+    height:9px
+  }
+  .b-stars_size_min .b-stars__val {
+    background-position:-200px -25px
+  }
+  .b-stars_val_10.b-stars_size_min .b-stars__val {
+    width:9px
+  }
+  .b-stars_val_20.b-stars_size_min .b-stars__val {
+    width:19px
+  }
+  .b-stars_val_30.b-stars_size_min .b-stars__val {
+    width:29px
+  }
+  .b-stars_val_40.b-stars_size_min .b-stars__val {
+    width:39px
+  }
+  .b-stars_val_50.b-stars_size_min .b-stars__val {
+    width:49px
+  }
+  .b-stars_loc_bigmap {
+    display:block;
+    margin-bottom:2px
+  }
+  .b-booking-price__room-title {
+    font-weight:bold;
+    margin:6px 0 3px
+  }
+  .b-booking-price__detail-discount {
+    margin-top:6px
+  }
+  .p-breakdown .implow {
+    color:#8695a6
+  }
+  .reservation {
+    position:relative
+  }
+  .reservation .button-script.goback {
+    position:absolute;
+    top:-25px
+  }
+  .reservation .button-script.goback em {
+    width:185px;
+    text-align:center
+  }
+  .p-breakdown {
+    padding:20px;
+    font-size:11px;
+    background:#fff;
+    border:1px solid #e2e5e8
+  }
+  .p-breakdown h3 {
+    margin:0 0 6px;
+    color:#3c5775;
+    font-size:11px
+  }
+  .p-breakdown p {
+    margin-top:14px;
+    font-size:13px
+  }
+  .p-breakdown dl {
+    overflow:hidden;
+    white-space:nowrap
+  }
+  .p-breakdown dt, .p-breakdown dd {
+    width:49%;
+    float:left;
+    text-align:right
+  }
+  .p-breakdown dt {
+    clear:left;
+    text-align:left
+  }
+  .p-breakdown .b-promo {
+    color:#308000
+  }
+  .p-breakdown small {
+    font-size:.75em
+  }
+  .p-breakdown .whitespace {
+    height:3em
+  }
+  .p-breakdown .wspace {
+    width:100%;
+    height:3px;
+    overflow:hidden
+  }
+  .p-breakdown .sep {
+    padding-top:5px;
+    overflow:hidden;
+    height:3px;
+    width:100%;
+    border-bottom:1px solid #e2e5e8;
+    margin-bottom:4px
+  }
+  .b-phone-input {
+    position:relative;
+    display:inline-block
+  }
+  .b-phone-input__code-wrap {
+    position:relative;
+    z-index:1;
+    display:inline-block
+  }
+  .b-phone-input__prefix {
+    color:#9c9c9c;
+    padding-right:3px
+  }
+  .b-phone-input__code {
+    color:#9c9c9c;
+    padding-right:3px
+  }
+  .b-phone-input__input {
+    width:148px
+  }
+  .b-phone-input .b-placeholder__text {
+    padding-left:0
+  }
+  .b-phone-input__select-controller {
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden
+  }
+  .b-phone-input__select-wrap {
+    position:absolute;
+    top:100%;
+    margin-top:-4px;
+    left:7px
+  }
+  .b-phone-input__select {
+    cursor:pointer;
+    position:absolute;
+    bottom:-2px;
+    left:0;
+    opacity:0
+  }
+  .b-phone-input__selected {
+    font-size:7px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#9c9c9c;
+    border-bottom:1px dotted
+  }
