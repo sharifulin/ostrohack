@@ -1,0 +1,11 @@
+
+  #searchForm
+  {
+    border: 1px solid red;
+  }
+
+  #searchForm .line
+  {
+    margin: 2px;
+    border: 1px solid green;
+  }

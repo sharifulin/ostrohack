@@ -2,7 +2,7 @@
   basis.require('app.type');
   basis.require('basis.ui');
   basis.require('basis.ui.button');
-  basis.require('basis.router');
+  basis.require('app.router');
 
   var templates = basis.template.define('searchResult', resource('template/index.js'));
   basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js'));
@@ -41,6 +41,29 @@
     datasetChanged: function(sender){
       list.setData(sender.dataset);
     }
+  });
+
+  app.router.add(/search\/\?(.*)/, function(query){
+    var params = {};
+
+    var parts = query.split('&');
+    for (var i = 0, part; part = parts[i]; i++)
+    {
+      var p = part.split('=');
+      params[p[0]] = p.slice(1).join('=');
+    }
+    console.log(params);
+
+    // set convertation to params -> filters
+    var dataset = app.type.Suggestion.getSearchResult({
+      region_id: 2395,
+      //destination: destinationField.getValue(),
+      room1_numberOfAdults: 2,
+      arrivalDate: '2013-04-19',
+      departureDate: '2013-04-20'
+    });
+
+    list.setDataSource(dataset);
   });
   
   module.exports = list;
