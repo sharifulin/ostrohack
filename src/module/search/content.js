@@ -4,8 +4,8 @@
   basis.require('basis.ui.button');
   basis.require('app.router');
 
-  var templates = basis.template.define('searchResult', resource('template/index.js'));
-  basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js'));
+  var templates = basis.template.define('searchResult', resource('template/index.js').fetch());
+  basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js').fetch());
 
   var form = resource('module/searchForm/index.js');
 
@@ -22,6 +22,7 @@
     childClass: {
       template: templates.item,
       binding: {
+        id: 'data:',
         name: 'data:',
         price: 'data:',
         is_golden: 'data:is_golden ? "golden" : ""',

@@ -15,8 +15,8 @@
   // definitions
   //
 
-  var templates = basis.template.define(namespace, resource('template/index.js'));
-  basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js'));
+  var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+  basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
   basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
     submitButton: 'Search'

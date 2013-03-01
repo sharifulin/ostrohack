@@ -1,3 +1,4 @@
+basis.require('basis.entity');
 
 var RoomType = new basis.entity.EntityType({
   name: 'Room',
@@ -26,6 +27,5 @@ var Room = new basis.entity.EntityType({
     size: Number
   }
 });
-
 
 module.exports = Room;
