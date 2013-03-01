@@ -2,6 +2,12 @@ basis.require('basis.l10n');
 basis.require('basis.ui');
 
 basis.l10n.createDictionary('app.module.hotelType', __dirname + 'l10n', {
+  Hotel: 'Hotel',
+  Apartment: 'Apartment',
+  Guesthouse: 'Guesthouse',
+  Hostel: 'Hostel',
+  'Mini-hotel': 'Mini-hotel',
+  Sanatorium: 'Sanatorium'
 });
 
 module.exports = new basis.ui.Node({
@@ -10,34 +16,15 @@ module.exports = new basis.ui.Node({
   childClass: {
     template: resource('template/item.tmpl'),
     binding: {
-      title: 'data:'
+      id: 'data:',
+      title: function(node) {
+        return basis.l10n.getToken('app.module.hotelType', node.data.id);
+      }
     }
   },
 
-  childNodes: [
-    {
-      data: {
-        name: 'Hotel',
-        title: 'Отель'
-      }
-    },
-    {
-      data: {
-        name: 'Apartment',
-        title: 'Апартаменты'
-      }
-    },
-    {
-      data: {
-        name: 'Guesthouse',
-        title: 'Гостевой дом'
-      }
-    },
-    {
-      data: {
-        name: 'Hostel',
-        title: 'Хостел'
-      }
-    }
-  ]
+  dataSource: new basis.data.dataset.Split({
+    source: app.type.Suggestion.all,
+    rule: 'data.kind'
+  })
 });

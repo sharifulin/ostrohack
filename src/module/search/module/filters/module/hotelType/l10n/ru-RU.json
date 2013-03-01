@@ -1,0 +1,10 @@
+{
+  "app.module.hotelType": {
+    "Hotel": "Отель",
+    "Apartment": "Апартаменты",
+    "Guesthouse": "Гостевой дом",
+    "Hostel": "Хостел",
+    "Mini-hotel": "Мини-отель",
+    "Sanatorium": "Санаторий"
+  }
+}

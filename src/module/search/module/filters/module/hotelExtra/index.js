@@ -10,7 +10,8 @@ module.exports = new basis.ui.Node({
   childClass: {
     template: resource('template/item.tmpl'),
     binding: {
-      title: 'data:'
+      title: 'data:',
+      name: 'data:'
     }
   },
 
