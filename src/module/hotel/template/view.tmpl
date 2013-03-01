@@ -1,6 +1,208 @@
-<div class="hotel-view">
-  <!--{hotel}-->
-  <div class="hotel-rooms">
-    <!--{rooms}-->
+<b:style src="view.css"/>
+
+<div class="layout-wrap ">
+  <div class="b-heading m-disabled b-heading_state_search-form">
+    <div class="b-heading__search-wrapper b-heading__search-wrapper_overflowable" style="text-indent: 0px;">
+      <div class="b-search-info">
+        <div class="b-search-info__inner clearfix">
+          <div class="heading_requestParams_searchInfo_requestDetails">
+            <input type="hidden" id="location_name_ru" value="Амстердам"/>
+            <a class="b-search-info__serp-link" title="Амстердам, Нидерланды">Посмотреть все отели в Амстердаме, Нидерланды</a>
+            <div class="b-search-info__details"> <span class="b-search-info__guests-number">для 2 взрослых и&nbsp;1 ребёнка</span>
+              <span class="dates"> с 4 по 8 марта</span>
+              <span class="b-search-info__change-conditions heading_requestParams_changeLink">Изменить условия</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-content m-id-hotelpage layout-content_facelift3">
+    <section class="b-hotelpage hotelpage">
+      <header class="b-hotelpage__header clearfix" data="LAT">
+        <div class="l-hotelpage__header-inner">
+          <h1 class="b-hotelpage__title">{name}</h1>
+          <span class="b-stars b-stars_val_50 b-stars_loc_hotelpage">
+            <span class="b-stars__val" data-star-rating="50"></span>
+          </span>
+          <p class="b-hotelpage__address"> <span class="b-hotelpage__address-big-map-trigger">{address}</span></p>
+        </div>
+        <div class="l-hotelpage__header-sidebar">
+          <p class="b-hotelpage-min-price"> 
+            <span class="b-hotelpage-min-price__from">от <strong class="b-hotelpage-min-price__value">{low_rate}</strong> <span class="b-hotelpage-min-price__currency">руб.</span>  </span> 
+            <small class="b-hotelpage-min-price__period">за <span class="b-hotelpage-min-price__period-value">4 ночи</span></small>
+          </p>
+          <a class="b-button button b-hotelpage-min-price-btn bookroom" href="#gotorooms" id="hpg_gotorooms"> <b class="b-button__inner"><i class="b-button__text">Забронировать</i></b>
+
+          </a>
+          <div class="b-hotelpage-best-price__container"> <span class="b-hotelpage-best-price">Гарантируем лучшие цены!</span>
+            <div class="b-hotelpage-best-price__tip">
+              <p class="b-hotelpage-best-price__paragraph">Найдите цену ниже и получите скидку или тройную разницу в цене.</p>
+            </div>
+          </div>
+        </div>
+        <ul class="b-hotelpage-content-switch clearfix">
+          <li class="b-hotelpage-content-switch__item b-hotelpage-content-switch__item_id_photos b-hotelpage-content-switch__item_state_active"> 
+            <span class="b-hotelpage-content-switch__item-icon"></span>
+            <span class="b-hotelpage-content-switch__item-name">Фотографии</span>
+          </li>
+          <li class="b-hotelpage-content-switch__item b-hotelpage-content-switch__item_id_map"> 
+            <span class="b-hotelpage-content-switch__item-icon"></span>
+            <span class="b-hotelpage-content-switch__item-name">На карте</span>
+          </li>
+        </ul>
+      </header>
+
+      <div class="l-hotelpage-content clearfix">
+        <div class="l-hotelpage-content-right">
+          <div class="b-photos-reviews-wrapper clearfix">
+            <div class="l-photos-reviews-left">
+              <div class="b-hotel-photos-container">
+                  <div class="b-photogallery" style="overflow: hidden">
+                    
+                    <!--{slider}-->
+
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-hotelmap " data-map-lat="52.37586" data-map-lng="4.90282" data-hotel-uid="l180653" style="display: block;">
+          </div>
+        </div>
+      </div>  
+
+      <div class="b-hotel-rooms-container">
+        <!--<span class="b-hotel-rooms__loading_message">Подождите пару секунд, мы ищем доступные номера в этом отеле…</span>-->
+        <div class="b-hotel-rooms" style="display: block; opacity: 1;">
+           <!--{rooms}-->
+        </div>
+      </div>  
+
+      <p class="b-hotelpage__notice">
+          <span class="b-hotelpage__price-details-guests-number">
+            Все цены указаны для 2 взрослых и 1 ребёнка
+          </span>
+          <span class="b-hotelpage__price-details-period">
+            при условии размещения на 4 ночи.
+          </span>
+      </p>
+      <p class="b-hotel-rooms__final-price-tip">
+          <span class="b-hotel-rooms__final-price-tip-check"></span>
+          <strong class="b-hotel-rooms__final-price-tip-title">Это окончательные цены.</strong> Ostrovok.ru не возьмёт никаких дополнительных комиссий за бронирование.
+      </p>      
+
+      <div class="b-call-discount-banner">
+        <p class="b-call-discount-banner__text">— Позвоните, и я помогу вам забронировать отель</p>
+        <img class="b-call-discount-banner__img" src="http://ostrovok.ru/st/img/banners/pics/pic-ksu-70x66.png" alt="— Позвоните, и я помогу вам забронировать отель"/> 
+        <b class="b-call-discount-banner__phone">
+          +7 495 539-31-81
+        </b>
+      </div>
+      <div class="b-hotel-description with-hotel-rating b-hotel-description_need_expander b-hotel-description_state_expanded">
+        <div class="b-hotel-description__clip" style="height: auto;">
+          <h3 class="b-hotel-description__header">Расположение</h3>
+          <p><em>Отель Grand Amrâth Amsterdam</em> расположен в центре Амстердама, всего в 5 минутах ходьбы от центрального вокзала и станции метро Centraal Station. Прогулка до площади Дам и Королевского дворца займет 15 минут. Расстояние до аэропорта Схипхол составляет
+            12 км.</p>
+          <h3 class="b-hotel-description__header">В отеле</h3>
+
+          <p>Завтрак гостям может быть подан в номер. В дорогу для гостей готовят упакованные ланчи. К услугам гостей отеля Grand Amrâth Amsterdam <em>ресторан</em> французской и интернациональной кухни. Выпить вена вы сможете в баре.</p>
+          <p>Для того чтобы расслабиться, посетите <em>оздоровительный спа-центр</em> с крытым бассейном, сауной и турецкой баней. Для тех кто предпочитает физические нагрузки, открыт фитнес-центр.</p>
+          <p>К услугам гостей <em>бесплатный Wi-Fi</em> на всей территории отеля. Для деловых гостей работает бизнес-центр. При необходимости в отеле можно обменять валюту.</p>
+           <h3 class="b-hotel-description__header">Описание номеров</h3>
+
+          <p>Отель Grand Amrâth Amsterdam предлагает <em>165 номеров</em> для проживания, оформленных в стиле модерн. Для приготовления кофе в номерах установлена машина Nespresso. В каждом номере установлен телевизор со спутниковыми каналами.</p>
+          <div class="b-hotel-description__clip-fade"></div>
+        </div> 
+        <span class="b-hotel-description__expand" style="display: none;">подробнее</span>
+      </div>
+      <div class="b-hotel-amenities">
+        <table class="b-hotel-amenities-list">
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h3 class="b-hotel-amenities-list__header">
+                  Услуги и особенности отеля
+                </h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="b-hotel-amenities-list__item_first">
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_common_info" title="В отеле"></span>
+      В отеле</th>
+              <td class="b-hotel-amenities-list__desc">Круглосуточная стойка регистрации, лифт на всех этажах, сейф, во всем отеле запрещено курение</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_extra_service" title="В номерах"></span>
+      В номерах</th>
+              <td class="b-hotel-amenities-list__desc">Мини-бар в каждом номере, номера на 1 этаже, фен в каждом номере, смежные номера, круглосуточное обслуживание номеров, телефон в каждом номере, удобства для приготовления чая/кофе в каждом номере, пресс для брюк в каждом номере</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_card_acceptance" title="Способы оплаты"></span>
+      Способы оплаты</th>
+              <td class="b-hotel-amenities-list__desc">Visa Debit, mastercard, visa/delta, american express, diners club</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_wifi_access" title="Интернет"></span>
+      Интернет</th>
+              <td class="b-hotel-amenities-list__desc">Wi-Fi в общественных зонах</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_meal" title="Питание"></span>
+      Питание</th>
+              <td class="b-hotel-amenities-list__desc">Ресторан, бар</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_cardio" title="Красота и здоровье"></span>
+      Красота и здоровье</th>
+              <td class="b-hotel-amenities-list__desc">Паровая баня, джакузи, сауна, массаж</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_pool" title="Бассейн и пляж"></span>
+      Бассейн и пляж</th>
+              <td class="b-hotel-amenities-list__desc">Крытый бассейн</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_fitness_facility" title="Спорт"></span>
+      Спорт</th>
+              <td class="b-hotel-amenities-list__desc">Фитнес-центр</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_barber_shop" title="Сервис"></span>
+      Сервис</th>
+              <td class="b-hotel-amenities-list__desc">Банкетные услуги, обмен валюты, лицензия на проведение бракосочетаний, консьерж, прачечная/срочная стирка, портье, услуга "звонок-будильник"</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_parking" title="Парковка"></span>
+      Парковка</th>
+              <td class="b-hotel-amenities-list__desc">Парковка на территории отеля</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_busyness" title="Для работы"></span>
+      Для работы</th>
+              <td class="b-hotel-amenities-list__desc">Помещения для проведения деловых встреч/конференций</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_kids_allowed" title="Для детей"></span>
+      Для детей</th>
+              <td class="b-hotel-amenities-list__desc">Детские кроватки</td>
+            </tr>
+            <tr>
+              <th class="b-hotel-amenities-list__name"> <span class="b-amenity-icon b-amenity-icon_has_extra_info" title="Удобства для гостей с ограниченными возможностями"></span>
+      Удобства для гостей с ограниченными возможностями</th>
+              <td class="b-hotel-amenities-list__desc">Удобства для гостей с ограниченными физическими возможностями, доступ в номера, доступ в общественные зоны, пандусы, доступ в конференц-залы, туалеты на 1 этаже, доступ в бар, доступ в ресторан, доступ к стойке регистрации</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="b-hotel-policy">
+         <h3 class="b-hotel-policy__header">Важная информация</h3>
+      Регистрация заезда - с 14:00, регистрация отъезда - до 12:00
+        <br>В этом отеле взимается городской налог в размере 5% от стоимости бронирования.
+        <p class="b-hotelpage__notice">Фотографии отелей предоставлены самими отелями и/или сетями отелей. Ostrovok.ru не несет ответственности за содержание и достоверность этих фотографий.</p>
+      </div>      
+    </section>
   </div>
 </div>
+

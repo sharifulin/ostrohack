@@ -7,7 +7,6 @@ basis.require('app.type');
 
 var templates = basis.template.define('app.module.hotel', {
   View: resource('template/view.tmpl'),
-  Hotel: resource('template/hotel.tmpl'),
   Room: resource('template/room.tmpl')
 });
 
@@ -17,25 +16,15 @@ var templates = basis.template.define('app.module.hotel', {
   Room: resource('template/mobile/room.tmpl')
 });*/
 
-
-//
-// hotel images
-//
-
-
-//
-// hotel 
-//
-var hotel = new basis.ui.Node({
-  template: templates.Hotel,
-
-  binding: {
-    slider: resource('module/slider/index.js').fetch(),
-    name: 'data:',
-    address: 'data:',
-    low_rate: 'data:'
+var hotelObject = new basis.data.DataObject({
+  active: true,  
+  handler: {
+    update: function(){
+      rooms.setDataSource(this.data.rooms);
+      hotelView.setDelegate(this.data.hotel);
+    } 
   }
-});
+})
 
 //
 // rooms
@@ -57,21 +46,12 @@ var rooms = new basis.ui.Node({
 // view
 //
 var hotelView = new basis.ui.Node({
-  active: true,
   template: templates.View,
   binding: {
-    hotel: hotel,
-    rooms: rooms
-  },
-
-  handler: {
-    update: function(){
-      if (this.data.hotel)
-        this.satellite.hotel.setDelegate(this.data.hotel);
-      
-      if (this.data.rooms)
-        this.satellite.rooms.setDataSource(this.data.rooms);
-    }
+    slider: resource('module/slider/index.js').fetch(),
+    rooms: rooms,
+    name: 'data:',
+    address: 'data:'
   }
 });
 
@@ -85,7 +65,7 @@ basis.router.add('/hotel?*params', function(params){
     hotelData[pare[0]] = pare[1];
   }
 
-  hotelView.setDelegate(app.type.HotelReport(app.type.HotelReport.reader(hotelData)));
+  hotelObject.setDelegate(app.type.HotelReport(app.type.HotelReport.reader(hotelData)));
 });
 
 //
