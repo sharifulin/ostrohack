@@ -19,8 +19,11 @@
 
   basis.ready(function(){
     var pages = new basis.ui.tabs.PageControl({
+      template: resource('app/template/pages.tmpl'),
+
       autoSelectChild: false,
       childClass: {
+        template: resource('app/template/page.tmpl'),
         handler: {
           select: function(){
             if (typeof this.lazyContent == 'function')
