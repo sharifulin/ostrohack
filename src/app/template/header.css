@@ -1,0 +1,205 @@
+.auth-container {
+  float:right;
+  height:1px;
+  margin-left:10px;
+  width:131px
+}
+.auth {
+  position:absolute;
+  top:0;
+  right:0;
+  font-family:Arial, sans-serif
+}
+.auth-button{
+  font-family:Arial, sans-serif
+}
+.auth-button {
+  height:19px;
+  display:inline-block;
+  vertical-align:top;
+  overflow:hidden;
+  padding:0 10px;
+  font-size:9px;
+  line-height:20px;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);
+  color:#fff;
+  background-color:transparent;
+  border:1px solid;
+  border-color:rgba(255, 255, 255, 0.1);
+  border-radius:2px;
+  cursor:pointer;
+  -webkit-transition:padding .5s ease;
+  -moz-transition:padding .5s ease;
+  -o-transition:padding .5s ease;
+  transition:padding .5s ease
+}
+.auth-button:hover {
+  color:#fff;
+  background-color:#064474;
+  background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  background-image:-moz-linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  background-image:linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  background-position:0 0;
+  box-shadow:0 0 0 1px rgba(0, 0, 0, 0.1)
+}
+@-moz-document url-prefix() {
+  .auth-button {
+    line-height:19px
+  }
+}
+.auth-button-register, .auth-button-login {
+  position:absolute;
+  top:22px;
+  z-index:1
+}
+.auth-button-register {
+  right:47px;
+  background:#003c6c url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) 0 -24px;
+  border-right:0;
+  border-radius:2px 0 0 2px
+}
+.auth-button-login {
+  right:0;
+  border-radius:0 2px 2px 0
+}
+.auth-button-grey {
+  text-shadow:0 1px 0 rgba(255, 255, 255, 0.4);
+  color:#0d2e47;
+  background-color:#c4d0da;
+  background-image:-webkit-linear-gradient(top, #c4d0da, #aebbc4);
+  background-image:-moz-linear-gradient(top, #c4d0da, #aebbc4);
+  background-image:-ms-linear-gradient(top, #c4d0da, #aebbc4);
+  background-image:-o-linear-gradient(top, #c4d0da, #aebbc4);
+  background-image:linear-gradient(top, #c4d0da, #aebbc4);
+  border-color:#c7d0d7;
+  border-top-color:#fff;
+  box-shadow:0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0.2)
+}
+.auth-button-grey:hover {
+  color:#0d2e47;
+  background-color:#dae2e8;
+  background-image:-webkit-linear-gradient(top, #dae2e8, #cdd5db);
+  background-image:-moz-linear-gradient(top, #dae2e8, #cdd5db);
+  background-image:-ms-linear-gradient(top, #dae2e8, #cdd5db);
+  background-image:-o-linear-gradient(top, #dae2e8, #cdd5db);
+  background-image:linear-gradient(top, #dae2e8, #cdd5db)
+}
+button::-moz-focus-inner {
+  border-color:transparent;
+  border-width:0
+}
+* {
+  border:0;
+  margin:0;
+  padding:0
+}
+html, body {
+  background:#fafafa;
+  color:#999;
+  height:100%;
+  margin:0;
+  padding:0
+}
+body {
+  font:13px/1.231 Arial, sans-serif
+}
+.header {
+  width:100px;
+  height:66px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/header-footer-69e6e6775718a99eff7c80df4e3545ccdaed7216.png") no-repeat 0 -18px;
+  -webkit-background-size:100px 93px;
+  background-size:100px 93px;
+  background-color:#003c6c;
+  background-repeat:repeat-x;
+  color:#fff;
+  position:relative;
+  white-space:nowrap;
+  width:auto;
+  z-index:20
+}
+.header-inner {
+  width:960px;
+  margin:0 auto;
+  position:relative
+}
+.header-logo {
+  padding:10px 30px 0 0;
+  height:56px;
+  float:left;
+  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat 100% -178px
+}
+.header-logo-inner {
+  display:inline-block;
+  vertical-align:middle
+}
+.header-logo-name {
+  display:block;
+  width:162px;
+  height:27px;
+  padding-bottom:6px;
+  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat 0 -262px
+}
+.header-logo-name:hover {
+  background-position:0 -302px
+}
+.header-logo-title {
+  display:block;
+  width:162px;
+  height:11px;
+  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat 0 -346px
+}
+.header-user {
+  float:right;
+  position:relative;
+  z-index:1
+}
+.header-nav {
+  font-size:11px;
+  font-weight:normal;
+  line-height:13px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:absolute;
+  right:-7px;
+  text-transform:uppercase;
+  top:70px;
+  -webkit-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  transition:all .5s ease
+}
+.header-nav-item {
+  float:left;
+  list-style:none;
+  margin-left:10px;
+  padding:4px 7px 3px
+}
+.header-nav-item-link {
+  color:#082a60;
+  text-decoration:none;
+  border-bottom:1px solid #c6ccd8;
+  font-family:OpenSansRegular, Helvetica, Arial, FreeSans, sans-serif
+}
+.header-nav-item-link:hover {
+  color:#082a60;
+  border-bottom-color:#082a60
+}
+.layout {
+  background:#f5f5f6;
+  min-height:100%;
+  min-width:980px;
+  height:auto!important;
+  height:100%;
+  margin:0 auto -93px
+}
+.layout:after {
+  clear:both;
+  content:'';
+  display:block;
+  height:93px
+}
