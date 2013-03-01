@@ -1,0 +1,394 @@
+.page:after {
+  clear:both;
+  content:'';
+  display:block
+}
+.page-content {
+  margin:0 auto;
+  position:relative;
+  width:960px
+}
+.clearfix:before, .clearfix:after {
+  display:table;
+  content:''
+}
+.clearfix:after {
+  clear:both
+}
+.serpfilter {
+  border-top:1px solid #cdcdcd;
+  box-shadow:inset 0 1px #fbfbfb;
+  color:#333;
+  font:400 12px"Open Sans", Verdana, sans-serif;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  padding-top:13px;
+  position:relative;
+  z-index:1
+}
+.serpfilter-price{
+  border:0;
+  box-shadow:none;
+  padding-top:0
+}
+.serpfilter-title {
+  color:#333;
+  font:600 14px"Open Sans", Verdana, sans-serif;
+  margin-bottom:7px
+}
+.serpfilter-input {
+  background:#fff;
+  border:1px solid #c0c2c6;
+  border-radius:4px;
+  box-shadow:0 1px 0 0 white, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset;
+  color:#333;
+  font:400 12px/normal"Open Sans", Verdana, sans-serif;
+  padding:3px 4px;
+  width:42px
+}
+.serpfilter-input-container {
+  display:inline-block;
+  font-size:0;
+  padding-right:16px;
+  position:relative
+}
+.serpfilter-input-arrow {
+  background:#fff;
+  border:1px solid #c0c2c6;
+  border-radius:0 3px 3px 0;
+  bottom:0;
+  box-shadow:inset 0 -1px 1px white;
+  cursor:pointer;
+  display:block;
+  position:absolute;
+  right:0;
+  top:0;
+  width:15px;
+  background-image:-webkit-linear-gradient(top, white, #eee);
+  background-image:-moz-linear-gradient(top, white, #eee);
+  background-image:-o-linear-gradient(top, white, #eee);
+  background-image:linear-gradient(to bottom, white, #eee)
+}
+.serpfilter-input-arrow:hover {
+  background-image:none;
+  box-shadow:none
+}
+.serpfilter-input-arrow:after {
+  content:'';
+  display:block;
+  height:5px;
+  position:absolute;
+  right:3px;
+  top:9px;
+  width:8px;
+  width:8px;
+  height:5px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -59px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serpfilter-input-arrow:active {
+  box-shadow:inset 0 1px 1px #fff;
+  background-image:-webkit-linear-gradient(bottom, white, #eee);
+  background-image:-moz-linear-gradient(bottom, white, #eee);
+  background-image:-o-linear-gradient(bottom, white, #eee);
+  background-image:linear-gradient(to top, white, #eee)
+}
+.serpfilter-input-arrow:active:after {
+  top:10px
+}
+.serpfilter-slider {
+  border:1px solid #d5d6d9;
+  border-radius:3px;
+  height:18px;
+  padding:3px 9px 3px 10px
+}
+ .serpfilter-slider .goog-twothumbslider-horizontal {
+  height:18px;
+  outline:0;
+  position:relative
+}
+ .serpfilter-slider .goog-twothumbslider-horizontal:after, .serpfilter-slider .goog-twothumbslider-rangehighlight {
+  border-radius:2px;
+  box-shadow:0 1px white, inset 0 1px 1px rgba(105, 105, 105, 0.37);
+  content:'';
+  height:4px;
+  left:0;
+  position:absolute;
+  top:8px;
+  z-index:0
+}
+ .serpfilter-slider .goog-twothumbslider-horizontal:after {
+  background-color:#e6e6e6;
+  right:0
+}
+ .serpfilter-slider .goog-twothumbslider-rangehighlight {
+  background:#b6b9bd;
+  margin-left:-5px;
+  padding:0 5px;
+  position:absolute;
+  z-index:1
+}
+ .serpfilter-slider .goog-twothumbslider-value-thumb, .serpfilter-slider .goog-twothumbslider-extent-thumb {
+  cursor:ew-resize;
+  position:absolute;
+  z-index:2;
+  width:13px;
+  height:18px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -375px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serpfilter-slider .goog-twothumbslider-value-thumb {
+  margin-left:-7px
+}
+.serpfilter-slider .goog-twothumbslider-extent-thumb {
+  margin-left:6px
+}
+.serpfilter-rating {
+  z-index:3
+}
+.serpfilter-distance {
+  z-index:2
+}
+.serpfilter-amenities {
+  z-index:1
+}
+.serpfilter-rating, .serpfilter-distance {
+  position:relative
+}
+.serpfilter-rating .serpfilter-input, .serpfilter-distance .serpfilter-input {
+  border-radius:3px 0 0 3px;
+  width:25px
+}
+.serpfilter-rating .serpfilter-slider, .serpfilter-rating .goog-twothumbslider-value-thumb, .serpfilter-distance .serpfilter-slider, .serpfilter-distance .goog-twothumbslider-value-thumb {
+  display:none
+}
+.serpfilter-distance {
+  margin-bottom:10px
+}
+.serpfilter-price .serpfilter-title {
+  margin-bottom:9px
+}
+.serpfilter-price .serpfilter-input::-webkit-input-placeholder {
+  color:rgba(51, 51, 51, 0.48);
+  font-style:normal;
+  font-weight:bold
+}
+.serpfilter-price .serpfilter-input:-moz-placeholder {
+  color:rgba(51, 51, 51, 0.48);
+  font-style:normal;
+  font-weight:bold
+}
+.serpfilter-price .serpfilter-input:-ms-input-placeholder {
+  color:rgba(51, 51, 51, 0.48);
+  font-style:normal;
+  font-weight:bold
+}
+.serpfilter-price .serpfilter-slider {
+  margin:12px 0 7px
+}
+.serpfilter-price-currency {
+  margin-left:3px
+}
+.serpfilter-price-paymenttype {
+  cursor:pointer;
+  white-space:nowrap
+}
+.serpfilter-price-paymenttype-hidden {
+  display:none
+}
+.serpfilter-price-paymenttype-label {
+  cursor:pointer;
+  margin-left:7px
+}
+.serpfilter-indicator {
+  white-space:nowrap
+}
+.serpfilter-indicator-separator {
+  color:#97a0a4;
+  text-shadow:0 1px #dbe2e6
+}
+.serpfilter-stars-label {
+  cursor:pointer;
+  float:left;
+  margin-left:24px;
+  text-align:center;
+  width:13px
+}
+.serpfilter-stars-label:first-of-type {
+  margin:0
+}
+.serpfilter-stars-checkbox {
+  display:block;
+  cursor:pointer;
+  margin-top:2px
+}
+ .serpfilter-type-item, .serpfilter-amenities-item, .serpfilter-discount-item {
+  display:block;
+  margin-top:7px
+}
+.serpfilter-amenities-checkbox, .serpfilter-type-checkbox, .serpfilter-discount-checkbox, .serpfilter-amenities-icon, .serpfilter-type-label, .serpfilter-amenities-label, .serpfilter-discount-label {
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:middle
+}
+.serpfilter-amenities-icon, .serpfilter-amenities-label, .serpfilter-type-label, .serpfilter-discount-label {
+  margin-left:8px
+}
+.serpfilter-amenities-internet .serpfilter-amenities-icon {
+  width:16px;
+  height:12px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -218px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serpfilter-amenities-breakfast .serpfilter-amenities-icon {
+  width:16px;
+  height:10px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -149px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serpfilter-amenities-parking .serpfilter-amenities-icon {
+  width:16px;
+  height:16px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -202px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serpfilter-discount-label {
+  vertical-align:top
+}
+.serpfilter-discount-hint {
+  border:1px solid #676767;
+  border-radius:2px;
+  color:#676767;
+  cursor:pointer;
+  font-size:10px;
+  line-height:12px;
+  margin-left:5px;
+  padding:0 3px
+}
+.serpfilter-discount-hint:hover {
+  position:relative
+}
+.serpfilter-discount-hint:hover .serpfilter-discount-hint-text {
+  background:#fff5cc;
+  color:#333;
+  display:block;
+  font-size:11px;
+  left:100%;
+  line-height:14px;
+  margin-left:8px;
+  padding:6px 10px;
+  position:absolute;
+  top:-22px;
+  white-space:nowrap
+}
+.serpfilter-discount-hint-text {
+  display:none
+}
+.serpfilter-cities-list {
+  max-height:115px;
+  overflow:auto;
+  overflow-x:hidden
+}
+.serpfilter-cities-list::-webkit-scrollbar {
+  -webkit-appearance:none;
+  width:5px
+}
+.serpfilter-cities-list::-webkit-scrollbar-thumb {
+  border-radius:3px;
+  background-color:rgba(0, 0, 0, 0.35)
+}
+.serpfilter-cities-label {
+  cursor:pointer;
+  margin:7px 4px 0 19px;
+  text-transform:capitalize
+}
+.serpfilter-cities-wrap {
+  margin-bottom:8px
+}
+.serpfilter-cities-checkbox {
+  cursor:pointer;
+  margin:0 5px 0 -19px
+}
+.serpfilter-cities-number {
+  color:#969696;
+  font-size:10px;
+  white-space:nowrap
+}
+.serpfilter-cities-number:before {
+  content:'•';
+  padding-right:4px
+}
+.serpfilter-name {
+  padding-top:20px
+}
+.serpfilter-name-input {
+  width:196px;
+  height:26px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -244px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px;
+  -webkit-background-size:196px 26px;
+  background-size:196px 26px;
+  background-color:white;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  cursor:default;
+  font-size:14px;
+  height:auto;
+  line-height:16px;
+  padding:5px 24px 5px 6px;
+  position:relative;
+  width:100%;
+  border:1px solid #c0c2c6;
+  border-radius:4px;
+  box-shadow:0 1px 0 0 white, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset
+}
+.minimap {
+  margin-bottom:20px;
+  position:relative
+}
+.minimap-mapwrapper {
+  background:#f5f5f6;
+  border:2px solid #fff;
+  border-radius:3px;
+  height:200px;
+  overflow:hidden;
+  position:relative
+}
+.minimap-map {
+  bottom:-15px;
+  cursor:pointer;
+  position:absolute;
+  top:-15px;
+  width:100%
+}
+.minimap-link {
+  background:#608cc4;
+  border-radius:2px;
+  bottom:2px;
+  color:white;
+  cursor:pointer;
+  font-size:11px;
+  line-height:12px;
+  padding:3px 6px 2px;
+  position:absolute;
+  right:2px
+}
+.minimap-link:after {
+  border-top:1px dotted #fff;
+  content:'';
+  display:block;
+  height:0
+}
+.serpPage-extra {
+  float:left;
+  min-height:1px;
+  position:relative;
+  width:198px;
+  z-index:1
+}

@@ -16,7 +16,9 @@
       thumbnail_tmpl: String,
       thumbnail_url_220: String,
       address: String,
-      hotel: Hotel
+      hotel: Hotel,
+      rating: Number,
+      rating_verbose: String
     },
     aliases: {
       ostrovok_id: 'id'
@@ -40,6 +42,15 @@
           var data = Suggestion.reader(raw);
           data.price = raw.rooms[0].total_rate;
           data.is_golden = raw.rooms[0].is_golden;
+
+          var rating = data.rating;
+          delete data.rating;          
+          if (rating && rating.total_verbose)
+          {
+            data.rating_verbose = rating.total_verbose;
+            data.rating = rating.total;
+          }
+
           return Suggestion(data);
         }));
         this.setState(basis.data.STATE.READY);
