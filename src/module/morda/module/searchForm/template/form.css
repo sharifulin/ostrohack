@@ -148,6 +148,13 @@ button::-moz-focus-inner {
   font-weight:bold;
   font-style:italic
 }
+.giantform-destination-input_processing {
+  background:white url(http://ostrovok.ru/st/gm/img/spinner_tiny-3308d0411752a814392b9c4867e99471fc9c2b75.gif) 98% center no-repeat
+}
+.destinationField-state_processing .giantform-destination-clear {
+  display: none;
+}
+.
 .giantform-destination-example-apply {
   border-bottom:dotted 1px;
   margin-left:4px

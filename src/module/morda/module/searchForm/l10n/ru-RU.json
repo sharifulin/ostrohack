@@ -1,5 +1,10 @@
 {
   "app.view.searchForm": {
-    "submitButton": "Искать"
+    "submitButton": "Искать",
+    "example": "Москва"
+  }, 
+  "app.view.searchForm.suggestionGroup": {
+    "hotel": "Отели",
+    "region": "Регионы"
   }
 }

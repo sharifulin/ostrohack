@@ -55,7 +55,7 @@ DestinationSuggestion.byQuery = new basis.entity.Grouping({
             type: 'region',
             targetId: region.id,
             pretty_slug: region.pretty_slug,
-            name: region.country + ', ' + region.name
+            name: (region.country ? region.country + ', ' : '') + region.name
           })
         }   
 

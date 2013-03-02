@@ -15,12 +15,14 @@
   //
   // definitions
   //
+  console.log(namespace);
 
   var templates = basis.template.define(namespace, resource('template/index.js').fetch());
   basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
   basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
     submitButton: 'Search',
+    example: 'Moscow'
   });
   basis.l10n.createDictionary(namespace + '.suggestionGroup', __dirname + 'l10n', {
     hotel: 'Hotels',
@@ -87,10 +89,8 @@
     },
     grouping: {
       groupGetter: basis.fn.getter('data.type'),
-      childClass: {
-        sorting: function(){
-          return this.data.id == 'hotels' ? 1 : 0;
-        }
+      sorting: function(object){
+        return object.data.id == 'hotel' ? 1 : 0;
       }
     },
     childClass: {
@@ -102,6 +102,13 @@
           getter: function(object){
             return basis.l10n.getToken(namespace, 'suggestionGroup', object.data.type);
           }
+        }
+      },
+      action: {
+        select: function(){
+          this.select();
+          var form = this.parentNode.owner;
+          form.satellite.destinationField.setValue(this.data.name);
         }
       }
     },
@@ -121,11 +128,14 @@
       arrivalField: 'satellite:',
       departureField: 'satellite:',
       submitButton: 'satellite:',
-      guestsField: 'satellite:'
+      guestsField: 'satellite:',
     },
     action: {
       kill: function(event){
         event.preventDefault();
+      },
+      setExample: function(){
+        this.satellite.destinationField.setValue(basis.l10n.getToken(namespace, 'example'));
       }
     },
 
@@ -136,51 +146,71 @@
       destinationField: {
         instanceOf: basis.ui.field.Text.subclass({
           template: templates.DestinationField,
-          event_fieldKeyup: function(event){
-            var value = this.getValue();  
-            var suggestions = this.owner.satellite.suggestions;
-            
-            var cur = suggestions.selection.pick();
-
-            switch (event.key){
-              case event.KEY.DOWN:
-                cur = cur || suggestions.firstChild;
-                cur = cur && basis.dom.axis(cur, basis.dom.AXIS_FOLLOWING_SIBLING).search(false, 'disabled');
-              break;
-
-              case event.KEY.UP: 
-                cur = cur ? basis.dom.axis(cur, basis.dom.AXIS_PRECEDING_SIBLING).search(false, 'disabled') : suggestions.firstChild;
-              break;
-            }
-
-            if (cur)
-            {
-              cur.select();
-              basis.dom.focus(this.tmpl.field);
-
-              if (event.key == event.KEY.ENTER)
-              {
-                if (suggestions.visible)
-                  this.setValue(cur.data.name);
-                else
-                  this.owner.submit();
-
-                suggestions.visible = false;
+          binding: {
+            hidden: {
+              events: 'change',
+              getter: function(object){
+                return !object.getValue();
               }
-              else
-                suggestions.visible = true;
             }
-            
-            suggestions.updateBind('visible');
-            suggestions.setDataSource(value ? DestinationSuggestion.byQuery.getSubset(value, true) : null);
           },
-          event_fieldFocus: function(){
-            this.owner.satellite.suggestions.visible = true;
-            this.owner.satellite.suggestions.updateBind('visible');
+          action: {
+            clear: function(){
+              this.setValue();
+            }
           },
-          event_fieldBlur: function(){
-            this.owner.satellite.suggestions.visible = false;
-            this.owner.satellite.suggestions.updateBind('visible');
+          handler: {
+            change: function(){
+              var value = this.getValue();
+              var source = value ? DestinationSuggestion.byQuery.getSubset(value, true) : null
+              this.setDelegate(source);
+              this.owner.satellite.suggestions.setDataSource(source);
+            },
+            fieldKeyup: function(object, event){
+              var value = this.getValue();  
+              var suggestions = this.owner.satellite.suggestions;
+              
+              var cur = suggestions.selection.pick();
+
+              switch (event.key){
+                case event.KEY.DOWN:
+                  cur = cur || suggestions.firstChild;
+                  cur = cur && basis.dom.axis(cur, basis.dom.AXIS_FOLLOWING_SIBLING).search(false, 'disabled');
+                break;
+
+                case event.KEY.UP: 
+                  cur = cur ? basis.dom.axis(cur, basis.dom.AXIS_PRECEDING_SIBLING).search(false, 'disabled') : suggestions.firstChild;
+                break;
+              }
+
+              if (cur)
+              {
+                cur.select();
+                basis.dom.focus(this.tmpl.field);
+
+                if (event.key == event.KEY.ENTER)
+                {
+                  if (suggestions.visible)
+                    this.setValue(cur.data.name);
+                  else
+                    this.owner.submit();
+
+                  suggestions.visible = false;
+                }
+                else
+                  suggestions.visible = true;
+              }
+              
+              suggestions.updateBind('visible');
+            },
+            fieldFocus: function(){
+              this.owner.satellite.suggestions.visible = true;
+              this.owner.satellite.suggestions.updateBind('visible');
+            },
+            fieldBlur: function(){
+              this.owner.satellite.suggestions.visible = false;
+              this.owner.satellite.suggestions.updateBind('visible');
+            }
           }
         }) 
       },
