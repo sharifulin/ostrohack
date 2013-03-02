@@ -23,15 +23,15 @@
       <header class="b-hotelpage__header clearfix" data="LAT">
         <div class="l-hotelpage__header-inner">
           <h1 class="b-hotelpage__title">{name}</h1>
-          <span class="b-stars b-stars_val_50 b-stars_loc_hotelpage">
-            <span class="b-stars__val" data-star-rating="50"></span>
+          <span class="b-stars b-stars_val_{stars} b-stars_loc_hotelpage">
+            <span class="b-stars__val" data-star-rating="{stars}"></span>
           </span>
           <p class="b-hotelpage__address"> <span class="b-hotelpage__address-big-map-trigger">{address}</span></p>
         </div>
         <div class="l-hotelpage__header-sidebar">
           <p class="b-hotelpage-min-price"> 
             <span class="b-hotelpage-min-price__from">от <strong class="b-hotelpage-min-price__value">{low_rate}</strong> <span class="b-hotelpage-min-price__currency">руб.</span>  </span> 
-            <small class="b-hotelpage-min-price__period">за <span class="b-hotelpage-min-price__period-value">1 ночь</span></small>
+            <small class="b-hotelpage-min-price__period">{l10n:app.module.hotel.night.for} <span class="b-hotelpage-min-price__period-value">{nights} {nightsText}</span></small>
           </p>
           <a class="b-button button b-hotelpage-min-price-btn bookroom" href="#gotorooms" id="hpg_gotorooms"> <b class="b-button__inner"><i class="b-button__text">Забронировать</i></b>
 

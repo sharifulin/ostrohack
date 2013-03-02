@@ -1,9 +1,22 @@
 basis.require('basis.ui');
 basis.require('app.type');  
 
-// basis.l10n.createDictionary('app.module.hotel', __dirname + 'l10n', {
+var namespace = 'app.module.hotel'
 
-// });
+basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
+  left1: 'Only 1 left',
+  left2: 'Only 2 rooms left',
+  left3: '3 rooms left',
+  left4: '4 rooms left',
+  left5: '5 rooms left'
+});
+
+basis.l10n.createDictionary(namespace + '.night', __dirname + 'l10n', {
+  'for': 'for',
+  night1: 'night',
+  night2: 'nights',
+  night3: 'nights'
+});
 
 var templates = basis.template.define('app.module.hotel', {
   View: resource('template/view.tmpl'),
@@ -47,6 +60,19 @@ var rooms = new basis.ui.Node({
       current_allotment: 'data:',
       size: 'data.room_type.data.size',
       description: 'data.room_type.data.description || ""',
+      thumbnail: 'data.room_type.data.thumbnail',
+      left: {
+        events: 'update',
+        getter: function(object){
+          return object.data.current_allotment <= 2 ? 'one' : (object.data.current_allotment <= 5 ? 'few' : 'lot');
+        }
+      },
+      leftCount: {
+        events: 'update',
+        getter: function(object){
+          return object.data.current_allotment <=5 ? basis.l10n.getToken(namespace, 'room.left', 'left' + object.data.current_allotment) : '';
+        }
+      },
       total_rate: {
         events: 'update',
         getter: function(object){
@@ -140,6 +166,14 @@ var hotelView = new basis.ui.Node({
     
     name: 'data:',
     address: 'data:',
+    stars: 'data:',
+    nights: 'data:',
+    nightsText: {
+      events: 'update',
+      getter: function(object){
+        return basis.l10n.getToken('app.module.hotel.night', 'night' + app.utils.plural(object.data.nights));
+      }
+    },
     low_rate: {
       events: 'update',
       getter: function(object){

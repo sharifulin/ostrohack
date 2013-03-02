@@ -5,7 +5,7 @@
       <td class="b-hotel-room__desc" rowspan="1">
           <div class="b-hotel-room__desc-inner">
               <div class="b-hotel-room__desc-popup clearfix" event-click="toggle">
-                  <img class="b-hotel-room__thumbnail" src="http://ostrovok-st.ngenix.net/t/100x100/extranet/media/dc0e14ea8220495fbe2c631ea432890f.jpg" alt="{name}"/>                 
+                  <img class="b-hotel-room__thumbnail" src="{thumbnail}" alt="{name}"/>                 
                   <h4 class="b-hotel-room__title">
                     {name}
                   </h4>
@@ -14,7 +14,7 @@
               </div>
           </div>
       </td>
-      <td class="b-hotel-room__rate">
+      <td class="b-hotel-room__rate b-hotel-room__rate_left_{left}">
         <div class="b-hotel-room-conditions b-hotel-room__cell b-hotel-room-conditions_with-icons">
 
           <div class="b-hotel-room-conditions__amenities">
@@ -61,7 +61,7 @@
           <div class="b-hotel-room-price__inner">
               <div class="b-hotel-room-price__value-wrapper">
                 <b class="b-hotel-room-price__value">{total_rate}</b>
-                <b class="b-hotel-room-price__currency b-hotel-room-price__currency_small">руб.</b>
+                <b class="b-hotel-room-price__currency b-hotel-room-price__currency_small"> руб.</b>
               </div>
 
               <div class="b-hotel-room-price__popup">
@@ -115,6 +115,10 @@
           <div class="b-compare-control" data-room-hash="356ff855-fcbf-59e4-9dfe-38bfcd1a17c3">
               <a class="b-compare-control__add" href="#">Добавить к сравнению</a>
           </div>
+
+          <div class="b-hotel-room__availability b-hotel-room__availability_left_{left}">
+              {leftCount}
+          </div>          
 
         </div>
       </td>

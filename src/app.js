@@ -4,6 +4,7 @@
   basis.require('basis.ui');
   basis.require('basis.ui.tabs');
   basis.require('app.router');
+  basis.require('app.utils');  
 
   // settings for l10n
   basis.l10n.setCultureList('ru-RU en-US');

@@ -528,6 +528,34 @@
     font-weight:bold;
     text-transform:uppercase
   }
+
+  .b-hotel-room__availability {
+    margin-top:8px;
+    padding-top:3px;
+    font-size:11px;
+    border-top:1px solid #f0f0f0
+  }
+  .b-hotel-room__rate_is_golden .b-hotel-room__availability {
+    border-color:#ead1a3
+  }
+  .b-hotel-room__availability_left_few {
+    color:#d87031
+  }
+  .b-hotel-room__availability_left_one, .b-hotel-room__rate_left_one .b-hotel-room-price__value-wrapper {
+    color:#bb0f07
+  }
+  .b-hotel-room__availability_left_lot
+  {
+    display: none;
+  }
+  .b-hotel-room__rate_left_one .b-hotel-room-price__value-wrapper {
+    border-color:#e59d99
+  }
+  .b-hotel-room__rate_is_golden .b-hotel-room-additional-price__container, .b-hotel-room__rate_is_golden .b-hotel-room-price__value-wrapper {
+    color:#9a0000;
+    border-color:#e1b2b2
+  }
+
   @-moz-document url-prefix() {
     }
   html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
