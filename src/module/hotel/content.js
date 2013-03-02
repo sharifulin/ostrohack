@@ -51,7 +51,8 @@ var templates = basis.template.define('app.module.hotel', {
   Room: resource('template/room.tmpl'),
   RoomAmenity: resource('template/roomAmenity.tmpl'),
   Rating: resource('template/rating.tmpl'),
-  Header: resource('template/header.tmpl')
+  Header: resource('template/header.tmpl'),
+  Settings: resource('template/settings.tmpl')
 });
 
 
@@ -191,12 +192,9 @@ var hotelSlider = new Slider({
   }  
 });
 
-//
-// header
-//
-var hotelHeader = new basis.ui.Node({
+var HotelSettings = basis.ui.Node.subclass({
   delegate: hotelObject,
-  template: templates.Header,
+  template: templates.Settings,
   binding: {
     adultsCount: 'data:room1_numberOfAdults',
     childrenCount: 'data:room1_numberOfChildren',
@@ -253,6 +251,17 @@ var hotelHeader = new basis.ui.Node({
 });
 
 //
+// header
+//
+var hotelHeader = new basis.ui.Node({
+  delegate: hotelObject,
+  template: templates.Header,
+  binding: {
+    settings: new HotelSettings({})
+  }
+});
+
+//
 // view
 //
 var hotelView = new basis.ui.Node({
@@ -262,6 +271,7 @@ var hotelView = new basis.ui.Node({
     rating: rating,
     rooms: rooms,
     header: hotelHeader,
+    settings: new HotelSettings({}),
     
     name: 'data:',
     address: 'data:',

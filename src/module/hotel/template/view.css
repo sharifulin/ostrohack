@@ -1042,3 +1042,40 @@
     padding: 10px 10px 0 ;
     background-color:#dcdcdc
   }
+
+  .b-hotel-rooms-heading {
+    float:left;
+    margin-bottom:5px;
+    -webkit-font-smoothing:antialiased;
+    color:#3e454d;
+    font-size:16px;
+    font-weight:bold
+  }
+
+  .b-hotel-search-params {
+    float:left;
+    clear:left;
+    margin-bottom:16px;
+    padding-right:50px;
+    -webkit-font-smoothing:antialiased;
+    color:#3e454d;
+    font-size:16px;
+    font-weight:bold
+  }
+  .b-hotel-search-params_loading {
+    background:url(http://ostrovok.ru/st/gm/img/spinner-grey-3-a9426e4b4d3359105118a907044d68ad76b95034.gif) no-repeat right
+  }
+  .b-hotel-search-params__guests-number {
+    padding-right:6px
+  }
+  .b-hotel-search-params__adults-number, .b-hotel-search-params__children-number {
+    text-align:right;
+    width:25px;
+    font-weight:bold
+  }
+  .b-hotel-search-params__change-control {
+    border-bottom:1px solid #96bad5;
+    color:#215386;
+    cursor:pointer;
+    font:11px Arial, normal, sans-serif
+  }  
