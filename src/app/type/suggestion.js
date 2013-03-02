@@ -23,7 +23,8 @@
       amenities: function(value){
         return value && value.length ? value : null;
       },
-      uid: String
+      uid: String,
+      star_rating: Number
     },
     aliases: {
       ostrovok_id: 'id',

@@ -36,7 +36,8 @@
           }
         },
         thumbnail_url_220: 'data:',
-        rating: 'satellite:'
+        rating: 'satellite:',
+        star_rating: 'satellite:'
       },
       satelliteConfig: {
         rating: {
@@ -51,7 +52,20 @@
               rating: 'data:rating'
             }
           })
+        },
+        star_rating: {
+          existsIf: function(owner){
+            return owner.data.star_rating;
+          },
+          instanceOf: basis.ui.Node.subclass({
+            autoDelegate: true,
+            template: resource('template/star_rating.tmpl'),
+            binding: {
+              star_rating: 'data:'
+            }
+          })
         }
+        
       }
     },
 
