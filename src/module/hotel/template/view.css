@@ -388,7 +388,7 @@
     vertical-align:top;
     width:17px;
     height:13px;
-    background:transparent url(res/1B2M2Y8AsgTpgAmY7PhCfg.png) no-repeat 0 -51px;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 -51px;
     -webkit-background-size:19px 90px;
     background-size:19px 90px
   }
@@ -397,21 +397,41 @@
     margin-bottom:-5px;
     width:12px;
     height:19px;
-    background:transparent url(res/1B2M2Y8AsgTpgAmY7PhCfg.png) no-repeat 0 -19px;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 -19px;
+    -webkit-background-size:19px 90px;
+    background-size:19px 90px
+  }
+  .b-hotelpage-content-switch__item_id_reviews .b-hotelpage-content-switch__item-icon {
+    vertical-align:top;
+    margin-top:1px;
+    font-size:7px;
+    line-height:10px;
+    text-align:center;
+    color:#f5f5f6;
+    width:19px;
+    height:13px;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 -77px;
     -webkit-background-size:19px 90px;
     background-size:19px 90px
   }
   .b-hotelpage-content-switch__item_id_photos.b-hotelpage-content-switch__item_state_active .b-hotelpage-content-switch__item-icon {
     width:17px;
     height:13px;
-    background:transparent url(res/1B2M2Y8AsgTpgAmY7PhCfg.png) no-repeat 0 -38px;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 -38px;
     -webkit-background-size:19px 90px;
     background-size:19px 90px
   }
   .b-hotelpage-content-switch__item_id_map.b-hotelpage-content-switch__item_state_active .b-hotelpage-content-switch__item-icon {
     width:12px;
     height:19px;
-    background:transparent url(res/1B2M2Y8AsgTpgAmY7PhCfg.png) no-repeat 0 0;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 0;
+    -webkit-background-size:19px 90px;
+    background-size:19px 90px
+  }
+  .b-hotelpage-content-switch__item_id_reviews.b-hotelpage-content-switch__item_state_active .b-hotelpage-content-switch__item-icon {
+    width:19px;
+    height:13px;
+    background:transparent url('http://ostrovok.ru/st/gm/img/sprites/hotelpage-tabs-229bc01d1120c6d2dba37fd58096c9ede15135a8.png') no-repeat 0 -64px;
     -webkit-background-size:19px 90px;
     background-size:19px 90px
   }
