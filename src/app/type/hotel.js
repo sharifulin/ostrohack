@@ -14,6 +14,7 @@
       thumbnail_url: String,
       low_rate: Number,
       rating: basis.fn.$self,
+      stars: Number,
       hotel_amenities: basis.array.from
     }
   });

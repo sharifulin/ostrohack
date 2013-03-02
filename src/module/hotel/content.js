@@ -159,6 +159,7 @@ var hotelView = new basis.ui.Node({
     
     name: 'data:',
     address: 'data:',
+    stars: 'data:',
     low_rate: {
       events: 'update',
       getter: function(object){

@@ -53,6 +53,7 @@
           
           data.hotel.id = this.data.hotelId;
           data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
+          data.hotel.stars = data._hotelpage && data._hotelpage.stars || 0;
           this.update({
             hotel: Hotel.reader(data.hotel),
             rooms: rooms.map(Room.reader)

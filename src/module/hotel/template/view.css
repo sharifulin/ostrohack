@@ -242,6 +242,33 @@
     left:0;
     background:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png) 0 -30px
   }
+  .b-stars, .b-stars__val {
+    height:10px;
+    display:inline-block
+  }
+  .b-stars {
+    width:50px;
+    position:relative;
+    vertical-align:top
+  }
+  .b-stars__val {
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png) 0 -30px
+  }
+  .b-stars_val_10 .b-stars__val {
+    width:10px
+  }
+  .b-stars_val_20 .b-stars__val {
+    width:20px
+  }
+  .b-stars_val_30 .b-stars__val {
+    width:30px
+  }
+  .b-stars_val_40 .b-stars__val {
+    width:40px
+  }
   .b-stars_val_50 .b-stars__val {
     width:50px
   }
