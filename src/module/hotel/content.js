@@ -65,9 +65,6 @@ var templates = basis.template.define('app.module.hotel', {
 
 var Slider = resource('module/slider/index.js').fetch();
 
-//
-// objects
-//
 var hotelObject = new basis.data.DataObject({
   active: true,  
   handler: {
@@ -75,6 +72,9 @@ var hotelObject = new basis.data.DataObject({
       rooms.setDataSource(this.data.rooms);
       hotelView.setDelegate(this.data.hotel);
       rating.update(this.data.hotel && this.data.hotel.data.rating);
+    },
+    stateChanged: function(){
+      hotelView.setState(this.state);
     } 
   }
 });
