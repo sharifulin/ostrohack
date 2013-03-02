@@ -20,6 +20,16 @@ var cityMerge = new basis.data.dataset.Merge({
 module.exports = new basis.ui.Node({
   template: resource('template/list.tmpl'),
   
+  selection: {
+    multiple: true,
+    handler: {
+      datasetChanged: function(){
+        cityMerge.setSources(this.getItems().map(function(item){
+          return item.delegate;
+        }));
+      }
+    }
+  },
   childClass: {
     template: resource('template/item.tmpl'),
     binding: {
@@ -31,25 +41,16 @@ module.exports = new basis.ui.Node({
     action: {
       check: function(event){
         if (event.sender.checked)
-          this.select();
+          this.select(true);
         else
           this.unselect();
       }
     },
-
     listen: {
       delegate: {
         datasetChanged: function(){
           this.updateBind('count');
         }
-      }
-    },
-    handler: {
-      select: function(){
-        cityMerge.addSource(this.delegate);
-      },
-      unselect: function(){
-        cityMerge.removeSource(this.delegate);
       }
     }
   },

@@ -36,7 +36,7 @@
 
     // set convertation to params -> filters
     var dataset = app.type.Suggestion.getSearchResult({
-      region_id: 2395,
+      region_id: 2395,//965825057,
       //destination: destinationField.getValue(),
       room1_numberOfAdults: 2,
       arrivalDate: '2013-04-19',
