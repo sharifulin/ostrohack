@@ -50,6 +50,20 @@ var list = new basis.ui.Node({
       price: 'data:',
       is_golden: 'data:is_golden ? "golden" : ""',
       address: 'data:',
+      nights: 'data:',
+      arrivalDate: 'data:',
+      departureDate: 'data:',
+      adults: 'data:',
+      children: 'data:',
+      locative_where: 'data:',
+      distance: {
+        events: 'update',
+        getter: function(node){
+          var distance = node.data.distance;
+          if (distance)
+            return distance.toFixed(1).replace(/\.0$/, '');
+        }
+      },
       thumbnail_url: {
         events: 'update',
         getter: function(node){

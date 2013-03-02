@@ -24,13 +24,43 @@
         return value && value.length ? value : null;
       },
       uid: String,
-      star_rating: Number
+      star_rating: Number,
+
+      longitude: Number,
+      latitude: Number,
+      distance: Number,
+
+      locative_where_ru: String,
+      locative_where_en: String,
+      locative_where: String,
+
+      nights: Number,
+      arrivalDate: String,
+      departureDate: String,
+      adults: Number,
+      children: Number
     },
     aliases: {
       ostrovok_id: 'id',
       hotel_amenities: 'amenities'
     }
   });
+
+  function distance(lat1, lon1, lat2, lon2){
+    function toRad(num){
+       return num * Math.PI / 180;
+    }
+    var R = 6371; // km
+    var dLat = toRad(lat2 - lat1);
+    var dLon = toRad(lon2 - lon1);
+    var lat1 = toRad(lat1);
+    var lat2 = toRad(lat2);
+
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return R * c;
+  }
 
   var fieldNameList = 'region_id destination room1_numberOfAdults arrivalDate departureDate'.qw();
   var SuggestionList = new basis.data.Dataset.subclass({
@@ -45,9 +75,32 @@
         }
       },
       success: function(data){
+        var nights = data._meta.nights;
+        var region = data._meta.region;
+        var center = region.center;
+        var locative_where_ru = region.locative_where_ru;
+        var locative_where_en = region.locative_where_en;
+        var arrivalDate = this.filters.arrivalDate;
+        var departureDate = this.filters.departureDate;
+        var adults = this.filters.room1_numberOfAdults;
+        var children = this.filters.room1_numberOfChildren || 0;
         this.set((data && data.hotels).map(function(raw){
           var data = Suggestion.reader(raw);
           data.price = raw.rooms[0].total_rate;
+
+          if (data.latitude && data.longitude && center)
+            data.distance = distance(center.lat, center.lng, data.latitude, data.longitude);
+
+          data.locative_where_en = locative_where_en;
+          data.locative_where_ru = locative_where_ru;
+          data.locative_where = locative_where_ru;
+
+          data.nights = nights;
+
+          data.arrivalDate = arrivalDate;
+          data.departureDate = departureDate;
+          data.adults = adults;
+          data.children = children;
 
           var rating = data.rating;
           delete data.rating;          

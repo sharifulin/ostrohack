@@ -49,31 +49,6 @@
   opacity:1;
   filter:none
 }
-.serpControls .serp-fav-counter {
-  left:100%;
-  margin-left:11px;
-  position:absolute
-}
-.serp-fav-counter {
-  border-bottom:1px dotted #f7c4c5;
-  color:#fc5252;
-  cursor:pointer;
-  font:11px/13px"Open Sans", Verdana, sans-serif;
-  -webkit-font-smoothing:antialiased;
-  margin:0 5px 0 0;
-  outline:0;
-  text-transform:uppercase;
-  vertical-align:middle;
-  white-space:nowrap
-}
-.serp-fav-counter-disabled{
-  padding-top:6px
-}
-.serp-fav-counter-disabled {
-  border-bottom:0;
-  color:#999;
-  cursor:auto
-}
 
 .tabbutton {
   background:#f9f9f9;
