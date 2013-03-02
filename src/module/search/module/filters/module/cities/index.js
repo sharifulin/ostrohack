@@ -1,21 +1,13 @@
 basis.require('basis.l10n');
 basis.require('basis.ui');
 basis.require('basis.data.dataset');
+basis.require('app.ext');
 
 basis.l10n.createDictionary('app.module.search.filters.cities', __dirname + 'l10n', {
   title: 'City of region'
 });
 
-var cityMerge = new basis.data.dataset.Merge({
-  handler: {
-    sourcesChanged: function(){
-      if (this.sources.length)
-        app.search.output.addSource(this);
-      else
-        app.search.output.removeSource(this);      
-    }
-  }
-});
+var cityMerge = new app.ext.FilterMerge();
 
 module.exports = new basis.ui.Node({
   template: resource('template/list.tmpl'),
