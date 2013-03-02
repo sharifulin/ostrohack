@@ -11,6 +11,13 @@ basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
   left5: '5 rooms left'
 });
 
+basis.l10n.createDictionary(namespace + '.night', __dirname + 'l10n', {
+  'for': 'for',
+  night1: 'night',
+  night2: 'nights',
+  night3: 'nights'
+});
+
 var templates = basis.template.define('app.module.hotel', {
   View: resource('template/view.tmpl'),
   Room: resource('template/room.tmpl'),
@@ -160,6 +167,13 @@ var hotelView = new basis.ui.Node({
     name: 'data:',
     address: 'data:',
     stars: 'data:',
+    nights: 'data:',
+    nightsText: {
+      events: 'update',
+      getter: function(object){
+        return basis.l10n.getToken('app.module.hotel.night', 'night' + app.utils.plural(object.data.nights));
+      }
+    },
     low_rate: {
       events: 'update',
       getter: function(object){

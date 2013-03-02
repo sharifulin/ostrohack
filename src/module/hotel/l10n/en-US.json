@@ -5,5 +5,11 @@
     "left3": "3 rooms left",
     "left4": "5 rooms left",
     "left5": "5 rooms left"
+  }, 
+  "app.module.hotel.night": {
+    "for": "for",
+    "night1": "night",
+    "night2": "nights",
+    "night3": "nights"
   }
 }

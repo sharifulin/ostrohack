@@ -15,6 +15,7 @@
       low_rate: Number,
       rating: basis.fn.$self,
       stars: Number,
+      nights: Number,
       hotel_amenities: basis.array.from
     }
   });
