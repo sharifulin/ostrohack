@@ -1,7 +1,7 @@
 basis.require('basis.l10n');
 basis.require('basis.ui');
 
-basis.l10n.createDictionary('app.module.hotelType', __dirname + 'l10n', {
+basis.l10n.createDictionary('app.module.type', __dirname + 'l10n', {
   Hotel: 'Hotel',
   Apartment: 'Apartment',
   Guesthouse: 'Guesthouse',
@@ -18,7 +18,7 @@ module.exports = new basis.ui.Node({
     binding: {
       id: 'data:',
       title: function(node) {
-        return basis.l10n.getToken('app.module.hotelType', node.data.id);
+        return basis.l10n.getToken('app.module.type', node.data.id);
       }
     }
   },

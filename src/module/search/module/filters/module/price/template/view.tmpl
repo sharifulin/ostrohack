@@ -1,0 +1,26 @@
+<b:resource src="view.css"/>
+
+<div class="serpfilter-price serpfilter">
+  <div class="serpfilter-content">
+    <h4 class="serpfilter-title">{l10n:app.module.search.filters.price.title} 4 {l10n:app.module.search.filters.price.nights}</h4>
+    <div class="serpfilter-indicator">
+      <input type="text" class="serpfilter-input serpfilter-indicator-from"/> <span class="serpfilter-indicator-separator">–</span> 
+      <input type="text" class="serpfilter-input serpfilter-indicator-to"/> <span class="serpfilter-price-currency">РУБ</span>
+    </div>
+    <div class="serpfilter-slider">
+      <div class="goog-twothumbslider-horizontal" role="slider" aria-valuemin="0" aria-valuemax="62" aria-valuenow="0" tabindex="0">
+        <div class="goog-twothumbslider-rangehighlight" style="left: 7px; width: 163px;"></div>
+        <div class="goog-twothumbslider-value-thumb" role="button" style="left: 0px;"></div>
+        <div class="goog-twothumbslider-extent-thumb" role="button" style="left: 164px;"></div>
+      </div>
+    </div>
+    <div class="serpfilter-price-paymenttype serpfilter-price-paymenttype-hidden">{l10n:app.module.search.filters.price.label}:
+      <label class="serpfilter-price-paymenttype-label"/>
+        <input type="checkbox" class="serpfilter-paymenttype-prepay" name="prepay"/>{l10n:app.module.search.filters.price.beforeHotel}
+      </label>
+      <label class="serpfilter-price-paymenttype-label"/>
+        <input type="checkbox" class="serpfilter-paymenttype-postpay" name="postpay"/>{l10n:app.module.search.filters.price.inHotel}
+      </label>
+    </div>
+  </div>
+</div>

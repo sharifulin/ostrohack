@@ -1,0 +1,9 @@
+{
+  "app.module.search.filters.price": {
+    "title": "Стоимость за",
+    "nights": "ночи",
+    "label": "Оплата",
+    "beforeHotel": "до заезда",
+    "inHotel": "в отеле"
+  }
+}

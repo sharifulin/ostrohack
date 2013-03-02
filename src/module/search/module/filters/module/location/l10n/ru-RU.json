@@ -1,0 +1,6 @@
+{
+  "app.module.search.filters.location": {
+    "title": "Расположение",
+    "label": "км от центра"
+  }
+}
