@@ -1,6 +1,6 @@
 
   basis.require('basis.l10n');
-  basis.require('basis.devpanel');
+  ;;;basis.require('basis.devpanel');
   basis.require('basis.ui');
   basis.require('basis.ui.tabs');
   basis.require('app.router');
