@@ -1,0 +1,9 @@
+
+.b-search-info__details_children
+{
+  display: none;
+}
+.b-search-info__details_children.hasChildren
+{
+  display: block;
+}

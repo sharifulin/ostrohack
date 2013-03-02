@@ -2,6 +2,8 @@ basis.require('basis.ui');
 basis.require('app.type');  
 
 var namespace = 'app.module.hotel'
+basis.require('basis.date');
+
 
 basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
   left1: 'Only 1 left',
@@ -18,14 +20,40 @@ basis.l10n.createDictionary(namespace + '.night', __dirname + 'l10n', {
   night3: 'nights'
 });
 
+basis.l10n.createDictionary(namespace + '.settings', __dirname + 'l10n', {
+  'for': 'for',
+  'and': 'and',
+  from: 'from',
+  till: 'till',
+  adult1: 'adult',
+  adult2: 'adults',
+  adult3: 'adults',
+  child1: 'child',
+  child2: 'childs',
+  child3: 'childs',
+  month1: 'January',
+  month2: 'February',  
+  month3: 'March',  
+  month4: 'April',  
+  month5: 'May',  
+  month6: 'June',  
+  month7: 'July',  
+  month8: 'August',    
+  month9: 'September',    
+  month10: 'October',
+  month11: 'November',  
+  month12: 'December'
+});
+
+
 var templates = basis.template.define('app.module.hotel', {
   View: resource('template/view.tmpl'),
   Room: resource('template/room.tmpl'),
   RoomAmenity: resource('template/roomAmenity.tmpl'),
-  Rating: resource('template/rating.tmpl')
+  Rating: resource('template/rating.tmpl'),
+  Header: resource('template/header.tmpl')
 });
 
-var Slider = resource('module/slider/index.js').fetch();
 
 /*basis.template.theme('mobile').define({
   View: resource('template/module/view.tmpl'),
@@ -33,6 +61,12 @@ var Slider = resource('module/slider/index.js').fetch();
   Room: resource('template/mobile/room.tmpl')
 });*/
 
+
+var Slider = resource('module/slider/index.js').fetch();
+
+//
+// objects
+//
 var hotelObject = new basis.data.DataObject({
   active: true,  
   handler: {
@@ -145,7 +179,7 @@ var rating = new basis.ui.Node({
 });
 
 //
-// view
+// slider
 //
 var hotelSlider = new Slider({
   autoDelegate: true,
@@ -157,12 +191,77 @@ var hotelSlider = new Slider({
   }  
 });
 
+//
+// header
+//
+var hotelHeader = new basis.ui.Node({
+  delegate: hotelObject,
+  template: templates.Header,
+  binding: {
+    adultsCount: 'data:room1_numberOfAdults',
+    childrenCount: 'data:room1_numberOfChildren',
+    adultsText: {
+      events: 'update',
+      getter: function(object){
+        return basis.l10n.getToken(namespace, 'settings', 'adult' + app.utils.plural(object.data.room1_numberOfAdults));
+      }
+    },
+    childrenText: {
+      events: 'update',
+      getter: function(object){
+        return basis.l10n.getToken(namespace, 'settings', 'child' + app.utils.plural(object.data.room1_numberOfChildren));
+      }
+    },    
+    hasChildren: {
+      events: 'update',
+      getter: function(object){
+        return object.data.room1_numberOfChildren > 0;
+      }
+    },
+    arrivalDate: {
+      events: 'update',
+      getter: function(object){
+        return object.data.arrivalDate && basis.date.fromISOString(object.data.arrivalDate).getDate();
+      }
+    },
+    departureDate: {
+      events: 'update',
+      getter: function(object){
+        return object.data.departureDate && basis.date.fromISOString(object.data.departureDate).getDate();
+      }
+    },
+    arrivalMonth: {
+      events: 'update',
+      getter: function(object){
+        if (object.data.arrivalDate){
+          var arrivalMonth = basis.date.fromISOString(object.data.arrivalDate).getMonth();
+          var departureMonth = basis.date.fromISOString(object.data.departureDate).getMonth();
+          return arrivalMonth != departureMonth ? basis.l10n.getToken(namespace, 'settings', 'month' + (arrivalMonth + 1)) : '';
+        }
+      }
+    },
+    departureMonth: {
+      events: 'update',
+      getter: function(object){
+        if (object.data.departureDate){
+          var departureMonth = basis.date.fromISOString(object.data.departureDate).getMonth();
+          return basis.l10n.getToken(namespace, 'settings', 'month' + (departureMonth + 1));
+        }
+      }
+    } 
+  }
+});
+
+//
+// view
+//
 var hotelView = new basis.ui.Node({
   template: templates.View,
   binding: {
     slider: hotelSlider,
     rating: rating,
     rooms: rooms,
+    header: hotelHeader,
     
     name: 'data:',
     address: 'data:',
