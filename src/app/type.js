@@ -9,6 +9,5 @@
     HotelReport: resource('type/hotelReport.js').fetch(),
     HotelImage: resource('type/hotelImage.js').fetch(),
     Destination: resource('type/destination.js').fetch(),
-
     DestinationSuggestion: resource('type/destinationSuggestion.js').fetch()
   };

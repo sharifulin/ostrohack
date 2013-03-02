@@ -23,6 +23,38 @@
   var filters = resource('module/filters/index.js').fetch();
   var header = resource('module/header/index.js').fetch();
 
+  var resolver = new basis.data.Object({
+    active: true,
+    handler: {
+      stateChanged: function(){
+        if (this.state == basis.data.STATE.READY)
+        {
+          var dest = app.type.Destination.get(this.params.q);
+          if (dest)
+            serpRequest(this.params, dest.data.id);
+          this.setDelegate();
+        }
+        if (this.state == basis.data.STATE.ERROR)
+          this.setDelegate();
+      }
+    }
+  });
+
+  function serpRequest(params, region_id){
+    // set convertation to params -> filters
+    var dates = params.dates.split('-');
+    var guests = params.guests.split('and');
+    var dataset = app.type.Suggestion.getSearchResult({
+      region_id: region_id,//965825057,
+      //destination: destinationField.getValue(),
+      room1_numberOfAdults: guests[0],
+      arrivalDate: dates[0].replace(/\./g, '-'),
+      departureDate: dates[1].replace(/\./g, '-')
+    });
+
+    inputDataset.setSources([dataset]);
+  }
+
   app.router.add(/search\/\?(.*)/, function(query){
     var params = {};
 
@@ -34,16 +66,14 @@
     }
     console.log(params);
 
-    // set convertation to params -> filters
-    var dataset = app.type.Suggestion.getSearchResult({
-      region_id: 2395,//965825057,
-      //destination: destinationField.getValue(),
-      room1_numberOfAdults: 2,
-      arrivalDate: '2013-04-19',
-      departureDate: '2013-04-20'
-    });
-
-    inputDataset.setSources([dataset]);
+    var dest = app.type.Destination.get(params.q);
+    if (dest)
+      serpRequest(params, dest.data.id);
+    else
+    {
+      resolver.params = params;
+      resolver.setDelegate(app.type.DestinationSuggestion.byQuery.getSubset(params.q, true));
+    } 
   });
 
 

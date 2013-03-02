@@ -1,6 +1,7 @@
+basis.require('basis.entity');
 
-/*var Destination = resource('Destination.js').fetch();
-var Hotel = resource('Hotel.js').fetch();*/
+var Destination = resource('destination.js').fetch();
+//var Hotel = resource('Hotel.js').fetch();
 
 var DestinationSuggestion = new basis.entity.EntityType({
   name: 'DestinationSuggestion',
@@ -39,25 +40,30 @@ DestinationSuggestion.byQuery = new basis.entity.Grouping({
         var res = [];
         var query = this.data.id;
 
+        if (data.exact)
+          Destination(data.exact);
 
-        for (var i = 0, hotel; hotel = data.hotels[i]; i++){
+        for (var i = 0, hotel; hotel = data.hotels[i]; i++)
+        {
           res.push({
             query: this.data.id,
             type: 'hotel',
             targetId: hotel.hotel_uid.slice(1),
             name: hotel.hotel_name + ', ' + hotel.region_name
-          })
+          });
         }
 
-        for (var i = 0, region; region = data.regions[i]; i++){
+        for (var i = 0, region; region = data.regions[i]; i++)
+        {
+          Destination(region);
           res.push({
             query: this.data.id,
             type: 'region',
             targetId: region.id,
             pretty_slug: region.pretty_slug,
             name: (region.country ? region.country + ', ' : '') + region.name
-          })
-        }   
+          });
+        }
 
         this.sync(res);
         this.setState(basis.data.STATE.READY);
