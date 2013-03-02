@@ -2,7 +2,10 @@ basis.require('basis.l10n');
 basis.require('basis.data.dataset');
 basis.require('basis.ui');
 
-basis.l10n.createDictionary('app.module.type', __dirname + 'l10n', {
+var namespace = 'app.module.search.filters.type';
+
+basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
+  title: 'Hotel type',
   Hotel: 'Hotel',
   Apartment: 'Apartment',
   Guesthouse: 'Guesthouse',
@@ -19,7 +22,7 @@ module.exports = new basis.ui.Node({
     binding: {
       id: 'data:',
       title: function(node) {
-        return basis.l10n.getToken('app.module.type', node.data.id);
+        return basis.l10n.getToken(namespace, node.data.id);
       }
     }
   },

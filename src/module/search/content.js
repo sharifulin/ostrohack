@@ -21,7 +21,6 @@
 
   var list = resource('module/list/index.js').fetch();
   var filters = resource('module/filters/index.js').fetch();
-  var toolbar = resource('module/toolbar/index.js').fetch();
   var header = resource('module/header/index.js').fetch();
 
   app.router.add(/search\/\?(.*)/, function(query){
@@ -53,7 +52,6 @@
     binding: {
       list: list,
       filters: filters,
-      toolbar: toolbar,
       header: header
     }
   });
