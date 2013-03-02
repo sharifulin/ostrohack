@@ -1,0 +1,13 @@
+.serpfilter-type-item {
+  display:block;
+  margin-top:7px
+}
+.serpfilter-type-checkbox, .serpfilter-type-label
+{
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:middle
+}
+.serpfilter-type-label {
+  margin-left: 8px;
+}

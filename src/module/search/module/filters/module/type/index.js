@@ -1,6 +1,7 @@
 basis.require('basis.l10n');
 basis.require('basis.data.dataset');
 basis.require('basis.ui');
+basis.require('app.ext');
 
 var namespace = 'app.module.search.filters.type';
 
@@ -14,16 +15,7 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   Sanatorium: 'Sanatorium'
 });
 
-var typeMerge = new basis.data.dataset.Merge({
-  handler: {
-    sourcesChanged: function(){
-      if (this.sources.length)
-        app.search.output.addSource(this);
-      else
-        app.search.output.removeSource(this);      
-    }
-  }
-});
+var typeMerge = new app.ext.FilterMerge();
 
 module.exports = new basis.ui.Node({
   template: resource('template/list.tmpl'),
@@ -56,6 +48,6 @@ module.exports = new basis.ui.Node({
         else
           this.unselect();
       }
-    },
+    }
   }
 });

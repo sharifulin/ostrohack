@@ -209,32 +209,20 @@
   color:#97a0a4;
   text-shadow:0 1px #dbe2e6
 }
-.serpfilter-stars-label {
-  cursor:pointer;
-  float:left;
-  margin-left:24px;
-  text-align:center;
-  width:13px
-}
-.serpfilter-stars-label:first-of-type {
-  margin:0
-}
-.serpfilter-stars-checkbox {
-  display:block;
-  cursor:pointer;
-  margin-top:2px
-}
- .serpfilter-type-item, .serpfilter-amenities-item, .serpfilter-discount-item {
+
+.serpfilter-amenities-item, .serpfilter-discount-item {
   display:block;
   margin-top:7px
 }
-.serpfilter-amenities-checkbox, .serpfilter-type-checkbox, .serpfilter-discount-checkbox, .serpfilter-amenities-icon, .serpfilter-type-label, .serpfilter-amenities-label, .serpfilter-discount-label {
+
+.serpfilter-amenities-checkbox, 
+.serpfilter-discount-checkbox, .serpfilter-amenities-icon, .serpfilter-amenities-label, .serpfilter-discount-label {
   cursor:pointer;
   display:inline-block;
   vertical-align:middle
 }
-.serpfilter-amenities-icon, .serpfilter-amenities-label, .serpfilter-type-label, .serpfilter-discount-label {
-  margin-left:8px
+.serpfilter-amenities-icon, .serpfilter-amenities-label, .serpfilter-discount-label {
+  margin-left: 8px;
 }
 .serpfilter-amenities-internet .serpfilter-amenities-icon {
   width:16px;

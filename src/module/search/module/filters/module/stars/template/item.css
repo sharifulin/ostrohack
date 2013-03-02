@@ -1,0 +1,15 @@
+.serpfilter-stars-label {
+  cursor:pointer;
+  float:left;
+  margin-left:24px;
+  text-align:center;
+  width:13px
+}
+.serpfilter-stars-label:first-of-type {
+  margin:0
+}
+.serpfilter-stars-checkbox {
+  display:block;
+  cursor:pointer;
+  margin-top:2px
+}
