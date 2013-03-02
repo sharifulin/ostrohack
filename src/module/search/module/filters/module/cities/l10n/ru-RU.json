@@ -1,1 +1,5 @@
-{}
+{
+  "app.module.search.filters.cities": {
+    "title": "Город региона"
+  }
+}

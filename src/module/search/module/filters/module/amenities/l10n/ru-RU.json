@@ -1,0 +1,8 @@
+{
+  "app.module.search.filters.amenities": {
+    "title": "Дополнительно в отеле",
+    "internet": "Интернет",
+    "breakfast": "Бесплатный завтрак",
+    "parking": "Парковка"
+  }
+}
