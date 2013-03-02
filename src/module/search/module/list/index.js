@@ -17,7 +17,9 @@
     childClass: {
       template: templates.item,
       binding: {
-        id: 'data:',
+        id: function(node){
+          return node.data.uid.substr(1);
+        },
         name: 'data:',
         price: 'data:',
         is_golden: 'data:is_golden ? "golden" : ""',
@@ -81,5 +83,6 @@
 
     list.setDataSource(dataset);
   });
+
 
   module.exports = list;

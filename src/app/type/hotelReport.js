@@ -24,7 +24,7 @@
   HotelReport.entityType.entityClass.extend({
     state: basis.data.STATE.UNDEFINED,
     syncAction: app.service.default.createAction({
-      url: '/api/v1/rooms/x:hotelId/',
+      url: '/eapi/',
       method: 'GET',
       request: function(){
         return {
@@ -50,10 +50,11 @@
           rooms = rooms.concat(room_type.rooms);
         
         data.hotel.id = this.data.hotelId;
+        data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
         this.update({
           hotel: Hotel.reader(data.hotel),
           rooms: rooms.map(Room.reader)
-        })
+        });
 
         this.setState(basis.data.STATE.READY);
       }

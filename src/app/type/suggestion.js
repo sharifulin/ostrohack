@@ -22,7 +22,8 @@
       city: String,
       amenities: function(value){
         return value && value.length ? value : null;
-      }
+      },
+      uid: String
     },
     aliases: {
       ostrovok_id: 'id',
