@@ -1,0 +1,98 @@
+.history-hotel {
+  background:#fff;
+  border:1px solid #ececed;
+  border-bottom-color:#bdbdbe;
+  display:inline-block;
+  font-size:11px;
+  height:80px;
+  letter-spacing:normal;
+  line-height:13px;
+  margin-right:10px;
+  position:relative;
+  text-decoration:none;
+  vertical-align:top;
+  width:180px
+}
+.history-hotel:hover .history-hotel-info {
+  display:block
+}
+.history-hotel-image {
+  float:left;
+  margin-right:6px
+}
+.history-hotel-stars {
+  margin-top:5px
+}
+.history-hotel-title {
+  color:#0074c5;
+  -webkit-font-smoothing:antialiased;
+  font-weight:normal;
+  height:40px;
+  margin:3px 6px 0 0;
+  overflow:hidden;
+  word-spacing:1px
+}
+.history-hotel-price {
+  bottom:1px;
+  color:#6d6c6c;
+  font-size:8px;
+  position:absolute;
+  right:6px;
+  text-transform:uppercase
+}
+.history-hotel-price-value {
+  color:#000;
+  font-size:14px;
+  font-weight:400
+}
+.history-hotel-info {
+  color:#798891;
+  display:none;
+  font-size:8px;
+  position:absolute;
+  text-transform:uppercase
+}
+.history-hotel-date {
+  bottom:100%;
+  margin-bottom:1px;
+  right:0
+}
+.history-hotel-urgency {
+  left:0;
+  margin-top:4px;
+  right:0;
+  text-align:center;
+  top:100%
+}
+.stars, .stars-val {
+  height:10px;
+  display:inline-block
+}
+.stars {
+  position:relative;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -393px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.stars-val {
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -402px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px;
+  width:auto
+}
+.stars-val-20 .stars-val {
+  width:20px
+}
+.stars-val-30 .stars-val {
+  width:30px
+}
+.stars-val-40 .stars-val {
+  width:40px
+}

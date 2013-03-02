@@ -6,6 +6,7 @@
   module.exports = new basis.ui.Node({
     template: resource('template/view.tmpl'),
     binding: {
-      form: new SearchForm({})
+      form: new SearchForm({}),
+      content: resource('module/content/index.js').fetch()
     }
   });

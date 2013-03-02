@@ -1151,7 +1151,7 @@ td.datepicker-monthyear {
   white-space:nowrap
 }
 .serpfilter-cities-number:before {
-  content:'вЂў';
+  content: '←';
   padding-right:4px
 }
 .serpfilter-name {
@@ -4058,12 +4058,12 @@ td.datepicker-monthyear {
 }
 .history-control-prev:before {
   border-right-width:4px;
-  content:'в†ђ';
+  content: '←';
   right:100%
 }
 .history-control-next:after {
   border-left-width:4px;
-  content:'в†’';
+  content: '→';
   left:100%
 }
 .history-control-disabled {

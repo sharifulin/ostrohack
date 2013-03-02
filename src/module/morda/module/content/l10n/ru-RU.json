@@ -1,0 +1,10 @@
+{
+  "app.module.morda.content": {
+    "title": "Последние просмотренные отели",
+    "back": "Назад",
+    "more": "Еще отель",
+    "labelViewed": "Сейчас Просматривает",
+    "labelPeople": "человек",
+    "labelPriceFrom": "от"
+  }
+}
