@@ -8,12 +8,12 @@
   basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js').fetch());
 
   var list = new basis.ui.Node({
+    dataSource: app.search.output,
     active: true, 
 
     template: templates.list,
 
     selection: true,
-
     childClass: {
       template: templates.item,
       binding: {
@@ -73,29 +73,6 @@
       this.setDelegate(data);
       this.setDataSource(data);      
     }
-  });
-
-  app.router.add(/search\/\?(.*)/, function(query){
-    var params = {};
-
-    var parts = query.split('&');
-    for (var i = 0, part; part = parts[i]; i++)
-    {
-      var p = part.split('=');
-      params[p[0]] = p.slice(1).join('=');
-    }
-    console.log(params);
-
-    // set convertation to params -> filters
-    var dataset = app.type.Suggestion.getSearchResult({
-      region_id: 2395,
-      //destination: destinationField.getValue(),
-      room1_numberOfAdults: 2,
-      arrivalDate: '2013-04-19',
-      departureDate: '2013-04-20'
-    });
-
-    list.setDataSource(dataset);
   });
 
 

@@ -1,4 +1,5 @@
 basis.require('basis.l10n');
+basis.require('basis.data.dataset');
 basis.require('basis.ui');
 
 basis.l10n.createDictionary('app.module.type', __dirname + 'l10n', {
@@ -24,7 +25,7 @@ module.exports = new basis.ui.Node({
   },
 
   dataSource: new basis.data.dataset.Split({
-    source: app.type.Suggestion.all,
+    source: app.search.input,
     rule: 'data.kind'
   })
 });

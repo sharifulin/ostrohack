@@ -27,7 +27,7 @@ module.exports = new basis.ui.Node({
   },
 
   dataSource: new basis.data.dataset.Split({
-    source: app.type.Suggestion.all,
+    source: app.search.input,
     rule: 'data.city'
   })
 });
