@@ -1,0 +1,9 @@
+{
+  "app.module.hotel.room.left": {
+    "left1": "Only 1 room left",
+    "left2": "Only 2 rooms left",
+    "left3": "3 rooms left",
+    "left4": "5 rooms left",
+    "left5": "5 rooms left"
+  }
+}
