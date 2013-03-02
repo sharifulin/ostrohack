@@ -1,7 +1,12 @@
+basis.require('basis.data.dataset');
 basis.require('basis.ui');
 
 var sorting = resource('module/sorting/index.js').fetch();
 var list = resource('module/list/index.js').fetch();
+
+var staredHotels = new basis.data.dataset.Subset({
+  source: app.search.input
+});
 
 sorting.addHandler({
   sortChanged: function(){
