@@ -1,0 +1,12 @@
+{
+  "app.module.search.filters.type": {
+    "title": "Тип отеля",
+    "Hotel": "Отель",
+    "Apartment": "Апартаменты",
+    "Guesthouse": "Гостевой дом",
+    "Hostel": "Хостел",
+    "Mini-hotel": "Мини-отель",
+    "Sanatorium": "Санаторий",
+    "Resort": "Курортный отель"
+  }
+}
