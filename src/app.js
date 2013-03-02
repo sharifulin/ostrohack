@@ -9,7 +9,16 @@
   // settings for l10n
   basis.l10n.setCultureList('ru-RU en-US');
   basis.l10n.setCulture('ru-RU');
-
+  
+  basis.l10n.createDictionary('app.currency.name', __dirname + 'l10n', {
+    rub: 'RUB',
+    usd: 'USD'
+  });
+  basis.l10n.createDictionary('app.currency.label', __dirname + 'l10n', {
+    rub: 'rub',
+    usd: '$',
+  });
+  
   // handle screen changes
   basis.dom.event.addHandler(window, 'resize', function(){
     if (document.body.offsetWidth < 400)
