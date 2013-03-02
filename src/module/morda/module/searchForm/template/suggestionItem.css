@@ -1,0 +1,11 @@
+.suggest-hr,
+.suggest-group
+{
+  display: none;
+}
+
+.suggest-rowwrap:first-child .suggest-hr,
+.suggest-rowwrap:first-child .suggest-group
+{
+  display: block;
+}
