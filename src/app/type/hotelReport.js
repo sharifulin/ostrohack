@@ -45,16 +45,19 @@
       success: function(data){
         var hotel = data.hotel;
 
-        var rooms = [];
-        for (var i = 0, room_type; room_type = hotel.rooms[i]; i++) 
-          rooms = rooms.concat(room_type.rooms);
-        
-        data.hotel.id = this.data.hotelId;
-        data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
-        this.update({
-          hotel: Hotel.reader(data.hotel),
-          rooms: rooms.map(Room.reader)
-        });
+        if (data.hotel)
+        {
+          var rooms = [];
+          for (var i = 0, room_type; room_type = hotel.rooms[i]; i++) 
+            rooms = rooms.concat(room_type.rooms);
+          
+          data.hotel.id = this.data.hotelId;
+          data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
+          this.update({
+            hotel: Hotel.reader(data.hotel),
+            rooms: rooms.map(Room.reader)
+          });
+        }
 
         this.setState(basis.data.STATE.READY);
       }

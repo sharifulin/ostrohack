@@ -51,7 +51,7 @@
         handler: {
           change: function(){
             this.update({
-              date: new Date(this.date.value)
+              date: new Date(this.selectedDate.value)
             });
             this.parentNode.setDelegate();
           }
@@ -90,8 +90,7 @@
       childClass: {
         sorting: function(){
           return this.data.id == 'hotels' ? 1 : 0;
-        },
-        template: templates.SuggestionGroup
+        }
       }
     },
     childClass: {
@@ -121,7 +120,8 @@
       destinationField: 'satellite:',
       arrivalField: 'satellite:',
       departureField: 'satellite:',
-      submitButton: 'satellite:'
+      submitButton: 'satellite:',
+      guestsField: 'satellite:'
     },
     action: {
       kill: function(event){
@@ -200,6 +200,12 @@
           }
         }        
       },
+      guestsField: {
+        instanceOf: basis.ui.field.Text.subclass({  
+          template: templates.GuestsField,
+          value: 2
+        })
+      },
       submitButton: {
         instanceOf: basis.ui.button.Button.subclass({
           template: resource('template/submitButton.tmpl'),
@@ -218,13 +224,33 @@
     },
 
     submit: function(){
-      debugger;
-      app.router.navigate('/search/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
-        city: 'Moscow',
-        guests: 2,
-        arrivalDate: '2013-04-19',
-        departureDate: '2013-04-20'
-      }));
+      var suggestion = this.satellite.suggestions.selection.pick();
+
+      if (suggestion)
+      {
+        var guests = this.satellite.guestsField.getValue();
+        var arrivalDate = this.satellite.arrivalField.data.date;
+        var departureDate = this.satellite.departureField.data.date;
+
+        if (suggestion.data.type == 'region')
+        {
+          app.router.navigate('/search/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
+            city: suggestion.data.pretty_slug,
+            guests: guests,
+            arrivalDate: arrivalDate.toFormat('%D.%M.%Y'),
+            departureDate: departureDate.toFormat('%D.%M.%Y')
+          }));
+        }
+        else
+        {
+          app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults=2={guests}'.format({
+            hotelId: suggestion.data.targetId,
+            guests: guests,
+            arrivalDate: arrivalDate.toISODateString(),
+            departureDate: departureDate.toISODateString()
+          }));
+        }
+      }
     }
   });
 

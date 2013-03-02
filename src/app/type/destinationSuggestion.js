@@ -39,11 +39,12 @@ DestinationSuggestion.byQuery = new basis.entity.Grouping({
         var res = [];
         var query = this.data.id;
 
+
         for (var i = 0, hotel; hotel = data.hotels[i]; i++){
           res.push({
             query: this.data.id,
             type: 'hotel',
-            targetId: hotel.hotel_id,
+            targetId: hotel.hotel_uid.slice(1),
             name: hotel.hotel_name + ', ' + hotel.region_name
           })
         }
