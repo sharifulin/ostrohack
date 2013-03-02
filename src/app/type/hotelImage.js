@@ -12,7 +12,7 @@ HotelImage.byHotel = new basis.entity.Grouping({
   rule: Function.getter('data.hotelId'),
   subsetClass: {
     state: basis.data.STATE.UNDEFINED,
-    syncAction: app.service.default.createAction({
+    syncAction: app.service['default'].createAction({
       url: '/api/v1/hotelimages/x:hotelId/',
       request: function(){
         return {

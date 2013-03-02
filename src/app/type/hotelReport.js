@@ -23,7 +23,7 @@
 
   HotelReport.entityType.entityClass.extend({
     state: basis.data.STATE.UNDEFINED,
-    syncAction: app.service.default.createAction({
+    syncAction: app.service['default'].createAction({
       url: '/eapi/',
       method: 'GET',
       request: function(){

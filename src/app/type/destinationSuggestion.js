@@ -18,7 +18,7 @@ DestinationSuggestion.byQuery = new basis.entity.Grouping({
   source: DestinationSuggestion.all, 
   rule: basis.fn.getter('data.query'),
   subsetClass: {
-    syncAction: app.service.default.createAction({
+    syncAction: app.service['default'].createAction({
       url: '/api/site/multicomplete.json',
       poolHashGetter: function(requestData){
         return requestData.params.query;
