@@ -1,0 +1,8 @@
+{
+  "app.module.search.list.amenity": {
+    "wifi": "Wi-Fi в номерах",
+    "internet": "Проводной интернет в номерах",
+    "breakfast": "Бесплатный завтрак",
+    "parking": "Парковка"
+  }
+}

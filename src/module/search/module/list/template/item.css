@@ -98,58 +98,6 @@ button::-moz-focus-inner {
   padding:0 7px 0 164px;
   width:379px
 }
-.serp-hotel-amenities {
-  background:#fff;
-  bottom:1px;
-  padding:5px 0 6px;
-  position:absolute;
-  right:201px;
-  z-index:1
-}
-.serp-hotel-amenity {
-  display:inline-block;
-  margin-left:6px;
-  vertical-align:middle
-}
-.serp-hotel-amenity:hover .serp-hotel-amenity-tip {
-  height:11px;
-  visibility:visible
-}
-.serp-hotel-amenity-tip {
-  background:#fff;
-  border-radius:0 0 3px 3px;
-  border-bottom:1px solid #217de6;
-  top:100%;
-  color:#778690;
-  font-size:9px;
-  -webkit-font-smoothing:auto;
-  font-weight:600;
-  height:0;
-  overflow:hidden;
-  padding:2px 8px 0;
-  position:absolute;
-  right:-7px;
-  visibility:hidden;
-  white-space:nowrap;
-  -webkit-transition:height .15s ease-in-out;
-  -moz-transition:height .15s ease-in-out;
-  -o-transition:height .15s ease-in-out;
-  transition:height .15s ease-in-out
-}
-.serp-hotel-amenity-wifi {
-  width:16px;
-  height:12px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -218px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
-}
-.serp-hotel-amenity-parking {
-  width:16px;
-  height:16px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -202px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
-}
 .serp-hotel-stars {
   display:block;
   margin:-5px 0 6px
