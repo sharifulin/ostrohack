@@ -19,7 +19,7 @@
     output: outputDataset
   };
 
-  var list = resource('module/list/index.js').fetch();
+  var hotels = resource('module/hotels/index.js').fetch();
   var filters = resource('module/filters/index.js').fetch();
   var header = resource('module/header/index.js').fetch();
 
@@ -50,7 +50,7 @@
   module.exports = new basis.ui.Node({
     template: resource('template/view.tmpl'),
     binding: {
-      list: list,
+      hotels: hotels,
       filters: filters,
       header: header
     }

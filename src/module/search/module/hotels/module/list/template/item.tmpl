@@ -1,0 +1,33 @@
+<b:resource src="item.css" />
+
+<div class="serp-hotel serp-hotel-available-few serp-hotel-never-booked">
+  <div class="serp-hotel-desc">
+    <!--{amenities}-->
+    <!--{star_rating}-->
+    <a class="serp-hotel-link external" href="#/hotel?hotelId={id}&arrivalDate=2013-03-04&departureDate=2013-03-06&room1_numberOfAdults=2&room1_numberOfChildren=0">
+      <div class="serp-hotel-thumb-container">
+        <img class="serp-hotel-thumb" src="{thumbnail_url}" alt="{name}" />
+      </div>
+      <img class="serp-hotel-image hidden" src="{thumbnail_url_220}" />
+      <div class="serp-hotel-image-arrow hidden" style="background-image: url({thumbnail_url_220});"></div>
+      <h3 class="serp-hotel-title">{name}</h3>
+    </a>
+    <div class="serp-hotel-info">
+      <span class="serp-hotel-location pseudo">На карте:</span>
+      &#32;
+      <span class="serp-hotel-location-address"><span class="serp-hotel-self">в центре Амстердама</span></span>
+    </div>
+    <!--{rating}-->
+  </div>
+  <div class="serp-hotel-price-container">
+    <div class="serp-hotel-price">
+      <span class="serp-hotel-price-value">{price}</span>
+      &#32;
+      <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">руб.</span><span class="serp-hotel-nights">за 4 ночи</span></span>
+    </div>
+    <a class="button button-blue serp-hotel-button external" href="#/hotel?hotelId={id}&arrivalDate=2013-03-04&departureDate=2013-03-06&room1_numberOfAdults=2&room1_numberOfChildren=0">
+      Забронировать
+    </a>
+  </div>
+  <div class="serp-hotel-like"></div>
+</div>

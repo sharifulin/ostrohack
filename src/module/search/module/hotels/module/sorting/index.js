@@ -13,7 +13,7 @@ basis.l10n.createDictionary(namespace + '.sorting', __dirname + 'l10n', {
   distance: 'distance'
 });
 
-var sorting = new basis.ui.Node({
+module.exports = new basis.ui.Node({
   template: resource('template/sorting.tmpl'),
 
   selection: true,
@@ -42,11 +42,4 @@ var sorting = new basis.ui.Node({
       sortFn: basis.getter('data.title')
     }
   ]
-});
-
-module.exports = new basis.ui.Node({
-  template: resource('template/view.tmpl'),
-  binding: {
-    sorting: sorting
-  }
 });
