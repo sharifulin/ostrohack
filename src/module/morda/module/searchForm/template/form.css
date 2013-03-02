@@ -83,21 +83,6 @@ button::-moz-focus-inner {
   border-bottom-color:#9b9ba1;
   box-shadow:0 0 0 4px rgba(255, 108, 0, 0.24), inset 0 2px 4px rgba(73, 14, 0, 0.5)
 }
-* {
-  border:0;
-  margin:0;
-  padding:0
-}
-html, body {
-  background:#fafafa;
-  color:#999;
-  height:100%;
-  margin:0;
-  padding:0
-}
-body {
-  font:13px/1.231 Arial, sans-serif
-}
 .pseudo {
   border-bottom:dotted 1px;
   cursor:pointer
