@@ -1,5 +1,14 @@
 {
   "app.view.searchForm": {
+    "title": "Поиск отелей",
+    "labelQuestion": "Куда вы хотите отправиться? ",
+    "labelExample": "например",
+    "checkIn": "Заезд",
+    "checkOut": "Выезд",
+    "labelAdults": "Взрослые",
+    "labelAnd": "и",
+    "labelChildren": "Дети",
+    "placeholder": "Город или отель",
     "submitButton": "Искать",
     "example": "Москва"
   }, 

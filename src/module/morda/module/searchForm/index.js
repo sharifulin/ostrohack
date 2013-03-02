@@ -20,6 +20,15 @@
   basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
   basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
+    title: 'Find Hotels',
+    labelQuestion: 'Where would you like to go?',
+    labelExample: 'for example',
+    checkIn: 'Check-in',
+    checkOut: 'Check-out',
+    labelAdults: 'Adults',
+    labelAnd: 'and',
+    labelChildren: 'Children',
+    placeholder: 'City or hotel name',
     submitButton: 'Search',
     example: 'Moscow'
   });
@@ -158,6 +167,7 @@
               this.setValue();
             }
           },
+          placeholder: basis.l10n.token(namespace + '.placeholder'),
           handler: {
             change: function(){
               var value = this.getValue();
