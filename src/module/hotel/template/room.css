@@ -1,4 +1,9 @@
-.b-hotel-room-details__inner.visible
+/*.b-hotel-room-details__inner.visible
 {
   display: block;
+}*/
+
+.b-hotel-room-details__photos
+{
+  height: 220px;
 }

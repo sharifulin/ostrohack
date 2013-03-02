@@ -8,6 +8,7 @@
                   <h4 class="b-hotel-room__title">
                     {name}
                   </h4>
+                  <p class="b-hotel-room__short-desc">{description}</p>
                   <div class="b-hotel-room__area">{size} м<sup class="b-hotel-room__area-square">2</sup></div>
               </div>
           </div>
@@ -111,16 +112,6 @@
               </div>
           </div>
 
-          <div class="b-hotel-room-additional-price__container">
-              <b class="b-hotel-room-additional-price__value">≈ 1080</b>
-              <b class="
-                  b-hotel-room-additional-price__currency
-            
-                      b-hotel-room-additional-price__currency_small
-            
-              ">€</b>
-          </div>
-    
           <div class="b-compare-control" data-room-hash="356ff855-fcbf-59e4-9dfe-38bfcd1a17c3">
               <a class="b-compare-control__add" href="#">Добавить к сравнению</a>
           </div>
@@ -129,62 +120,17 @@
       </td>
     </tr>
     <tr>
-      <td class="b-hotel-room-details {visible}" colspan="2">
+      <td class="b-hotel-room-details b-hotel-room-details_state_{visible}" colspan="2">
         <div class="b-hotel-room-details__wrapper">
           <span class="b-hotel-room-details__toggle" event-click="toggle">
             <span class="b-hotel-room-details__toggle-inner">в номере</span>
           </span>
 
           <div class="b-hotel-room-details__inner">
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Интернет:</strong>
-                    бесплатный wi-fi.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Питание:</strong>
-                    бесплатный мини-бар.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Развлечения и досуг:</strong>
-                    телевизор с плоским экраном.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Сервис:</strong>
-                    круглосуточное обслуживание номеров, 
-                    спа-процедуры в номере, 
-                    услуга "звонок-будильник".
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Особенности и информация:</strong>
-                    телефон с прямым набором номера, 
-                    письменный стол, 
-                    смежные номера, 
-                    сейф (подходит для хранения ноутбука).
-            </p>
-            <p class="b-hotel-room-details__item">
-              <strong class="b-hotel-room-details__item-name">Кровати:</strong>
-                    детская кроватка по запросу, 
-                    детская кроватка по запросу, 
-                    очень большая двуспальная кровать, 
-                    2 односпальные кровати.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Ванная комната:</strong>
-                    ванна/душ, 
-                    банный халат, 
-                    фен.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Туристам:</strong>
-                    карта города.
-            </p>
-            <p class="b-hotel-room-details__item">
-                <strong class="b-hotel-room-details__item-name">Особенности:</strong>
-                    slippers, 
-                    голосовая почта, 
-                    набор для приготовления чая и кофе, 
-                    климат-контроль.
-            </p>
+            <div class="b-hotel-room-details__photos">
+              <!--{slider}-->
+            </div>            
+            <!--{amenities}-->
           </div>
         </div>
       </td>

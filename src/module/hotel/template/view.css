@@ -4116,6 +4116,7 @@
   }
   .b-hotel-room-details__photos {
     width:934px;
+    height: 230px;
     position:relative;
     margin-bottom:10px;
     -webkit-user-select:none;

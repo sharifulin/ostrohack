@@ -8,13 +8,10 @@ var templates = basis.template.define('app.module.hotel.slider', {
 });
 
 
-module.exports = new basis.ui.scroller.ScrollPanel({
+module.exports = basis.ui.scroller.ScrollPanel.subclass({
   scrollX: true,
   scrollY: false,
   wheelDelta: 100,
-
-  autoDelegate: true,
-  active: true,
 
   template: templates.imageList,
 
@@ -22,12 +19,6 @@ module.exports = new basis.ui.scroller.ScrollPanel({
     template: templates.imageItem,
     binding: {
       url: 'data:'
-    }
-  },
-  
-  handler: {
-    targetChanged: function(){
-      this.setDataSource(this.target ? app.type.HotelImage.byHotel.getSubset(this.target.getId(), true) : null);
     }
   }  
 });

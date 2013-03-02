@@ -8,7 +8,8 @@ var RoomType = new basis.entity.EntityType({
     description: String,
     size: Number,
     thumbnail: String,
-    amenities: basis.fn.$self
+    amenities: basis.fn.$self,
+    room_type_image_list: basis.fn.$self
   },
   aliases: {
     room_type_id: 'id'
