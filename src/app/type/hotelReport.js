@@ -12,8 +12,8 @@
     fields: {
       id: basis.entity.IntId,
       hotelId: Number,
-      arrivalDate: String,
-      departureDate: String,
+      arrivalDate: basis.fn.$self,
+      departureDate: basis.fn.$self,
       room1_numberOfAdults: Number,
       room1_numberOfChildren: Number,
       viewallText: String,
@@ -29,11 +29,12 @@
       url: '/eapi/',
       method: 'GET',
       request: function(){
+        console.log('call request');
         return {
           params: {
-            arrivalDate: this.data.arrivalDate,
             hotelId: this.data.hotelId,
-            departureDate: this.data.departureDate,
+            arrivalDate: this.data.arrivalDate.toFormat('%D-%M-%Y'),
+            departureDate: this.data.departureDate.toFormat('%D-%M-%Y'),
             room1_numberOfAdults: this.data.room1_numberOfAdults,
             room1_numberOfChildren: this.data.room1_numberOfChildren,
             lang: basis.l10n.getCulture().split('-').shift(),

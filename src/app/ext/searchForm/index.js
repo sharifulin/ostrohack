@@ -60,9 +60,7 @@
         autoDelegate: true,
         handler: {
           change: function(){
-            this.update({
-              date: new Date(this.selectedDate.value)
-            });
+            this.parentNode.delegate.setValue(this.selectedDate.value);
             this.parentNode.setDelegate();
           }
         }
@@ -70,13 +68,17 @@
     ]
   });  
 
-  var DatePicker = basis.ui.Node.subclass({
+  var DatePicker = basis.ui.field.Text.subclass({
     template: templates.DatePicker,
+    readFieldValue_: function(){
+      return this.getValue();
+    },
     binding: {
-      date: {
-        events: 'update',
+      value: {
+        events: 'change',
         getter: function(node){
-          return node.data.date.toFormat('%D/%M/%Y')
+          var value = node.getValue();
+          return value && value.toFormat('%D/%M/%Y') || '';
         }
       }
     },
@@ -127,6 +129,11 @@
     }
   });
 
+  var FORM_FIELDS = [
+    'arrivalField',
+    'departureField',
+    'guestsField' 
+  ];
  
   var Form = basis.ui.Node.subclass({
     template: resource('template/form.tmpl'),
@@ -226,21 +233,36 @@
       arrivalField: {
         instanceOf: DatePicker,
         config: {
-          data: {
-            date: (new Date).add('day', 1)
+          name: 'arrivalDate',          
+          value: (new Date).add('day', 1),
+          handler: {
+            change: function(){
+              var arrival = this.getValue();
+              var departure = this.owner.satellite.departureField.getValue();
+              if (arrival > departure)
+                this.owner.satellite.departureField.setValue((new Date(arrival)).add('day', 1));
+            }
           }
         }
       },
       departureField: {
         instanceOf: DatePicker,
         config: {
-          data: {
-            date: (new Date).add('day', 2)
+          name: 'departureDate',
+          value: (new Date).add('day', 2),
+          handler: {
+            change: function(){
+              var departure = this.getValue();
+              var arrival = this.owner.satellite.arrivalField.getValue();
+              if (arrival > departure)
+                this.owner.satellite.arrivalField.setValue((new Date(departure)).add('day', -1));
+            }
           }
         }        
       },
       guestsField: {
         instanceOf: basis.ui.field.Text.subclass({  
+          name: 'guestsCount',
           template: templates.GuestsField,
           value: 2
         })
@@ -262,45 +284,47 @@
       this.filters = filters;
     },
 
+    serialize: function(){
+      var data = {};
+      FORM_FIELDS.forEach(function(fieldName){
+        data[this.satellite[fieldName].name] = this.satellite[fieldName].getValue();
+      }, this);
+      return data;
+    },
+
     submit: function(){
       var suggestion = this.satellite.suggestions.selection.pick();
 
       if (suggestion)
       {
-        var guests = this.satellite.guestsField.getValue();
-        var arrivalDate = this.satellite.arrivalField.data.date;
-        var departureDate = this.satellite.departureField.data.date;
+        var data = this.serialize();
 
         if (suggestion.data.type == 'region')
         {
           app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
             city: suggestion.data.pretty_slug,
-            guests: guests,
-            arrivalDate: arrivalDate.toFormat('%D.%M.%Y'),
-            departureDate: departureDate.toFormat('%D.%M.%Y')
+            guests: data.guestsCount,
+            arrivalDate: data.arrivalDate.toFormat('%D.%M.%Y'),
+            departureDate: data.departureDate.toFormat('%D.%M.%Y')
           }));
         }
         else
         {
           app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults=2={guests}'.format({
             hotelId: suggestion.data.targetId,
-            guests: guests,
-            arrivalDate: arrivalDate.toISODateString(),
-            departureDate: departureDate.toISODateString()
+            guests: data.guestsCount,
+            arrivalDate: data.arrivalDate.toFormat('%D-%M-%Y'),
+            departureDate: data.departureDate.toFormat('%D-%M-%Y')
           }));
         }
       }
     },
     loadData: function(data){
-      this.satellite.arrivalField.update({
-        date: basis.date.fromISOString(data.arrivalDate)
-      });
-      this.satellite.departureField.update({
-        date: basis.date.fromISOString(data.departureDate)
-      });
-
-      this.satellite.guestsField.setValue(data.adultsCount);
-      this.satellite.destinationField.setValue();
+      FORM_FIELDS.forEach(function(fieldName){
+      var key = this.satellite[fieldName].name;
+        if (data[key])
+          this.satellite[fieldName].setValue(data[key]);
+      }, this);  
     }
   });
 

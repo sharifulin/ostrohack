@@ -1,4 +1,6 @@
-
-  <div event-click="open">
-    <input class="giantform-input giantform-check-in-input" type="text" value="{date}" autocomplete="off" readonly/> 
-  </div>
+<b:include src="basis.ui.field.Text" no-style>
+  <b:set-attr ref="field" name="readonly" value="true"/>
+  <b:set-attr ref="field" name="autocomplete" value="off"/>
+  <b:set-attr ref="field" name="event-click" value="open"/>
+  <b:class ref="field" value="giantform-input giantform-check-in-input"/>
+</b:include>

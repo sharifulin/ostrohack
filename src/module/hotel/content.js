@@ -331,6 +331,12 @@ basis.router.add('/hotel?*params', function(params){
     hotelData[pare[0]] = pare[1];
   }
 
+  var dateParts = hotelData.arrivalDate.split('-');
+  hotelData.arrivalDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+
+  dateParts = hotelData.departureDate.split('-');
+  hotelData.departureDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+
   hotelObject.setDelegate(app.type.HotelReport(app.type.HotelReport.reader(hotelData)));
 });
 
