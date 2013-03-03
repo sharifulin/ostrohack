@@ -45,19 +45,41 @@
   //
 
   var calendarPopup = new basis.ui.popup.Popup({
-    dir: 'left bottom left top',
-    autorotate: true,
+    dir: 'left top left top',
+    template: templates.DatePickerPopup,
+    autorotate: false,
     handler: {
-      delegateChanged: function(){
+      delegateChanged: function(object, oldDelegate){
         if (this.delegate)
+        {
+          this.delegate.opened = true;
+          this.delegate.updateBind('opened');
           this.show(this.delegate.element);
+
+          this.firstChild.selectedDate.set(this.delegate.getValue());
+          
+          var that = this;
+          setTimeout(function(){
+            that.realign();
+          }, 0)
+        }
         else
           this.hide();
+
+        if (oldDelegate)       
+        {
+          oldDelegate.opened = false;
+          oldDelegate.updateBind('opened');
+        }
+      },
+      hide: function(){
+        this.setDelegate();
       }
     },
     childNodes: [
       new basis.ui.calendar.Calendar({
         autoDelegate: true,
+        minDate: new Date,
         handler: {
           change: function(){
             this.parentNode.delegate.setValue(this.selectedDate.value);
@@ -69,11 +91,13 @@
   });  
 
   var DatePicker = basis.ui.field.Text.subclass({
+    opened: false,
     template: templates.DatePicker,
     readFieldValue_: function(){
       return this.getValue();
     },
     binding: {
+      opened: 'opened',
       value: {
         events: 'change',
         getter: function(node){
@@ -179,6 +203,7 @@
             change: function(){
               var value = this.getValue();
               var source = value ? DestinationSuggestion.byQuery.getSubset(value, true) : null
+              
               this.setDelegate(source);
               this.owner.satellite.suggestions.setDataSource(source);
             },
@@ -235,6 +260,7 @@
         config: {
           name: 'arrivalDate',          
           value: (new Date).add('day', 1),
+          readOnly: true,
           handler: {
             change: function(){
               var arrival = this.getValue();
@@ -250,6 +276,7 @@
         config: {
           name: 'departureDate',
           value: (new Date).add('day', 2),
+          readOnly: true,
           handler: {
             change: function(){
               var departure = this.getValue();

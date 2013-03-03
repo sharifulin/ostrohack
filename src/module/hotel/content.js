@@ -232,21 +232,21 @@ var HotelSettings = basis.ui.Node.subclass({
     arrivalDate: {
       events: 'update',
       getter: function(object){
-        return object.data.arrivalDate && basis.date.fromISOString(object.data.arrivalDate).getDate();
+        return object.data.arrivalDate && object.data.arrivalDate.getDate();
       }
     },
     departureDate: {
       events: 'update',
       getter: function(object){
-        return object.data.departureDate && basis.date.fromISOString(object.data.departureDate).getDate();
+        return object.data.departureDate && object.data.departureDate.getDate();
       }
     },
     arrivalMonth: {
       events: 'update',
       getter: function(object){
         if (object.data.arrivalDate){
-          var arrivalMonth = basis.date.fromISOString(object.data.arrivalDate).getMonth();
-          var departureMonth = basis.date.fromISOString(object.data.departureDate).getMonth();
+          var arrivalMonth = object.data.arrivalDate.getMonth();
+          var departureMonth = object.data.departureDate.getMonth();
           return arrivalMonth != departureMonth ? basis.l10n.getToken(namespace, 'settings', 'month' + (arrivalMonth + 1)) : '';
         }
       }
@@ -255,7 +255,7 @@ var HotelSettings = basis.ui.Node.subclass({
       events: 'update',
       getter: function(object){
         if (object.data.departureDate){
-          var departureMonth = basis.date.fromISOString(object.data.departureDate).getMonth();
+          var departureMonth = object.data.departureDate.getMonth();
           return basis.l10n.getToken(namespace, 'settings', 'month' + (departureMonth + 1));
         }
       }

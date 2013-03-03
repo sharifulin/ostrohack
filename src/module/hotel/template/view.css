@@ -983,3 +983,8 @@
   {
     visibility: hidden;
   }
+
+  .b-hotel-search-params .b-search-info__serp-link
+  {
+    display: none;
+  }
