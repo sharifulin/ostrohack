@@ -1,351 +1,88 @@
-
-  label, input[type="button"], input[type="submit"], input[type="image"], button {
-    cursor:pointer
-  }
-  body, button, input, select, textarea {
-    font-family:Helvetica, Arial, FreeSans, sans-serif
-  }
-  sup {
-    vertical-align:text-top
-  }
-  sub {
-    vertical-align:text-bottom
-  }
-  h3 {
-    font-weight:bold;
-    font-size:20px;
-    color:#074386;
-    margin-bottom:10px
-  }
-  h6 sub {
-    color:#bbd9ff;
-    vertical-align:baseline;
-    font-size:14px;
-    font-weight:normal
-  }
-  form ul {
-    font-size:14px
-  }
-  form li label {
-    font-weight:bold;
-    display:block;
-    margin-bottom:4px
-  }
-  html {
-    background:#f5f5f6
-  }
-  html, body {
-    height:100%
-  }
-  button {
-    font-family:Helvetica, Arial, FreeSans, sans-serif;
-    cursor:pointer
-  }
-  h2{
-    text-align:left;
-    padding:0;
-    color:#061424;
-    margin-top:0;
-    margin-bottom:10px;
-    padding-bottom:0;
-    font-size:24px;
-    background:0;
-    position:relative
-  }
-  h3 {
-    color:#3c5775;
-    margin:30px 0 7px 0;
-    font-size:16px
-  }
-  @-webkit-keyframes simpleRotate {
-    0% {
-      -webkit-transform:rotate(0deg)
-    }
-    100% {
-      -webkit-transform:rotate(360deg)
-    }
-  }
-  @-moz-keyframes simpleRotate {
-    0% {
-      -moz-transform:rotate(0deg)
-    }
-    100% {
-      -moz-transform:rotate(360deg)
-    }
-  }
-  @keyframes simpleRotate {
-    0% {
-      transform:rotate(0deg)
-    }
-    100% {
-      transform:rotate(360deg)
-    }
-  }
-  form li div {
-    padding:7px 12px
-  }
-  @-moz-document url-prefix() {
-    }
-  .l-photos-reviews-right {
-    width:210px;
-    float:right
-  }
-  .b-hotel-rating {
-    margin-bottom:30px;
-    font-family:Arial, sans-serif
-  }
-  .b-hotel-rating__inner {
-    position:relative;
-    padding:4px 0;
-    color:#353535;
-    cursor:default;
-    background:#e8ebef;
-    -moz-border-radius:2px;
-    border-radius:2px;
-    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.9);
-    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.9)
-  }
-  .b-hotel-rating__value {
-    width:50px;
-    display:inline-block;
-    vertical-align:middle;
-    font-weight:bold;
-    font-size:28px;
-    -webkit-font-smoothing:antialiased;
-    text-align:center;
-    border-right:1px solid #d3d8dd
-  }
-  .b-hotel-rating__value-title {
-    display:block;
-    font-weight:normal;
-    font-size:8px;
-    text-transform:uppercase
-  }
-  .b-hotel-rating__verbal {
-    width:143px;
-    display:inline-block;
-    vertical-align:middle;
-    margin-left:4px
-  }
-  .b-hotel-rating__verbal-inner {
-    font-weight:bold;
-    font-size:17px;
-    line-height:20px;
-    -webkit-font-smoothing:antialiased;
-    color:#365f97;
-    border-bottom:1px dotted
-  }
-  .b-hotel-rating__count {
-    display:block;
-    padding:3px 5px;
-    font-size:9px;
-    line-height:10px;
-    color:#6f6f6f
-  }
-  .b-hotel-rating__detailed {
-    display:none;
-    position:absolute;
-    top:100%;
-    right:0;
-    left:50px;
-    background:#e8ebef;
-    border:1px solid rgba(0, 0, 0, 0.025);
-    border-top:0 none;
-    border-radius:0 0 2px 2px;
-    z-index:1
-  }
-  .b-hotel-rating__parameter {
-    overflow:hidden;
-    padding:0 10px;
-    font-size:11px;
-    line-height:18px
-  }
-  .b-hotel-rating__parameter_odd {
-    background:#eef0f3
-  }
-  .b-hotel-rating__parameter-val {
-    float:right;
-    font-weight:bold
-  }
-  .b-hotel-rating__inner:hover {
-    -webkit-border-radius:2px 2px 0 2px;
-    border-radius:2px 2px 0 2px
-  }
-  .b-hotel-rating__inner:hover .b-hotel-rating__detailed {
-    display:block
-  }
-  @-moz-document url-prefix() {
-    }
-  html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    font-size:100%
-  }
-  html {
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%
-  }
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display:block
-  }
-  canvas {
-    display:inline-block;
-    *display:inline;
-    *zoom:1
-  }
-  [hidden] {
-    display:none
-  }
-  img {
-    -ms-interpolation-mode:bicubic;
-    vertical-align:middle
-  }
-  svg:not(:root) {
-    overflow:hidden
-  }
-  blockquote, q {
-    quotes:none
-  }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content:'';
-    content:none
-  }
-  abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help
-  }
-  dfn {
-    font-style:italic
-  }
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  b, strong, i, cite, em, var, dfn {
-    text-decoration:none;
-    font-weight:normal;
-    font-style:normal
-  }
-  body {
-    font:13px/1.231 sans-serif
-  }
-  ul, ol, li {
-    list-style:none;
-    list-style-image:none
-  }
-  button, input, select, textarea {
-    width:auto;
-    overflow:visible;
-    margin:0;
-    font-size:100%;
-    font-family:sans-serif;
-    vertical-align:baseline;
-    *vertical-align:middle
-  }
-  textarea {
-    overflow:auto;
-    vertical-align:top
-  }
-  button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance:button
-  }
-  button, input {
-    line-height:normal;
-    *overflow:visible
-  }
-  input[type="checkbox"], input[type="radio"] {
-    box-sizing:border-box
-  }
-  input::-moz-focus-inner, button::-moz-focus-inner {
-    border:0;
-    padding:0
-  }
-  legend {
-    *margin-left:-7px
-  }
-  table button, table input {
-    *overflow:auto
-  }
-  HTML {
-    background:#f5f5f6
-  }
-  HTML, BODY {
-    height:100%
-  }
-  BODY, BUTTON, INPUT, SELECT, TEXTAREA {
-    font-family:Helvetica, Arial, 'FreeSans', sans-serif
-  }
-  SUP {
-    vertical-align:text-top
-  }
-  SUB {
-    vertical-align:text-bottom
-  }
-  A{
-    color:#0851a3
-  }
-  A:hover, A:focus{
-    color:#006de8
-  }
-  INPUT[type="button"], INPUT[type="submit"], INPUT[type="image"], BUTTON {
-    cursor:pointer
-  }
-  .clearfix:before, .clearfix:after {
-    display:table;
-    content:''
-  }
-  .clearfix:after {
-    clear:both
-  }
-  input[type="text"], input[type="url"], input[type="number"], input[type="search"], input[type="email"], input[type="password"], input[type="tel"], textarea{
-    padding:3px;
-    background:#fff;
-    border:1px solid #c0c2c6;
-    border-radius:4px;
-    box-shadow:0 1px 0 0 #fff, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset
-  }
-  input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus, input[type="url"]:hover, input[type="url"]:active, input[type="url"]:focus, input[type="number"]:hover, input[type="number"]:active, input[type="number"]:focus, input[type="search"]:hover, input[type="search"]:active, input[type="search"]:focus, input[type="email"]:hover, input[type="email"]:active, input[type="email"]:focus, input[type="password"]:hover, input[type="password"]:active, input[type="password"]:focus, input[type="tel"]:hover, input[type="tel"]:active, input[type="tel"]:focus, textarea:hover, textarea:active, textarea:focus{
-    border-color:#9499a1
-  }
-  input[disabled]{
-    color:#999!important;
-    border-color:#c0c2c6!important
-  }
-  input::-webkit-input-placeholder {
-    color:#d0d9e0
-  }
-  input:-ms-input-placeholder {
-    color:#d0d9e0
-  }
-  input:-moz-placeholder {
-    color:#d0d9e0
-  }
-  input::-webkit-input-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  input:-ms-input-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  input:-moz-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  textarea::-webkit-input-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  textarea:-ms-input-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  textarea:-moz-placeholder {
-    font-style:italic;
-    color:#bdbdbd
-  }
-  @-moz-document url-prefix() {
-    }
-  
+.l-photos-reviews-right {
+  width:210px;
+  float:right
+}
+.b-hotel-rating {
+  margin-bottom:30px;
+  font-family:Arial, sans-serif
+}
+.b-hotel-rating__inner {
+  position:relative;
+  padding:4px 0;
+  color:#353535;
+  cursor:default;
+  background:#e8ebef;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.9);
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.9)
+}
+.b-hotel-rating__value {
+  width:50px;
+  display:inline-block;
+  vertical-align:middle;
+  font-weight:bold;
+  font-size:28px;
+  -webkit-font-smoothing:antialiased;
+  text-align:center;
+  border-right:1px solid #d3d8dd
+}
+.b-hotel-rating__value-title {
+  display:block;
+  font-weight:normal;
+  font-size:8px;
+  text-transform:uppercase
+}
+.b-hotel-rating__verbal {
+  width:143px;
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:4px
+}
+.b-hotel-rating__verbal-inner {
+  font-weight:bold;
+  font-size:17px;
+  line-height:20px;
+  -webkit-font-smoothing:antialiased;
+  color:#365f97;
+  border-bottom:1px dotted
+}
+.b-hotel-rating__count {
+  display:block;
+  padding:3px 5px;
+  font-size:9px;
+  line-height:10px;
+  color:#6f6f6f
+}
+.b-hotel-rating__detailed {
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  left:50px;
+  background:#e8ebef;
+  border:1px solid rgba(0, 0, 0, 0.025);
+  border-top:0 none;
+  border-radius:0 0 2px 2px;
+  z-index:1
+}
+.b-hotel-rating__parameter {
+  overflow:hidden;
+  padding:0 10px;
+  font-size:11px;
+  line-height:18px
+}
+.b-hotel-rating__parameter_odd {
+  background:#eef0f3
+}
+.b-hotel-rating__parameter-val {
+  float:right;
+  font-weight:bold
+}
+.b-hotel-rating__inner:hover {
+  -webkit-border-radius:2px 2px 0 2px;
+  border-radius:2px 2px 0 2px
+}
+.b-hotel-rating__inner:hover .b-hotel-rating__detailed {
+  display:block
+}

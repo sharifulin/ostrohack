@@ -1,86 +1,7 @@
 
-  label, input[type="button"], input[type="submit"], input[type="image"], button {
-    cursor:pointer
-  }
-  sup {
-    vertical-align:text-top
-  }
-  sub {
-    vertical-align:text-bottom
-  }
-  h3 {
-    font-weight:bold;
-    font-size:20px;
-    color:#074386;
-    margin-bottom:10px
-  }
-  h6 sub {
-    color:#bbd9ff;
-    vertical-align:baseline;
-    font-size:14px;
-    font-weight:normal
-  }
-  form ul {
-    font-size:14px
-  }
-  form li label {
-    font-weight:bold;
-    display:block;
-    margin-bottom:4px
-  }
-  form .button {
-    text-align:center
-  }
-  button {
-    font-family:Helvetica, Arial, FreeSans, sans-serif;
-    cursor:pointer
-  }
   .layout-content {
     padding:15px;
     position:relative
-  }
-  h2{
-    text-align:left;
-    padding:0;
-    color:#061424;
-    margin-top:0;
-    margin-bottom:10px;
-    padding-bottom:0;
-    font-size:24px;
-    background:0;
-    position:relative
-  }
-  h3 {
-    color:#3c5775;
-    margin:30px 0 7px 0;
-    font-size:16px
-  }
-  @-webkit-keyframes simpleRotate {
-    0% {
-      -webkit-transform:rotate(0deg)
-    }
-    100% {
-      -webkit-transform:rotate(360deg)
-    }
-  }
-  @-moz-keyframes simpleRotate {
-    0% {
-      -moz-transform:rotate(0deg)
-    }
-    100% {
-      -moz-transform:rotate(360deg)
-    }
-  }
-  @keyframes simpleRotate {
-    0% {
-      transform:rotate(0deg)
-    }
-    100% {
-      transform:rotate(360deg)
-    }
-  }
-  form li div {
-    padding:7px 12px
   }
   .b-amenity-icon {
     width:16px;
@@ -141,8 +62,6 @@
   .b-hotel-rooms-container {
     clear:both
   }
-  @-moz-document url-prefix() {
-    }
   .b-hotelpage-min-price {
     min-height:32px;
     color:#8695a6;
@@ -656,109 +575,10 @@
     height:230px;
     background-color:#dcdcdc
   }
-  @-moz-document url-prefix() {
-    }
-  html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    font-size:100%
-  }
-  html {
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%
-  }
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display:block
-  }
-  canvas {
-    display:inline-block;
-    *display:inline;
-    *zoom:1
-  }
-  [hidden] {
-    display:none
-  }
-  img {
-    -ms-interpolation-mode:bicubic;
-    vertical-align:middle
-  }
-  svg:not(:root) {
-    overflow:hidden
-  }
-  blockquote, q {
-    quotes:none
-  }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content:'';
-    content:none
-  }
-  abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help
-  }
-  dfn {
-    font-style:italic
-  }
-  table {
+
+  .hotel-info-pages table {
     border-collapse:collapse;
     border-spacing:0
-  }
-  b, strong, i, cite, em, var, dfn {
-    text-decoration:none;
-    font-weight:normal;
-    font-style:normal
-  }
-  body {
-    font:13px/1.231 sans-serif
-  }
-  ul, ol, li {
-    list-style:none;
-    list-style-image:none
-  }
-  button, input, select, textarea {
-    width:auto;
-    overflow:visible;
-    margin:0;
-    font-size:100%;
-    font-family:sans-serif;
-    vertical-align:baseline;
-    *vertical-align:middle
-  }
-  textarea {
-    overflow:auto;
-    vertical-align:top
-  }
-  button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance:button
-  }
-  button, input {
-    line-height:normal;
-    *overflow:visible
-  }
-  input[type="checkbox"], input[type="radio"] {
-    box-sizing:border-box
-  }
-  input::-moz-focus-inner, button::-moz-focus-inner {
-    border:0;
-    padding:0
-  }
-  legend {
-    *margin-left:-7px
-  }
-  table button, table input {
-    *overflow:auto
-  }
-  
-  A{
-    color:#0851a3
-  }
-  A:hover, A:focus{
-    color:#006de8
-  }
-  INPUT[type="button"], INPUT[type="submit"], INPUT[type="image"], BUTTON {
-    cursor:pointer
   }
   .clearfix:before, .clearfix:after {
     display:table;
