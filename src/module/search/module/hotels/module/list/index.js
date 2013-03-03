@@ -28,16 +28,11 @@ var amenitiesSorting = {
   parking: 4
 }
 
-var toolbar = resource('module/toolbar/index.js').fetch();
-
 var list = new basis.ui.Node({
   dataSource: app.search.output,
   active: true, 
 
   template: templates.list,
-  binding: {
-    toolbar: toolbar
-  },
 
   selection: true,
   childClass: {
