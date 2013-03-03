@@ -1,0 +1,3736 @@
+  html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline
+  }
+  html {
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block
+  }
+  audio, canvas, video {
+    display:inline-block
+  }
+  audio:not([controls]) {
+    display:none
+  }
+  [hidden] {
+    display:none
+  }
+  blockquote, q {
+    quotes:none
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content:"";
+    content:none
+  }
+  b, strong, dfn, kbd, ins, mark, i, em, del, s {
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none
+  }
+  abbr[title], dfn[title] {
+    border-bottom:1px dotted
+  }
+  table {
+    border-collapse:collapse;
+    border-spacing:0
+  }
+  td {
+    vertical-align:top
+  }
+  hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0
+  }
+  body {
+    font:13px/1.231 sans-serif
+  }
+  pre, code, kbd, samp {
+    font-family:monospace, serif;
+    font-size:1em
+  }
+  pre {
+    white-space:pre;
+    white-space:pre-wrap;
+    word-wrap:break-word
+  }
+  a:hover, a:active, input:hover, input:active {
+    outline:0
+  }
+  ul, ol, li {
+    list-style:none;
+    list-style-image:none
+  }
+  small {
+    font-size:inherit
+  }
+  sub, sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+  }
+  sup {
+    top:-0.5em
+  }
+  sub {
+    bottom:-0.25em
+  }
+  button, input, select, textarea {
+    width:auto;
+    overflow:visible;
+    margin:0;
+    font-size:100%;
+    font-family:sans-serif;
+    vertical-align:baseline
+  }
+  textarea {
+    overflow:auto;
+    vertical-align:top;
+    resize:vertical
+  }
+  button, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance:button
+  }
+  input[type="checkbox"], input[type="radio"] {
+    box-sizing:border-box
+  }
+  input[type="search"] {
+    -webkit-appearance:none;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box
+  }
+  input[type="password"], input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance:none
+  }
+  input::-moz-focus-inner, button::-moz-focus-inner {
+    border:0;
+    padding:0
+  }
+  body, select, input, button, textarea {
+    color:#333;
+    font:normal 13px Helvetica, Arial, sans-serif;
+    line-height:1.4em
+  }
+  ::-moz-selection {
+    background:#497eb3;
+    color:#fff;
+    text-shadow:none
+  }
+  ::selection {
+    background:#497eb3;
+    color:#fff;
+    text-shadow:none
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+    text-rendering:optimizeLegibility
+  }
+  a, a:active, a:visited {
+    color:#0572b0;
+    text-decoration:none
+  }
+  a[href^="javascript"] {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  html {
+    background:#eaeaea url(http://ostrovok.ru/st/gm/mobile/img/glob/html-105b9b1149cdf4b2cc506f13ebdc80a07c2f8c34.jpg) repeat;
+    background-size:100px 100px
+  }
+  .android * {
+    text-shadow:none!important
+  }
+  .glob-block>h1 {
+    padding:5px 0;
+    color:#484848;
+    font:normal 20px'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height:1.4em;
+    text-align:center;
+    text-shadow:0 1px 0 white
+  }
+  .glob-block-pressed {
+    position:relative;
+    overflow:hidden
+  }
+  .glob-block-pressed:before {
+    width:120%;
+    height:10px;
+    margin-left:-10%;
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.3) inset
+  }
+  .glob-buttwrap-centered {
+    padding:5px 0;
+    text-align:center
+  }
+  .glob-tracking-counter {
+    display:none
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    html {
+      background-size:50px 50px
+    }
+  }
+  .glob-header {
+    height:44px;
+    overflow:hidden;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+    border-bottom:1px solid #083d7f;
+    background-color:#5691c5;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#5691c5), to(#3a67a2));
+    background-image:-webkit-linear-gradient(top, #5691c5, #3a67a2);
+    background-image:-moz-linear-gradient(top, #5691c5, #3a67a2);
+    background-image:-ms-linear-gradient(top, #5691c5, #3a67a2);
+    background-image:-o-linear-gradient(top, #5691c5, #3a67a2);
+    background-image:linear-gradient(to bottom, #5691c5, #3a67a2);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .glob-header .logo-block {
+    width:127px;
+    height:21px;
+    margin:10px;
+    display:block;
+    float:left
+  }
+  .glob-header .logo-image {
+    width:127px;
+    height:20px;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/logo-8af5e41ccdba537ca7826fffde54511e045fd2e6.png) no-repeat;
+    -webkit-background-size:127px 20px;
+    background-size:127px 20px
+  }
+  .glob-header .gh-action {
+    width:50%;
+    float:right;
+    text-align:right
+  }
+  .glob-header .gh-action .gh-link-item {
+    width:50px;
+    padding:5px;
+    display:inline-block;
+    text-align:center;
+    font-size:10px;
+    line-height:10px;
+    color:#9db4d1
+  }
+  .glob-header .gh-action .gh-link-item .gh-icon {
+    margin-bottom:2px;
+    display:inline-block
+  }
+  .glob-header .gh-action .gh-link-item .gh-icon.search {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 -84px;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-link-item .gh-icon.login {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 0;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-link-item .gh-icon.profile {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 -42px;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-link-item:active, .glob-header .gh-action .gh-link-item.active {
+    color:#fff;
+    background-color:#164279;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#164279), to(#246096));
+    background-image:-webkit-linear-gradient(top, #164279, #246096);
+    background-image:-moz-linear-gradient(top, #164279, #246096);
+    background-image:-ms-linear-gradient(top, #164279, #246096);
+    background-image:-o-linear-gradient(top, #164279, #246096);
+    background-image:linear-gradient(to bottom, #164279, #246096)
+  }
+  .glob-header .gh-action .gh-link-item:active .gh-icon.search, .glob-header .gh-action .gh-link-item.active .gh-icon.search {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 -105px;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-link-item:active .gh-icon.login, .glob-header .gh-action .gh-link-item.active .gh-icon.login {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 -21px;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-link-item:active .gh-icon.profile, .glob-header .gh-action .gh-link-item.active .gh-icon.profile {
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/header_icons-b0f6762bab223422e90e7c61e3da50f197dac1d4.png") no-repeat 0 -63px;
+    -webkit-background-size:24px 126px;
+    background-size:24px 126px
+  }
+  .glob-header .gh-action .gh-overlay-close, .has_overlay .glob-header .gh-action .gh-link-item {
+    display:none
+  }
+  .has_overlay .glob-header .gh-action .gh-overlay-close {
+    margin:5px;
+    display:inline-block
+  }
+  .glob-header .gh-action .gh-overlay-close .overlay-close-changed, .glob-header .gh-action .gh-overlay-close.changed .overlay-close-basic {
+    display:none
+  }
+  .glob-header .gh-action .gh-overlay-close.changed .overlay-close-changed {
+    display:inline
+  }
+  .glob-wrap {
+    min-height:370px;
+    overflow:hidden;
+    position:relative
+  }
+  .glob-footer {
+    margin-top:5px;
+    padding:10px 0;
+    text-align:center;
+    font-size:10px;
+    line-height:15px;
+    color:#555;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .glob-footer li {
+    padding:0 5px;
+    display:inline-block
+  }
+  .glob-footer a {
+    font-weight:bold;
+    font-size:12px;
+    color:#22518a
+  }
+  .glob-footer .gf-copy {
+    text-shadow:0 1px 0 white
+  }
+  .glob-overlay {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:absolute;
+    left:-100%;
+    top:-100%;
+    z-index:1000;
+    background:#eaeaea url(http://ostrovok.ru/st/gm/mobile/img/glob/html-105b9b1149cdf4b2cc506f13ebdc80a07c2f8c34.jpg) repeat;
+    background-size:100px 100px;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  .has_overlay .glob-wrap {
+    min-height:370px
+  }
+  .hide_main_cont .glob-main-content {
+    display:none
+  }
+  .glob-loading {
+    width:100%;
+    height:100%;
+    display:none;
+    opacity:0;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:9000;
+    background:#fff;
+    background:rgba(255, 255, 255, 0.7);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  .glob-loading-message {
+    width:200px;
+    height:50px;
+    margin:40px auto;
+    display:block;
+    font-weight:bold;
+    font-size:16px;
+    line-height:50px;
+    text-align:center;
+    color:#fff;
+    background:#333;
+    background:rgba(0, 0, 0, 0.7);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .glob-overlay {
+      background-size:50px 50px
+    }
+  }
+  input, input[type="text"], textarea {
+    margin:0;
+    padding:0;
+    border:0;
+    -webkit-appearance:none
+  }
+  input, input[type="text"], input[type="search"], textarea {
+    width:100%;
+    padding:10px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .7);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .7);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .7);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    font-size:18px;
+    color:#555
+  }
+  input::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:#e5e5e5
+  }
+  input:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#e5e5e5
+  }
+  input:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="search"]:-moz-placeholder, textarea:-moz-placeholder {
+    color:#e5e5e5
+  }
+  textarea {
+    resize:none
+  }
+  input.error, textarea.error {
+    -webkit-box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset;
+    -moz-box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset;
+    box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset
+  }
+  input[type="search"]:focus {
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+  }
+  .button, .button-gray {
+    margin:0;
+    padding:0;
+    display:inline-block;
+    border:0;
+    outline:0;
+    background:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .button span {
+    width:300px;
+    height:40px;
+    display:inline-block;
+    border-width:1px;
+    border-style:solid;
+    border-color:#22518a #174277 #0b3365;
+    outline:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background-color:#4a80c3;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#4a80c3), to(#22508a));
+    background-image:-webkit-linear-gradient(top, #4a80c3, #22508a);
+    background-image:-moz-linear-gradient(top, #4a80c3, #22508a);
+    background-image:-ms-linear-gradient(top, #4a80c3, #22508a);
+    background-image:-o-linear-gradient(top, #4a80c3, #22508a);
+    background-image:linear-gradient(to bottom, #4a80c3, #22508a);
+    -webkit-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.3) inset;
+    -moz-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    font-weight:bold;
+    font-size:16px;
+    line-height:40px;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+    text-align:center
+  }
+  .button:active span, .button.active span {
+    padding-top:1px;
+    background-color:#194c82;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#194c82), to(#3a81b7));
+    background-image:-webkit-linear-gradient(top, #194c82, #3a81b7);
+    background-image:-moz-linear-gradient(top, #194c82, #3a81b7);
+    background-image:-ms-linear-gradient(top, #194c82, #3a81b7);
+    background-image:-o-linear-gradient(top, #194c82, #3a81b7);
+    background-image:linear-gradient(to bottom, #194c82, #3a81b7);
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none
+  }
+  .button-gray span {
+    max-width:300px;
+    height:40px;
+    padding:0 30px;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #979797;
+    outline:0;
+    background-color:#f9f9f9;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(gainsboro));
+    background-image:-webkit-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-moz-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-ms-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-o-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:linear-gradient(to bottom, #f9f9f9, gainsboro);
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    font-weight:bold;
+    font-size:16px;
+    line-height:40px;
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+    text-align:center;
+    cursor:pointer
+  }
+  .button-gray:active span, .button-gray.active span {
+    padding-top:1px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    background-color:#d1d1d1;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#f4f4f4));
+    background-image:-webkit-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-moz-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-ms-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-o-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:linear-gradient(to bottom, #d1d1d1, #f4f4f4);
+    color:#444
+  }
+  .smallbutton, a.smallbutton {
+    height:32px;
+    padding:0 10px;
+    display:inline-block;
+    border:1px solid #829eb7;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background-color:#f9f8f6;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#f9f8f6), to(#d2dce5));
+    background-image:-webkit-linear-gradient(top, #f9f8f6, #d2dce5);
+    background-image:-moz-linear-gradient(top, #f9f8f6, #d2dce5);
+    background-image:-ms-linear-gradient(top, #f9f8f6, #d2dce5);
+    background-image:-o-linear-gradient(top, #f9f8f6, #d2dce5);
+    background-image:linear-gradient(to bottom, #f9f8f6, #d2dce5);
+    color:#245188;
+    font-weight:bold;
+    font-size:14px;
+    line-height:32px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+    cursor:pointer;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .smallbutton.disabled, a.smallbutton.disabled {
+    color:#aaa;
+    border-color:#888
+  }
+  .smallbutton:active, .smallbutton.active, a.smallbutton:active, a.smallbutton.active {
+    background-color:#f9f8f6;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#f9f8f6), to(#e2e9f1));
+    background-image:-webkit-linear-gradient(top, #f9f8f6, #e2e9f1);
+    background-image:-moz-linear-gradient(top, #f9f8f6, #e2e9f1);
+    background-image:-ms-linear-gradient(top, #f9f8f6, #e2e9f1);
+    background-image:-o-linear-gradient(top, #f9f8f6, #e2e9f1);
+    background-image:linear-gradient(to bottom, #f9f8f6, #e2e9f1)
+  }
+  .smallbutton-gray, a.smallbutton-gray {
+    height:30px;
+    padding:1px 15px;
+    display:inline-block;
+    border:1px solid #979797;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background-color:#f9f9f9;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(gainsboro));
+    background-image:-webkit-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-moz-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-ms-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:-o-linear-gradient(top, #f9f9f9, gainsboro);
+    background-image:linear-gradient(to bottom, #f9f9f9, gainsboro);
+    color:#484848;
+    font-weight:bold;
+    font-size:14px;
+    line-height:30px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+    cursor:pointer;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .smallbutton-gray:active, .smallbutton-gray.active, a.smallbutton-gray:active, a.smallbutton-gray.active {
+    padding:2px 15px 0 15px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    background-color:#d1d1d1;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#f4f4f4));
+    background-image:-webkit-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-moz-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-ms-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:-o-linear-gradient(top, #d1d1d1, #f4f4f4);
+    background-image:linear-gradient(to bottom, #d1d1d1, #f4f4f4);
+    color:#444
+  }
+  .smallbutton-blue, a.smallbutton-blue {
+    height:20px;
+    padding:2px 5px;
+    display:inline-block;
+    border:1px solid #164277;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background-color:#4f84c6;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#4f84c6), to(#3268aa));
+    background-image:-webkit-linear-gradient(top, #4f84c6, #3268aa);
+    background-image:-moz-linear-gradient(top, #4f84c6, #3268aa);
+    background-image:-ms-linear-gradient(top, #4f84c6, #3268aa);
+    background-image:-o-linear-gradient(top, #4f84c6, #3268aa);
+    background-image:linear-gradient(to bottom, #4f84c6, #3268aa);
+    -webkit-box-shadow:0 1px 1px 0 rgba(255, 255, 255, 0.2) inset;
+    -moz-box-shadow:0 1px 1px 0 rgba(255, 255, 255, 0.2) inset;
+    box-shadow:0 1px 1px 0 rgba(255, 255, 255, 0.2) inset;
+    color:#fff;
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.6);
+    cursor:pointer;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .smallbutton-blue:active, .smallbutton-blue.active, a.smallbutton-blue:active, a.smallbutton-blue.active {
+    padding:3px 5px 1px 5px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset
+  }
+  .widebutton-orange, a.widebutton-orange {
+    height:40px;
+    padding:1px 15px;
+    display:block;
+    -webkit-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.3);
+    background-color:#fdb032;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#fdb032), to(#ff9100));
+    background-image:-webkit-linear-gradient(top, #fdb032, #ff9100);
+    background-image:-moz-linear-gradient(top, #fdb032, #ff9100);
+    background-image:-ms-linear-gradient(top, #fdb032, #ff9100);
+    background-image:-o-linear-gradient(top, #fdb032, #ff9100);
+    background-image:linear-gradient(to bottom, #fdb032, #ff9100);
+    color:#fff;
+    font-weight:bold;
+    font-size:16px;
+    line-height:40px;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.4);
+    text-align:left;
+    cursor:pointer;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .widebutton-orange:active, .widebutton-orange.active, a.widebutton-orange:active, a.widebutton-orange.active {
+    padding:2px 15px 0 15px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    background-color:#fdb032;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#fdb032), to(#fe9c14));
+    background-image:-webkit-linear-gradient(top, #fdb032, #fe9c14);
+    background-image:-moz-linear-gradient(top, #fdb032, #fe9c14);
+    background-image:-ms-linear-gradient(top, #fdb032, #fe9c14);
+    background-image:-o-linear-gradient(top, #fdb032, #fe9c14);
+    background-image:linear-gradient(to bottom, #fdb032, #fe9c14)
+  }
+  .widebutton-orange.icon-external, a.widebutton-orange.icon-external {
+    padding:1px 30px 1px 15px;
+    position:relative
+  }
+  .widebutton-orange.icon-external:after, a.widebutton-orange.icon-external:after {
+    margin:15px;
+    display:block;
+    content:"";
+    position:absolute;
+    right:0;
+    top:-2px;
+    width:9px;
+    height:15px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/arrows-ab7d1740760db8eeba3aeb0387282655b3a2d86e.png") no-repeat 0 -10px;
+    -webkit-background-size:13px 65px;
+    background-size:13px 65px
+  }
+  .widebutton-orange.icon-external:active, .widebutton-orange.icon-external.active, a.widebutton-orange.icon-external:active, a.widebutton-orange.icon-external.active {
+    padding:2px 30px 0 15px
+  }
+  .widebutton-orange.icon-external:active:after, .widebutton-orange.icon-external.active:after, a.widebutton-orange.icon-external:active:after, a.widebutton-orange.icon-external.active:after {
+    top:-1px
+  }
+  .icon-holder {
+    padding:1px;
+    display:inline-block;
+    vertical-align:baseline;
+    border:1px solid #b7b7b7;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background-color:#f9f9f9;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e4e1e1));
+    background-image:-webkit-linear-gradient(top, #f9f9f9, #e4e1e1);
+    background-image:-moz-linear-gradient(top, #f9f9f9, #e4e1e1);
+    background-image:-ms-linear-gradient(top, #f9f9f9, #e4e1e1);
+    background-image:-o-linear-gradient(top, #f9f9f9, #e4e1e1);
+    background-image:linear-gradient(to bottom, #f9f9f9, #e4e1e1)
+  }
+  .icon-target {
+    display:inline-block;
+    vertical-align:top;
+    width:18px;
+    height:18px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -15px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .icon-radar-pin {
+    display:inline-block;
+    vertical-align:middle;
+    width:24px;
+    height:24px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -211px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .payment-types {
+    line-height:14px
+  }
+  .payment-icon {
+    display:inline-block;
+    vertical-align:middle
+  }
+  .payment-icon.prepay {
+    width:10px;
+    height:7px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -45px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .payment-icon.postpay {
+    width:9px;
+    height:7px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -52px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .payment-text {
+    margin-left:5px;
+    display:inline-block;
+    color:#929292;
+    font-weight:normal;
+    font-size:10px;
+    line-height:10px
+  }
+  .amenity {
+    line-height:14px
+  }
+  .amenity-icon {
+    display:inline-block;
+    vertical-align:middle
+  }
+  .amenity-icon.has_sauna {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -200px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_tennis_court {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -230px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_pets_allowed {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -180px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_internet_access {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -110px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_spa {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -220px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_fitness_facility, .amenity-icon.has_fitnes {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -100px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_airport_transfer {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 0;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_parking, .amenity-icon.has_parkovka {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -170px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_pool {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -190px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_non_smoking_rooms {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -160px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_wifi_access {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -280px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_internet_access {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -110px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_meal {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -150px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_common_info {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -50px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_busyness {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -20px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_entertainment {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -60px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_extra_service {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -80px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_kids_allowed {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -120px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_barber_shop {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -10px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_mall {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -140px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_tours {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -240px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_extra_services {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -90px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_shuttle {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -210px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_cardio {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -30px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_childcare {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -40px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-icon.has_extra_info {
+    width:10px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/amenities-1495840ecbb7b7fc4dca6e69ec029c65be5a5042.png") no-repeat 0 -70px;
+    -webkit-background-size:10px 290px;
+    background-size:10px 290px
+  }
+  .amenity-text {
+    margin-left:5px;
+    display:inline-block;
+    color:#929292;
+    font-weight:normal;
+    font-size:10px;
+    line-height:10px
+  }
+  .cancellation {
+    color:#929292;
+    font-weight:normal;
+    font-size:10px;
+    line-height:14px
+  }
+  .mod-input-status {
+    display:block;
+    position:relative
+  }
+  .mod-input-status input {
+    padding-right:25px
+  }
+  .mod-input-status.controls input, .mod-input-status.controls input[type="search"] {
+    padding-right:40px
+  }
+  .mod-input-status .mod-is-control {
+    margin-top:-10px;
+    display:none;
+    position:absolute;
+    right:10px;
+    top:50%;
+    width:19px;
+    height:19px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -180px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px;
+    cursor:pointer;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .mod-input-status .mod-is-control.active {
+    display:block
+  }
+  .mod-input-status .mod-is-secure {
+    margin-top:-6px;
+    display:block;
+    position:absolute;
+    right:10px;
+    top:50%;
+    width:10px;
+    height:12px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -199px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px;
+    pointer-events:none
+  }
+  .mod-input-prefix {
+    display:block;
+    position:relative
+  }
+  .mod-input-prefix .mod-ip-textprefix {
+    width:30px;
+    height:100%;
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    font-size:18px;
+    line-height:44px;
+    color:#555;
+    text-align:center;
+    -webkit-border-radius:3px 0 0 3px;
+    -moz-border-radius:3px 0 0 3px;
+    border-radius:3px 0 0 3px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    border-right:0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default;
+    pointer-events:none;
+    background:rgba(0, 0, 0, 0.05)
+  }
+  .mod-input-prefix input {
+    padding-left:40px
+  }
+  .mod-input-increment {
+    width:120px;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    border:1px solid #aaa;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-input-increment .mod-ii-neg, .mod-input-increment .mod-ii-pos, .mod-input-increment .mod-ii-neg.locked:active, .mod-input-increment .mod-ii-pos.locked:active {
+    width:35px;
+    height:25px;
+    padding-top:0;
+    float:left;
+    display:inline-block;
+    -webkit-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7) inset;
+    -moz-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7) inset;
+    box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7) inset;
+    background-color:#d5d5d5;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#d5d5d5), to(#f6f6f6));
+    background-image:-webkit-linear-gradient(top, #d5d5d5, #f6f6f6);
+    background-image:-moz-linear-gradient(top, #d5d5d5, #f6f6f6);
+    background-image:-ms-linear-gradient(top, #d5d5d5, #f6f6f6);
+    background-image:-o-linear-gradient(top, #d5d5d5, #f6f6f6);
+    background-image:linear-gradient(to bottom, #d5d5d5, #f6f6f6);
+    color:#656c73;
+    font-weight:bold;
+    font-size:20px;
+    line-height:22px;
+    text-align:center;
+    text-shadow:0 1px 0 white;
+    cursor:pointer
+  }
+  .mod-input-increment .mod-ii-neg:active, .mod-input-increment .mod-ii-pos:active {
+    height:24px;
+    padding-top:1px;
+    -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.4) inset;
+    box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.4) inset;
+    background-color:#9b9b9b;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#9b9b9b), to(whitesmoke));
+    background-image:-webkit-linear-gradient(top, #9b9b9b, whitesmoke);
+    background-image:-moz-linear-gradient(top, #9b9b9b, whitesmoke);
+    background-image:-ms-linear-gradient(top, #9b9b9b, whitesmoke);
+    background-image:-o-linear-gradient(top, #9b9b9b, whitesmoke);
+    background-image:linear-gradient(to bottom, #9b9b9b, whitesmoke)
+  }
+  .mod-input-increment .mod-ii-neg.locked, .mod-input-increment .mod-ii-pos.locked, .mod-input-increment .mod-ii-neg.locked:active, .mod-input-increment .mod-ii-pos.locked:active {
+    color:#aaa
+  }
+  .mod-input-increment .mod-ii-fakeinput {
+    width:48px;
+    height:23px;
+    display:inline-block;
+    float:left;
+    border:1px solid #eee;
+    -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+    color:#555;
+    font-weight:bold;
+    font-size:18px;
+    line-height:23px;
+    text-align:center;
+    text-shadow:0 1px 0 white;
+    background:#d9d9d9;
+    outline:0
+  }
+  .mod-input-increment input {
+    display:none
+  }
+  .mod-input-select {
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+    border:1px solid #aaa;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    -webkit-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7);
+    -moz-box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.7);
+    background:#fff;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-input-select .mod-is-fakeinput {
+    min-width:20px;
+    height:30px;
+    padding:0 5px;
+    display:inline-block;
+    font-weight:bold;
+    font-size:16px;
+    line-height:30px;
+    text-align:center;
+    color:#656c73
+  }
+  .mod-input-select.dropdown .mod-is-fakeinput {
+    min-width:100px;
+    height:auto;
+    padding:5px 15px 5px 5px;
+    position:relative;
+    z-index:10;
+    font-weight:bold;
+    font-size:14px;
+    line-height:16px;
+    color:#484848;
+    text-align:left;
+    background-color:#fefefe;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#d4d4d4));
+    background-image:-webkit-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-moz-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-ms-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-o-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:linear-gradient(to bottom, #fefefe, #d4d4d4)
+  }
+  .mod-input-select.dropdown .mod-is-fakeinput:after {
+    width:0;
+    height:0;
+    margin-top:-4px;
+    content:"";
+    display:block;
+    position:absolute;
+    right:3px;
+    top:50%;
+    border-top:8px solid #484848;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent
+  }
+  .mod-input-select select {
+    width:100%;
+    height:100%;
+    opacity:0;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:10
+  }
+  .mod-input-select.jsdropdown select {
+    left:-999px;
+    top:-999px
+  }
+  .mod-input-select.dropdown .mod-is-dropdown {
+    width:100%;
+    margin-left:-1px;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:50;
+    display:none;
+    border:1px solid #aaa;
+    border-top:0;
+    -webkit-border-radius:0 0 2px 2px;
+    -moz-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+    background:rgba(255, 255, 255, 0.9)
+  }
+  .mod-input-select.dropdown .mod-is-dropdown.active {
+    display:block
+  }
+  .mod-input-select.dropdown .mod-is-dropdown li {
+    padding:10px;
+    border-top:1px solid #aaa
+  }
+  .mod-input-select.dropdown .mod-is-dropdown li.selected {
+    font-weight:bold;
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);
+    background:rgba(0, 0, 0, 0.2)
+  }
+  .mod-input-range {
+    width:300px;
+    margin:0 auto
+  }
+  .mod-ir-container {
+    width:280px;
+    height:10px;
+    padding:6px 10px;
+    display:block;
+    overflow:visible;
+    position:relative;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5);
+    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5);
+    box-shadow:0 1px 3px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5)
+  }
+  .snapping .mod-ir-container {
+    width:290px;
+    height:24px;
+    margin:0 auto;
+    padding:0 5px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none
+  }
+  .mod-ir-knob {
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:10;
+    width:23px;
+    height:23px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -157px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-ir-track {
+    width:280px;
+    height:8px;
+    display:block;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_input_range_bg-4fa78c157926a0e9824af2e5ac8b024d930576d1.png) no-repeat -302px 0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-background-size:600px 8px;
+    background-size:600px 8px;
+    border:1px solid rgba(0, 0, 0, 0.3)
+  }
+  .double .mod-ir-selection {
+    width:280px;
+    height:8px;
+    margin:6px 9px;
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:5;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_input_range_bg-4fa78c157926a0e9824af2e5ac8b024d930576d1.png) no-repeat 0 0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-background-size:600px 8px;
+    background-size:600px 8px;
+    border:1px solid rgba(0, 0, 0, 0.3)
+  }
+  .snapping .mod-ir-track {
+    width:290px;
+    height:24px;
+    display:block;
+    background:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border:0
+  }
+  .snapping.points3 .mod-ir-track {
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_input_range_sp3_bg-7e1c5ca45830f4327a8a7b0c1681936f98a73d04.png) no-repeat 0 3px;
+    -webkit-background-size:290px 17px;
+    background-size:290px 17px
+  }
+  .mod-input-radio {
+    margin:0 10px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-input-radio .mod-ir-option {
+    min-height:20px;
+    margin:6px 0;
+    overflow:hidden
+  }
+  .mod-input-radio .mod-ir-label {
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px;
+    color:#6e7073
+  }
+  .mod-input-radio .mod-ir-fakeinput {
+    width:20px;
+    height:20px;
+    display:block;
+    float:right;
+    position:relative;
+    width:20px;
+    height:20px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -117px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-input-radio .mod-ir-option:active .mod-ir-fakeinput, .mod-input-radio .mod-ir-option.checked .mod-ir-fakeinput {
+    width:20px;
+    height:20px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -137px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-input-checkbox {
+    margin:10px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-input-checkbox .mod-ic-label {
+    display:inline-block;
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px;
+    color:#6e7073
+  }
+  .mod-input-checkbox .mod-ic-fakeinput {
+    width:51px;
+    height:26px;
+    display:block;
+    float:right;
+    border:1px solid #a0a0a0;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    -webkit-transition:background-position .1s ease;
+    -moz-transition:background-position .1s ease;
+    -o-transition:background-position .1s ease;
+    transition:background-position .1s ease;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_input_checkbox-cd475f31843baeb416d14a21fc891e774bebd755.png) no-repeat -25px 0;
+    -webkit-background-size:76px 26px;
+    background-size:76px 26px
+  }
+  .mod-input-checkbox .mod-ic-fakeinput.checked {
+    background-position:0 0
+  }
+  .mod-input-options {
+    width:300px;
+    margin:10px auto;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-input-options .mod-iopt-list {
+    width:300px;
+    overflow:hidden;
+    border:1px solid #8c8c8c;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px
+  }
+  .mod-input-options .mod-iopt-cell {
+    padding:5px;
+    display:block;
+    float:left;
+    background-color:#fefefe;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#d4d4d4));
+    background-image:-webkit-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-moz-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-ms-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:-o-linear-gradient(top, #fefefe, #d4d4d4);
+    background-image:linear-gradient(to bottom, #fefefe, #d4d4d4);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border-right:1px solid #8c8c8c;
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+    color:#484848;
+    cursor:pointer
+  }
+  .mod-input-options .mod-iopt-cell:last-child {
+    border-right:0
+  }
+  .mod-input-options .mod-iopt-cell.active {
+    background-color:#898989;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#898989), to(#adadad));
+    background-image:-webkit-linear-gradient(top, #898989, #adadad);
+    background-image:-moz-linear-gradient(top, #898989, #adadad);
+    background-image:-ms-linear-gradient(top, #898989, #adadad);
+    background-image:-o-linear-gradient(top, #898989, #adadad);
+    background-image:linear-gradient(to bottom, #898989, #adadad);
+    -webkit-box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4) inset;
+    box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4) inset;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.3);
+    color:#fff
+  }
+  .mod-input-options.options2 .mod-iopt-cell {
+    width:150px
+  }
+  .mod-input-options.options3 .mod-iopt-cell {
+    width:100px
+  }
+  .mod-input-options.options4 .mod-iopt-cell {
+    width:75px
+  }
+  .mod-input-options.stars-picker .mod-iopt-cell {
+    height:45px;
+    padding:0
+  }
+  .mod-input-options.stars-picker .mod-iopt-label {
+    padding-top:2px;
+    display:block;
+    font-weight:bold;
+    font-size:22px;
+    line-height:24px;
+    color:#484848
+  }
+  .mod-input-options.stars-picker .mod-iopt-cell:last-child .mod-iopt-label {
+    font-size:20px;
+    line-height:45px
+  }
+  .mod-input-options.stars-picker .mod-iopt-cell.active .mod-iopt-label, .mod-input-options.stars-picker .mod-iopt-cell.active .mod-iopt-desc {
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.3)
+  }
+  .mod-input-options.stars-picker .mod-iopt-desc {
+    display:block;
+    font-size:13px;
+    color:#4988cf
+  }
+  .mod-input-phone {
+    overflow:hidden
+  }
+  .mod-input-phone .mod-ip-country {
+    width:29%
+  }
+  .mod-input-phone .mod-ip-number {
+    float:right;
+    width:69%;
+    padding-left:10px
+  }
+  .mod-textarea-autogrow {
+    position:relative
+  }
+  .mod-textarea-autogrow .mod-tag-textarea {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:10;
+    overflow:hidden;
+    -webkit-transition:height .3s ease-in-out;
+    -moz-transition:height .3s ease-in-out;
+    -o-transition:height .3s ease-in-out;
+    transition:height .3s ease-in-out
+  }
+  .mod-textarea-autogrow .mod-tag-pusher {
+    min-height:1em;
+    padding:11px;
+    display:block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:18px;
+    line-height:25px;
+    word-wrap:break-word;
+    color:transparent
+  }
+  .mod-formvalidate-error {
+    margin-top:10px;
+    padding:6px 10px;
+    display:block;
+    background:rgba(200, 0, 0, 0.05);
+    border:1px solid rgba(200, 0, 0, 0.2);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    font-size:12px;
+    line-height:16px;
+    color:#700;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .splash-page .mod-formvalidate-error {
+    margin:10px 10px 0;
+    background:rgba(255, 100, 50, 0.6);
+    border:1px solid #ff6432;
+    color:#fff
+  }
+  .mod-formvalidate-error:first-child {
+    margin-top:0
+  }
+  .mod-carousel {
+    width:310px;
+    margin:0 auto;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-car-scroller-wrap {
+    width:310px;
+    position:relative;
+    z-index:1;
+    overflow:hidden
+  }
+  .mod-car-scroller {
+    width:9000px;
+    height:100%;
+    overflow:hidden;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  .mod-car-item {
+    width:310px;
+    height:100%;
+    float:left
+  }
+  .mod-car-dots {
+    width:100%;
+    margin-top:10px;
+    text-align:center
+  }
+  .mod-car-dots li {
+    margin:0 5px;
+    display:inline-block;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    width:7px;
+    height:7px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 0;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-car-dots li.active {
+    width:8px;
+    height:8px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -7px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-carousel.hotels_slider .mod-car-scroller {
+    width:1550px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-carousel.hotels_slider .mod-car-item {
+    width:304px;
+    padding:3px;
+    overflow:hidden
+  }
+  .mod-carousel.hotels_slider .hs-hotel {
+    width:149px;
+    height:180px;
+    margin-left:6px;
+    overflow:hidden;
+    float:left;
+    position:relative;
+    background:#f8f8f8;
+    -webkit-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3)
+  }
+  .mod-carousel.hotels_slider .hs-hotel:first-child {
+    margin-left:0
+  }
+  .mod-carousel.hotels_slider .hs-hotel-thumb {
+    width:150px;
+    height:100px;
+    display:block;
+    -webkit-background-size:cover;
+    background-size:cover
+  }
+  .mod-carousel.hotels_slider .hs-hotel-dest {
+    padding:0 5px 5px;
+    color:#484848
+  }
+  .mod-carousel.hotels_slider .hs-hotel-dest .hs-hotel-name {
+    font-size:11px;
+    line-height:12px
+  }
+  .mod-carousel.hotels_slider .hs-hotel-dest .hs-hotel-distance {
+    margin:5px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    color:#999;
+    font-size:11px
+  }
+  .mod-carousel.hotels_slider .hs-hotel-dest .hs-hotel-address {
+    margin-top:5px;
+    display:block;
+    font-size:11px;
+    line-height:12px
+  }
+  .mod-carousel.hotels_slider .hs-hotel-dest .hs-hotel-rating {
+    display:block;
+    color:#f5bc50;
+    font-size:10px
+  }
+  .mod-photo-slider {
+    height:110px;
+    margin:10px 0;
+    overflow:hidden;
+    position:relative;
+    -webkit-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.7) inset;
+    -moz-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.7) inset;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.7) inset;
+    background:#6c6c6c;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .mod-photo-slider .mod-ps-photo-list {
+    margin-top:5px;
+    position:absolute;
+    left:0;
+    top:0
+  }
+  .mod-photo-slider .mod-ps-pl-item {
+    padding-left:5px
+  }
+  .mod-photo-slider .mod-ps-pl-item:last-child {
+    padding-right:5px
+  }
+  .mod-photo-slider .mod-ps-pl-image {
+    height:100px
+  }
+  .mod-details {
+    margin:10px 0;
+    border:1px solid #ababab;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    background:rgba(0, 0, 0, 0.1)
+  }
+  .mod-details.disabled {
+    position:relative
+  }
+  .mod-details.disabled:after {
+    width:100%;
+    height:100%;
+    display:block;
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    background:rgba(255, 255, 255, 0.5)
+  }
+  .mod-details .mod-d-control {
+    padding:10px 30px 10px 10px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    font-weight:bold;
+    font-size:18px;
+    line-height:24px;
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .mod-details.newpage .mod-d-control {
+    -webkit-touch-callout:default;
+    touch-callout:default
+  }
+  .mod-details .mod-d-control-arrow {
+    margin-top:-5px;
+    display:inline-block;
+    position:absolute;
+    right:10px;
+    top:50%;
+    width:13px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/arrows-ab7d1740760db8eeba3aeb0387282655b3a2d86e.png") no-repeat 0 0;
+    -webkit-background-size:13px 65px;
+    background-size:13px 65px
+  }
+  .mod-details.active .mod-d-control-arrow {
+    width:13px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/arrows-ab7d1740760db8eeba3aeb0387282655b3a2d86e.png") no-repeat 0 -40px;
+    -webkit-background-size:13px 65px;
+    background-size:13px 65px
+  }
+  .mod-details.newpage .mod-d-control-arrow {
+    margin-top:-7px;
+    width:9px;
+    height:15px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/arrows-ab7d1740760db8eeba3aeb0387282655b3a2d86e.png") no-repeat 0 -25px;
+    -webkit-background-size:13px 65px;
+    background-size:13px 65px
+  }
+  .mod-details .mod-d-control-plus {
+    margin-top:-14px;
+    display:inline-block;
+    position:absolute;
+    right:10px;
+    top:50%;
+    width:29px;
+    height:29px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -88px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-details.active .mod-d-control-plus {
+    width:29px;
+    height:29px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -59px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .mod-details.active .mod-d-control {
+    border-bottom:1px dashed #949494
+  }
+  .mod-details .mod-d-content {
+    padding:10px;
+    display:none;
+    border-top:1px dashed #e9e9e9;
+    font-size:14px;
+    line-height:18px;
+    color:#525252
+  }
+  .mod-details.active .mod-d-content {
+    display:block
+  }
+  .mod-paperback {
+    margin:10px;
+    padding-bottom:5px;
+    position:relative;
+    overflow:visible;
+    -webkit-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background:#e4e1dd url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_paperback_bg-8f1dbaf783343f75fee81a9611a97a1eec99bc07.jpg) repeat;
+    background-size:100px 100px
+  }
+  .mod-paperback:before {
+    width:100%;
+    height:7px;
+    margin-bottom:-8px;
+    content:"";
+    display:block;
+    -webkit-box-shadow:0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:10
+  }
+  .mod-paperback:after {
+    width:100%;
+    height:11px;
+    margin-bottom:-7px;
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:11;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/mod_paperback_bottom-ade04d050b383107cf9feb6926cbf30bd4715363.png) repeat-x 0 0;
+    -webkit-background-size:12px 11px;
+    background-size:12px 11px
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .mod-paperback {
+      background-size:50px 50px
+    }
+  }
+  .mod-pressed {
+    margin:10px 0;
+    border:1px solid #ababab;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    background:rgba(0, 0, 0, 0.1);
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .dates-picker {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .dp-header {
+    width:280px;
+    margin:0 auto;
+    padding:10px 20px;
+    overflow:hidden;
+    color:#555;
+    font-size:12px;
+    text-shadow:0 1px 0 white
+  }
+  .dp-header .dp-arrival, .dp-header .dp-departure {
+    width:49%;
+    float:left;
+    text-align:center
+  }
+  .dp-header .dp-departure {
+    float:right
+  }
+  .dp-header .dp-header-label {
+    display:block;
+    font-weight:bold;
+    font-size:18px;
+    line-height:20px
+  }
+  .dates-picker.checkout .dp-header .dp-departure {
+    opacity:.5
+  }
+  .calendar {
+    width:320px;
+    height:265px;
+    margin:0 auto
+  }
+  .cal-header {
+    -webkit-box-shadow:0 2px 7px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 2px 7px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 2px 7px 0 rgba(0, 0, 0, 0.3) inset;
+    background:#3e71b1;
+    color:#e1e1e4;
+    text-align:center;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.3);
+    border-bottom:1px solid #15437c
+  }
+  .cal-header .cal-status {
+    padding-top:5px;
+    position:relative;
+    font-weight:bold;
+    font-size:20px;
+    line-height:22px
+  }
+  .cal-header .cal-status .cal-controls {
+    width:40px;
+    height:40px;
+    margin:5px 0;
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    text-align:center;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .cal-header .cal-status .cal-controls i {
+    display:inline-block;
+    width:12px;
+    height:16px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/calendar-cdf2a4239d4a7dbb389632a826ee6abd943f03e3.png") no-repeat 0 0;
+    -webkit-background-size:12px 32px;
+    background-size:12px 32px
+  }
+  .cal-header .cal-status .cal-control-down i {
+    width:12px;
+    height:16px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/calendar-cdf2a4239d4a7dbb389632a826ee6abd943f03e3.png") no-repeat 0 -16px;
+    -webkit-background-size:12px 32px;
+    background-size:12px 32px
+  }
+  .cal-header .cal-status .cal-controls.disabled {
+    opacity:.5
+  }
+  .cal-header .cal-status .cal-control-down {
+    left:auto;
+    right:0
+  }
+  .cal-day-labels {
+    overflow:hidden;
+    font-weight:bold;
+    font-size:10px
+  }
+  .cal-day-labels li {
+    width:46px;
+    display:inline-block;
+    float:left
+  }
+  .cal-day-labels li:first-child {
+    width:44px
+  }
+  .cal_datelist_holder {
+    height:215px;
+    position:relative;
+    overflow:hidden;
+    -webkit-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition:height .2s ease-in;
+    -moz-transition:height .2s ease-in;
+    -o-transition:height .2s ease-in;
+    transition:height .2s ease-in;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  .calendar-list {
+    width:320px;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:-1px;
+    color:#8f959e;
+    font-weight:bold;
+    font-size:24px;
+    text-align:center;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0)
+  }
+  .calendar-list li {
+    width:45px;
+    height:35px;
+    border-top:1px solid #9a9ea7;
+    border-left:1px solid #9a9ea7;
+    display:block;
+    float:left;
+    line-height:35px;
+    background:#e0e0e0
+  }
+  .calendar-list li.monday, .calendar-list li:first-child {
+    width:44px;
+    border-left:none
+  }
+  .calendar-list li.active {
+    color:#303b47
+  }
+  .calendar-list li.past {
+    color:#ccc
+  }
+  .calendar-list li.selected {
+    position:relative;
+    overflow:hidden;
+    border-color:#6984a3;
+    background:#89a5c0;
+    color:#395d80
+  }
+  .calendar-list li.selected.checkin, .calendar-list li.selected.checkout {
+    background:#4e81af;
+    color:#fff
+  }
+  .calendar-list li.selected.checkin::after, .calendar-list li.selected.checkout::after {
+    width:4px;
+    height:4px;
+    margin-left:-2px;
+    margin-top:-2px;
+    display:block;
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:2px;
+    background:#fff;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px
+  }
+  .calendar-list li.monthlabel {
+    position:relative
+  }
+  .calendar-list li.monthlabel strong {
+    width:100%;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:normal;
+    font-size:10px;
+    line-height:10px;
+    text-align:center;
+    color:#f00
+  }
+  .hf-dest .hf-dest-input-holder {
+    padding:10px 10px 5px
+  }
+  .hf-dest .hf-dest-input-holder .hf-dest-input {
+    font-weight:bold
+  }
+  .hf-dest-options-holder {
+    display:none;
+    position:relative;
+    overflow:visible
+  }
+  .hf-dest .hf-dest-options-holder.active {
+    display:block
+  }
+  .hf-dest .hf-dest-options {
+    width:100%;
+    min-height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+    background:#eaeaea url(http://ostrovok.ru/st/gm/mobile/img/glob/html-105b9b1149cdf4b2cc506f13ebdc80a07c2f8c34.jpg) repeat;
+    background-size:100px 100px
+  }
+  .hf-use-current-pos {
+    margin:0 20px;
+    display:none;
+    color:#656c73;
+    font-weight:bold;
+    font-size:14px;
+    text-shadow:0 1px 0 white;
+    -webkit-touch-callout:none;
+    touch-callout:none
+  }
+  .has_geo .hf-use-current-pos {
+    display:block
+  }
+  .hf-dest-dropdown {
+    margin-top:5px;
+    background:#fff;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hf-dest-dropdown>li {
+    padding:6px 10px;
+    border-bottom:1px solid #949494;
+    font-size:14px;
+    color:#656c73
+  }
+  .hf-dates {
+    margin:5px 10px 10px;
+    padding:10px 0;
+    overflow:hidden;
+    border-top:1px dashed #736a6a;
+    border-bottom:1px dashed #736a6a;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hf-dates-arrival, .hf-dates-departure {
+    width:47%;
+    background:#fff;
+    border:1px solid #aeaeae;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px
+  }
+  .hf-dates-arrival {
+    float:left
+  }
+  .hf-dates-departure {
+    float:right
+  }
+  .hf-dates-datetitle {
+    padding:3px;
+    display:block;
+    color:#fff;
+    font-size:14px;
+    text-align:center;
+    background:#3e71b1
+  }
+  .hf-dates-numbers-holder {
+    padding:5px 10px;
+    color:#555;
+    text-align:center
+  }
+  .hf-dates-day {
+    display:inline-block;
+    font-weight:bold;
+    font-size:45px;
+    line-height:45px
+  }
+  .hf-dates-numbers-holder span {
+    display:inline-block
+  }
+  .hf-dates-month {
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    line-height:16px
+  }
+  .hf-dates-year {
+    font-weight:bold;
+    font-size:21px;
+    line-height:27px
+  }
+  .hf-adults, .hf-children, .hf-children-ages {
+    margin:10px;
+    overflow:hidden;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hf-adults {
+    padding-bottom:10px;
+    border-bottom:1px dashed #736a6a
+  }
+  .hf-outstanding-label {
+    width:50%;
+    padding-left:0;
+    padding-top:5px;
+    display:block;
+    float:left;
+    font-weight:bold;
+    font-size:13px;
+    line-height:15px;
+    color:#656c73;
+    text-shadow:0 1px 0 white
+  }
+  .android .hf-children-ages-label {
+    position:absolute
+  }
+  .hf-adults .mod-input-increment, .hf-children .mod-input-increment {
+    float:right
+  }
+  .hf-children-ages {
+    padding-top:10px;
+    border-top:1px dashed #736a6a;
+    display:none
+  }
+  .hf-children-ages.active {
+    display:block
+  }
+  .gf-children-ages-selects {
+    text-align:right
+  }
+  .hf-children-ages .mod-input-select {
+    display:none
+  }
+  .hf-children-ages .mod-input-select.active {
+    display:inline-block
+  }
+  .hotels-form .hf-form-search-nearby {
+    margin-top:10px;
+    overflow:hidden;
+    display:none
+  }
+  .hotels-form .hf-form-search-nearby.enabled {
+    display:block
+  }
+  .hotels-form .hf-form-search-nearby .icon-radar-pin {
+    margin:-5px 5px 0 0
+  }
+  .hotel-item {
+    clear:both;
+    overflow:hidden;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hotel-item .hi-hotel-thumb {
+    width:80px;
+    height:80px;
+    padding:4px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    display:block;
+    float:left;
+    background:#fff
+  }
+  .hotel-item .hi-hotel-desc {
+    margin-left:100px;
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .hotel-item .hi-hotel-name {
+    font-size:16px;
+    line-height:18px
+  }
+  .hotel-item .hi-hotel-reviews-rating {
+    margin-top:2px;
+    padding:1px 4px;
+    display:inline-block;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background:#d9d9d2;
+    font-weight:bold;
+    color:#555
+  }
+  .hotel-item .hi-hotel-rating {
+    display:inline-block;
+    color:#f5bc50;
+    font-size:10px;
+    line-height:10px
+  }
+  .hotel-item .hi-hotel-price {
+    margin-top:3px;
+    display:block;
+    font-weight:bold;
+    font-size:16px;
+    color:#0851a3
+  }
+  .hotel-item .hi-hotel-address {
+    margin-top:1px;
+    display:block;
+    font-size:12px;
+    line-height:14px;
+    color:#646464
+  }
+  .hi-address-icon {
+    display:inline-block;
+    vertical-align:baseline;
+    width:6px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/serp-7caa057771b5c6198d02fa5e29734c57fe898b24.png") no-repeat 0 0;
+    -webkit-background-size:10px 27px;
+    background-size:10px 27px
+  }
+  .hi-hotel-distance {
+    font-size:12px;
+    line-height:14px;
+    color:#525252
+  }
+  .hi-hotel-distance-icon {
+    display:inline-block;
+    vertical-align:baseline;
+    width:6px;
+    height:10px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/serp-7caa057771b5c6198d02fa5e29734c57fe898b24.png") no-repeat 0 -17px;
+    -webkit-background-size:10px 27px;
+    background-size:10px 27px
+  }
+  .hotels-list {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hotels-list .hl-item {
+    padding:10px;
+    border-top:1px solid #f4f3f3;
+    border-bottom:1px solid #a09a9a
+  }
+  .hotels-list .hl-item:first-child {
+    border-top:0
+  }
+  .hotels-list .hl-item:last-child {
+    border-bottom:0
+  }
+  .hotels-list.completed .hl-item {
+    padding:10px 10px 5px
+  }
+  .hl-rooms-link {
+    display:block
+  }
+  .hl-hotel-booking_info {
+    margin-top:10px;
+    padding:5px 0;
+    overflow:hidden;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .hl-hbi-guests {
+    margin-left:100px
+  }
+  .hl-hotel-booking_info .hl-hbi-dates, .hl-hotel-booking_info .hl-hbi-price {
+    width:50%;
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    font-weight:bold;
+    font-size:12px;
+    line-height:14px;
+    color:#575757
+  }
+  .hl-hotel-booking_info .hl-hbi-label-first {
+    margin-bottom:5px;
+    display:block;
+    font-weight:bold;
+    font-size:10px;
+    line-height:12px;
+    color:#797979
+  }
+  .hl-hotel-booking_info .hl-hbi-label {
+    margin-bottom:5px;
+    margin-top:10px;
+    display:block;
+    font-weight:bold;
+    font-size:10px;
+    line-height:12px;
+    color:#797979
+  }
+  .hl-hotel-booking_info .hl-hbi-price-num {
+    font-weight:bold;
+    font-size:14px
+  }
+  .sf-info-header {
+    padding:5px 10px;
+    position:relative;
+    background:#a9c2d4;
+    border-bottom:1px solid #6c88a0;
+    font-size:12px;
+    font-weight:bold;
+    line-height:14px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6);
+    color:#245283;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .sf-form {
+    padding:5px 10px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .sf-form-sort, .sf-form-price, .sf-form-distance {
+    padding:10px 0;
+    border-bottom:1px dashed #736a6a
+  }
+  .sf-form-sort .sf-form-label {
+    display:inline-block;
+    vertical-align:middle;
+    line-height:28px
+  }
+  .sf-form-sort .mod-is-fakeinput {
+    width:150px
+  }
+  .sf-form-label {
+    display:block;
+    font-weight:bold;
+    font-size:15px;
+    line-height:15px;
+    color:#484848
+  }
+  .sf-form-calc-state {
+    margin-top:4px;
+    padding-top:5px;
+    display:block;
+    position:relative;
+    font-weight:bold;
+    font-size:11px;
+    line-height:14px;
+    color:#9a9a9a;
+    text-align:center
+  }
+  .sf-form-calc-state .sf-form-calc-min {
+    margin-top:-3px;
+    position:absolute;
+    left:0;
+    top:100%
+  }
+  .sf-form-calc-state .sf-form-calc-max {
+    margin-top:-3px;
+    position:absolute;
+    right:0;
+    top:100%
+  }
+  .sf-form-calc-state .sf-form-calc-result {
+    padding:5px;
+    display:inline-block;
+    position:relative;
+    background:rgba(0, 0, 0, 0.1);
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    color:#484848
+  }
+  .sf-form-calc-state .sf-form-calc-result:after {
+    width:0;
+    height:0;
+    margin-left:-5px;
+    display:block;
+    content:"";
+    position:absolute;
+    left:50%;
+    top:100%;
+    border-top:5px solid rgba(0, 0, 0, 0.1);
+    border-left:5px solid transparent;
+    border-right:5px solid transparent
+  }
+  .sf-form-calc-state em {
+    font-weight:inherit
+  }
+  .sf-range-slider {
+    margin-top:12px
+  }
+  .sf-form-stars {
+    padding:10px 0
+  }
+  .sf-form-stars .mod-input-options.stars-picker {
+    margin:10px auto 0
+  }
+  .sf-form-distance-label-userpos, .same_region .sf-form-distance-label-regioncenter {
+    display:none
+  }
+  .same_region .sf-form-distance-label-userpos {
+    display:inline
+  }
+  .b-rtnrvs-total-wrap {
+    overflow:hidden
+  }
+  .b-rtnrvs-total-num {
+    width:50px;
+    margin-left:-3px;
+    padding-right:5px;
+    display:block;
+    float:left;
+    border-right:1px solid #a7a7a7;
+    text-align:center;
+    font-size:26px
+  }
+  .b-rtnrvs-tw-num-label {
+    display:block;
+    font-weight:normal;
+    font-size:10px;
+    line-height:10px
+  }
+  .b-rtnrvs-total-verbose {
+    padding-left:5px;
+    padding-top:3px;
+    display:inline-block;
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:16px
+  }
+  .block-reviews .mod-d-content {
+    padding:0
+  }
+  .block-ratings {
+    padding:10px;
+    border-bottom:2px solid #d3d3d3;
+    background:#f0f0f0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .b-rt-contents-wrap {
+    width:310px;
+    margin:0 auto;
+    overflow:hidden
+  }
+  .block-ratings .b-rt-totals {
+    width:60px;
+    height:60px;
+    display:block;
+    float:left;
+    border:1px solid #2a5f99;
+    background:#bcdcf0;
+    color:#2a5f99;
+    font-weight:bold;
+    font-size:28px;
+    line-height:60px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8);
+    text-align:center;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px
+  }
+  .b-rt-details {
+    margin-left:20px;
+    float:left;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8)
+  }
+  .b-rt-details-title {
+    color:#2a5f99;
+    font-weight:bold;
+    font-size:20px
+  }
+  .b-rt-detailed-item {
+    padding:3px 0;
+    font-size:15px;
+    color:#525252
+  }
+  .b-rt-di-value {
+    font-weight:bold
+  }
+  @media only screen and (min-width:360px) {
+    .b-rt-total-verbose {
+      font-size:18px
+    }
+  }
+  .block-reviews .b-rv-review {
+    padding:10px;
+    border-top:1px solid #ababab;
+    color:#525252;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .block-reviews .b-rv-review:first-child {
+    border-top:0
+  }
+  .block-reviews .b-rv-review .b-rv-review-meta, .block-reviews .b-rv-review .b-rv-review-author {
+    margin-bottom:5px;
+    font-weight:bold;
+    font-size:12px;
+    color:#9e9e9e;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .block-reviews .b-rv-review .b-rv-review-timestamp {
+    display:block;
+    font-weight:normal
+  }
+  .block-reviews .b-rv-review .b-rv-review-negative {
+    margin-top:5px
+  }
+  .block-reviews .b-rv-review .b-rv-review-label {
+    display:block;
+    font-weight:bold
+  }
+  .rooms_list {
+    position:relative;
+    overflow:hidden;
+    background:rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .rooms_list .rl_room {
+    padding:10px;
+    border-top:1px solid #f4f3f3;
+    border-bottom:1px solid #a7a7a7
+  }
+  .rooms_list .rl_room:first-child {
+    border-top:0
+  }
+  .rooms_list .rl_room:last-child {
+    border-bottom:0
+  }
+  .rooms_list .rl_room_rate {
+    padding-bottom:5px;
+    border-top:1px dashed #f4f3f3;
+    border-bottom:1px dashed #a7a7a7
+  }
+  .rooms_list .rl_room_rate:first-child {
+    border-top:0
+  }
+  .rooms_list .rl_room_rate:last-child {
+    padding-bottom:0;
+    border-bottom:0
+  }
+  .rl_room .rl_room_heading {
+    font-weight:bold;
+    font-size:14px;
+    color:#484848
+  }
+  .rl_room .rl_rate_details {
+    margin:5px 0
+  }
+  .block-simplemap {
+    max-width:480px;
+    margin:10px;
+    padding:5px;
+    display:block;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    background:#fff
+  }
+  .block-simplemap .b-sm-image {
+    height:100px;
+    display:block;
+    -webkit-background-size:480px 100px;
+    background-size:480px 100px
+  }
+  @media only screen and (min-width:480px) {
+    .block-simplemap {
+      margin:10px auto
+    }
+  }
+  .price-breakdown {
+    overflow:hidden
+  }
+  .price-breakdown>dt {
+    width:49%;
+    display:inline-block
+  }
+  .price-breakdown>dd {
+    width:49%;
+    display:inline-block;
+    text-align:right
+  }
+  .price-breakdown>.push {
+    margin-top:1em
+  }
+  .price-breakdown>.pb-discount {
+    display:none
+  }
+  .price-breakdown>.pb-discount.active {
+    display:inline-block
+  }
+  .discount_block .db-description, .discount_block .db-redeem-wrap {
+    text-align:center
+  }
+  .discount_block .db-inputs {
+    margin-top:10px
+  }
+  .discount_block .db-status-block {
+    margin-top:5px 0;
+    display:none;
+    text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px
+  }
+  .discount_block .db-status-block.error {
+    display:block;
+    color:#c00
+  }
+  .discount_block .db-status-block.success {
+    display:block;
+    color:#0c0
+  }
+  .discount_block .db-status-block .mod-formvalidate-error {
+    margin-top:10px
+  }
+  .discount_block .db-status-block.success .mod-formvalidate-error {
+    background:rgba(0, 200, 0, 0.05);
+    border:1px solid rgba(0, 200, 0, 0.2);
+    color:#070
+  }
+  .discount_block .db-redeem-wrap {
+    margin-top:10px
+  }
+  .creditcard {
+    margin:5px 0
+  }
+  .cc-num-row {
+    margin:10px 0;
+    overflow:hidden
+  }
+  .cc-num-row .mod-input-status {
+    width:68%;
+    display:inline-block;
+    float:left
+  }
+  .cc-num-row .cc-dates-wrap {
+    width:30%;
+    margin-left:2%;
+    overflow:hidden;
+    display:inline-block;
+    float:right;
+    text-align:right
+  }
+  .cc-num-row .cc-e_month, .cc-num-row .cc-e_year {
+    width:48%;
+    padding:10px 3px;
+    text-align:center
+  }
+  .cc-cvc-row {
+    overflow:hidden
+  }
+  .cc-cvc-row .cc-secure_code {
+    width:20%;
+    float:right;
+    text-align:center
+  }
+  .block-payment_qiwi {
+    margin:5px 0
+  }
+  .block-payment_qiwi .b-pq-description {
+    margin-top:5px;
+    font-size:14px;
+    line-height:18px;
+    color:#525252
+  }
+  .block-payment_qiwi {
+    margin:5px 0;
+    color:#525252
+  }
+  .block-payment_qiwi .b-pq-title {
+    font-weight:bold
+  }
+  .block-payment_qiwi .b-pq-paum-num {
+    color:#333;
+    font-weight:bold;
+    font-size:20px
+  }
+  .block-payment_qiwi .b-pq-description {
+    font-size:14px;
+    line-height:18px
+  }
+  .booking_cancellation {
+    padding:0 10px
+  }
+  .booking_cancellation .bc-form {
+    margin-top:10px
+  }
+  .bc-form .bc-form-hidden-fields {
+    display:none
+  }
+  .geo-status {
+    width:100%;
+    height:20px;
+    padding:0 10px;
+    overflow:hidden;
+    background-color:#e7e7e7;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#cdcdcd));
+    background-image:-webkit-linear-gradient(top, #e7e7e7, #cdcdcd);
+    background-image:-moz-linear-gradient(top, #e7e7e7, #cdcdcd);
+    background-image:-ms-linear-gradient(top, #e7e7e7, #cdcdcd);
+    background-image:-o-linear-gradient(top, #e7e7e7, #cdcdcd);
+    background-image:linear-gradient(to bottom, #e7e7e7, #cdcdcd);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border-bottom:1px solid #979797;
+    font-weight:bold;
+    font-size:10px;
+    line-height:20px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .geo-status .geo-status-icon {
+    display:inline-block;
+    width:7px;
+    height:6px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -33px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .geo-status .geo-status-icon.active {
+    display:inline-block;
+    width:7px;
+    height:6px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -39px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .sp-info-header {
+    padding:5px 10px;
+    position:relative;
+    background:#a9c2d4;
+    border-top:1px solid rgba(255, 255, 255, 0.15);
+    border-bottom:1px solid #6c88a0;
+    font-size:12px;
+    line-height:14px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6)
+  }
+  .sp-filters-toggle {
+    display:block;
+    color:#245283
+  }
+  .sp-info-header .sp-info-header-title {
+    font-weight:bold;
+    font-size:14px;
+    line-height:16px
+  }
+  .sp-info-header .smallbutton {
+    margin:3px;
+    position:absolute;
+    right:0;
+    top:0
+  }
+  .sp-info-header .sp-data-updated, .newdata .sp-info-header .sp-filters-toggle {
+    display:none
+  }
+  .newdata .sp-info-header {
+    background-color:#0e5895;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#0e5895), to(#1d487f));
+    background-image:-webkit-linear-gradient(top, #0e5895, #1d487f);
+    background-image:-moz-linear-gradient(top, #0e5895, #1d487f);
+    background-image:-ms-linear-gradient(top, #0e5895, #1d487f);
+    background-image:-o-linear-gradient(top, #0e5895, #1d487f);
+    background-image:linear-gradient(to bottom, #0e5895, #1d487f);
+    border-bottom:1px solid #022550;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .newdata .sp-info-header .sp-data-updated {
+    display:block;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.7)
+  }
+  .sp-info-reload-icon {
+    margin:9px;
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+    width:24px;
+    height:21px;
+    background:transparent url("http://ostrovok.ru/st/gm/mobile/img/sprites/common-eb0b37535650ff36055a73fe930bdcd96fc89de6.png") no-repeat 0 -235px;
+    -webkit-background-size:29px 256px;
+    background-size:29px 256px
+  }
+  .sp-list-bottom-block {
+    margin:20px auto;
+    text-align:center
+  }
+  .serp-page.lasthotels .sp-list-bottom-block {
+    display:none
+  }
+  .sp-hotels-empty-list {
+    padding:10px;
+    display:none;
+    font-size:12px;
+    line-height:14px;
+    text-align:center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .sp-hotels-empty-list .sp-hotels-el-header {
+    margin:20px 0;
+    font-size:16px;
+    line-height:20px
+  }
+  .sp-hotels-empty-list .glob-buttwrap-centered {
+    margin:30px 0 20px
+  }
+  .serp-page.nohotels .sp-hotels-empty-list {
+    display:block
+  }
+  .serp-page.nohotels .hotels-list {
+    display:none
+  }
+  .rooms_page .hotel-item, .rooms_page .mod-details {
+    margin:10px
+  }
+  .rp-soldout-msg {
+    margin:10px;
+    padding:10px;
+    font-size:16px;
+    line-height:20px;
+    color:#484848;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    background:rgba(0, 0, 0, 0.1);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .hotel_page {
+    padding:10px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.8)
+  }
+  .hotel_page .hp-title, .hotel_page .hp-description>h4 {
+    font-size:18px;
+    line-height:22px;
+    color:#525252
+  }
+  .hp-va-list {
+    font-size:14px
+  }
+  .hp-va-list-item {
+    padding:10px;
+    border-top:1px solid #ababab
+  }
+  .hp-va-list-item:first-child {
+    border-top:0
+  }
+  .hp-va-list .hp-va-category {
+    display:block;
+    font-weight:bold;
+    color:#525252
+  }
+  .hp-va-list .hp-va-description {
+    margin-top:5px
+  }
+  .page-booking_info .p-bi-section {
+    padding:10px;
+    border-top:1px dashed #f4f3f3;
+    border-bottom:1px dashed #736a6a;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.5)
+  }
+  .page-booking_info .p-bi-section:first-child {
+    border-top:0
+  }
+  .page-booking_info .p-bi-section:last-child {
+    border-bottom:0
+  }
+  .p-bi-room-name {
+    padding:10px;
+    font-weight:bold;
+    font-size:18px;
+    line-height:24px;
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .p-bi-room-description strong {
+    margin-top:10px;
+    display:block;
+    font-weight:bold
+  }
+  .p-bi-room-description strong:first-child {
+    margin-top:0
+  }
+  .p-bi-room-description ul {
+    margin-top:3px
+  }
+  .p-bi-room-description li {
+    display:inline
+  }
+  .p-bi-guests-info .p-bi-guests-info-item {
+    overflow:hidden;
+    font-size:14px;
+    line-height:18px;
+    color:#484848;
+    word-wrap:break-word
+  }
+  .p-bi-guests-info .p-bi-gi-title {
+    width:49%;
+    display:block;
+    float:left
+  }
+  .p-bi-guests-info .p-bi-gi-value {
+    width:49%;
+    display:block;
+    float:right;
+    font-weight:bold;
+    text-align:right
+  }
+  .p-bi-booking-form .p-bi-bf-label {
+    font-weight:bold;
+    font-size:12px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .p-bi-booking-form .p-bi-bf-guest-contacts {
+    margin-top:10px
+  }
+  .p-bi-booking-form .p-bi-bf-guest-inputwrap {
+    overflow:hidden
+  }
+  .p-bi-bf-guest-inputwrap .p-bi-bf-guest-firstname {
+    width:49%;
+    float:left
+  }
+  .p-bi-bf-guest-inputwrap .p-bi-bf-guest-lastname {
+    width:49%;
+    float:right
+  }
+  .p-bi-booking-form .p-bi-bf-guest-email, .p-bi-booking-form .p-bi-bf-guest-phone-block {
+    margin-top:10px
+  }
+  .p-bi-bf-extra-options .mod-d-content {
+    padding:0
+  }
+  .p-bi-bf-extra-options .mod-input-radio {
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom:1px dashed #a09a9a
+  }
+  .p-bi-bf-extra-options .mod-input-checkbox {
+    margin-bottom:15px;
+    padding-bottom:20px;
+    border-bottom:1px dashed #a09a9a
+  }
+  .p-bi-bf-extra-options .mod-textarea-autogrow {
+    margin:10px
+  }
+  .p-bi-bf-other-guests {
+    margin-top:0
+  }
+  .p-bi-bf-other-guests .p-bi-bf-other-guest {
+    margin-top:10px
+  }
+  .p-bi-bf-other-guests .p-bi-bf-other-guest:first-child {
+    margin-top:0
+  }
+  .page-booking_info .p-bi-legal {
+    font-weight:bold;
+    font-size:12px;
+    line-height:16px
+  }
+  .page-booking_info .p-bi-bf-errors {
+    margin:10px 0
+  }
+  .page-booking_payment .p-bp-section {
+    padding:10px;
+    border-top:1px dashed #f4f3f3;
+    border-bottom:1px dashed #736a6a;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.5)
+  }
+  .page-booking_payment .p-bp-section:first-child {
+    border-top:0
+  }
+  .page-booking_payment .p-bp-section:last-child {
+    border-bottom:0
+  }
+  .p-bp-price-total {
+    overflow:hidden
+  }
+  .p-bp-price-total .p-bp-price-total-label {
+    width:49%;
+    display:block;
+    float:left;
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px;
+    color:#484848
+  }
+  .p-bp-price-total .p-bp-price-total-sum {
+    width:49%;
+    display:block;
+    float:right;
+    font-weight:bold;
+    font-size:18px;
+    line-height:18px;
+    color:#0851a3;
+    text-align:right
+  }
+  .p-bp-postpay-notice {
+    margin-top:5px;
+    font-size:12px;
+    line-height:14px;
+    color:#525252
+  }
+  .p-bp-discount-applied {
+    padding:10px;
+    font-weight:bold;
+    font-size:18px;
+    line-height:24px;
+    color:#484848;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .p-bp-booking-form .p-bp-bf-label {
+    font-weight:bold;
+    font-size:12px
+  }
+  .p-bp-bf-payment-opts-picker {
+    margin-top:20px
+  }
+  .p-bp-bf-payment-opts-block {
+    display:none
+  }
+  .p-bp-bf-payment-opts-block.active {
+    display:block
+  }
+  .page-booking_payment .p-bp-cancellation {
+    font-weight:bold;
+    font-size:14px;
+    line-height:18px
+  }
+  .page-booking_payment .p-bp-cancellation>strong {
+    font-weight:bold
+  }
+  .page-booking_payment .p-bp-bf-errors {
+    margin:10px 0
+  }
+  .page-booking_payment_3ds {
+    padding:10px;
+    font-size:12px;
+    line-height:14px;
+    text-align:center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .page-booking_payment_3ds .p-bp-3ds-header {
+    margin:20px 0;
+    font-size:16px;
+    line-height:20px
+  }
+  .page-booking_payment_3ds .glob-buttwrap-centered {
+    margin:30px 0 20px
+  }
+  .ip-results .ip-results-list {
+    padding:10px;
+    font-size:12px;
+    color:#484848;
+    border-bottom:1px dashed #a7a7a7
+  }
+  .ip-results .ip-results-item {
+    overflow:hidden
+  }
+  .ip-results .ip-results-label {
+    width:48%;
+    margin-top:5px;
+    display:inline-block;
+    vertical-align:top;
+    text-align:right;
+    font-weight:bold
+  }
+  .ip-results .ip-results-value {
+    width:48%;
+    margin-left:2%;
+    margin-top:5px;
+    display:inline-block;
+    vertical-align:top
+  }
+  .ip-results .ip-results-totals {
+    border-top:1px dashed #f4f3f3;
+    font-weight:bold;
+    font-size:16px;
+    color:#484848
+  }
+  .ip-call-hotel {
+    margin-top:10px
+  }
+  .op-empty-list-msg {
+    padding:10px;
+    font-size:15px;
+    line-height:18px;
+    text-align:center
+  }
+  .order-page .hotel-item, .op-booking-details {
+    margin:10px
+  }
+  .op-booking-details .op-bd-item {
+    padding:10px;
+    overflow:hidden;
+    border-top:1px solid #ababab;
+    font-weight:bold;
+    font-size:20px;
+    color:#707070
+  }
+  .op-booking-details .op-bd-item:first-child {
+    border-top:0
+  }
+  .op-bd-item .op-bd-item-west {
+    width:49%;
+    float:left
+  }
+  .op-bd-item .op-bd-item-east {
+    width:49%;
+    float:right
+  }
+  .op-bd-item .op-bd-label {
+    display:block;
+    font-weight:bold;
+    font-size:12px;
+    color:#484848
+  }
+  .op-booking-details .op-bd-item.op-bd-contacts {
+    font-size:16px
+  }
+  .op-bd-contacts-phone {
+    white-space:nowrap
+  }
+  .op-booking-details .op-bd-item.op-bd-dates {
+    padding-bottom:20px;
+    font-size:22px
+  }
+  .op-bd-dates .op-bd-dates-datewrap {
+    padding-right:17px;
+    display:inline-block;
+    position:relative
+  }
+  .op-bd-dates .op-bd-dates-day {
+    margin-top:-2px;
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:12px;
+    line-height:10px
+  }
+  .op-bd-dates .op-bd-dates-month {
+    position:absolute;
+    left:0;
+    top:100%;
+    font-weight:bold;
+    font-size:10px;
+    line-height:10px
+  }
+  .op-extra-info {
+    margin:10px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .op-extra-info .op-ei-content {
+    padding:0;
+    color:#707070
+  }
+  .op-extra-info .op-ei-cancellation {
+    padding:10px
+  }
+  .op-extra-info .op-ei-cancellation-title {
+    margin-bottom:5px;
+    display:block;
+    font-weight:bold;
+    color:#484848
+  }
+  .op-extra-info .op-ei-amenities {
+    padding:10px;
+    border-top:1px solid #ababab
+  }
+  .op-ei-amenities .op-ei-amenities-title {
+    margin-top:1em;
+    display:block;
+    font-weight:bold;
+    font-size:12px;
+    color:#484848
+  }
+  .op-ei-amenities .op-ei-amenities-title:first-child {
+    margin-top:0
+  }
+  .op-cancelled-block {
+    margin:20px 10px 10px;
+    padding:10px 10px 10px 40px;
+    display:none;
+    position:relative;
+    font-weight:bold;
+    font-size:18px;
+    line-height:24px
+  }
+  .cancelled .op-cancelled-block {
+    display:block
+  }
+  .op-cancelled-block .op-cb-success_icon {
+    margin-top:-10px;
+    position:absolute;
+    left:10px;
+    top:50%;
+    color:#39a30b;
+    font-size:20px;
+    line-height:20px
+  }
+  .order-page .op-cancel-booking {
+    display:none
+  }
+  .order-page .op-cancel-booking, .order-page.cancellable.cancelled .op-cancel-booking, .order-page.cancellable .op-show-search-form {
+    display:none
+  }
+  .order-page.cancellable .op-cancel-booking, .order-page.cancellable.cancelled .op-show-search-form {
+    display:inline-block
+  }
+  .legal-page {
+    padding:10px;
+    font-size:14px;
+    line-height:18px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7)
+  }
+  .legal-page>h2 {
+    margin-bottom:10px;
+    font-size:18px;
+    line-height:22px;
+    text-align:center
+  }
+  .legal-page>h3 {
+    margin:.8em 0 .2em
+  }
+  .legal-page p {
+    -webkit-hyphens:auto;
+    -moz-hyphens:auto;
+    hyphens:auto;
+    white-space:break-word
+  }
+  .legal-page p+p {
+    margin-top:.5em
+  }
+  .legal-page p strong {
+    font-style:italic
+  }
+  html.login-splash {
+    background:#0f2e60
+  }
+  .login-page {
+    min-height:355px
+  }
+  .lp-splash-header {
+    margin-top:60px;
+    color:#fff;
+    font-size:12px;
+    line-height:16px;
+    letter-spacing:2px;
+    text-indent:3px;
+    text-align:center;
+    text-transform:uppercase;
+    text-shadow:0 1px 0 rgba(0, 0, 0, 0.8)
+  }
+  .lp-splash-header-logo {
+    width:191px;
+    height:30px;
+    margin:10px auto;
+    display:block;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/logo_splash-387aa492ed18fb4a90afa553aa8d0f9c27c3c7ba.png) no-repeat;
+    -webkit-background-size:191px 30px;
+    background-size:191px 30px
+  }
+  .lp-login-form-fields {
+    width:300px;
+    margin:50px auto 30px;
+    position:relative;
+    border:1px solid #05193a;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .2);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .2);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .1) inset, 0 1px 0 0 rgba(255, 255, 255, .2)
+  }
+  .lp-login-form-fields .lp-input {
+    display:block;
+    border:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none
+  }
+  .lp-login-form-fields .lp-input.error {
+    -webkit-box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset;
+    -moz-box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset;
+    box-shadow:0 0 5px 0 rgba(255, 0, 0, 0.5) inset
+  }
+  .lp-login-form-fields .lp-email-input {
+    -webkit-border-radius:3px 3px 0 0;
+    -moz-border-radius:3px 3px 0 0;
+    border-radius:3px 3px 0 0
+  }
+  .lp-login-form-fields .lp-password-input {
+    border-top:1px solid #ababab;
+    -webkit-border-radius:0 0 3px 3px;
+    -moz-border-radius:0 0 3px 3px;
+    border-radius:0 0 3px 3px
+  }
+  .lp-login-form-errors {
+    color:#ff7171;
+    text-shadow:0 1px 0 rgba(0, 0, 0, 0.8)
+  }
+  .feedback_page {
+    padding:10px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .fbp-option-selection .fbp-option-status {
+    padding:10px;
+    border:1px solid #ababab;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 0 rgba(255, 255, 255, 1);
+    background:rgba(0, 0, 0, 0.1);
+    font-weight:bold;
+    font-size:18px;
+    line-height:24px;
+    color:#484848;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.7);
+    text-align:center
+  }
+  .fbp-option-status .fbp-option-status-item {
+    display:none
+  }
+  .fbp-option-status .fbp-option-status-item.active {
+    display:block
+  }
+  .fbp-option-selection .fbp-option-picker, .fbp-form .fbp-errors, .fbp-form .fbp-submit {
+    margin-top:20px
+  }
+  .fbp-form .fbp-textarea {
+    margin:20px 0
+  }
+  html.error-splash, html.error-splash body {
+    height:100%
+  }
+  html.unsupported-splash {
+    background:#0f2e60
+  }
+  .unsupported-splash {
+    min-height:415px
+  }
+  .p-u-unsupportedicon {
+    width:200px;
+    height:194px;
+    margin:20px auto 20px;
+    display:block;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/unsupported-4f528ecd06ebc5735197b0ef1460c0e293535949.png) no-repeat
+  }
+  .p-u-message {
+    margin:0 auto;
+    padding:0 20px;
+    color:#eee;
+    font-weight:bold;
+    font-size:14px;
+    line-height:22px;
+    text-shadow:0 1px 0 rgba(0, 0, 0, 0.7);
+    text-align:center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .p-u-message a {
+    color:#33b0ee
+  }
+  @font-face {
+    font-family:'UpheavalPro';
+    src:url(http://ostrovok.ru/st/gm/mobile/font/upheavalpro-webfont-4d70b37507a5bc48a6ec2011512edf1c7350b507.woff) format("woff"), url(http://ostrovok.ru/st/gm/mobile/font/upheavalpro-webfont-64617bf4bc0686c63f556b5ffd0585ea3958eb3e.ttf) format("truetype"), url(http://ostrovok.ru/st/gm/mobile/font/upheavalpro-webfont-e892f28aeb59492c63b80b37fcc86a732cee1cb2.svg#UpheavalProRegular) format("svg");
+    font-weight:normal;
+    font-style:normal
+  }
+  .spacemonkey {
+    height:100%;
+    min-height:415px;
+    position:relative;
+    overflow:hidden;
+    background-color:#148ace;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#148ace), to(#1f92db));
+    background-image:-webkit-linear-gradient(top, #148ace, #1f92db);
+    background-image:-moz-linear-gradient(top, #148ace, #1f92db);
+    background-image:-ms-linear-gradient(top, #148ace, #1f92db);
+    background-image:-o-linear-gradient(top, #148ace, #1f92db);
+    background-image:linear-gradient(to bottom, #148ace, #1f92db);
+    font-family:'UpheavalPro';
+    font-size:25px;
+    line-height:30px;
+    color:#ffde00;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    cursor:default
+  }
+  .spacemonkey a {
+    color:#ffde00
+  }
+  .spacemonkey .sm-8bitbutt {
+    height:30px;
+    padding:0 20px;
+    position:relative;
+    display:inline-block;
+    background:#f00;
+    line-height:26px;
+    text-align:center
+  }
+  .spacemonkey .sm-8bitbutt, .spacemonkey .sm-8bitbutt::before, .spacemonkey .sm-8bitbutt::after {
+    background-color:#f00
+  }
+  .spacemonkey .sm-8bitbutt::before, .spacemonkey .sm-8bitbutt::after {
+    width:5px;
+    height:20px;
+    display:block;
+    content:"";
+    position:absolute;
+    top:5px
+  }
+  .spacemonkey .sm-8bitbutt::before {
+    left:-5px
+  }
+  .spacemonkey .sm-8bitbutt::after {
+    right:-5px
+  }
+  .spacemonkey .sm-monkey {
+    width:69px;
+    height:97px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/monkey-a4f0b1fb8da58414be5a9448babde7c8dffa3398.png) no-repeat 0 0;
+    background-size:69px 97px
+  }
+  .spacemonkey .sm-monkey-dead {
+    width:69px;
+    height:58px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/monkey_dead-599501ceebb14f709c159eb059393153a2fadd66.png) no-repeat 0 0;
+    background-size:69px 58px
+  }
+  .spacemonkey .sm-banana {
+    width:26px;
+    height:32px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/banana-b1425941091dd56721f0a438fd7b7c17671909e6.png) no-repeat 0 0;
+    background-size:26px 32px
+  }
+  .spacemonkey .sm-bomb {
+    width:32px;
+    height:46px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/bomb-1c417d5b15baf13a8b1a6c15daa50400a8c1cb7c.png) no-repeat 0 0;
+    background-size:32px 46px
+  }
+  .spacemonkey .sm-cloud {
+    width:100px;
+    height:51px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/cloud-f830b117cbcdeec70b122e4e58241d5f9cfddd6b.png) no-repeat 0 0;
+    background-size:100px 51px
+  }
+  .spacemonkey .sm-heart {
+    width:26px;
+    height:24px;
+    display:block;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/heart-26c5d0016f1c0f6e602cca0e04edb73653686aa8.png) no-repeat 0 0;
+    background-size:26px 24px
+  }
+  .spacemonkey .sm-cloud {
+    position:absolute;
+    left:0;
+    bottom:-100%
+  }
+  .spacemonkey .sm-cloud.uno {
+    left:-5%;
+    bottom:0
+  }
+  .spacemonkey .sm-cloud.dos {
+    left:40%;
+    bottom:-12px
+  }
+  .spacemonkey .sm-cloud.tres {
+    left:90%;
+    bottom:-10px
+  }
+  .spacemonkey .sm-ground {
+    width:100%;
+    height:22px;
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:url(http://ostrovok.ru/st/gm/mobile/img/spacemonkey/ground-ba5642de2d02eaa653f5a2cbdb282ea690265ea2.png) repeat-x;
+    background-size:60px 22px
+  }
+  .spacemonkey .sm-introduction-screen {
+    padding:60px 20px 20px;
+    text-align:center
+  }
+  .sm-introduction-screen .sm-monkey-dead {
+    margin:20px auto
+  }
+  .sm-introduction-screen .sm-8bitbutt {
+    width:112px;
+    margin:0 auto;
+    display:block
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (-o-min-device-pixel-ratio:3) {
+    display:block;
+    text-indent:-999em;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    text-align:left;
+    direction:ltr
+  }
+  .ir br {
+    display:none
+  }
+  .hidden {
+    display:none!important;
+    visibility:hidden
+  }
+  .visuallyhidden {
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px
+  }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip:auto;
+    height:auto;
+    margin:0;
+    overflow:visible;
+    position:static;
+    width:auto
+  }
+  .invisible {
+    visibility:hidden
+  }
+  .cf:before, .cf:after {
+    content:"";
+    display:table
+  }
+  .cf:after {
+    clear:both
+  }
+  .cf {
+    zoom:1
+  }
+  .cb {
+    clear:both
+  }
+  .fl {
+    float:left
+  }
+  .fr {
+    float:right
+  }
+  .eblock {
+    display:block
+  }
+  .iblock {
+    display:inline-block
+  }
+  .rblock {
+    display:block;
+    position:relative
+  }
+  .riblock {
+    display:inline-block;
+    position:relative
+  }
+  .dump {
+    margin:50px 0;
+    padding:20px;
+    background:#000;
+    color:#0a0;
+    clear:both;
+    overflow:scroll;
+    white-space:pre;
+    text-shadow:none
+  }
+  .nocallout {
+    -webkit-touch-callout:none
+  }
+  .ellipsis {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap
+  }
+  textarea[contenteditable] {
+    -webkit-appearance:none
+  }

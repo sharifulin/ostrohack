@@ -1,176 +1,33 @@
-.footer {
-  background:#013e6d url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) 0 0;
-  min-width:980px;
-  position:relative
-}
-.footer, .footer-inner {
-  height:93px
-}
-.footer-inner {
-  width:980px;
-  margin:0 auto;
-  position:relative
-}
-.footer-copyright {
-  position:absolute;
-  top:10px;
-  left:10px
-}
-.footer-copyright i {
+hr {
   display:block;
-  width:88px;
-  height:16px;
-  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat 0 -371px;
-  margin-bottom:8px
-}
-.footer-copyright small {
-  display:block;
-  font-size:9px;
-  line-height:12px;
-  color:#8cadc8
-}
-.footer-nav {
-  left:177px;
-  position:absolute;
-  white-space:nowrap
-}
-.footer-nav a {
-  color:#fff;
-  text-decoration:none;
-  border-bottom:1px solid #47769c
-}
-.footer-nav a:hover {
-  border-bottom-color:#fff
-}
-.footer-partnership, .footer-destinations, .footer-mobileapp, .footer-facebook, .footer-twitter, .footer-vkontakte, .footer-googleplus, .footer-rss, .footer-nav-item {
-  list-style:none;
-  list-style-image:none
-}
-.footer-nav-item {
-  float:left;
-  font-size:13px;
-  padding-right:19px
-}
-.footer-nav-item-skype {
-  float:right;
-  padding-right:1px
-}
-.footer-nav-item-skype a {
-  width:18px;
-  height:18px;
-  display:block;
+  height:1px;
   border:0;
-  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat -92px -478px
-}
-.footer-nav-top, .footer-nav-bottom {
-  margin:0;
+  border-top:1px solid #ccc;
+  margin:1em 0;
   padding:0
 }
-.footer-nav-top {
-  border-bottom:1px solid #012d4f;
-  line-height:18px;
-  height:18px;
-  padding:11px 0;
-  width:670px
-}
-.footer-nav-top:after {
-  clear:both;
-  content:'';
-  display:block;
-  font-size:0;
-  overflow:hidden;
-  height:0
-}
-.footer-nav-item-eng {
-  border:0;
-  left:100%;
-  margin-left:72px;
-  padding-right:0;
-  position:absolute
-}
-.footer-nav-item-eng i {
-  display:block;
-  float:left;
-  width:16px;
-  height:16px;
-  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat -144px -370px;
-  margin-left:-20px
-}
-.footer-nav-bottom {
-  width:520px
-}
-.footer-nav-bottom li {
-  float:left;
-  padding:11px 33px 3px 0
-}
-.footer-partnership a {
-  color:#f2c76b;
-  text-decoration:none;
-  border-bottom:1px solid #617268
-}
-.footer-partnership a:hover {
-  border-bottom-color:#f2c76b
-}
-.footer-partnership i {
-  display:block;
-  float:left;
-  width:12px;
-  height:25px;
-  background:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png) no-repeat -113px -371px;
-  margin:-8px 0 0 -17px
-}
-.footer-social {
-  position:absolute;
-  top:46px;
-  right:136px
-}
-.footer-social ul {
-  width:134px;
-  position:absolute;
-  right:0
-}
-.footer-social small {
-  display:block;
-  white-space:nowrap;
-  color:#8babc4;
+.glob-footer {
+  margin-top:5px;
+  padding:10px 0;
+  text-align:center;
   font-size:10px;
-  line-height:12px;
-  margin-bottom:3px
+  line-height:15px;
+  color:#555;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  cursor:default
 }
-.footer-social-list {
-  margin:0;
-  padding:0
+.glob-footer li {
+  padding:0 5px;
+  display:inline-block
 }
-.footer-social li {
-  float:left;
-  margin-left:11px
+.glob-footer a {
+  font-weight:bold;
+  font-size:12px;
+  color:#22518a
 }
-.footer-social li:first-child {
-  margin:0
-}
-.footer-social li, .footer-social a {
-  width:18px;
-  height:18px
-}
-.footer-social a {
-  display:block
-}
-.footer-social a {
-  background-image:url(http://ostrovok.ru/st/gm/img/sprite-header-footer-c8f40303a2944eeb0cbe4a8abaa0d0844d26e148.png);
-  background-repeat:no-repeat
-}
-.footer-facebook a {
-  background-position:0 -478px
-}
-.footer-twitter a {
-  background-position:-22px -478px
-}
-.footer-vkontakte a {
-  background-position:-45px -478px
-}
-.footer-googleplus a {
-  background-position:-115px -478px
-}
-.footer-rss a {
-  background-position:-68px -478px
+.glob-footer .gf-copy {
+  text-shadow:0 1px 0 white
 }

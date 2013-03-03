@@ -21,7 +21,7 @@ basis.l10n.createDictionary('app.menu', __dirname + 'l10n', {
   faq: 'FAQ',
   about: 'About Us',
   contact: 'Contact Us',
-  login: 'Sign in',
+  signin: 'Sign in',
   signup: 'Sign up',
   press: 'Press',
   jobs: 'Jobs',
@@ -31,5 +31,8 @@ basis.l10n.createDictionary('app.menu', __dirname + 'l10n', {
   partners: 'Partnership',
   popular: 'Popular destionations',
   mobile: 'Mobile',
-  wesocial: 'Find us in Social Networks'
+  wesocial: 'Find us in Social Networks',
+  search: 'Search',
+  login: 'Login',
+  full: 'Full version'
 });

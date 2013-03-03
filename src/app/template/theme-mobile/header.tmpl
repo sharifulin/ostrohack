@@ -1,16 +1,11 @@
 <b:style src="header.css"/>
 
-<div class="header">
-  <div class="header-inner">
-    <div class="header-logo">
-      <a class="header-logo-inner" href="/"><span class="header-logo-name"></span><span class="header-logo-title"></span>
-      </a>
-    </div>
-    <div class="header-user">
-      <div class="auth-container">
-        <div class="auth"><span class="auth-button auth-button-register">{l10n:app.menu.signup}</span><span class="auth-button auth-button-login auth-button-grey">{l10n:app.menu.login}</span>
-        </div>
-      </div>
-    </div>
+<header id="header" class="glob-header">
+  <a href="/" class="logo-block">
+     <h1 class="logo-image">Ostrovok.ru</h1>
+  </a>
+  <div class="gh-action">
+    <a href="/m/" class="gh-link-item active"> <span class="gh-icon search"></span> {l10n:app.menu.search}</a>
+    <a href="http://ostrovok.ru/m/login/" class="gh-link-item" target="_blank"> <span class="gh-icon login"></span> {l10n:app.menu.login}</a>
   </div>
-</div>
+</header>
