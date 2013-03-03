@@ -1,8 +1,14 @@
 basis.require('basis.data.dataset');
 basis.require('basis.ui');
 
-var templates = basis.template.define('app.module.search.hotels', resource('template/index.js').fetch());
-basis.template.theme('mobile').define('app.module.search.hotels', resource('template/theme-mobile/index.js').fetch());
+var namespace = 'app.module.search.hotels';
+
+basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
+  loading: 'Loading...'
+});
+
+var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
 var sorting = resource('module/sorting/index.js').fetch();
 var stared = resource('module/stared/index.js').fetch();

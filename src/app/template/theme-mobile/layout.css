@@ -1,0 +1,28 @@
+@import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic,latin-ext";
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+html, body
+{
+  background: #fafafa;
+  color: #999;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  font: 13px/1.231 Arial, sans-serif;
+}
+button::-moz-focus-inner {
+  border-color:transparent;
+  border-width:0
+}
+
+body .Basis-Blocker-Mate
+{
+  opacity: .8;
+}

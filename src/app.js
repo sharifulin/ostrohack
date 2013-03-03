@@ -11,11 +11,11 @@
 
   basis.ready(function(){
     var pages = new basis.ui.Node({
-      template: resource('app/template/pages.tmpl'),
+      template: basis.template.get('app.pages'),
 
       selection: true,
       childClass: {
-        template: resource('app/template/page.tmpl'),
+        template: basis.template.get('app.page'),
         handler: {
           select: function(){
             if (typeof this.lazyContent == 'function')
@@ -41,7 +41,7 @@
 
     var layout = new basis.ui.Node({
       container: document.body,
-      template: resource('app/template/layout.tmpl'),
+      template: basis.template.get('app.layout'),
       binding: {
         pages: pages
       }
