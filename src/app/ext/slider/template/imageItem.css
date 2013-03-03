@@ -1,0 +1,10 @@
+.hotel-slider-image
+{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.hotel-slider-image:last-child
+{
+  margin-right: 0;
+}

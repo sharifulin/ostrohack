@@ -14,5 +14,6 @@ var FilterMerge = basis.data.dataset.Merge.subclass({
 module.exports = {
   FilterMerge: FilterMerge,
   SearchForm: resource('ext/searchForm/index.js').fetch(),
-  Settings: resource('ext/settings/index.js').fetch()
+  Settings: resource('ext/settings/index.js').fetch(),
+  Slider: resource('ext/slider/index.js').fetch()
 };

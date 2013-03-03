@@ -1,4 +1,5 @@
 basis.require('basis.ui');
+basis.require('basis.ui.tabs');
 basis.require('app.type');  
 basis.require('app.ext');  
 
@@ -35,24 +36,13 @@ basis.l10n.createDictionary(namespace + '.night', __dirname + 'l10n', {
 });
 
 
-var templates = basis.template.define(namespace, {
-  View: resource('template/view.tmpl'),
-  Room: resource('template/room.tmpl'),
-  RoomAmenity: resource('template/roomAmenity.tmpl'),
-  Rating: resource('template/rating.tmpl'),
-  Header: resource('template/header.tmpl'),
-  Settings: resource('template/settings.tmpl')
-});
-
-
-/*basis.template.theme('mobile').define({
-  View: resource('template/module/view.tmpl'),
-  Hotel: resource('template/mobile/hotel.tmpl'),
-  Room: resource('template/mobile/room.tmpl')
-});*/
+var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+basis.template.theme('mobile').define(namespace, resource('template/mobile/index.js').fetch());
 
 var searchFormPopup = basis.resource('src/module/searchFormPopup/index.js');
-var Slider = resource('module/slider/index.js').fetch();
+
+var rooms = resource('module/rooms/index.js').fetch();
+var description = resource('module/description/index.js').fetch();
 
 var hotelObject = new basis.data.DataObject({
   active: true,  
@@ -69,86 +59,25 @@ var hotelObject = new basis.data.DataObject({
 });
 
 //
-// rooms
+// hotel info page control
 //
 
-var rooms = new basis.ui.Node({
+var infoPages = new basis.ui.tabs.PageControl({
+  template: templates.InfoPages,
+  autoSelectChild: false,
   childClass: {
-    visible: false,
-    template: templates.Room,
-    binding: {
-      slider: 'satellite:',
-      amenities: 'satellite:',
-      name: 'data:',
-      visible: 'visible',
-      current_allotment: 'data:',
-      size: 'data.room_type.data.size',
-      description: 'data.room_type.data.description || ""',
-      thumbnail: 'data.room_type.data.thumbnail',
-      
-      left: {
-        events: 'update',
-        getter: function(object){
-          return object.data.current_allotment <= 2 ? 'one' : (object.data.current_allotment <= 5 ? 'few' : 'lot');
-        }
-      },
-      leftCount: {
-        events: 'update',
-        getter: function(object){
-          return object.data.current_allotment <=5 ? basis.l10n.getToken(namespace, 'room.left', 'left' + object.data.current_allotment) : '';
-        }
-      },
-      total_rate: {
-        events: 'update',
-        getter: function(object){
-          return object.data.total_rate.format(0, '\x0A', '', '', '.');
-        }
-      }
+    template: templates.InfoPage
+  },
+  childNodes: [
+    {
+      name: 'rooms',
+      childNodes: rooms
     },
-    action: {
-      toggle: function(){
-        this.visible = !this.visible;
-        this.updateBind('visible');
-      }
-    },
-    satelliteConfig: {
-      slider: {
-        instanceOf: Slider
-      },
-      amenities: {
-        instanceOf: basis.ui.Node.subclass({
-          childClass: {
-            template: templates.RoomAmenity,
-            binding: {
-              title: 'title',
-              value: 'value'
-            }
-          }
-        })
-      }
-    },
-    templateUpdate: function(){
-      var images = (this.data.room_type && this.data.room_type.data.room_type_image_list || []).map(function(url){
-        return basis.data({
-          url: url
-        });
-      })
-      
-      this.satellite.slider.setChildNodes(images);
-
-      // aminities
-      var res = [];
-      var amenities = (this.data.room_type && this.data.room_type.data.amenities);
-      for (var key in amenities)
-      {
-        res.push({
-          title: key,
-          value: amenities[key].join(', ')
-        });
-      }
-      this.satellite.amenities.setChildNodes(res);
+    {
+      name: 'description',
+      childNodes: description
     }
-  }
+  ]
 });
 
 //
@@ -172,7 +101,7 @@ var rating = new basis.ui.Node({
 //
 // slider
 //
-var hotelSlider = new Slider({
+var hotelSlider = new app.ext.Slider({
   autoDelegate: true,
   active: true,
   handler: {
@@ -181,8 +110,6 @@ var hotelSlider = new Slider({
     }
   }  
 });
-
-
 
 //
 // header
@@ -209,10 +136,12 @@ var hotelHeader = new basis.ui.Node({
 var hotelView = new basis.ui.Node({
   template: templates.View,
   binding: {
+    header: hotelHeader,
     slider: hotelSlider,
     rating: rating,
-    rooms: rooms,
-    header: hotelHeader,
+    
+    infoPages: infoPages,
+
     settings: new app.ext.Settings({
       autoDelegate: false,
       delegate: hotelObject
@@ -235,7 +164,6 @@ var hotelView = new basis.ui.Node({
         return object.data.low_rate && object.data.low_rate.format(0, '\x0A', '', '', '.');
       }
     },
-    descr: 'data:description',
     has_rating: {
       events: 'update',
       getter: function(object){
