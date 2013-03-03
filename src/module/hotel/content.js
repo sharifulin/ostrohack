@@ -17,7 +17,11 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   availableRooms: 'All available rooms',
   'viewAll': 'Show all hotels',
   'change': 'change',
-  from: 'from'
+  from: 'from',
+  description: 'Description',
+  rooms: 'Rooms',
+  descriptionPageTitle: 'Description',
+  roomsPageTitle: 'Rooms'
 });
 
 basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
@@ -63,21 +67,58 @@ var hotelObject = new basis.data.DataObject({
 //
 
 var infoPages = new basis.ui.tabs.PageControl({
-  template: templates.InfoPages,
+  autoDelegate: true,
   autoSelectChild: false,
+  
+  template: templates.InfoPages,
+
   childClass: {
-    template: templates.InfoPage
+    template: templates.InfoPage,
+    binding: {
+      title: 'title'
+    },
+    action: {
+      back: function(){
+        this.unselect();
+      }
+    }
   },
   childNodes: [
     {
       name: 'rooms',
+      title: basis.l10n.getToken(namespace, 'roomsPageTitle'),
       childNodes: rooms
     },
     {
+      autoDelegate: true,
       name: 'description',
+      title: basis.l10n.getToken(namespace, 'descriptionPageTitle'),
       childNodes: description
     }
-  ]
+  ],
+  selection: {
+    handler: {
+      datasetChanged: function(){
+        hotelView.pageSelected = !!this.pick();
+        hotelView.updateBind('pageSelected');
+      }
+    }
+  }
+});
+
+//
+// hotel menu
+//
+var hotelMenu = new basis.ui.Node({
+  template: templates.Menu,
+  action: {
+    rooms: function(){
+      infoPages.item('rooms').select();
+    },
+    description: function(){
+      infoPages.item('description').select();
+    }
+  }
 });
 
 //
@@ -120,7 +161,7 @@ var hotelHeader = new basis.ui.Node({
   binding: {
     settings: new app.ext.Settings({}),
     viewallText: 'data:',
-    viewallHref: 'data:'
+    viewallHref: 'data:',
   },
   action: {
     changeSettings: function(){
@@ -134,18 +175,23 @@ var hotelHeader = new basis.ui.Node({
 // view
 //
 var hotelView = new basis.ui.Node({
+  pageSelected: false,
+
   template: templates.View,
   binding: {
     header: hotelHeader,
     slider: hotelSlider,
     rating: rating,
     
+    menu: hotelMenu,
     infoPages: infoPages,
 
     settings: new app.ext.Settings({
       autoDelegate: false,
       delegate: hotelObject
     }),
+
+    pageSelected: 'pageSelected',
     
     name: 'data:',
     address: 'data:',

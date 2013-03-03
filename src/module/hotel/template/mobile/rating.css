@@ -1,0 +1,18 @@
+.hotel-rating
+{
+  padding: 1em 0.5em;
+  color: #666;
+}
+
+.hotel-rating-value
+{
+  font-size: 2.5em;
+  vertical-align: middle;  
+}
+
+.hotel-rating-verbose
+{
+  font-size: 1.5em;
+  margin-left: .5em;
+  vertical-align: middle;
+}

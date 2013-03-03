@@ -23,6 +23,10 @@
     "availableRooms": "Все доступные номера",
     "viewAll": "Показать все отели",
     "change": "Изменить условия",
-    "from": "от"
+    "from": "от",
+    "description": "Описание",
+    "rooms": "Комнаты",
+    "descriptionPageTitle": "Описание",
+    "roomsPageTitle": "Комнаты"
   }
 }

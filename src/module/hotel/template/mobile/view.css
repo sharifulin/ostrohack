@@ -1,0 +1,34 @@
+.hotel
+{
+
+}
+.hotel-state_processing .hotel-wrapper
+{
+  visibility: hidden;
+}
+.hotel-title
+{
+  background: #57636f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: mobota, Arial;
+  padding: 1em 0;
+  line-height: 1;
+}
+.hotel-slider
+{
+  height: 150px;
+}
+
+.hotel-slider .b-photogallery__right,
+.hotel-slider .b-photogallery__left
+{
+  display: none !important;
+}
+
+.hotel.pageSelected .hotel-content
+{
+  display: none;
+}

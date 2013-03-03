@@ -15,6 +15,10 @@
   "app.module.hotel": {
     "garant": "Find it cheaper and get 3 times the price difference!",
     "garantInfo": "If you find a cheaper rate for the same room, we will repay you triple the price difference. This is how you book a room at the best price. ",
-    "from": "from"
+    "from": "from",
+    "description": "Description",
+    "rooms": "Rooms",
+    "descriptionPageTitle": "Description",
+    "roomsPageTitle": "Rooms"
   }
 }
