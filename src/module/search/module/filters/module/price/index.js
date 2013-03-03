@@ -11,8 +11,5 @@ basis.l10n.createDictionary('app.module.search.filters.price', __dirname + 'l10n
 
 module.exports = new basis.ui.Node({
   template: resource('template/view.tmpl'),
-  binding: {
-  },
-  action: {
-  }
+  disabled: true
 });
