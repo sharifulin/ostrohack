@@ -8,5 +8,7 @@
     GuestsField: resource('guestsField.tmpl'),
     GuestsFieldPopup: resource('guestsFieldPopup.tmpl'),
     GuestsFieldListItem: resource('guestsFieldItem.tmpl'),
+    ChildrenAgeField: resource('childrenAgeField.tmpl'),
+    ChildrenAgeFieldItem: resource('childrenAgeFieldItem.tmpl'),    
     ErrorPopup: resource('errorPopup.tmpl')
   };

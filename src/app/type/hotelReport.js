@@ -16,6 +16,7 @@
       departureDate: basis.fn.$self,
       room1_numberOfAdults: Number,
       room1_numberOfChildren: Number,
+      childrenAge: String,
       viewallText: String,
       viewallHref: String,
       hotel: Hotel,
@@ -29,17 +30,25 @@
       url: '/eapi/',
       method: 'GET',
       request: function(){
-        console.log('call request');
+        var params = {
+          hotelId: this.data.hotelId,
+          arrivalDate: this.data.arrivalDate.toFormat('%D-%M-%Y'),
+          departureDate: this.data.departureDate.toFormat('%D-%M-%Y'),
+          room1_numberOfAdults: this.data.room1_numberOfAdults,
+          room1_numberOfChildren: this.data.room1_numberOfChildren,
+          lang: basis.l10n.getCulture().split('-').shift(),
+          grouped: true
+        }
+
+        if (this.data.room1_numberOfChildren)
+        {
+          var ages = this.data.childrenAge.split('.');
+          for (var i = 1; i <= this.data.room1_numberOfChildren; i++)
+            params['room_child' + i + 'Age'] = ages[i - 1];
+        }
+        
         return {
-          params: {
-            hotelId: this.data.hotelId,
-            arrivalDate: this.data.arrivalDate.toFormat('%D-%M-%Y'),
-            departureDate: this.data.departureDate.toFormat('%D-%M-%Y'),
-            room1_numberOfAdults: this.data.room1_numberOfAdults,
-            room1_numberOfChildren: this.data.room1_numberOfChildren,
-            lang: basis.l10n.getCulture().split('-').shift(),
-            grouped: true
-          },
+          params: params,
           routerParams: {
             hotelId: this.data.hotelId
           }

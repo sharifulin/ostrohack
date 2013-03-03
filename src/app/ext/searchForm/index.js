@@ -232,6 +232,33 @@
     }
   });
 
+  //
+  // children age field
+  //
+
+  var ChildrenAgeField = basis.ui.Node.subclass({
+    template: templates.ChildrenAgeField,
+    getValue: function(){
+      return this.childNodes.map(function(field){ 
+        return field.tmpl.field.value; 
+      }).join('.');
+    },
+    setValue: function(value){
+      var items = value && value.split('.') || [];
+      this.setChildNodes(items.map(function(val){
+        return {
+          value: val
+        }
+      }));
+    },
+    childClass: {
+      template: templates.ChildrenAgeFieldItem,
+      binding: {
+        value: 'value'
+      }
+    }
+  });
+
 
   //
   // main part
@@ -241,7 +268,8 @@
     'arrivalField',
     'departureField',
     'adultsField',
-    'childrenField' 
+    'childrenField',
+    'childrenAgeField' 
   ];
 
   var Form = basis.ui.Node.subclass({
@@ -253,7 +281,8 @@
       departureField: 'satellite:',
       submitButton: 'satellite:',
       adultsField: 'satellite:',
-      childrenField: 'satellite:'
+      childrenField: 'satellite:',
+      childrenAgeField: 'satellite:'
     },
     action: {
       kill: function(event){
@@ -388,7 +417,19 @@
           name: 'childrenCount',
           itemCountFrom: 0,
           itemCountTo: 4,
-          value: 0
+          value: 0,
+          handler: {
+            change: function(){
+              var value = this.getValue();
+              this.owner.satellite.childrenAgeField.setValue(basis.array.create(value, 7).join('.'));
+            }
+          }
+        }
+      },
+      childrenAgeField: {
+        instanceOf: ChildrenAgeField,
+        config: {
+          name: 'childrenAge'
         }
       },
       submitButton: {
@@ -425,18 +466,21 @@
 
         if (suggestion.data.type == 'region')
         {
-          app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
+          app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}&childrenAge={childrenAge}'.format({
             city: suggestion.data.pretty_slug,
             guests: data.adultsCount,
+            childrenAge: data.childrenAge,
             arrivalDate: data.arrivalDate.toFormat('%D.%M.%Y'),
             departureDate: data.departureDate.toFormat('%D.%M.%Y')
           }));
         }
         else
         {
-          app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults=2={guests}'.format({
+          app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults={guests}&room1_numberOfChildren={childrenCount}&childrenAge={childrenAge}'.format({
             hotelId: suggestion.data.targetId,
             guests: data.adultsCount,
+            childrenCount: data.childrenCount,
+            childrenAge: data.childrenAge,
             arrivalDate: data.arrivalDate.toFormat('%D-%M-%Y'),
             departureDate: data.departureDate.toFormat('%D-%M-%Y')
           }));
@@ -444,7 +488,6 @@
       }
       else
       {
-        console.log('element');
         errorPopup().show(this.satellite.destinationField.tmpl.field);
         errorPopup().realign();
       } 

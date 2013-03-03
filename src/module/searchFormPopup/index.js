@@ -16,7 +16,8 @@ module.exports = new basis.ui.window.Window({
           arrivalDate: this.data.arrivalDate,
           departureDate: this.data.departureDate,
           adultsCount: this.data.room1_numberOfAdults,
-          childrenCount: this.data.room1_numberOfChildren
+          childrenCount: this.data.room1_numberOfChildren,
+          childrenAge: this.data.childrenAge
         });
       }
     },
