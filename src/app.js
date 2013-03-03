@@ -2,7 +2,6 @@
   basis.require('basis.l10n');
   ;;;basis.require('basis.devpanel');
   basis.require('basis.ui');
-  basis.require('basis.ui.tabs');
   basis.require('app.router');
   basis.require('app.utils');  
 
@@ -45,10 +44,10 @@
   });
 
   basis.ready(function(){
-    var pages = new basis.ui.tabs.PageControl({
+    var pages = new basis.ui.Node({
       template: resource('app/template/pages.tmpl'),
 
-      autoSelectChild: false,
+      selection: true,
       childClass: {
         template: resource('app/template/page.tmpl'),
         handler: {
