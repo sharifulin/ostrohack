@@ -2,3 +2,26 @@
 {
   display: none;
 }
+
+.hotel-info-page-title
+{
+  background: #57636f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: mobota, Arial;
+  padding: 1em 0;
+  line-height: 1;
+  position: relative;
+}
+
+.hotel-info-page-back
+{
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  color: white !important;
+  text-align: center;
+  cursor: pointer;
+}

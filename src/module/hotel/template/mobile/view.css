@@ -1,6 +1,6 @@
 .hotel
 {
-
+  font-family: mobota, Tahoma;
 }
 .hotel-state_processing .hotel-wrapper
 {
@@ -30,5 +30,6 @@
 
 .hotel.pageSelected .hotel-content
 {
+  visibility: hidden;
   display: none;
 }

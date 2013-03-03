@@ -9,7 +9,12 @@
   margin-right: 0;
 }
 
+.hotel-slider-image
+{
+  float: left;
+}
+.hotel-slider-image,
 .hotel-slider-image img
 {
-  height: 100%
+  min-height: 100%;
 }

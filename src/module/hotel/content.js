@@ -24,14 +24,6 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   roomsPageTitle: 'Rooms'
 });
 
-basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
-  left1: 'Only 1 left',
-  left2: 'Only 2 rooms left',
-  left3: '3 rooms left',
-  left4: '4 rooms left',
-  left5: '5 rooms left'
-});
-
 basis.l10n.createDictionary(namespace + '.night', __dirname + 'l10n', {
   'for': 'for',
   night1: 'night',

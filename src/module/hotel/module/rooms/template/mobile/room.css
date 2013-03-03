@@ -1,0 +1,64 @@
+
+.hotel-room
+{
+  padding: 0 .5em;
+  margin-top: -1px;
+}
+.hotel-room:first-child
+{
+  margin-top: .5em;
+}
+
+.hotel-room:first-child .hotel-room-wrapper
+{
+  border-radius: 4px 4px 0 0;
+}
+.hotel-room:last-child .hotel-room-wrapper
+{
+  border-radius: 0 0 4px 4px;
+}
+
+.hotel-room-wrapper
+{
+  border: 1px solid #afafaf;
+  background: white;
+}
+
+.hotel-room-content
+{
+  padding: 1em;
+}
+
+.hotel-room-slider
+{
+  height: 150px;
+}
+
+.hotel-room-slider .b-photogallery__left,
+.hotel-room-slider .b-photogallery__right
+{
+  display: none !important;
+}
+
+.hotel-room-title
+{
+  color: #4b5c66;
+  font-size: 1.4em;
+  margin-bottom: .5em;
+}
+
+.hotel-room-amenities
+{
+  color: #808a8f;
+}
+.hotel-room-amenities p
+{
+  margin: 0;
+}
+
+.hotel-room-price
+{
+  color: #4a95c9;
+  font-size: 2em;
+  margin: 0.5em 0;
+}

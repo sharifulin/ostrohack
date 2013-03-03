@@ -1,0 +1,18 @@
+.hotel-description-content
+{
+  padding: 0 0.5em;
+  color: #808a8f;
+}
+
+.hotel-description-content H4
+{
+  font-size: 1.5em;
+  color: #4b5c66;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+}
+.hotel-description-content H4:first-child
+{
+  margin-top: 1em;
+}
+

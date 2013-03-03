@@ -2,6 +2,14 @@ basis.require('app.ext');
 
 var namespace = 'app.module.hotel.rooms';
 
+basis.l10n.createDictionary(namespace + '.left', __dirname + 'l10n', {
+  left1: 'Only 1 left',
+  left2: 'Only 2 rooms left',
+  left3: '3 rooms left',
+  left4: '4 rooms left',
+  left5: '5 rooms left'
+});
+
 var templates = basis.template.define(namespace, resource('template/index.js').fetch());
 basis.template.theme('mobile').define(namespace, resource('template/mobile/index.js').fetch());
 
@@ -29,7 +37,7 @@ module.exports = new basis.ui.Node({
       leftCount: {
         events: 'update',
         getter: function(object){
-          return object.data.current_allotment <=5 ? basis.l10n.getToken(namespace, 'room.left', 'left' + object.data.current_allotment) : '';
+          return object.data.current_allotment <=5 ? basis.l10n.getToken(namespace, 'left', 'left' + object.data.current_allotment) : '';
         }
       },
       total_rate: {

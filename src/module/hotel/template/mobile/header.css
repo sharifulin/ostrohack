@@ -5,8 +5,13 @@
 .hotel-header-back a
 {
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 1em;
   left: 1em;
+  color: white !important;
+  text-align: center;
+  font-size: 1.5em;
+}
+.hotel-header-back a:hover
+{
+  color: white !important; 
 }
