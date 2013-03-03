@@ -126,6 +126,7 @@ var rating = new basis.ui.Node({
   binding: {
     count: 'data:count',
     total_verbose: 'data:total_verbose',
+    stars: 'data:',
     total: {
       events: 'update',
       getter: function(object){

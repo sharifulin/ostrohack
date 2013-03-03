@@ -59,7 +59,12 @@
 
 .hotel-room-price
 {
-  color: #4a95c9;
+  color: white;
   font-size: 2em;
-  margin: 0.5em 0;
+  margin: 0.5em;
+  padding: 0.7em;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #e77257;
+  background: #ff937a;
 }

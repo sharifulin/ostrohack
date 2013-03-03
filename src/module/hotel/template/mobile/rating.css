@@ -4,6 +4,13 @@
   color: #666;
 }
 
+.hotel-rating-stars
+{
+  float: right;
+  font-size: 1.4em;
+  padding: 0.2em 0 0;
+}
+
 .hotel-rating-value
 {
   font-size: 2em;
@@ -15,4 +22,18 @@
   font-size: 1.2em;
   margin-left: .5em;
   vertical-align: middle;
+}
+
+.hotel-rating-stars_10 .icon-star:nth-child(2),
+.hotel-rating-stars_10 .icon-star:nth-child(3),
+.hotel-rating-stars_10 .icon-star:nth-child(4),
+.hotel-rating-stars_10 .icon-star:nth-child(5),
+.hotel-rating-stars_20 .icon-star:nth-child(3),
+.hotel-rating-stars_20 .icon-star:nth-child(4),
+.hotel-rating-stars_20 .icon-star:nth-child(5),
+.hotel-rating-stars_30 .icon-star:nth-child(4),
+.hotel-rating-stars_30 .icon-star:nth-child(5),
+.hotel-rating-stars_40 .icon-star:nth-child(5)
+{
+  display: none;
 }
