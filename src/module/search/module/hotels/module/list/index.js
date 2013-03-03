@@ -13,7 +13,10 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   map: 'Map',
   fromCenter: 'from center',
   overnight: 'for',
-  nights: 'nights'
+  nights: 'nights',
+  night1: 'night',
+  night2: 'nights',
+  night3: 'nights'
 });
 
 basis.l10n.createDictionary(namespace + '.rating', __dirname + 'l10n', {
@@ -65,6 +68,12 @@ var list = new basis.ui.Node({
       is_golden: 'data:is_golden ? "golden" : ""',
       address: 'data:',
       nights: 'data:',
+      nightsText: {
+        events: 'update',
+        getter: function(node){
+          return basis.l10n.getToken(namespace, 'night' + app.utils.plural(node.data.nights || 1));
+        }
+      },
       arrivalDate: 'data:',
       departureDate: 'data:',
       adults: 'data:',

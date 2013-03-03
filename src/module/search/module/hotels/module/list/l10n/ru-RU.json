@@ -4,7 +4,10 @@
     "map": "На карте:",
     "fromCenter": "от центра",
     "overnight": "за",
-    "nights": "ночи"
+    "nights": "ночи",
+    "night1": "ночь",
+    "night2": "ночи",
+    "night3": "ночей"
   }, 
   "app.module.search.hotels.list.amenity": {
     "wifi": "Wi-Fi в номерах",
