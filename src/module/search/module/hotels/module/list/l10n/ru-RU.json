@@ -1,8 +1,18 @@
 {
+  "app.module.search.hotels.list": {
+    "book": "Забронировать",
+    "map": "На карте:",
+    "fromCenter": "от центра",
+    "overnight": "за",
+    "nights": "ночи"
+  }, 
   "app.module.search.hotels.list.amenity": {
     "wifi": "Wi-Fi в номерах",
     "internet": "Проводной интернет в номерах",
     "breakfast": "Бесплатный завтрак",
     "parking": "Парковка"
+  }, 
+  "app.module.search.hotels.list.rating": {
+    "fromMax": "из 10"
   }
 }

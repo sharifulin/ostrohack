@@ -13,6 +13,10 @@ basis.l10n.createDictionary('app.currency.label', __dirname + 'l10n', {
   usd: '$'
 });
 
+basis.l10n.createDictionary('app.distance.label', __dirname + 'l10n', {
+  km: 'km'
+});
+
 basis.l10n.createDictionary('app.menu', __dirname + 'l10n', {
   faq: 'FAQ',
   about: 'About Us',

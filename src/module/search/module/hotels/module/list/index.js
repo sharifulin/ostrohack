@@ -8,6 +8,18 @@ basis.template.theme('mobile').define('searchResult', resource('template/theme-m
 
 var namespace = 'app.module.search.hotels.list';
 
+basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
+  book: 'Book now',
+  map: 'Map',
+  fromCenter: 'from center',
+  overnight: 'for',
+  nights: 'nights'
+});
+
+basis.l10n.createDictionary(namespace + '.rating', __dirname + 'l10n', {
+  fromMax: 'from 10'
+});
+
 basis.l10n.createDictionary(namespace + '.amenity', __dirname + 'l10n', {
   wifi: 'wifi',
   internet: 'internet',
@@ -89,7 +101,7 @@ var list = new basis.ui.Node({
         },
         instanceOf: basis.ui.Node.subclass({
           autoDelegate: true,
-          template: resource('template/rating.tmpl'),
+          template: templates.rating,
           binding: {
             rating_verbose: 'data:',
             rating: 'data:rating'
@@ -102,7 +114,7 @@ var list = new basis.ui.Node({
         },
         instanceOf: basis.ui.Node.subclass({
           autoDelegate: true,
-          template: resource('template/star_rating.tmpl'),
+          template: templates.star_rating,
           binding: {
             star_rating: 'data:'
           }
@@ -114,7 +126,7 @@ var list = new basis.ui.Node({
         },
         instanceOf: basis.ui.Node.subclass({
           autoDelegate: true,
-          template: resource('template/amenities.tmpl'),
+          template: templates.amenities,
           init: function(){
             basis.ui.Node.prototype.init.call(this);
             this.setChildNodes(this.data.amenities.map(function(amenity){
@@ -129,7 +141,7 @@ var list = new basis.ui.Node({
             return amenitiesSorting[child.name];
           },
           childClass: {
-            template: resource('template/amenity.tmpl'),
+            template: templates.amenity,
             binding: {
               name: 'name',
               hint: 'hint'

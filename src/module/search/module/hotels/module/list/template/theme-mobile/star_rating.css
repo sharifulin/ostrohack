@@ -1,0 +1,38 @@
+.stars, .stars-val {
+  height:10px;
+  display:inline-block
+}
+.stars {
+  position:relative;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -393px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.stars-val {
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -402px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px;
+  width:auto
+}
+.stars-val-10 .stars-val {
+  width:10px
+}
+.stars-val-20 .stars-val {
+  width:20px
+}
+.stars-val-30 .stars-val {
+  width:30px
+}
+.stars-val-40 .stars-val {
+  width:40px
+}
+.stars-val-50 .stars-val {
+  width:50px
+}

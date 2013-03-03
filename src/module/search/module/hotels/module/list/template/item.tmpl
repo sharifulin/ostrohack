@@ -13,12 +13,12 @@
       <h3 class="serp-hotel-title">{name}</h3>
     </a>
     <div class="serp-hotel-info">
-      <span class="serp-hotel-location pseudo">На карте:</span>
+      <span class="serp-hotel-location pseudo">{l10n:app.module.search.hotels.list.map}</span>
       &#32;
       <span class="serp-hotel-location-address">
-        <span class="serp-hotel-distance">{distance}&nbsp;км.</span>
+        <span class="serp-hotel-distance">{distance}&nbsp;{l10n:app.distance.label.km}</span>
         &#32;
-        <span class="serp-hotel-self">от центра {locative_where}</span>
+        <span class="serp-hotel-self">{l10n:app.module.search.hotels.list.fromCenter} {locative_where}</span>
       </span>
     </div>
     <!--{rating}-->
@@ -27,10 +27,10 @@
     <div class="serp-hotel-price">
       <span class="serp-hotel-price-value">{price}</span>
       &#32;
-      <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">руб.</span><span class="serp-hotel-nights">за {nights} ночи</span></span>
+      <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">{l10n:app.currency.label.rub}</span><span class="serp-hotel-nights">{l10n:app.module.search.hotels.list.overnight} {nights} {l10n:app.module.search.hotels.list.nights}</span></span>
     </div>
     <a class="button button-blue serp-hotel-button external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
-      Забронировать
+      {l10n:app.module.search.hotels.list.book}
     </a>
   </div>
   <div class="serp-hotel-like"></div>
