@@ -6,7 +6,7 @@ basis.template.theme('mobile').define('app', resource('../template/theme-mobile/
 
 
 function checkTheme(){
-  if (window.innerWidth <= 480)
+  if (window.innerWidth <= 568)
     basis.template.setTheme('mobile');
   else
     basis.template.setTheme('base');

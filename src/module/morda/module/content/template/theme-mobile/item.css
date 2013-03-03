@@ -22,7 +22,7 @@
   margin: 4px 0 0;
   word-spacing: 1px;
   line-height: 1.1em;
-  font-size: 140%;
+  font-size: 19px;
 }
 .history-hotel-price {
   bottom: 1px;
@@ -37,7 +37,7 @@
 }
 .history-hotel-price-value {
   color: #000;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
 }
 .history-hotel-info {

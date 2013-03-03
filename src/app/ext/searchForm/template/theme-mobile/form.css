@@ -1,7 +1,11 @@
+.giantform .hidden {
+  display: none;
+}
 .giantform-title {
   color: #424d53;
-  font: 300 32px/38px "Open Sans", Verdana, sans-serif;
-  margin: 35px 0 18px 30px;
+  font: 300 150% "Open Sans", Verdana, sans-serif;
+  margin: .75em 0 .85em;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
 }
 .giantform-form {
@@ -23,8 +27,7 @@
   position:relative
 }
 .giantform-label {
-  display:inline-block;
-  margin: 5px 0 0 9px;
+  padding: 5px 0 0 9px;
 }
 .giantform-input {
   background-clip:padding-box;

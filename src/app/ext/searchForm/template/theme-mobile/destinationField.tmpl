@@ -1,6 +1,12 @@
 <b:define name="hidden" type="bool"/>
 <b:include src="basis.ui.field.Text" no-style class="destinationField-state_{state}">
   <b:class ref="field" value="giantform-input giantform-destination-input giantform-destination-input_{state}"/>
+  <b:set-attr ref="field" name="autocomplete" value="off"/>
+  <b:set-attr ref="field" name="autocapitalize" value="off"/>
+  <b:set-attr ref="field" name="autocorrect" value="off"/>
+  <b:set-attr ref="field" name="spellcheck" value="false"/>
+  <!--<b:set-attr ref="field" name="x-webkit-speech" value="x-webkit-speech"/>-->
+  <b:set-attr ref="field" name="required" value="required"/>
   <b:append ref="content">
     <span class="giantform-destination-clear {hidden}" event-click="clear"></span>
   </b:append>  

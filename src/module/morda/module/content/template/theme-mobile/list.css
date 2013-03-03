@@ -1,17 +1,17 @@
 .history {
   font-family: 'Open Sans', Verdana, sans-serif;
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 .history-header {
-  color: #798891;
+  color: #424d53;
   font: 400 20px/30px "Open Sans", Verdana, sans-serif;
   -webkit-font-smoothing:antialiased;
-  margin: .4em 0;
-  padding-top: 4em;
+  margin: .6em 0 .8em;
+  padding-top: .1em;
   text-align: center;
 }
 .history-header-link {
-  color: #798891;
+  color: #424d53;
   display: inline-block;
   line-height: 29px;
   text-decoration: none;
