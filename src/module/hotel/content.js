@@ -102,7 +102,11 @@ var infoPages = new basis.ui.tabs.PageControl({
 // hotel menu
 //
 var hotelMenu = new basis.ui.Node({
+  autoDelegate: true,
   template: templates.Menu,
+  binding: {
+    address: 'data:'
+  },
   action: {
     rooms: function(){
       infoPages.item('rooms').select();

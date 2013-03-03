@@ -19,8 +19,9 @@
 .hotel-info-page-back
 {
   position: absolute;
-  top: 1em;
-  left: 1em;
+  left: 0;
+  top: 0;
+  padding: 1em;
   color: white !important;
   text-align: center;
   cursor: pointer;

@@ -10,12 +10,24 @@
 {
   background: #57636f;
   color: white;
-  font-weight: bold;
+  
   text-align: center;
-  font-size: 1.5em;
+  
   font-family: mobota, Arial;
   padding: 1em 0;
   line-height: 1;
+}
+.hotel-name
+{
+  font-size: 1.5em;  
+  font-weight: bold;
+}
+.hotel-address
+{
+  margin-top: 0.7em;
+  color: #EEE;
+  font-size: 85%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
 }
 .hotel-slider
 {
