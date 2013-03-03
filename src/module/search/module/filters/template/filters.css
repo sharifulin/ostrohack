@@ -15,6 +15,9 @@
 .clearfix:after {
   clear:both
 }
+.serpfilter-disabled .serpfilter-content {
+  opacity: .4;
+}
 .serpfilter {
   border-top:1px solid #cdcdcd;
   box-shadow:inset 0 1px #fbfbfb;
@@ -26,7 +29,7 @@
   position:relative;
   z-index:1
 }
-.serpfilter-price{
+.serpfilter-price {
   border:0;
   box-shadow:none;
   padding-top:0

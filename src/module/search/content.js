@@ -5,7 +5,22 @@
 
   var inputDataset = new basis.data.dataset.Merge({
     active: true,
-    sources: []
+    sources: [],
+    listen: {
+      source: {
+        stateChanged: function(sender){
+          this.setState(sender.state);
+        }
+      }
+    },
+    handler: {
+      stateChanged: function(){
+        if (this.state != basis.data.STATE.READY)
+          view.disable();
+        else
+          view.enable();
+      }
+    }
   });
   var outputDataset = new basis.data.dataset.Merge({
     sources: [
@@ -22,6 +37,24 @@
   var hotels = resource('module/hotels/index.js').fetch();
   var filters = resource('module/filters/index.js').fetch();
   var header = resource('module/header/index.js').fetch();
+
+  var view = new basis.ui.Node({
+    template: resource('template/view.tmpl'),
+    binding: {
+      hotels: hotels,
+      filters: filters,
+      header: header
+    }
+  });
+  // basis bug, satellite do not disable on add to owner via binding
+  view.disable();
+
+  module.exports = view;
+
+
+  //
+  // router
+  //
 
   var resolver = new basis.data.Object({
     active: true,
@@ -74,13 +107,4 @@
       resolver.params = params;
       resolver.setDelegate(app.type.DestinationSuggestion.byQuery.getSubset(params.q, true));
     } 
-  });
-
-  module.exports = new basis.ui.Node({
-    template: resource('template/view.tmpl'),
-    binding: {
-      hotels: hotels,
-      filters: filters,
-      header: header
-    }
   });

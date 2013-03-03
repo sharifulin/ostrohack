@@ -36,6 +36,15 @@
   border-bottom: 1px dotted;
   position: static;
 }
+.sortbutton-disabled.sortbutton-selected {
+  background: 0;
+  border: 0;
+  color: #999 !important;
+}
+.sortbutton-disabled {
+  color: #999;
+  cursor: default;
+}
 .sortbutton:hover {
   color: #1a6fde;
 }
