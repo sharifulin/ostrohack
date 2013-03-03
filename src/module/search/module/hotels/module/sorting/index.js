@@ -10,18 +10,12 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   distance: 'distance'
 });
 
-<<<<<<< Updated upstream
-var toolbar = new basis.ui.Node({
-  autoDelegate: true,
-
-  template: resource('template/sorting.tmpl'),
-=======
 var templates = basis.template.define(namespace, resource('template/index.js').fetch());
 basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
-module.exports = new basis.ui.Node({
+var sortingPanel = new basis.ui.Node({
+  autoDelegate: true,
   template: templates.view,
->>>>>>> Stashed changes
 
   event_sortChanged: basis.event.create('sortChanged'),
   selection: true,
@@ -79,4 +73,4 @@ module.exports = new basis.ui.Node({
   ]
 });
 
-module.exports = toolbar;
+module.exports = sortingPanel;
