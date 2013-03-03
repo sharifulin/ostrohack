@@ -9,8 +9,5 @@ basis.l10n.createDictionary('app.module.search.filters.discounts', __dirname + '
 
 module.exports = new basis.ui.Node({
   template: resource('template/view.tmpl'),
-  binding: {
-  },
-  action: {
-  }
+  disabled: true
 });
