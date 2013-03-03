@@ -33,9 +33,9 @@ INSTALL
   $ basis server
 ```
 
-* Launch [Chrome](http://localhost:8003)
+* Launch [browser](http://localhost:8003)
 
-* Additional you can install Google Chrome plugin [Basis.js Tools](https://chrome.google.com/webstore/search-extensions/basisjs?utm_source=chrome-ntp-icon)
+* Additional you can install the Google Chrome plugin [Basis.js Tools](https://chrome.google.com/webstore/search-extensions/basisjs?utm_source=chrome-ntp-icon)
 
 
 SEE ALSO
