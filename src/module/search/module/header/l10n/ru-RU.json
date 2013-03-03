@@ -1,0 +1,7 @@
+{
+  "app.module.search.module.header": {
+    "newSearch": "Новый поиск",
+    "findLabelFake": "Найдены отели в данном регионе",
+    "forLabelFake": "для взрослых и детей на эти даты"
+  }
+}
