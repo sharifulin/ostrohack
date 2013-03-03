@@ -23,7 +23,10 @@ basis.template.theme('mobile').define(namespace, resource('template/theme-mobile
 module.exports = new basis.ui.Node({
   template: templates.view,
   binding: {
-    form: new app.ext.SearchForm({}),
+    form: 'satellite:',
     content: resource('module/content/index.js').fetch()
+  },
+  satellite: {
+    form: new app.ext.SearchForm({})
   }
 });

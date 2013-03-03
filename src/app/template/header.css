@@ -46,11 +46,6 @@
   background-position:0 0;
   box-shadow:0 0 0 1px rgba(0, 0, 0, 0.1)
 }
-@-moz-document url-prefix() {
-  .auth-button {
-    line-height:19px
-  }
-}
 .auth-button-register, .auth-button-login {
   position:absolute;
   top:22px;
