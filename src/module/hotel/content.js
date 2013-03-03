@@ -213,7 +213,10 @@ var hotelView = new basis.ui.Node({
     rating: rating,
     rooms: rooms,
     header: hotelHeader,
-    settings: new app.ext.Settings({}),
+    settings: new app.ext.Settings({
+      autoDelegate: false,
+      delegate: hotelObject
+    }),
     
     name: 'data:',
     address: 'data:',
