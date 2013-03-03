@@ -1,7 +1,9 @@
 basis.require('basis.l10n');
 basis.require('basis.ui');
 
-basis.l10n.createDictionary('app.module.morda.content', __dirname + 'l10n', {
+var namespace = 'app.module.morda.content';
+
+basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   title: 'Recently viewed',
   back: 'Go back',
   more: 'More hotel',
@@ -10,8 +12,11 @@ basis.l10n.createDictionary('app.module.morda.content', __dirname + 'l10n', {
   labelPriceFrom: 'from'
 });
 
+var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
+
 module.exports = new basis.ui.Node({
-  template: resource('template/list.tmpl'),
+  template: templates.list,
   binding: {
     countMore: 'data:'
   },
@@ -20,7 +25,7 @@ module.exports = new basis.ui.Node({
   },
   
   childClass: {
-    template: resource('template/item.tmpl'),
+    template: templates.item,
     binding: {
       title: 'data:',
       img: 'data:',

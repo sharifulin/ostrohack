@@ -1,0 +1,72 @@
+.history {
+  font-family:'Open Sans', Verdana, sans-serif;
+  margin-bottom:42px;
+  position:relative;
+  margin-bottom:42px
+}
+.history-list {
+  font-size:0;
+  letter-spacing:-4px
+}
+.history-controls {
+  font-size:0;
+  position:absolute;
+  right:16px;
+  top:14px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none
+}
+.history-control {
+  border-bottom:1px dotted #66a2d5;
+  color:#266499;
+  cursor:pointer;
+  display:inline-block;
+  font-family:Arial, sans-serif;
+  font-size:11px;
+  -webkit-font-smoothing:antialiased;
+  text-transform:uppercase;
+  white-space:nowrap
+}
+.history-control:before, .history-control:after {
+  border:0 solid transparent;
+  font-size:13px;
+  line-height:11px;
+  position:absolute;
+  top:0
+}
+.history-control-prev {
+  position:absolute;
+  right:109px
+}
+.history-control-prev:before {
+  border-right-width:4px;
+  content: '←';
+  right:100%
+}
+.history-control-next:after {
+  border-left-width:4px;
+  content: '→';
+  left:100%
+}
+.history-control-disabled {
+  border:0;
+  color:#99a5ac;
+  cursor:default
+}
+.history-control-disabled:after {
+  content:none
+}
+.history-header{
+  color:#798891;
+  font:400 25px/30px"Open Sans", Verdana, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  margin-bottom:17px
+}
+.history-header-link {
+  border-bottom: 1px solid #ccd0d3;
+  color: #798891;
+  display: inline-block;
+  line-height: 29px;
+  text-decoration: none;
+}
