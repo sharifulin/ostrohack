@@ -57,7 +57,7 @@
   });
 
   //
-  // main part
+  // date picker
   //
 
   var calendarPopup = new basis.ui.popup.Popup({
@@ -125,6 +125,10 @@
     }
   });
 
+  //
+  // suggestions popup
+  //
+
   var Suggestions = basis.ui.Node.subclass({
     visible: false,
     active: true,
@@ -165,12 +169,81 @@
     }
   });
 
+
+
+  //
+  // guests Field
+  //
+  var guestsPopup = basis.fn.lazyInit(function(){
+    var popup = new basis.ui.popup.Popup({
+      template: templates.GuestsFieldPopup,
+      dir: 'left bottom left top',
+      childNodes: new basis.ui.Node({
+        autoDelegate: true,
+        childClass: {
+          autoDelegate: true,
+          template: templates.GuestsFieldListItem,
+          binding: {
+            title: 'value'
+          },
+          action: {
+            select: function(){
+              popup.delegate.setValue(this.value);
+              popup.hide();
+            }
+          }
+        },
+        handler: {
+          rootChanged: function(){
+            var root = this.root;
+            var childNodes = root && basis.array.create(root.itemCountTo - root.itemCountFrom + 1, function(index){
+              return {
+                value: root.itemCountFrom + index
+              }
+            });
+            
+            this.setChildNodes(childNodes || []);
+          }
+        }
+      }),
+      handler: {
+        delegateChanged: function(){
+          if (this.delegate)
+            this.show(this.delegate.tmpl.field);
+          else 
+            this.hide();
+        },
+        hide: function(){
+          this.setDelegate();
+        }
+      }
+    })
+
+    return popup;
+  });
+
+  var GuestsField = basis.ui.field.Text.subclass({
+    readOnly: true,
+    template: templates.GuestsField,
+    action: {
+      open: function(){
+        guestsPopup().setDelegate(this);
+      }
+    }
+  });
+
+
+  //
+  // main part
+  //
+
   var FORM_FIELDS = [
     'arrivalField',
     'departureField',
-    'guestsField' 
+    'adultsField',
+    'childrenField' 
   ];
- 
+
   var Form = basis.ui.Node.subclass({
     template: resource('template/form.tmpl'),
     binding: {
@@ -179,7 +252,8 @@
       arrivalField: 'satellite:',
       departureField: 'satellite:',
       submitButton: 'satellite:',
-      guestsField: 'satellite:',
+      adultsField: 'satellite:',
+      childrenField: 'satellite:'
     },
     action: {
       kill: function(event){
@@ -299,12 +373,23 @@
           }
         }        
       },
-      guestsField: {
-        instanceOf: basis.ui.field.Text.subclass({  
-          name: 'guestsCount',
-          template: templates.GuestsField,
+      adultsField: {
+        instanceOf: GuestsField,
+        config: {  
+          name: 'adultsCount',
+          itemCountFrom: 1,
+          itemCountTo: 6,
           value: 2
-        })
+        }
+      },
+      childrenField: {
+        instanceOf: GuestsField,
+        config: {  
+          name: 'childrenCount',
+          itemCountFrom: 0,
+          itemCountTo: 4,
+          value: 0
+        }
       },
       submitButton: {
         instanceOf: basis.ui.button.Button.subclass({
@@ -342,7 +427,7 @@
         {
           app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
             city: suggestion.data.pretty_slug,
-            guests: data.guestsCount,
+            guests: data.adultsCount,
             arrivalDate: data.arrivalDate.toFormat('%D.%M.%Y'),
             departureDate: data.departureDate.toFormat('%D.%M.%Y')
           }));
@@ -351,7 +436,7 @@
         {
           app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults=2={guests}'.format({
             hotelId: suggestion.data.targetId,
-            guests: data.guestsCount,
+            guests: data.adultsCount,
             arrivalDate: data.arrivalDate.toFormat('%D-%M-%Y'),
             departureDate: data.departureDate.toFormat('%D-%M-%Y')
           }));
