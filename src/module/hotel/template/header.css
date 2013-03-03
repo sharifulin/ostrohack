@@ -59,11 +59,3 @@
   margin-bottom:0;
   text-shadow:none
 }
-.b-search-info__details_children
-{
-  display: none;
-}
-.b-search-info__details_children.hasChildren
-{
-  display: inline;
-}

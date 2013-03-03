@@ -1,0 +1,26 @@
+{
+  "app.ext.settings": {
+    "for": "for",
+    "and": "and",
+    "from": "from",
+    "till": "till",
+    "adult1": "adult",
+    "adult2": "children",
+    "adult3": "adults",
+    "child1": "child",
+    "child2": "children",
+    "child3": "children",
+    "month1": "January",
+    "month2": "February",
+    "month3": "March",
+    "month4": "April",
+    "month5": "May",
+    "month6": "June",
+    "month7": "July",
+    "month8": "August",
+    "month9": "September",
+    "month10": "October",
+    "month11": "November",
+    "month12": "December"
+  }
+}

@@ -1,5 +1,6 @@
 basis.require('basis.l10n');
 basis.require('basis.ui');
+basis.require('app.ext');
 
 var namespace = 'app.module.search.module.header';
 
@@ -16,8 +17,12 @@ var searchFormPopup = basis.resource('src/module/searchFormPopup/index.js');
 
 module.exports = new basis.ui.Node({
   template: templates.view,
+  binding: {
+    settings: new app.ext.Settings({})
+  },
   action: {
     newSearch: function(){
+      searchFormPopup().setDelegate(this.root);
       searchFormPopup().open();
     }
   }

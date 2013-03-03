@@ -11,8 +11,21 @@ module.exports = new basis.ui.window.Window({
   childNodes: new app.ext.SearchForm({
     autoDelegate: true,
     handler: {
-      targetChanged: function(){
+      rootChanged: function(){
+        var destination = this.data.destination;
+
+        if (destination)
+        {
+          var destinationName = (destination.data.country ? destination.data.country + ', ' : '') + destination.data.name;
+          app.type.DestinationSuggestion({
+            type: 'region',
+            query: destinationName,
+            pretty_slug: destination.data.pretty_slug
+          });
+        }
+
         this.loadData({
+          destination: destinationName,
           arrivalDate: this.data.arrivalDate,
           departureDate: this.data.departureDate,
           adultsCount: this.data.room1_numberOfAdults,

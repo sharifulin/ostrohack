@@ -39,6 +39,9 @@
   var filters = resource('module/filters/index.js').fetch();
   var header = resource('module/header/index.js').fetch();
 
+  var settings = new basis.data.DataObject({});
+  header.setDelegate(settings);
+
   var view = new basis.ui.Node({
     template: resource('template/view.tmpl'),
     binding: {
@@ -65,7 +68,14 @@
         {
           var dest = app.type.Destination.get(this.params.q);
           if (dest)
+          {
+           
+            settings.update({
+              destination: dest
+            });
+
             serpRequest(this.params, dest.data.id);
+          }
           this.setDelegate();
         }
         if (this.state == basis.data.STATE.ERROR)
@@ -106,14 +116,40 @@
       var p = part.split('=');
       params[p[0]] = p.slice(1).join('=');
     }
-    console.log(params);
 
     var dest = app.type.Destination.get(params.q);
     if (dest)
+    {
+      settings.update({
+        destination: dest
+      });
       serpRequest(params, dest.data.id);
+    }
     else
     {
       resolver.params = params;
       resolver.setDelegate(app.type.DestinationSuggestion.byQuery.getSubset(params.q, true));
     } 
+
+    // settings
+    settings.update(parseSettings(params));        
   });
+
+  function parseSettings(params){
+    var dates = params.dates.split('-');
+    var guests = params.guests.split('and');
+    var childrenAge = guests[1];
+    var childrenCount = guests[1] && guests[1].split('.').length || 0;
+
+    var arrivalDate = dates[0].split('.');
+    var departureDate = dates[1].split('.');
+
+    return {
+      query: params.q,
+      room1_numberOfAdults: guests[0],
+      room1_numberOfChildren: childrenCount,
+      arrivalDate: new Date(Number(arrivalDate[2]), Number(arrivalDate[1]) - 1, Number(arrivalDate[0])),
+      departureDate: new Date(Number(departureDate[2]), Number(departureDate[1]) - 1, Number(departureDate[0])),
+      childrenAge: childrenAge
+    }
+  }

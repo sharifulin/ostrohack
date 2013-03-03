@@ -267,6 +267,7 @@
   //
 
   var FORM_FIELDS = [
+    'destinationField',
     'arrivalField',
     'departureField',
     'adultsField',
@@ -306,6 +307,7 @@
       },
       destinationField: {
         instanceOf: basis.ui.field.Text.subclass({
+          name: 'destination',
           template: templates.DestinationField,
           binding: {
             hidden: {
