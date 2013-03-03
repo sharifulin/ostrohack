@@ -2,7 +2,8 @@
   display:none
 }
 .giantform {
-  width:570px
+  width: 570px;
+  float: left;
 }
 .giantform-title {
   color:#424d53;
@@ -251,6 +252,6 @@
   width:90%;
   z-index:-1
 }
-.giantform {
-  float:left
+.giantform .pseudo {
+  cursor: pointer;
 }
