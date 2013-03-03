@@ -2,6 +2,8 @@
   basis.require('basis.ui');
 
   var filters = new basis.ui.Node({
+    autoDelegate: true,
+    
     template: resource('template/filters.tmpl'),
     binding: {
       price: resource('module/price/index.js').fetch(),
