@@ -1,9 +1,21 @@
 basis.require('basis.ui');
 basis.require('app.type');  
 
-var namespace = 'app.module.hotel'
+var namespace = 'app.module.hotel';
 basis.require('basis.date');
 
+basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
+  loading: 'Loading...',
+  book: 'Book now',
+  garant: 'Garant Label',
+  garantInfo: 'Garant Info',
+  photos: 'Photos',
+  map: 'Map',
+  reviews: 'Reviews',
+  availableRooms: 'All available rooms',
+  'viewAll': 'Show all hotels',
+  'change': 'change'
+});
 
 basis.l10n.createDictionary(namespace + '.room.left', __dirname + 'l10n', {
   left1: 'Only 1 left',
@@ -96,6 +108,7 @@ var rooms = new basis.ui.Node({
       size: 'data.room_type.data.size',
       description: 'data.room_type.data.description || ""',
       thumbnail: 'data.room_type.data.thumbnail',
+      
       left: {
         events: 'update',
         getter: function(object){
@@ -246,7 +259,9 @@ var HotelSettings = basis.ui.Node.subclass({
           return basis.l10n.getToken(namespace, 'settings', 'month' + (departureMonth + 1));
         }
       }
-    } 
+    },
+    viewallText: 'data:',
+    viewallHref: 'data:'
   }
 });
 
@@ -282,6 +297,7 @@ var hotelView = new basis.ui.Node({
     name: 'data:',
     address: 'data:',
     stars: 'data:',
+    
     nights: 'data:',
     nightsText: {
       events: 'update',

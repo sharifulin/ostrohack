@@ -4,7 +4,7 @@
   <!--{header}-->
 
   <div class="layout-content m-id-hotelpage layout-content_facelift3 layout-content-state_{state}">
-    <div class="layout-content-loading"><span>Терпение, мой друг...</span></div>
+    <div class="layout-content-loading"><span>{l10n:app.module.hotel.loading}</span></div>
     <section class="b-hotelpage hotelpage">
       <header class="b-hotelpage__header clearfix" data="LAT">
         <div class="l-hotelpage__header-inner">
@@ -16,15 +16,15 @@
         </div>
         <div class="l-hotelpage__header-sidebar">
           <p class="b-hotelpage-min-price"> 
-            <span class="b-hotelpage-min-price__from">от <strong class="b-hotelpage-min-price__value">{low_rate}</strong> <span class="b-hotelpage-min-price__currency">руб.</span>  </span> 
+            <span class="b-hotelpage-min-price__from">{l10n:app.module.hotel.settings.from} <strong class="b-hotelpage-min-price__value">{low_rate}</strong> <span class="b-hotelpage-min-price__currency">{l10n:app.currency.label.rub}</span>  </span> 
             <small class="b-hotelpage-min-price__period">{l10n:app.module.hotel.night.for} <span class="b-hotelpage-min-price__period-value">{nights} {nightsText}</span></small>
           </p>
-          <a class="b-button button b-hotelpage-min-price-btn bookroom" href="#gotorooms" id="hpg_gotorooms"> <b class="b-button__inner"><i class="b-button__text">Забронировать</i></b>
+          <a class="b-button button b-hotelpage-min-price-btn bookroom" href="#gotorooms" id="hpg_gotorooms"> <b class="b-button__inner"><i class="b-button__text">{l10n:app.module.hotel.book}</i></b>
 
           </a>
-          <div class="b-hotelpage-best-price__container"> <span class="b-hotelpage-best-price">Гарантируем лучшие цены!</span>
+          <div class="b-hotelpage-best-price__container"> <span class="b-hotelpage-best-price">{l10n:app.module.hotel.garant}</span>
             <div class="b-hotelpage-best-price__tip">
-              <p class="b-hotelpage-best-price__paragraph">Найдите цену ниже и получите скидку или тройную разницу в цене.</p>
+              <p class="b-hotelpage-best-price__paragraph">{l10n:app.module.hotel.garantInfo}</p>
             </div>
           </div>
         </div>
@@ -32,18 +32,18 @@
         <ul class="b-hotelpage-content-switch clearfix">
           <li class="b-hotelpage-content-switch__item b-hotelpage-content-switch__item_id_photos b-hotelpage-content-switch__item_state_active">
           <span class="b-hotelpage-content-switch__item-icon"></span>
-          <span class="b-hotelpage-content-switch__item-name">Фотографии</span>
+          <span class="b-hotelpage-content-switch__item-name">{l10n:app.module.hotel.photos}</span>
           </li>
 
           <li class="b-hotelpage-content-switch__item b-hotelpage-content-switch__item_id_map">
           <span class="b-hotelpage-content-switch__item-icon"></span>
-          <span class="b-hotelpage-content-switch__item-name">На карте</span>
+          <span class="b-hotelpage-content-switch__item-name">{l10n:app.module.hotel.map}</span>
           </li>
 
                 
           <li class="b-hotelpage-content-switch__item b-hotelpage-content-switch__item_id_reviews">
           <span class="b-hotelpage-content-switch__item-icon"></span>
-          <span class="b-hotelpage-content-switch__item-name">Отзывы</span>
+          <span class="b-hotelpage-content-switch__item-name">{l10n:app.module.hotel.reviews}</span>
           </li>
         </ul>
       </header>
@@ -64,7 +64,7 @@
       </div>  
 
       <div class="b-giant-change-search-form__wrapper">
-        <div class="b-hotel-rooms-heading">Все доступные номера</div>
+        <div class="b-hotel-rooms-heading">{l10n:app.module.hotel.availableRooms}</div>
         <div class="b-hotel-search-params">
           <!--{settings}-->
         </div>

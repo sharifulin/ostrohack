@@ -16,6 +16,8 @@
       departureDate: String,
       room1_numberOfAdults: Number,
       room1_numberOfChildren: Number,
+      viewallText: String,
+      viewallHref: String,
       hotel: Hotel,
       rooms: RoomList
     }
@@ -55,7 +57,10 @@
           data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
           data.hotel.stars = data._hotelpage && data._hotelpage.stars;
           data.hotel.nights = data._meta && data._meta.nights;
+          
           this.update({
+            viewallText: data._viewall && data._viewall.text,
+            viewallHref: data._viewall && data._viewall.href,
             hotel: Hotel.reader(data.hotel),
             rooms: rooms.map(Room.reader)
           });

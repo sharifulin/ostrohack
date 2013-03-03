@@ -3,7 +3,8 @@ basis.require('basis.ui');
 
 basis.l10n.createDictionary('app.module.search.filters.location', __dirname + 'l10n', {
   title: 'Location',
-  label: 'km around center'
+  label: 'km around center',
+  hint: 'Hotels on the map'
 });
 
 module.exports = new basis.ui.Node({

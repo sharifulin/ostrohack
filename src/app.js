@@ -15,7 +15,7 @@
     usd: 'USD'
   });
   basis.l10n.createDictionary('app.currency.label', __dirname + 'l10n', {
-    rub: 'rub',
+    rub: 'rub.',
     usd: '$'
   });
   

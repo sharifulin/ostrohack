@@ -1,0 +1,6 @@
+{
+  "app.module.search.filters.discounts": {
+    "label": "I have a VIP card \nor a coupon code",
+    "hint": "Show only hotels where the discount applies."
+  }
+}

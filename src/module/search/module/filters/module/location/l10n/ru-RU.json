@@ -1,6 +1,7 @@
 {
   "app.module.search.filters.location": {
     "title": "Расположение",
-    "label": "км от центра"
+    "label": "км от центра",
+    "hint": "Отели на большой карте"
   }
 }
