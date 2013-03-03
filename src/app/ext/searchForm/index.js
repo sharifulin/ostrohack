@@ -273,7 +273,7 @@
 
         if (suggestion.data.type == 'region')
         {
-          app.router.navigate('/search/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
+          app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
             city: suggestion.data.pretty_slug,
             guests: guests,
             arrivalDate: arrivalDate.toFormat('%D.%M.%Y'),

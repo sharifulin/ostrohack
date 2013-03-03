@@ -45,7 +45,7 @@
     var dates = params.dates.split('-');
     var guests = params.guests.split('and');
     var dataset = app.type.Suggestion.getSearchResult({
-      region_id: region_id,//965825057,
+      region_id: region_id,
       //destination: destinationField.getValue(),
       room1_numberOfAdults: guests[0],
       arrivalDate: dates[0].replace(/\./g, '-'),
@@ -55,7 +55,7 @@
     inputDataset.setSources([dataset]);
   }
 
-  app.router.add(/search\/\?(.*)/, function(query){
+  app.router.add(/hotels\/\?(.*)/, function(query){
     var params = {};
 
     var parts = query.split('&');
@@ -75,7 +75,6 @@
       resolver.setDelegate(app.type.DestinationSuggestion.byQuery.getSubset(params.q, true));
     } 
   });
-
 
   module.exports = new basis.ui.Node({
     template: resource('template/view.tmpl'),

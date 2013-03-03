@@ -1,5 +1,5 @@
 
   module.exports = {
-    router: /^\/search\/.*/,
+    router: /^\/hotels\/.*/,
     lazyContent: resource('content.js')
   };
