@@ -25,12 +25,13 @@
   float:left
 }
 .glob-header .logo-image {
-  width:127px;
-  height:20px;
+  width: 127px;
+  height: 20px;
+  margin: 0;
   text-indent:100%;
   white-space:nowrap;
   overflow:hidden;
-  background:transparent url(http://ostrovok.ru/st/gm/mobile/img/glob/logo-8af5e41ccdba537ca7826fffde54511e045fd2e6.png) no-repeat;
+  background: url(http://ostrovok.ru/st/gm/mobile/img/glob/logo-8af5e41ccdba537ca7826fffde54511e045fd2e6.png) no-repeat;
   -webkit-background-size:127px 20px;
   background-size:127px 20px
 }

@@ -28,10 +28,12 @@
   bottom: 1px;
   color: #6d6c6c;
   font-size: 14px;
-  padding-right: 6px;
-  display: block;
-  text-align: right;
+  padding: 0 6px 6px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   text-transform: uppercase;
+
 }
 .history-hotel-price-value {
   color: #000;

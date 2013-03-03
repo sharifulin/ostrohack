@@ -2,14 +2,12 @@
   font-family: 'Open Sans', Verdana, sans-serif;
   margin: 1em 0;
 }
-.history-control-disabled:after {
-  content:none
-}
 .history-header {
   color: #798891;
   font: 400 20px/30px "Open Sans", Verdana, sans-serif;
   -webkit-font-smoothing:antialiased;
-  margin-bottom: .4em;
+  margin: .4em 0;
+  padding-top: 4em;
   text-align: center;
 }
 .history-header-link {
