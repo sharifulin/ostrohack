@@ -78,13 +78,21 @@
     // set convertation to params -> filters
     var dates = params.dates.split('-');
     var guests = params.guests.split('and');
-    var dataset = app.type.Suggestion.getSearchResult({
+    var children = guests[1] && guests[1].split('.') || [];
+
+    var requestData = {
       region_id: region_id,
       //destination: destinationField.getValue(),
       room1_numberOfAdults: guests[0],
+      room1_numberOfChildren: children.length,
       arrivalDate: dates[0].replace(/\./g, '-'),
       departureDate: dates[1].replace(/\./g, '-')
-    });
+    }
+
+    for (var i = 1; i <= children.length; i++)
+      requestData['room_child' + i + 'Age'] = children[i - 1];
+    
+    var dataset = app.type.Suggestion.getSearchResult(requestData);
 
     inputDataset.setSources([dataset]);
   }

@@ -180,6 +180,7 @@
       dir: 'left bottom left top',
       childNodes: new basis.ui.Node({
         autoDelegate: true,
+        selection: {},
         childClass: {
           autoDelegate: true,
           template: templates.GuestsFieldListItem,
@@ -188,6 +189,7 @@
           },
           action: {
             select: function(){
+              this.select();
               popup.delegate.setValue(this.value);
               popup.hide();
             }
@@ -198,7 +200,8 @@
             var root = this.root;
             var childNodes = root && basis.array.create(root.itemCountTo - root.itemCountFrom + 1, function(index){
               return {
-                value: root.itemCountFrom + index
+                value: root.itemCountFrom + index,
+                selected: root.getValue() == root.itemCountFrom + index
               }
             });
             
@@ -466,10 +469,9 @@
 
         if (suggestion.data.type == 'region')
         {
-          app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}&childrenAge={childrenAge}'.format({
+          app.router.navigate('/hotels/?q={city}&dates={arrivalDate}-{departureDate}&guests={guests}'.format({
             city: suggestion.data.pretty_slug,
-            guests: data.adultsCount,
-            childrenAge: data.childrenAge,
+            guests: data.adultsCount + (data.childrenCount ? 'and' + data.childrenAge : ''),
             arrivalDate: data.arrivalDate.toFormat('%D.%M.%Y'),
             departureDate: data.departureDate.toFormat('%D.%M.%Y')
           }));
@@ -490,6 +492,7 @@
       {
         errorPopup().show(this.satellite.destinationField.tmpl.field);
         errorPopup().realign();
+        this.satellite.destinationField.focus();
       } 
     },
     loadData: function(data){

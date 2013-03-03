@@ -12,3 +12,9 @@
   text-align: center;
   cursor: pointer;
 }
+
+.guest-field-item.selected
+{
+  background: #0a5289;
+  color: white;
+}

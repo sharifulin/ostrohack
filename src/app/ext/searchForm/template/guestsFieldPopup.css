@@ -1,3 +1,7 @@
+.guest-field-popup
+{
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
 .guest-field-popup .Basis-Popup-Content
 {
   min-width: 0 !important;
