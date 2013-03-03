@@ -34,16 +34,6 @@
   form .button {
     text-align:center
   }
-  html {
-    background:#f5f5f6
-  }
-  html, body {
-    height:100%
-  }
-  button {
-    font-family:Helvetica, Arial, FreeSans, sans-serif;
-    cursor:pointer
-  }
   h2{
     text-align:left;
     padding:0;
@@ -704,7 +694,7 @@
   input:-moz-placeholder {
     color:#d0d9e0
   }
-  .button {
+  .button-room {
     display:inline-block;
     position:relative;
     white-space:nowrap;
@@ -724,7 +714,7 @@
     user-select:none;
     box-shadow:inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 0.4)
   }
-  .button:before {
+  .button-room:before {
     content:'';
     position:absolute;
     top:0;
@@ -732,23 +722,23 @@
     bottom:0;
     left:0
   }
-  .button::selection {
+  .button-room::selection {
     background:transparent
   }
-  .button:hover b {
+  .button-room:hover b {
     box-shadow:0 2px 2px rgba(0, 0, 0, .4)
   }
-  .button:hover i {
+  .button-room:hover i {
     background-color:#1766c4;
     background-image:-webkit-linear-gradient(top, #2d81e2, #1766c4);
     background-image:-moz-linear-gradient(top, #2d81e2, #1766c4);
     background-image:-o-linear-gradient(top, #2d81e2, #1766c4);
     background-image:linear-gradient(top, #2d81e2, #1766c4)
   }
-  .button[disabled]{
+  .button-room[disabled]{
     cursor:default
   }
-  .button[disabled]:hover i{
+  .button-room[disabled]:hover i{
     background-color:transparent;
     background-image:none
   }
@@ -757,7 +747,7 @@
     background:0;
     box-shadow:0 1px 0 rgba(255, 255, 255, .4)
   }
-  .button:active i {
+  .button-room:active i {
     padding:1px 19px;
     line-height:44px;
     border-radius:3px;
@@ -768,7 +758,7 @@
     background-image:linear-gradient(top, #1158c9, #0041aa);
     box-shadow:inset 0 1px 3px rgba(0, 0, 0, .6)
   }
-  .button b {
+  .button-room b {
     display:inline-block;
     font-weight:normal;
     padding:1px;
@@ -780,7 +770,7 @@
     box-shadow:0 1px 1px rgba(0, 0, 0, .3);
     border-radius:3px
   }
-  .button i {
+  .button-room i {
     display:inline-block;
     font-style:normal;
     font-weight:600;
@@ -796,31 +786,31 @@
     background-image:linear-gradient(top, #1c77e1, #0058bd);
     box-shadow:inset 0 2px 2px rgba(255, 255, 255, .5), inset 0 0 0 1px rgba(255, 255, 255, .3)
   }
-  .button[disabled] i{
+  .button-room[disabled] i{
     background-color:transparent;
     background-image:none
   }
-  .button.small {
+  .button-room.small {
     border-radius:3px;
     padding:0;
     font-size:13px;
     -webkit-font-smoothing:antialiased
   }
-  .button.small i {
+  .button-room.small i {
     height:25px;
     line-height:26px;
     padding:0 10px
   }
-  .button.small:hover {
+  .button-room.small:hover {
     box-shadow:0 2px 2px rgba(0, 0, 0, .4)
   }
-  .button.small:hover b {
+  .button-room.small:hover b {
     box-shadow:none
   }
-  .button.small:active {
+  .button-room.small:active {
     box-shadow:none
   }
-  .button.small:active i {
+  .button-room.small:active i {
     line-height:28px;
     padding:1px 11px
   }

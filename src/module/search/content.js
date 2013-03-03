@@ -6,6 +6,7 @@
   var inputDataset = new basis.data.dataset.Merge({
     active: true,
     sources: [],
+    state: 'processing',
     listen: {
       source: {
         stateChanged: function(sender){
