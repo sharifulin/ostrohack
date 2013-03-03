@@ -102,3 +102,20 @@
   zoom:1;
   height:16px
 }
+
+.serpPage-main__loading
+{
+  text-align: center;    
+  display: none;
+}
+.serpPage-main__loading span
+{
+  background:url(http://ostrovok.ru/st/gm/img/spinner-grey-3-a9426e4b4d3359105118a907044d68ad76b95034.gif) no-repeat left center;
+  padding: 1em 0 1em 40px;
+  color: #999;
+  font-style: italic;    
+}
+.serpPage-main_state-processing .serpPage-main__loading
+{
+  display: block;
+}

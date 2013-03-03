@@ -16,6 +16,7 @@ sorting.addHandler({
 
 module.exports = new basis.ui.Node({
   template: resource('template/view.tmpl'),
+  delegate: app.search.input,
   binding: {
     sorting: sorting,
     list: list
