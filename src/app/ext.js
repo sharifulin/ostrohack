@@ -12,5 +12,6 @@ var FilterMerge = basis.data.dataset.Merge.subclass({
 });
 
 module.exports = {
-  FilterMerge: FilterMerge
+  FilterMerge: FilterMerge,
+  SearchForm: resource('ext/searchForm/index.js').fetch()
 };

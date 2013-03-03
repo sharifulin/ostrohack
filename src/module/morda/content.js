@@ -1,5 +1,6 @@
 
   basis.require('basis.ui');
+  basis.require('app.ext');
   
   var namespace = 'app.module.morda.banners';
   
@@ -16,12 +17,10 @@
     info: 'Info'
   });
   
-  var SearchForm = resource('module/searchForm/index.js').fetch();
-
   module.exports = new basis.ui.Node({
     template: resource('template/view.tmpl'),
     binding: {
-      form: new SearchForm({}),
+      form: new app.ext.SearchForm({}),
       content: resource('module/content/index.js').fetch()
     }
   });

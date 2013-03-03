@@ -21,3 +21,8 @@ button::-moz-focus-inner {
   border-color:transparent;
   border-width:0
 }
+
+body .Basis-Blocker-Mate
+{
+  opacity: .8;
+}

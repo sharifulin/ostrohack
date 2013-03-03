@@ -1,0 +1,18 @@
+.search-form-popup
+{
+  position: absolute;
+}
+
+.search-form-popup-close {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background:url(http://ostrovok.ru/st/gm/img/landing-serp/close-bc78d3fa59957bf6006ab1683873fd96238e6693.png) no-repeat 0 0;
+  color:#333;
+  cursor:pointer;
+  font-weight:normal;
+  height:17px;
+  width:17px;
+  overflow:hidden;
+  text-indent:-9999px;
+}

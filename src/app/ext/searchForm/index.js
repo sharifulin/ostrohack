@@ -290,6 +290,17 @@
           }));
         }
       }
+    },
+    loadData: function(data){
+      this.satellite.arrivalField.update({
+        date: basis.date.fromISOString(data.arrivalDate)
+      });
+      this.satellite.departureField.update({
+        date: basis.date.fromISOString(data.departureDate)
+      });
+
+      this.satellite.guestsField.setValue(data.adultsCount);
+      this.satellite.destinationField.setValue();
     }
   });
 

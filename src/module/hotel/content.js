@@ -62,7 +62,7 @@ var templates = basis.template.define('app.module.hotel', {
   Room: resource('template/mobile/room.tmpl')
 });*/
 
-
+var searchFormPopup = basis.resource('src/module/searchFormPopup/index.js');
 var Slider = resource('module/slider/index.js').fetch();
 
 var hotelObject = new basis.data.DataObject({
@@ -258,6 +258,12 @@ var hotelHeader = new basis.ui.Node({
   template: templates.Header,
   binding: {
     settings: new HotelSettings({})
+  },
+  action: {
+    changeSettings: function(){
+      searchFormPopup().setDelegate(hotelObject);
+      searchFormPopup().open();
+    }
   }
 });
 
