@@ -6,9 +6,7 @@ basis.require('app.router');
 var templates = basis.template.define('searchResult', resource('template/index.js').fetch());
 basis.template.theme('mobile').define('searchResult', resource('template/theme-mobile/index.js').fetch());
 
-var namespace = 'app.module.search.list';
-basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
-});
+var namespace = 'app.module.search.hotels.list';
 
 basis.l10n.createDictionary(namespace + '.amenity', __dirname + 'l10n', {
   wifi: 'wifi',
