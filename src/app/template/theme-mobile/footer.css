@@ -1,3 +1,9 @@
+.gf-list
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .glob-footer {
   padding:10px 0;
   text-align:center;
@@ -11,8 +17,8 @@
   cursor:default
 }
 .glob-footer li {
-  padding:0 5px;
-  display:inline-block
+  padding: 1em 2em 1.5em;
+  display: inline-block
 }
 .glob-footer a {
   font-weight:bold;
