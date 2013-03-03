@@ -218,7 +218,7 @@ button::-moz-focus-inner {
 .giantform-children-input {
   text-align:center
 }
-.giantform-children-input-disabled {
+.giantform-children-input_disabled {
   margin:-1px 0 -1px;
   color:#3d7dad;
   background:0;

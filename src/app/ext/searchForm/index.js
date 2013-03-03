@@ -421,10 +421,15 @@
           itemCountFrom: 0,
           itemCountTo: 4,
           value: 0,
+          disabled: true,
           handler: {
             change: function(){
               var value = this.getValue();
               this.owner.satellite.childrenAgeField.setValue(basis.array.create(value, 7).join('.'));
+              if (value > 0)
+                this.enable();
+              else
+                this.disable();
             }
           }
         }
