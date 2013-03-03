@@ -129,68 +129,6 @@
   .b-amenity-icon_has_card_acceptance{
     background-position:-107px -164px
   }
-  .b-heading {
-    background:#e2e8eb;
-    box-shadow:0 5px 5px rgba(90, 112, 128, 0.5);
-    color:#3a5571;
-    margin-bottom:15px;
-    position:relative;
-    -webkit-font-smoothing:antialiased
-  }
-  .b-search-info__inner{
-    margin:0 auto;
-    position:relative;
-    width:960px
-  }
-  .b-heading__search-wrapper {
-    position:relative;
-    overflow:hidden;
-    white-space:nowrap
-  }
-  .b-heading__search-wrapper:before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background:#e2e8eb;
-    background-image:-webkit-linear-gradient(top, #e2e8eb, #d1dae0);
-    background-image:-moz-linear-gradient(top, #e2e8eb, #d1dae0);
-    background-image:-ms-linear-gradient(top, #e2e8eb, #d1dae0);
-    background-image:-o-linear-gradient(top, #e2e8eb, #d1dae0);
-    background-image:linear-gradient(top, #e2e8eb, #d1dae0);
-    z-index:20
-  }
-   .b-heading__search-wrapper_overflowable {
-    overflow:visible
-  }
-  .b-heading_state_search-form .b-heading__search-wrapper {
-    overflow:visible;
-    font-size:0;
-    letter-spacing:-4px
-  }
-  .b-search-info{
-    width:100%;
-    display:inline-block;
-    vertical-align:middle;
-    text-indent:0;
-    white-space:normal;
-    letter-spacing:normal;
-    height:63px
-  }
-  .b-search-info {
-    background:transparent;
-    border:0;
-    border-radius:0;
-    -webkit-box-shadow:none;
-    -moz-box-shadow:none;
-    box-shadow:none;
-    color:#000;
-    filter:none!important;
-    margin-bottom:0;
-    text-shadow:none
-  }
   .heading_requestParams_searchInfo_requestDetails {
     position:relative;
     float:left;
