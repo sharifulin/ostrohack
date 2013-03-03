@@ -131,7 +131,6 @@
 
   var Suggestions = basis.ui.Node.subclass({
     visible: false,
-    active: true,
     selection: {},
     template: templates.Suggestions,
     binding: {
@@ -293,6 +292,11 @@
       },
       setExample: function(){
         this.satellite.destinationField.setValue(basis.l10n.getToken(namespace, 'example'));
+        DestinationSuggestion({
+          query: basis.l10n.getToken(namespace, 'example').value,
+          type: 'region',
+          pretty_slug: 'Moscow'
+        });
       }
     },
 
@@ -365,10 +369,12 @@
             fieldFocus: function(){
               this.owner.satellite.suggestions.visible = true;
               this.owner.satellite.suggestions.updateBind('visible');
+              this.setActive(true);
             },
             fieldBlur: function(){
               this.owner.satellite.suggestions.visible = false;
               this.owner.satellite.suggestions.updateBind('visible');
+              this.setActive(false);
             }
           }
         }) 
