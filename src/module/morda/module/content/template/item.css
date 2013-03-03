@@ -1,49 +1,56 @@
+.history-hotel-wrapper {
+  width: 20%;
+  float: left;
+}
 .history-hotel {
-  background:#fff;
-  border:1px solid #ececed;
-  border-bottom-color:#bdbdbe;
-  display:inline-block;
-  font-size:11px;
-  height:80px;
-  letter-spacing:normal;
-  line-height:13px;
-  margin-right:10px;
-  position:relative;
-  text-decoration:none;
-  vertical-align:top;
-  width:180px
+  background: #fff;
+  border: 1px solid #ececed;
+  border-bottom-color: #bdbdbe;
+  display: block;
+  font-size: 11px;
+  height: 80px;
+  letter-spacing: normal;
+  line-height: 13px;
+  margin-right: 10px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+  width: 180px;
+}
+.hostory-hotel:last-child {
+  margin-right: 0;
 }
 .history-hotel:hover .history-hotel-info {
-  display:block
+  display: block;
 }
 .history-hotel-image {
-  float:left;
-  margin-right:6px
+  float: left;
+  margin-right: 6px
 }
 .history-hotel-stars {
-  margin-top:5px
+  margin-top: 5px
 }
 .history-hotel-title {
   color:#0074c5;
   -webkit-font-smoothing:antialiased;
   font-weight:normal;
-  height:40px;
-  margin:3px 6px 0 0;
-  overflow:hidden;
-  word-spacing:1px
+  height: 40px;
+  margin: 3px 6px 0 0;
+  overflow: hidden;
+  word-spacing: 1px
 }
 .history-hotel-price {
-  bottom:1px;
-  color:#6d6c6c;
-  font-size:8px;
-  position:absolute;
-  right:6px;
-  text-transform:uppercase
+  bottom: 1px;
+  color: #6d6c6c;
+  font-size: 8px;
+  position: absolute;
+  right: 6px;
+  text-transform: uppercase
 }
 .history-hotel-price-value {
-  color:#000;
-  font-size:14px;
-  font-weight:400
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
 }
 .history-hotel-info {
   color:#798891;

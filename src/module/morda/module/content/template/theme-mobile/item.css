@@ -1,52 +1,45 @@
 .history-hotel {
-  background:#fff;
-  border:1px solid #ececed;
-  border-bottom-color:#bdbdbe;
-  display:inline-block;
-  font-size:11px;
-  height:80px;
-  letter-spacing:normal;
-  line-height:13px;
-  margin-right:10px;
-  position:relative;
-  text-decoration:none;
-  vertical-align:top;
-  width:180px
-}
-.history-hotel:hover .history-hotel-info {
-  display:block
+  display: block;
+  overflow: hidden;
+  background: white;
+  border-bottom: 1px solid #DDD;
+  margin: 0px;
+  font-size: 16px;
+  letter-spacing: normal;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+
 }
 .history-hotel-image {
-  float:left;
-  margin-right:6px
-}
-.history-hotel-stars {
-  margin-top:5px
+  float: left;
+  margin: 6px;
 }
 .history-hotel-title {
-  color:#0074c5;
-  -webkit-font-smoothing:antialiased;
-  font-weight:normal;
-  height:40px;
-  margin:3px 6px 0 0;
-  overflow:hidden;
-  word-spacing:1px
+  color: #0074c5;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  margin: 4px 0 0;
+  word-spacing: 1px;
+  line-height: 1.1em;
+  font-size: 140%;
 }
 .history-hotel-price {
-  bottom:1px;
-  color:#6d6c6c;
-  font-size:8px;
-  position:absolute;
-  right:6px;
-  text-transform:uppercase
+  bottom: 1px;
+  color: #6d6c6c;
+  font-size: 14px;
+  padding-right: 6px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
 }
 .history-hotel-price-value {
-  color:#000;
-  font-size:14px;
-  font-weight:400
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
 }
 .history-hotel-info {
-  color:#798891;
+  color: #798891;
   display:none;
   font-size:8px;
   position:absolute;
@@ -57,16 +50,14 @@
   margin-bottom:1px;
   right:0
 }
-.history-hotel-urgency {
-  left:0;
-  margin-top:4px;
-  right:0;
-  text-align:center;
-  top:100%
+
+.history-hotel-stars {
+  margin-top: 5px;
+  float: left;
 }
 .stars, .stars-val {
-  height:10px;
-  display:inline-block
+  height: 10px;
+  display: inline-block;
 }
 .stars {
   position:relative;
@@ -87,6 +78,9 @@
   background-size:196px 505px;
   width:auto
 }
+.stars-val-10 .stars-val {
+  width:10px
+}
 .stars-val-20 .stars-val {
   width:20px
 }
@@ -94,5 +88,8 @@
   width:30px
 }
 .stars-val-40 .stars-val {
+  width:40px
+}
+.stars-val-50 .stars-val {
   width:40px
 }

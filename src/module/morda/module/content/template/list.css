@@ -1,13 +1,32 @@
 .history {
+  clear: both;
   font-family:'Open Sans', Verdana, sans-serif;
-  margin-bottom:42px;
+
+  padding-top: 5em;
+  margin: 2em 0;
   position:relative;
-  margin-bottom:42px
 }
 .history-list {
-  font-size:0;
-  letter-spacing:-4px
+  font-size: 0;
+  letter-spacing: -4px;
 }
+
+.history-header {
+  margin-bottom: .7em;
+  position: relative;
+  font-weight: normal;
+}
+.history-header-link {
+  color: #798891;
+  font: 400 25px/30px"Open Sans", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid #ccd0d3;
+  color: #798891;
+  display: inline-block;
+  line-height: 29px;
+  text-decoration: none;
+}
+
 .history-controls {
   font-size:0;
   position:absolute;
@@ -56,17 +75,4 @@
 }
 .history-control-disabled:after {
   content:none
-}
-.history-header{
-  color:#798891;
-  font:400 25px/30px"Open Sans", Verdana, sans-serif;
-  -webkit-font-smoothing:antialiased;
-  margin-bottom:17px
-}
-.history-header-link {
-  border-bottom: 1px solid #ccd0d3;
-  color: #798891;
-  display: inline-block;
-  line-height: 29px;
-  text-decoration: none;
 }
