@@ -8,9 +8,7 @@
     fields: {
       id: basis.entity.IntId,
       name: String,
-      price: function(value){
-        return parseInt(value, 10);
-      },
+      price: Number,
       kind: String,
       thumbnail_url: String,
       thumbnail_tmpl: String,

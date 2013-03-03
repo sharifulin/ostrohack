@@ -40,7 +40,16 @@ var list = new basis.ui.Node({
         return node.data.uid.substr(1);
       },
       name: 'data:',
-      price: 'data:',
+      price: {
+        events: 'update',
+        getter: function(node){
+          var price = parseInt(node.data.price, 10);
+          if (price >= 10000)
+            return price.group(3);
+          else
+            return price;
+        }
+      },
       is_golden: 'data:is_golden ? "golden" : ""',
       address: 'data:',
       nights: 'data:',
