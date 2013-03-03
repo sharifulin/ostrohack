@@ -1,0 +1,73 @@
+.error-popup
+{
+  position: absolute;
+}
+
+.popuptip {
+  position:absolute;
+  padding:0 9px 0 29px;
+  font-size:11px;
+  line-height:30px;
+  text-shadow:0 0 2px #000;
+  color:#FFF;
+  background:url(http://ostrovok.ru/st/gm/img/img/overlay-bg-359185b28850f01bcb8da5409bda6e0fe064368f.png);
+  border-radius:5px;
+  box-shadow:1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  cursor:default;
+  z-index:100;
+  
+    -webkit-transition: .2s opacity, .2s margin;
+    -moz-transition: .2s opacity, .2s margin;
+    -o-transition: .2s opacity, .2s margin;
+  transition: .2s opacity, .2s margin;
+  margin-left: 0;
+  opacity: 1;
+}
+
+.popuptip.visible-anim
+{
+  opacity: 0;
+  margin-left: -1em;
+}
+
+
+.popuptip-pointer {
+  width:6px;
+  height:17px;
+  display:block;
+  position:absolute;
+  background:url(http://ostrovok.ru/st/gm/img/img/form_error_arrow-2ed7432b7196dec5e3fa073ec6259e606413356e.png)
+}
+.popuptip-top .popuptip-pointer, .popuptip-bottom .popuptip-pointer {
+  width:16px;
+  height:9px;
+  left:10px
+}
+.popuptip-top .popuptip-pointer {
+  bottom:-9px;
+  background-position:-18px -39px
+}
+.popuptip-right .popuptip-pointer {
+  width:6px;
+  height:17px;
+  top:4px;
+  left:-6px
+}
+.popuptip-bottom .popuptip-pointer {
+  top:-9px;
+  background-position:-18px 0
+}
+.popuptip-left .popuptip-pointer {
+  width:6px;
+  height:17px;
+  right:-6px;
+  background-position:-7px -24px
+}
+.popuptip-icon {
+  width:16px;
+  height:17px;
+  position:absolute;
+  top:5px;
+  left:6px;
+  background:transparent url(http://ostrovok.ru/st/gm/img/sprite-sys-messages-898728dcbfd9b1ee03994d4235f468cf829c5ffa.png) 0 -34px
+}

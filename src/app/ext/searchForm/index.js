@@ -37,15 +37,31 @@
     region: 'Regions'
   });
 
+  basis.l10n.createDictionary(namespace + '.errorPopup', __dirname + 'l10n', {  
+    text: 'error'
+  });
+
 
   var DestinationSuggestion = app.type.DestinationSuggestion;
+
+  //
+  // errorPopup
+  //
+
+  var errorPopup = basis.fn.lazyInit(function(){
+    return new basis.ui.popup.Balloon({
+      dir: 'right center left center',
+      orientation: 'horizontal',
+      template: templates.ErrorPopup
+    });
+  });
 
   //
   // main part
   //
 
   var calendarPopup = new basis.ui.popup.Popup({
-    dir: 'left top left top',
+    dir: 'center top center top',
     template: templates.DatePickerPopup,
     autorotate: false,
     handler: {
@@ -57,11 +73,7 @@
           this.show(this.delegate.element);
 
           this.firstChild.selectedDate.set(this.delegate.getValue());
-          
-          var that = this;
-          setTimeout(function(){
-            that.realign();
-          }, 0)
+          this.realign();
         }
         else
           this.hide();
@@ -345,6 +357,12 @@
           }));
         }
       }
+      else
+      {
+        console.log('element');
+        errorPopup().show(this.satellite.destinationField.tmpl.field);
+        errorPopup().realign();
+      } 
     },
     loadData: function(data){
       FORM_FIELDS.forEach(function(fieldName){

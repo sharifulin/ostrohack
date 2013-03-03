@@ -15,5 +15,8 @@
   "app.view.searchForm.suggestionGroup": {
     "hotel": "Отели",
     "region": "Регионы"
+  }, 
+  "app.view.searchForm.errorPopup": {
+    "text": "Заполните поле"
   }
 }

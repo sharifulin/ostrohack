@@ -6,5 +6,8 @@
   "app.view.searchForm.suggestionGroup": {
     "hotel": "Hotels",
     "region": "Regions"
+  }, 
+  "app.view.searchForm.errorPopup": {
+    "text": "Fill in this field"
   }
 }
