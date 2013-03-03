@@ -1,0 +1,45 @@
+
+  <b:resource src="form.css" />
+  
+  <div class="giantform giantform-suggest_{loading}">
+    <h1 class="giantform-title">{l10n:app.view.searchForm.title}</h1>
+  
+    <form class="giantform-form" event-submit="kill">
+      <div class="giantform-destination">
+        <!--{suggestions}-->
+        <!--{destinationField}-->
+        <label class="giantform-label giantform-destination-example" for="destination">{l10n:app.view.searchForm.labelQuestion} <span class="giantform-destination-example-apply pseudo" event-click="setExample">{l10n:app.view.searchForm.example}</span>, {l10n:app.view.searchForm.labelExample}.</label>
+      </div>
+      <div class="giantform-dates">
+        <div class="giantform-check-in">
+          <!--{arrivalField}-->
+          <label class="giantform-label giantform-check-in-label" for="check-in">{l10n:app.view.searchForm.checkIn}</label>
+        </div>
+        <div class="giantform-dates-separator">–</div>
+        <div class="giantform-check-out">
+          <!--{departureField}-->
+          <label class="giantform-label giantform-check-out-label" for="check-out">{l10n:app.view.searchForm.checkOut}</label>
+        </div>
+      </div>
+      <div class="giantform-number">
+        <div class="giantform-adults">
+          <span class="numcontrol numcontrol-highlight">
+            <span class="numcontrol-decrease" style="-webkit-user-select: none; width: 34px; margin-right: -15px; padding-right: 0px;-webkit-user-select: none; width: 34px; margin-left: -15px; padding-left: 0px;-webkit-user-select: none; width: 0px; margin-right: -1px; padding-right: 0px;-webkit-user-select: none; width: 0px; margin-left: -1px; padding-left: 0px;display: none;display: none;"><span class="numcontrol-decrease-inner">-</span></span>
+            <!--{adultsField}-->
+            </span>
+          <label class="giantform-label giantform-adults-label" for="adults">{l10n:app.view.searchForm.labelAdults}</label>
+        </div>
+        <div class="giantform-number-separator">{l10n:app.view.searchForm.labelAnd}</div>
+        <div class="giantform-children">
+          <!--<span class="numcontrol">
+           <input class="giantform-input giantform-children-input giantform-children-input-disabled" id="children" name="children" type="text" value="0" autocomplete="off"></input>
+          </span>-->
+           <!--{childrenField}-->
+          <label class="giantform-label giantform-children-label" for="children">{l10n:app.view.searchForm.labelChildren}</label>
+        </div>
+      </div>
+      <!--{childrenAgeField}-->
+      <!--{submitButton}-->
+    </form>
+  </div>
+  

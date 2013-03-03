@@ -1,4 +1,8 @@
+<b:style src="datePicker.css"/>
+<b:define name="opened" type="bool"/>
 
-  <div>
-    <input type="date"/>
-  </div>
+<b:include src="basis.ui.field.Text" class="date-picker {opened}" no-style>
+  <b:set-attr ref="field" name="autocomplete" value="off"/>
+  <b:set-attr ref="field" name="event-click" value="open"/>
+  <b:class ref="field" value="giantform-input giantform-check-in-input"/>
+</b:include>

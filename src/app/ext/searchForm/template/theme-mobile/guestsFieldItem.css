@@ -1,0 +1,20 @@
+.guest-field-item
+{
+  width: 50px;
+  
+  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  color: #303030;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 6px 8px 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.guest-field-item.selected
+{
+  background: #0a5289;
+  color: white;
+}

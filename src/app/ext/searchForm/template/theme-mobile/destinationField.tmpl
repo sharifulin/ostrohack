@@ -1,0 +1,7 @@
+<b:define name="hidden" type="bool"/>
+<b:include src="basis.ui.field.Text" no-style class="destinationField-state_{state}">
+  <b:class ref="field" value="giantform-input giantform-destination-input giantform-destination-input_{state}"/>
+  <b:append ref="content">
+    <span class="giantform-destination-clear {hidden}" event-click="clear"></span>
+  </b:append>  
+</b:include>

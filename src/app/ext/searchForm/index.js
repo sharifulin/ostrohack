@@ -11,7 +11,6 @@
 
   var namespace = 'app.view.searchForm';
 
-
   //
   // definitions
   //
@@ -41,6 +40,8 @@
     text: 'error'
   });
 
+  var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+  basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
   var DestinationSuggestion = app.type.DestinationSuggestion;
 
@@ -276,7 +277,7 @@
   ];
 
   var Form = basis.ui.Node.subclass({
-    template: resource('template/form.tmpl'),
+    template: templates.form,
     binding: {
       suggestions: 'satellite:',
       destinationField: 'satellite:',
@@ -450,7 +451,7 @@
       },
       submitButton: {
         instanceOf: basis.ui.button.Button.subclass({
-          template: resource('template/submitButton.tmpl'),
+          template: templates.submitButton,
           caption: basis.l10n.getToken(namespace, 'submitButton'),
           click: function(){
             this.owner.submit();

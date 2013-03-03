@@ -1,0 +1,5 @@
+.date-picker.opened
+{
+  z-index: 3000;
+  position: relative;
+}

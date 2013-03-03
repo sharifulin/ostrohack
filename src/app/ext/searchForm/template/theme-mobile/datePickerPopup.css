@@ -1,0 +1,89 @@
+.date-picker-popup
+{
+  margin-top: 1.15em;
+  border: none !important;
+}
+
+.date-picker-popup .Basis-Calendar-SectionTitle
+{
+  background: none;
+  padding: 0.8em 0 0.1em;
+}
+
+.date-picker-popup .Basis-Calendar-Section
+{
+  position: static;
+}
+
+.date-picker-popup .Basis-Calendar-Body,
+.date-picker-popup .Basis-Calendar-Footer
+{
+  border-color: transparent;
+}
+
+.date-picker-popup .Basis-Calendar-Body,
+.date-picker-popup .Basis-Calendar-SectionContent
+{
+  height: auto;
+}
+
+.date-picker-popup .Basis-Calendar-SectionTitle
+{
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Arial;
+}
+
+.date-picker-popup .Basis-Calendar-ButtonPrevPeriod, 
+.date-picker-popup .Basis-Calendar-ButtonNextPeriod
+{
+  background: none;
+}
+.date-picker-popup .Basis-Calendar-ButtonPrevPeriod SPAN, 
+.date-picker-popup .Basis-Calendar-ButtonNextPeriod SPAN
+{
+  visibility: hidden;
+}
+
+.date-picker-popup .Basis-Calendar-ButtonNextPeriod SPAN.over,
+.date-picker-popup .Basis-Calendar-ButtonPrevPeriod SPAN.over
+{
+  visibility: visible;
+  content: '';
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  border: transparent solid 4px;  
+}
+
+.date-picker-popup .Basis-Calendar-ButtonNextPeriod SPAN.over
+{
+  border-left-color: #303030;
+  right: 8px;
+}
+.date-picker-popup .Basis-Calendar-ButtonPrevPeriod SPAN.over
+{
+  border-right-color: #303030;  
+  left: 8px;
+}
+
+.date-picker-popup .Basis-Calendar-MonthWeekDays-Day
+{
+  color: #303030;
+  padding: 0.25em 0;
+}
+
+.date-picker-popup .Basis-Calendar-MonthWeekDays
+{
+  margin-bottom: 5px;
+}
+
+.date-picker-popup .Basis-Calendar-Node.selected
+{
+  background: #0a5289 !important;
+  color: white;
+}
