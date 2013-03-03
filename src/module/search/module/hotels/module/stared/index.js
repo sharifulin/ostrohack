@@ -8,7 +8,7 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
 module.exports = new basis.ui.Node({
   template: resource('template/view.tmpl'),
   binding: {
-    count: basis.data.index.count()
+    //count: basis.data.index.count()
   },
   action: {
   }
