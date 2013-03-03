@@ -109,6 +109,17 @@
     var dataset = app.type.Suggestion.getSearchResult(requestData);
 
     inputDataset.setSources([dataset]);
+
+    // settings
+    var arrivalDate = requestData.arrivalDate.split('-');
+    var departureDate = requestData.departureDate.split('-');
+    
+    settings.update({
+      room1_numberOfAdults: requestData.room1_numberOfAdults,
+      room1_numberOfChildren: requestData.room1_numberOfChildren,
+      arrivalDate: new Date(Number(arrivalDate[2]), Number(arrivalDate[1]) - 1, Number(arrivalDate[0])),
+      departureDate: new Date(Number(departureDate[2]), Number(departureDate[1]) - 1, Number(departureDate[0]))
+    });
   }
 
   app.router.add(/hotels\/\?(.*)/, function(query){
@@ -134,26 +145,5 @@
       resolver.params = params;
       resolver.setDelegate(app.type.DestinationSuggestion.byQuery.getSubset(params.q, true));
     } 
-
-    // settings
-    settings.update(parseSettings(params));        
   });
 
-  function parseSettings(params){
-    var dates = params.dates.split('-');
-    var guests = params.guests.split('and');
-    var childrenAge = guests[1];
-    var childrenCount = guests[1] && guests[1].split('.').length || 0;
-
-    var arrivalDate = dates[0].split('.');
-    var departureDate = dates[1].split('.');
-
-    return {
-      query: params.q,
-      room1_numberOfAdults: guests[0],
-      room1_numberOfChildren: childrenCount,
-      arrivalDate: new Date(Number(arrivalDate[2]), Number(arrivalDate[1]) - 1, Number(arrivalDate[0])),
-      departureDate: new Date(Number(departureDate[2]), Number(departureDate[1]) - 1, Number(departureDate[0])),
-      childrenAge: childrenAge
-    }
-  }

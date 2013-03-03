@@ -22,6 +22,7 @@
 {
   border: 1px solid #afafaf;
   background: white;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .25);
 }
 
 .hotel-room-content
