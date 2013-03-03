@@ -45,6 +45,9 @@
   color: #999;
   cursor: default;
 }
+.sortbutton-hidden {
+  display: none;
+}
 .sortbutton:hover {
   color: #1a6fde;
 }

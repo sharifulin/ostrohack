@@ -13,11 +13,12 @@ basis.l10n.createDictionary(namespace + '.sorting', __dirname + 'l10n', {
   distance: 'distance'
 });
 
-module.exports = new basis.ui.Node({
+var toolbar = new basis.ui.Node({
+  autoDelegate: true,
+
   template: resource('template/sorting.tmpl'),
 
   event_sortChanged: basis.event.create('sortChanged'),
-
   selection: true,
   listen: {
     selection: {
@@ -35,7 +36,8 @@ module.exports = new basis.ui.Node({
   childClass: {
     template: resource('template/sortingButton.tmpl'),
     binding: {
-      title: 'title'
+      title: 'title',
+      hidden: 'hidden'
     }
   },
   childNodes: [
@@ -58,7 +60,18 @@ module.exports = new basis.ui.Node({
     {
       title: basis.l10n.getToken(namespace, 'sorting', 'distance'),
       sortFn: basis.getter('data.distance'),
-      invert: true
+      invert: true,
+      hidden: true,
+
+      autoDelegate: true,
+      handler: {
+        update: function(){
+          this.hidden = !this.data.center;
+          this.updateBind('hidden');
+        }
+      }
     }
   ]
 });
+
+module.exports = toolbar;

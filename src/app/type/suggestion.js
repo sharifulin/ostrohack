@@ -82,6 +82,13 @@
         var departureDate = this.filters.departureDate;
         var adults = this.filters.room1_numberOfAdults;
         var children = this.filters.room1_numberOfChildren || 0;
+
+        this.update({
+          nights: nights,
+          center: center,
+          region: region
+        });
+
         this.set((data && data.hotels).map(function(raw){
           var data = Suggestion.reader(raw);
           data.price = raw.rooms[0].total_rate;
@@ -109,7 +116,7 @@
           }
 
           return Suggestion(data);
-        }));
+        }, this));
         this.setState(basis.data.STATE.READY);
       }
     })
@@ -128,7 +135,8 @@
     if (!dataset)
     {
       dataset = new SuggestionList({
-        filters: data
+        filters: data,
+        data: data
       });
       searchResultCache[resultId] = dataset;
     }

@@ -15,6 +15,9 @@
       }
     },
     handler: {
+      sourcesChanged: function(){
+        view.setDelegate(this.sources[0]);
+      },
       stateChanged: function(){
         if (this.state != basis.data.STATE.READY)
           view.disable();
@@ -44,6 +47,7 @@
 
   var view = new basis.ui.Node({
     template: resource('template/view.tmpl'),
+    delegate: inputDataset,
     binding: {
       hotels: hotels,
       filters: filters,

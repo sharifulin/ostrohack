@@ -26,7 +26,7 @@ sorting.addHandler({
 
 module.exports = new basis.ui.Node({
   template: templates.view,
-  delegate: app.search.input,
+  autoDelegate: true,
   binding: {
     stared: stared,
     sorting: sorting,
