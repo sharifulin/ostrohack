@@ -76,6 +76,7 @@
         var nights = data._meta.nights;
         var region = data._meta.region;
         var center = region.center;
+        var rates = data._meta.rates;
         var locative_where_ru = region.locative_where_ru;
         var locative_where_en = region.locative_where_en;
         var arrivalDate = this.filters.arrivalDate;
@@ -92,7 +93,8 @@
 
         this.set((data && data.hotels).map(function(raw){
           var data = Suggestion.reader(raw);
-          data.price = raw.rooms[0].total_rate;
+
+          data.price = raw.rooms[0].total_rate * rates[raw.rooms[0].currency];
 
           if (data.latitude && data.longitude && center)
             data.distance = distance(center.lat, center.lng, data.latitude, data.longitude);

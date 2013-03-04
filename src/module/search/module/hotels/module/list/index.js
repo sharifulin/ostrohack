@@ -58,7 +58,7 @@ var list = new basis.ui.Node({
       price: {
         events: 'update',
         getter: function(node){
-          var price = parseInt(node.data.price, 10);
+          var price = Math.round(node.data.price);
           if (price >= 10000)
             return price.group(3);
           else
