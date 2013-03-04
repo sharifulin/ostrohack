@@ -4,7 +4,7 @@ basis.require('basis.layout');
 var namespace = 'app.ext.slider'
 
 var templates = basis.template.define(namespace, resource('template/index.js').fetch());
-//basis.template.theme('mobile').define(namespace, resource('template/mobile/index.js').fetch());
+basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
 
 module.exports = basis.ui.scroller.ScrollPanel.subclass({
