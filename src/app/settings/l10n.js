@@ -34,5 +34,13 @@ basis.l10n.createDictionary('app.menu', __dirname + 'l10n', {
   wesocial: 'Find us in Social Networks',
   search: 'Search',
   login: 'Login',
-  full: 'Full version'
+  full: 'Full version',
+  lang: 'Language'
 });
+
+app.l10n = {
+  cultureTitle: {
+    'ru-RU': 'Русский',
+    'en-US': 'English'
+  }
+};

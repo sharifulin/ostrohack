@@ -2,6 +2,7 @@
   basis.require('basis.l10n');
   ;;;basis.require('basis.devpanel');
   basis.require('basis.ui');
+  basis.require('basis.ui.popup');
   basis.require('app.router');
   basis.require('app.utils');  
 
@@ -38,11 +39,39 @@
     if (!pages.selection.pick())
       pages.firstChild.select();
 
+    var langPopup = new basis.ui.popup.Popup({
+      dir: 'left top left top',
+      template: basis.template.get('app.l10npopup'),
+      childClass: {
+        template: basis.template.get('app.l10nitem'),
+        action: {
+          click: function(){
+            basis.l10n.setCulture(this.culture);
+            this.parentNode.hide();
+          }
+        },
+        binding: {
+          caption: 'title'
+        }
+      },
+      childNodes: basis.l10n.getCultureList().map(function(culture){
+        return {
+          culture: culture,
+          title: app.l10n.cultureTitle[culture]
+        }
+      })
+    });
+
     var layout = new basis.ui.Node({
       container: document.body,
       template: basis.template.get('app.layout'),
       binding: {
         pages: pages
+      },
+      action: {
+        chooseLang: function(event){
+          langPopup.show(this.tmpl.l10nAnchor || event.sender);
+        }
       }
     });
   });
