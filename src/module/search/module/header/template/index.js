@@ -1,3 +1,4 @@
 module.exports = {
-  view: resource('view.tmpl')
+  view: resource('view.tmpl'),
+  searchResults: resource('results.tmpl')
 };

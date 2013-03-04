@@ -86,7 +86,8 @@
         this.update({
           nights: nights,
           center: center,
-          region: region
+          region: region,
+          resultCount: data._hotels_cnt
         });
 
         this.set((data && data.hotels).map(function(raw){

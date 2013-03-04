@@ -1,0 +1,7 @@
+.serpheader-region-results .ready,
+.serpheader-region-results_ready .processing {
+  display: none;
+}
+.serpheader-region-results_ready .ready {
+  display: block;
+}

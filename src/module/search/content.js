@@ -8,6 +8,7 @@ var namespace = 'app.module.search';
 var templates = basis.template.define(namespace, resource('template/index.js').fetch());
 basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
+var source = new basis.data.DataObject();
 var inputDataset = new basis.data.dataset.Merge({
   active: true,
   sources: [],
@@ -20,9 +21,6 @@ var inputDataset = new basis.data.dataset.Merge({
     }
   },
   handler: {
-    sourcesChanged: function(){
-      view.setDelegate(this.sources[0]);
-    },
     stateChanged: function(){
       if (this.state != basis.data.STATE.READY)
         view.disable();
@@ -39,6 +37,7 @@ var outputDataset = new basis.data.dataset.Merge({
 });
 
 app.search = {
+  source: source,
   input: inputDataset,
   output: outputDataset
 };
@@ -52,7 +51,7 @@ header.setDelegate(settings);
 
 var view = new basis.ui.Node({
   template: basis.template.get('app.module.search.view'),
-  delegate: inputDataset,
+  delegate: source,
   binding: {
     hotels: hotels,
     filters: filters,
@@ -114,6 +113,7 @@ var view = new basis.ui.Node({
     var dataset = app.type.Suggestion.getSearchResult(requestData);
 
     inputDataset.setSources([dataset]);
+    source.setDelegate(dataset);
 
     // settings
     var arrivalDate = requestData.arrivalDate.split('-');
