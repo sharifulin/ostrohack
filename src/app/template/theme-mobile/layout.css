@@ -33,3 +33,8 @@ hr {
 {
   left: 160px !important;
 }
+.Basis-Menu-Item
+{
+  cursor: pointer !important;
+  font-size: 140%;
+}

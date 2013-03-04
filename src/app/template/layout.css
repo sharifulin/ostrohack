@@ -26,3 +26,7 @@ body .Basis-Blocker-Mate
 {
   opacity: .8;
 }
+.Basis-Menu-Item
+{
+  cursor: pointer !important;
+}
