@@ -1,6 +1,6 @@
 module.exports = {
-  amenities: resource('amenities.tmpl'),
-  amenity: resource('amenity.tmpl'),
+  amenities: resource('empty.tmpl'),
+  amenity: resource('empty.tmpl'),
   item: resource('item.tmpl'),
   list: resource('list.tmpl'),
   rating: resource('rating.tmpl'),

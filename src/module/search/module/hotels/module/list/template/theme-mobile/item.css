@@ -1,253 +1,93 @@
-button::-moz-focus-inner {
-  border-color:transparent;
-  border-width:0
-}
-.button {
-  border:1px solid;
-  border-radius:3px;
-  cursor:pointer;
-  display:inline-block;
-  font:bold 14px/28px Arial, sans-serif;
-  -webkit-font-smoothing:antialiased;
-  padding:0 12px;
-  position:relative;
-  text-decoration:none;
-  text-transform:uppercase;
-  white-space:nowrap;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  user-select:none
-}
-.button:before {
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0
-}
-.button:active {
-  line-height:26px;
-  padding-top:2px
-}
-.button-blue {
-  border-color:#767676;
-  border-bottom-color:#4e4e4e;
-  border-top-color:#8a8a8a;
-  box-shadow:0 1px 0 rgba(0, 0, 0, 0.16), inset 0 3px 0 -2px rgba(255, 255, 255, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
-  color:#fff;
-  text-shadow:0 1px rgba(0, 0, 0, 0.31);
-  background-image:-webkit-linear-gradient(top, #1c77e1, #0158be);
-  background-image:-moz-linear-gradient(top, #1c77e1, #0158be);
-  background-image:-o-linear-gradient(top, #1c77e1, #0158be);
-  background-image:linear-gradient(to bottom, #1c77e1, #0158be)
-}
-.button-blue:hover, .button-blue:active {
-  text-shadow:0 1px rgba(0, 0, 0, 0.61)
-}
-.button-blue:hover {
-  box-shadow:0 1px 0 rgba(0, 0, 0, 0.09), inset 0 3px 0 -2px rgba(255, 255, 255, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
-  background-image:-webkit-linear-gradient(top, #117fef, #005fcd);
-  background-image:-moz-linear-gradient(top, #117fef, #005fcd);
-  background-image:-o-linear-gradient(top, #117fef, #005fcd);
-  background-image:linear-gradient(to bottom, #117fef, #005fcd)
-}
-.button-blue:active {
-  border-color:#d1d1d1;
-  border-top-color:#aaa;
-  box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.4), inset 0 1px 5px 1px rgba(0, 0, 0, 0.5);
-  background-image:-webkit-linear-gradient(top, #1158c9, #0041aa);
-  background-image:-moz-linear-gradient(top, #1158c9, #0041aa);
-  background-image:-o-linear-gradient(top, #1158c9, #0041aa);
-  background-image:linear-gradient(to bottom, #1158c9, #0041aa)
-}
-.pseudo {
-  border-bottom:dotted 1px;
-  cursor:pointer
-}
-.hidden {
-  display:none
-}
 .serp-hotel {
-  background:#fff;
-  border:1px solid #ececee;
-  border-bottom-color:#bdbdbf;
-  font-family:"Open Sans", Verdana, sans-serif;
-  -webkit-font-smoothing:antialiased;
-  letter-spacing:-4px;
-  margin-bottom:14px;
-  padding:10px 0;
-  position:relative;
-  -webkit-transition:border-color .3s ease;
-  -moz-transition:border-color .3s ease;
-  -o-transition:border-color .3s ease;
-  transition:border-color .3s ease
-}
-.serp-hotel:hover {
-  border-color:#217de6;
-  z-index:2
-}
-.serp-hotel-desc, .serp-hotel-price-container {
-  display:inline-block;
-  letter-spacing:normal;
-  vertical-align:middle
-}
-.serp-hotel-desc {
-  border-right:1px solid #ececee;
-  min-height:85px;
-  padding:0 7px 0 164px;
-  width:379px
-}
-.serp-hotel-stars {
-  display:block;
-  margin:-5px 0 6px
-}
-.serp-hotel-link {
-  color:#88bee4
-}
-.serp-hotel-title {
-  color:#0074c5;
-  font-size:22px;
-  font-weight:400;
-  margin-bottom:-3px;
-  position:relative;
-  top:-7px
-}
-.serp-hotel-title:hover {
-  color:#1a6fde
-}
-.serp-hotel-thumb-container {
-  bottom:0;
-  left:0;
-  overflow:hidden;
-  position:absolute;
-  top:0;
-  width:154px
-}
-.serp-hotel-thumb-container:hover ~ .serp-hotel-image, .serp-hotel-thumb-container:hover ~ .serp-hotel-image-arrow {
-  display:block
+  display: block;
+  overflow: hidden;
+  background: white;
+  border-bottom: 1px solid #DDD;
+  margin: 0px;
+  font-size: 16px;
+  letter-spacing: normal;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+
 }
 .serp-hotel-image {
-  background:#FFF;
-  border:1px solid #dbdbdb;
-  bottom:10px;
-  display:none;
-  left:164px;
-  max-width:574px;
-  padding:2px;
-  position:absolute;
-  z-index:1
+  float: left;
+  margin: 6px;
 }
-.serp-hotel-image-arrow {
-  background-position:3px 37px;
-  bottom:36px;
-  display:none;
-  height:14px;
-  left:157px;
-  position:absolute;
-  width:10px;
-  z-index:2
-}
-.serp-hotel-image-arrow:after {
-  content:'';
-  position:absolute;
-  width:10px;
-  height:14px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -230px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
-}
-.serp-hotel:first-child .serp-hotel-image{
-  top:10px
-}
-.serp-hotel:first-child .serp-hotel-image-arrow{
-  background-position:3px -24px;
-  top:36px
-}
-.serp-hotel-info {
-  background:#fff;
-  max-width:380px;
-  margin-bottom:-1px;
-  overflow:hidden;
-  position:relative;
-  text-overflow:ellipsis;
-  white-space:nowrap
-}
-.serp-hotel-info:hover {
-  max-width:none;
-  min-width:381px;
-  background-image:-webkit-linear-gradient(left, white 380px, #e5e5e5 100%);
-  background-image:-moz-linear-gradient(left, white 380px, #e5e5e5 100%);
-  background-image:-o-linear-gradient(left, white 380px, #e5e5e5 100%);
-  background-image:linear-gradient(to right, white 380px, #e5e5e5 100%)
-}
-.serp-hotel-info:hover .serp-hotel-location-address {
-  padding-right:4px
-}
-.serp-hotel-location {
-  border-bottom:1px solid #88bee4;
-  color:#0074c5;
-  display:inline-block;
-  margin-left:12px;
-  position:relative
-}
-.serp-hotel-location:hover {
-  color:#1a6fde
-}
-.serp-hotel-location:before {
-  content:'';
-  margin-right:3px;
-  position:absolute;
-  right:100%;
-  top:2px;
-  width:9px;
-  height:11px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -270px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
-}
-.serp-hotel-price-container {
-  border-left:1px solid #ececee;
-  margin-left:-1px;
-  text-align:center;
-  width:191px
+.serp-hotel-title {
+  color: #0074c5;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  margin: 4px 0 0;
+  word-spacing: 1px;
+  line-height: 1.1em;
+  font-size: 19px;
 }
 .serp-hotel-price {
-  margin-bottom:5px
+  display: block;
+  color: #6d6c6c;
+  font-size: 14px;
+  padding: 0 6px 6px 0;
+  text-transform: uppercase;
 }
 .serp-hotel-price-value {
-  color:#333;
-  font-size:29px
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
 }
-.serp-hotel-currency-container {
-  color:#a2a2a2;
-  display:inline-block;
-  font-size:10px;
-  line-height:13px;
-  text-align:left;
+.serp-hotel-info {
+  color: #798891;
+  display:none;
+  font-size:8px;
+  position:absolute;
   text-transform:uppercase
 }
-.serp-hotel-currency {
-  display:block
+.serp-hotel-date {
+  bottom:100%;
+  margin-bottom:1px;
+  right:0
 }
-.serp-hotel-like {
-  cursor:pointer;
+
+.serp-hotel-stars {
+  margin-top: 5px;
+  float: left;
+}
+.serp-hotel .stars, .stars-val {
+  height: 10px;
+  display: inline-block;
+}
+.serp-hotel .stars {
+  position:relative;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -393px;
+  -webkit-background-size:196px 505px;
+  background-size:196px 505px
+}
+.serp-hotel .stars-val {
   position:absolute;
-  right:6px;
-  top:6px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  user-select:none;
-  width:17px;
-  height:14px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -31px;
+  top:0;
+  left:0;
+  width:50px;
+  height:9px;
+  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -402px;
   -webkit-background-size:196px 505px;
-  background-size:196px 505px
+  background-size:196px 505px;
+  width:auto
 }
-.serp-hotel-like:hover{
-  width:17px;
-  height:14px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -45px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
+.serp-hotel .stars-val-10 .stars-val {
+  width: 10px
+}
+.serp-hotel .stars-val-20 .stars-val {
+  width: 20px
+}
+.serp-hotel .stars-val-30 .stars-val {
+  width: 30px
+}
+.serp-hotel .stars-val-40 .stars-val {
+  width: 40px
+}
+.serp-hotel .stars-val-50 .stars-val {
+  width: 50px
 }

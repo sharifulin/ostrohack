@@ -1,0 +1,118 @@
+.serpPage-main {
+  position: relative;
+}
+
+.serpControls {
+  background:#ececec;
+  border-top:1px solid #d5d5d5;
+  border-radius:2px;
+  box-shadow:inset 0 1px 4px rgba(0, 0, 0, 0.065), 0 1px 0 rgba(255, 255, 255, 0.9);
+  font-size:12px;
+  height:26px;
+  margin-bottom:14px;
+  margin-right:151px;
+  position:relative;
+  padding:4px 5px
+}
+.serpControls-tabs {
+  float:right
+}
+.serpControls .tabbutton-icon {
+  background-image:url(http://ostrovok.ru/st/gm/img/hotel_icons-0520f9db951e2c7ae6df6735a24dd379d4339011.png);
+  background-repeat:no-repeat;
+  display:inline-block;
+  filter:alpha(opacity=55);
+  height:16px;
+  opacity:.55;
+  position:relative;
+  vertical-align:top;
+  width:16px
+}
+.serpControls-hotelsicon {
+  background-position:-61px -335px
+}
+.serpControls-mapicon {
+  background-position:-17px -334px;
+  height:17px;
+  margin-top:-1px
+}
+.tabbutton-checked .serpControls-hotelsicon {
+  background-position:-82px -335px
+}
+.tabbutton-checked .serpControls-mapicon {
+  background-position:-38px -334px
+}
+.serpControls .tabbutton-checked .tabbutton-icon{
+  opacity:1;
+  filter:none
+}
+
+.tabbutton {
+  background:#f9f9f9;
+  border:0;
+  border-radius:2px;
+  box-shadow:inset 0 -1px 0 #b9b9b9;
+  color:#979797;
+  cursor:pointer;
+  display:inline-block;
+  font-family:Arial, sans-serif;
+  font-size:12px;
+  line-height:16px;
+  margin:0 .3ex;
+  outline:0;
+  overflow:hidden;
+  padding:5px 8px 4px;
+  text-shadow:0 0 1px #fff;
+  text-transform:uppercase;
+  background-image:-webkit-linear-gradient(top, white, #f8f8f8);
+  background-image:-moz-linear-gradient(top, white, #f8f8f8);
+  background-image:-o-linear-gradient(top, white, #f8f8f8);
+  background-image:linear-gradient(to bottom, white, #f8f8f8)
+}
+.tabbutton-iconwrap {
+  margin-right:.8ex
+}
+ .tabbutton-checked {
+  cursor:default
+}
+.tabbutton-collapse-right {
+  border-radius:2px 0 0 2px;
+  margin-right:0
+}
+.tabbutton-collapse-left {
+  border-radius:0 2px 2px 0;
+  margin-left:0
+}
+.tabbutton-checked {
+  color:#fff;
+  text-shadow:0 1px 0 #365080;
+  box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.5);
+  background-color:#5881b5;
+  background-image:-webkit-linear-gradient(top, #5881b5, #6796d3);
+  background-image:-moz-linear-gradient(top, #5881b5, #6796d3);
+  background-image:-o-linear-gradient(top, #5881b5, #6796d3);
+  background-image:linear-gradient(to bottom, #5881b5, #6796d3)
+}
+.tabbutton-content {
+  display:inline-block;
+  vertical-align:top;
+  zoom:1;
+  height:16px
+}
+
+.serpPage-main__loading
+{
+  text-align: center;    
+  display: none;
+}
+.serpPage-main__loading span
+{
+  background:url(http://ostrovok.ru/st/gm/img/spinner-grey-3-a9426e4b4d3359105118a907044d68ad76b95034.gif) no-repeat left center;
+  padding: 1em 0 1em 40px;
+  color: #999;
+  font-style: italic;    
+}
+.serpPage-main_state-processing .serpPage-main__loading
+{
+  display: block;
+}

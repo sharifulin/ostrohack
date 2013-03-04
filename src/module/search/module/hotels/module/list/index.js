@@ -98,6 +98,17 @@ var list = new basis.ui.Node({
             return node.data.thumbnail_url;
         }
       },
+      thumbnail_url_80: {
+        events: 'update',
+        getter: function(node){
+          if (node.data.thumbnail_tmpl)
+            return node.data.thumbnail_tmpl.format({
+              size: '80x80'
+            });
+          else
+            return node.data.thumbnail_url;
+        }
+      },
       thumbnail_url_220: 'data:',
       rating: 'satellite:',
       star_rating: 'satellite:',

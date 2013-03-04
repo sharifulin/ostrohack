@@ -1,37 +1,12 @@
 <b:resource src="item.css" />
 
-<div class="serp-hotel serp-hotel-available-few serp-hotel-never-booked">
-  <div class="serp-hotel-desc">
-    <!--{amenities}-->
-    <!--{star_rating}-->
-    <a class="serp-hotel-link external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
-      <div class="serp-hotel-thumb-container">
-        <img class="serp-hotel-thumb" src="{thumbnail_url}" alt="{name}" />
-      </div>
-      <img class="serp-hotel-image hidden" src="{thumbnail_url_220}" />
-      <div class="serp-hotel-image-arrow hidden" style="background-image: url({thumbnail_url_220});"></div>
-      <h3 class="serp-hotel-title">{name}</h3>
-    </a>
-    <div class="serp-hotel-info">
-      <span class="serp-hotel-location pseudo">{l10n:app.module.search.hotels.list.map}</span>
-      &#32;
-      <span class="serp-hotel-location-address">
-        <span class="serp-hotel-distance">{distance}&nbsp;{l10n:app.distance.label.km}</span>
-        &#32;
-        <span class="serp-hotel-self">{l10n:app.module.search.hotels.list.fromCenter} {locative_where}</span>
-      </span>
-    </div>
-    <!--{rating}-->
+<a class="serp-hotel external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
+  <img class="serp-hotel-image" width="80" height="80" src="{thumbnail_url_80}" alt="{name}"/>
+  <h4 class="serp-hotel-title">{name}</h4>
+  <!--{star_rating}-->
+  <div class="serp-hotel-price">
+    <b class="serp-hotel-price-value">{price}</b>
+    &#32;
+    {l10n:app.currency.label.rub}
   </div>
-  <div class="serp-hotel-price-container">
-    <div class="serp-hotel-price">
-      <span class="serp-hotel-price-value">{price}</span>
-      &#32;
-      <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">{l10n:app.currency.label.rub}</span><span class="serp-hotel-nights">{l10n:app.module.search.hotels.list.overnight} {nights} {l10n:app.module.search.hotels.list.nights}</span></span>
-    </div>
-    <a class="button button-blue serp-hotel-button external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
-      {l10n:app.module.search.hotels.list.book}
-    </a>
-  </div>
-  <div class="serp-hotel-like"></div>
-</div>
+</a>

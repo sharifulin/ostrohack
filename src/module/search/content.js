@@ -1,59 +1,64 @@
 
-  basis.require('basis.ui');
-  basis.require('basis.data.dataset');
-  basis.require('app.router');
+basis.require('basis.ui');
+basis.require('basis.data.dataset');
+basis.require('app.router');
 
-  var inputDataset = new basis.data.dataset.Merge({
-    active: true,
-    sources: [],
-    state: 'processing',
-    listen: {
-      source: {
-        stateChanged: function(sender){
-          this.setState(sender.state);
-        }
+var namespace = 'app.module.search';
+
+var templates = basis.template.define(namespace, resource('template/index.js').fetch());
+basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
+
+var inputDataset = new basis.data.dataset.Merge({
+  active: true,
+  sources: [],
+  state: 'processing',
+  listen: {
+    source: {
+      stateChanged: function(sender){
+        this.setState(sender.state);
       }
+    }
+  },
+  handler: {
+    sourcesChanged: function(){
+      view.setDelegate(this.sources[0]);
     },
-    handler: {
-      sourcesChanged: function(){
-        view.setDelegate(this.sources[0]);
-      },
-      stateChanged: function(){
-        if (this.state != basis.data.STATE.READY)
-          view.disable();
-        else
-          view.enable();
-      }
+    stateChanged: function(){
+      if (this.state != basis.data.STATE.READY)
+        view.disable();
+      else
+        view.enable();
     }
-  });
-  var outputDataset = new basis.data.dataset.Merge({
-    sources: [
-      inputDataset
-    ],
-    rule: basis.data.dataset.Merge.INTERSECTION
-  });
+  }
+});
+var outputDataset = new basis.data.dataset.Merge({
+  sources: [
+  inputDataset
+  ],
+  rule: basis.data.dataset.Merge.INTERSECTION
+});
 
-  app.search = {
-    input: inputDataset,
-    output: outputDataset
-  };
+app.search = {
+  input: inputDataset,
+  output: outputDataset
+};
 
-  var hotels = resource('module/hotels/index.js').fetch();
-  var filters = resource('module/filters/index.js').fetch();
-  var header = resource('module/header/index.js').fetch();
+var hotels = resource('module/hotels/index.js').fetch();
+var filters = resource('module/filters/index.js').fetch();
+var header = resource('module/header/index.js').fetch();
 
-  var settings = new basis.data.DataObject({});
-  header.setDelegate(settings);
+var settings = new basis.data.DataObject({});
+header.setDelegate(settings);
 
-  var view = new basis.ui.Node({
-    template: resource('template/view.tmpl'),
-    delegate: inputDataset,
-    binding: {
-      hotels: hotels,
-      filters: filters,
-      header: header
-    }
-  });
+var view = new basis.ui.Node({
+  template: basis.template.get('app.module.search.view'),
+  delegate: inputDataset,
+  binding: {
+    hotels: hotels,
+    filters: filters,
+    header: header
+  }
+});
   // basis bug, satellite do not disable on add to owner via binding
   view.disable();
 
@@ -73,7 +78,7 @@
           var dest = app.type.Destination.get(this.params.q);
           if (dest)
           {
-           
+
             settings.update({
               destination: dest
             });
