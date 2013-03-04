@@ -25,13 +25,14 @@
   </div>
   <div class="serp-hotel-price-container">
     <div class="serp-hotel-price">
-      <span class="serp-hotel-price-value">{price}</span>
+      <span class="serp-hotel-price-value serp-hotel-price-value-{allotment}">{price}</span>
       &#32;
       <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">{l10n:app.currency.label.rub}</span><span class="serp-hotel-nights">{l10n:app.module.search.hotels.list.overnight} {nights} {nightsText}</span></span>
     </div>
     <a class="button button-blue serp-hotel-button external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
       {l10n:app.module.search.hotels.list.book}
     </a>
+    <div class="serp-hotel-availability serp-hotel-availability-{allotment}">{allotmentText}</div>
   </div>
   <div class="serp-hotel-like"></div>
 </div>

@@ -9,6 +9,7 @@
       id: basis.entity.IntId,
       name: String,
       price: Number,
+      allotment: Number,
       kind: String,
       thumbnail_url: String,
       thumbnail_tmpl: String,
@@ -94,7 +95,34 @@
         this.set((data && data.hotels).map(function(raw){
           var data = Suggestion.reader(raw);
 
-          data.price = raw.rooms[0].total_rate * rates[raw.rooms[0].currency];
+          var minPrice = Infinity;
+          var amenities = [];
+          var hasWiFi = false;
+          var hasMeal = false;
+          var allotment = 0;
+          for (var i = 0, room; room = raw.rooms[i]; i++)
+          {
+            minPrice = Math.min(minPrice, raw.rooms[i].total_rate * rates[raw.rooms[i].currency]);
+            allotment += room.current_allotment;
+            if (room.value_adds)
+              for (var j = 0, va; va = room.value_adds[j]; j++)
+              {
+                hasWiFi = hasWiFi || va.code == 'has_wifi_access';
+                hasMeal = hasMeal || va.code == 'has_meal';
+              }
+          }
+
+          data.price = minPrice;
+          data.allotment = allotment;
+
+          if (data.amenities && data.amenities.indexOf('parkovka'))
+            amenities.push('parking');
+          if (hasWiFi)
+            amenities.push('wifi');
+          if (hasMeal)
+            amenities.push('breakfast');
+
+          data.amenities = amenities;
 
           if (data.latitude && data.longitude && center)
             data.distance = distance(center.lat, center.lng, data.latitude, data.longitude);

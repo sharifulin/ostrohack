@@ -7,7 +7,12 @@
     "nights": "ночи",
     "night1": "ночь",
     "night2": "ночи",
-    "night3": "ночей"
+    "night3": "ночей",
+    "allotment1": "Последний шанс! Остался один номер",
+    "allotment2": "Осталось всего два номера",
+    "allotment3": "Осталось 3 номера",
+    "allotment4": "Осталось 5 номеров",
+    "allotment5": "Осталось 4 номера"
   }, 
   "app.module.search.hotels.list.amenity": {
     "wifi": "Wi-Fi в номерах",

@@ -16,7 +16,12 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
   nights: 'nights',
   night1: 'night',
   night2: 'nights',
-  night3: 'nights'
+  night3: 'nights',
+  allotment1: 'Your last chance! 1 room left',
+  allotment2: 'Only 2 rooms left',
+  allotment3: '3 rooms left',
+  allotment4: '4 rooms left',
+  allotment5: '5 rooms left'
 });
 
 basis.l10n.createDictionary(namespace + '.rating', __dirname + 'l10n', {
@@ -65,13 +70,32 @@ var list = new basis.ui.Node({
             return price;
         }
       },
+      allotment: 'data:',
+      allotmentText: {
+        events: 'update',
+        getter: function(node){
+          switch (node.data.allotment)
+          {
+            case 1: return basis.l10n.getToken(namespace, 'allotment1');
+            case 2: return basis.l10n.getToken(namespace, 'allotment2');
+            case 3: return basis.l10n.getToken(namespace, 'allotment3');
+            case 4: return basis.l10n.getToken(namespace, 'allotment4');
+            case 5: return basis.l10n.getToken(namespace, 'allotment5');
+          }
+        }
+      },
       is_golden: 'data:is_golden ? "golden" : ""',
       address: 'data:',
       nights: 'data:',
       nightsText: {
         events: 'update',
         getter: function(node){
-          return basis.l10n.getToken(namespace, 'night' + app.utils.plural(node.data.nights || 1));
+          switch (app.utils.plural(node.data.nights || 1))
+          {
+            case 1: return basis.l10n.getToken(namespace, 'night1');
+            case 2: return basis.l10n.getToken(namespace, 'night2');
+            case 3: return basis.l10n.getToken(namespace, 'night3');
+          }
         }
       },
       arrivalDate: 'data:',

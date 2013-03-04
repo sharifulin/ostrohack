@@ -219,6 +219,10 @@ button::-moz-focus-inner {
   color:#333;
   font-size:29px
 }
+.serp-hotel-price-value-1,
+.serp-hotel-price-value-2 {
+  color: #c72626;
+}
 .serp-hotel-currency-container {
   color:#a2a2a2;
   display:inline-block;
@@ -244,10 +248,28 @@ button::-moz-focus-inner {
   -webkit-background-size:196px 505px;
   background-size:196px 505px
 }
-.serp-hotel-like:hover{
+.serp-hotel-like:hover {
   width:17px;
   height:14px;
   background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -45px;
   -webkit-background-size:196px 505px;
   background-size:196px 505px
+}
+
+.serp-hotel-availability {
+  display: none;
+  margin: 5px 0 -3px;
+  font-size: 11px;
+  line-height: 13px;
+}
+.serp-hotel-availability-1,
+.serp-hotel-availability-2 {
+  display: inline-block;
+  color: #c72626;
+}
+.serp-hotel-availability-3,
+.serp-hotel-availability-4,
+.serp-hotel-availability-5 {
+  display: inline-block;
+  color: #d87031;
 }
