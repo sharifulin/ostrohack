@@ -264,12 +264,12 @@ button::-moz-focus-inner {
 }
 .serp-hotel-availability-1,
 .serp-hotel-availability-2 {
-  display: inline-block;
+  display: block;
   color: #c72626;
 }
 .serp-hotel-availability-3,
 .serp-hotel-availability-4,
 .serp-hotel-availability-5 {
-  display: inline-block;
+  display: block;
   color: #d87031;
 }
