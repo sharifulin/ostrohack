@@ -104,7 +104,9 @@
         }
       })
     ]
-  });  
+  });
+  // basis bug, don't apply minDate in config
+  calendarPopup.firstChild.setMinDate(new Date());
 
   var DatePicker = basis.ui.field.Text.subclass({
     opened: false,

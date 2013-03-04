@@ -44,10 +44,10 @@
 }
 .serp-hotel-info {
   color: #798891;
-  display:none;
-  font-size:8px;
-  position:absolute;
-  text-transform:uppercase
+  display: none;
+  font-size: 8px;
+  position: absolute;
+  text-transform: uppercase;
 }
 .serp-hotel-date {
   bottom:100%;
