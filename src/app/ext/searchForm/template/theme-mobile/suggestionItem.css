@@ -1,3 +1,49 @@
+.suggest-hr {
+  width:100%;
+  height:3px;
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009));
+  background:-moz-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009));
+  background:-o-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009));
+  background:linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009))
+}
+.suggest-group {
+  width:50px;
+  font-size:7px;
+  left:0;
+  letter-spacing:1px;
+  margin-top:7px;
+  text-align:right;
+  text-transform:uppercase;
+  color:#798891
+}
+.suggest-row {
+  color:#36434c;
+  cursor:pointer;
+  padding:.5em 20px .5em 10px;
+  font-family:Arial, sans-serif;
+  font-size: 160%;
+  font-weight: 400;
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.suggest-name {
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+.suggest-rowwrap {
+  position:relative
+}
+.suggest-rowwrap.selected,
+.suggest-rowwrap:hover {
+  background:#ebf1f5
+}
+
 .suggest-hr,
 .suggest-group
 {
@@ -9,3 +55,4 @@
 {
   display: block;
 }
+

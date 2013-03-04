@@ -144,6 +144,17 @@
       groupGetter: basis.fn.getter('data.type'),
       sorting: function(object){
         return object.data.id == 'hotel' ? 1 : 0;
+      },
+      childClass: {
+        template: templates.SuggestionGroup,
+        binding: {
+          typeTitle: {
+            events: 'update',
+            getter: function(object){
+              return basis.l10n.getToken(namespace, 'suggestionGroup', object.data.id);
+            }
+          }
+        }
       }
     },
     childClass: {

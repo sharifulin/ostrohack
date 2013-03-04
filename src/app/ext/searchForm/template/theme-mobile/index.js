@@ -3,6 +3,7 @@ module.exports = {
   DatePickerPopup: resource('datePickerPopup.tmpl'),
   Suggestions: resource('suggestions.tmpl'),
   SuggestionItem: resource('suggestionItem.tmpl'),    
+  SuggestionGroup: resource('suggestionGroup.tmpl'),
   DestinationField: resource('destinationField.tmpl'),
   GuestsField: resource('guestsField.tmpl'),
   GuestsFieldPopup: resource('guestsFieldPopup.tmpl'),

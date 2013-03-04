@@ -1,0 +1,9 @@
+.suggest-rowgroup-title {
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009) 20%);
+  background:-moz-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009) 20%);
+  background:-o-linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009) 20%);
+  background:linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.009) 20%);
+  font-size: 120%;
+  font-weight: bold;
+  padding: .2em 10px;
+}
