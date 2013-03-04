@@ -43,7 +43,11 @@ module.exports = new basis.ui.Node({
       total_rate: {
         events: 'update',
         getter: function(object){
-          return object.data.total_rate.format(0, '\x0A', '', '', '.');
+          var price = Math.round(object.data.total_rate);
+          if (price >= 10000)
+            return price.group(3);
+          else
+            return price;
         }
       }
     },

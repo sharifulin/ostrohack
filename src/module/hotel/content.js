@@ -204,7 +204,11 @@ var hotelView = new basis.ui.Node({
     low_rate: {
       events: 'update',
       getter: function(object){
-        return object.data.low_rate && object.data.low_rate.format(0, '\x0A', '', '', '.');
+        var price = Math.round((object.data.low_rate || 0) * object.data.nights);
+        if (price >= 10000)
+          return price.group(3);
+        else
+          return price;
       }
     },
     has_rating: {

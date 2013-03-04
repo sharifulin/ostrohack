@@ -76,7 +76,10 @@
             viewallText: data._viewall && data._viewall.text,
             viewallHref: data._viewall && data._viewall.href,
             hotel: Hotel.reader(data.hotel),
-            rooms: rooms.map(Room.reader)
+            rooms: rooms.map(function(room){
+              room.total_rate = room.total_rate_rub;
+              return Room.reader(room);
+            })
           });
         }
 
