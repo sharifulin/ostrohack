@@ -33,6 +33,7 @@
       request: function(){
         var params = {
           hotelId: this.data.hotelId,
+          type: this.data.type,
           arrivalDate: this.data.arrivalDate.toFormat('%D-%M-%Y'),
           departureDate: this.data.departureDate.toFormat('%D-%M-%Y'),
           room1_numberOfAdults: this.data.room1_numberOfAdults,
