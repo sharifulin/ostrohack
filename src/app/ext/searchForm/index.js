@@ -53,6 +53,7 @@
   var errorPopup = basis.fn.lazyInit(function(){
     return new basis.ui.popup.Balloon({
       dir: 'right center left center',
+      autorotate: ['center bottom center top'],
       orientation: 'horizontal',
       template: templates.ErrorPopup
     });

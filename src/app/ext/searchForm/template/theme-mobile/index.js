@@ -9,7 +9,7 @@ module.exports = {
   GuestsFieldListItem: resource('guestsFieldItem.tmpl'),
   ChildrenAgeField: resource('childrenAgeField.tmpl'),
   ChildrenAgeFieldItem: resource('childrenAgeFieldItem.tmpl'),    
-  ErrorPopup: resource('errorPopup.tmpl'),
+  //ErrorPopup: resource('errorPopup.tmpl'),
     
   form: resource('form.tmpl'),
   submitButton: resource('submitButton.tmpl')
