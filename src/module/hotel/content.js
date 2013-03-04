@@ -226,11 +226,22 @@ basis.router.add('/hotel?*params', function(params){
     hotelData[pare[0]] = pare[1];
   }
 
-  var dateParts = hotelData.arrivalDate.split('-');
+  var dateParts;
+
+  if (!hotelData.arrivalDate)
+    hotelData.arrivalDate = (new Date()).add('day', 2).toFormat('%D-%M-%Y');
+  
+  dateParts = hotelData.arrivalDate.split('-');
   hotelData.arrivalDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+
+  if (!hotelData.departureDate)
+    hotelData.departureDate = (new Date()).add('day', 3).toFormat('%D-%M-%Y');
 
   dateParts = hotelData.departureDate.split('-');
   hotelData.departureDate = new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
+
+  if (!hotelData.room1_numberOfAdults)
+    hotelData.room1_numberOfAdults = 2;
 
   hotelObject.setDelegate(app.type.HotelReport(app.type.HotelReport.reader(hotelData)));
 });
