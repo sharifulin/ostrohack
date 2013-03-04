@@ -53,9 +53,10 @@
   var errorPopup = basis.fn.lazyInit(function(){
     return new basis.ui.popup.Balloon({
       dir: 'right center left center',
-      autorotate: ['center bottom center top'],
+      autorotate: ['left bottom left top'],
       orientation: 'horizontal',
-      template: templates.ErrorPopup
+      template: templates.ErrorPopup,
+      hideOnKey: basis.fn.$true
     });
   });
 
@@ -312,6 +313,7 @@
         instanceOf: basis.ui.field.Text.subclass({
           name: 'destination',
           template: templates.DestinationField,
+          autocomplete: 'off',
           binding: {
             hidden: {
               events: 'change',
