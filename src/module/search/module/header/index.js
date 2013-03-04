@@ -27,7 +27,11 @@ var results = new basis.ui.Node({
     region: {
       events: 'update',
       getter: function(node){
-        return node.data.region && node.data.region['locative_in_' + basis.l10n.getCulture().split('-')[0]];
+        if (node.data.region)
+        {
+          var c = basis.l10n.getCulture().split('-')[0];
+          return node.data.region['locative_in_' + c] + (node.data.region.country_code ? ',' + node.data.region['country_' + c] : '');
+        }
       }
     },
     hotelText: {
