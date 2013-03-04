@@ -127,6 +127,12 @@ var rating = new basis.ui.Node({
     count: 'data:count',
     total_verbose: 'data:total_verbose',
     stars: 'data:',
+    has_rating: {
+      events: 'update',
+      getter: function(object){
+        return object.data.exists;
+      }
+    },
     total: {
       events: 'update',
       getter: function(object){
