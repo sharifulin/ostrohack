@@ -109,6 +109,7 @@ button::-moz-focus-inner {
   color:#0074c5;
   font-size:22px;
   font-weight:400;
+  margin-top: 0;
   margin-bottom:-3px;
   position:relative;
   top:-7px
