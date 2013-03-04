@@ -44,6 +44,7 @@
   basis.template.theme('mobile').define(namespace, resource('template/theme-mobile/index.js').fetch());
 
   var DestinationSuggestion = app.type.DestinationSuggestion;
+  
 
   //
   // errorPopup
@@ -492,7 +493,8 @@
         }
         else
         {
-          app.router.navigate('/hotel?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults={guests}&room1_numberOfChildren={childrenCount}&childrenAge={childrenAge}'.format({
+          debugger;
+          app.router.navigate('/hotel/' + suggestion.data.kind + '/rooms?hotelId={hotelId}&arrivalDate={arrivalDate}&departureDate={departureDate}&room1_numberOfAdults={guests}&room1_numberOfChildren={childrenCount}&childrenAge={childrenAge}'.format({
             hotelId: suggestion.data.targetId,
             guests: data.adultsCount,
             childrenCount: data.childrenCount,

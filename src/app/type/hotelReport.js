@@ -12,6 +12,7 @@
     fields: {
       id: basis.entity.IntId,
       hotelId: Number,
+      type: String,
       arrivalDate: basis.fn.$self,
       departureDate: basis.fn.$self,
       room1_numberOfAdults: Number,

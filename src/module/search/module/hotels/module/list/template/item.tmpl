@@ -4,7 +4,7 @@
   <div class="serp-hotel-desc">
     <!--{amenities}-->
     <!--{star_rating}-->
-    <a class="serp-hotel-link external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
+    <a class="serp-hotel-link external" href="#/hotel/{type}/rooms?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
       <div class="serp-hotel-thumb-container">
         <img class="serp-hotel-thumb" src="{thumbnail_url}" alt="{name}" />
       </div>
@@ -29,7 +29,7 @@
       &#32;
       <span class="serp-hotel-currency-container"><span class="serp-hotel-currency">{l10n:app.currency.label.rub}</span><span class="serp-hotel-nights">{l10n:app.module.search.hotels.list.overnight} {nights} {nightsText}</span></span>
     </div>
-    <a class="button button-blue serp-hotel-button external" href="#/hotel?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
+    <a class="button button-blue serp-hotel-button external" href="#/hotel/{type}/rooms?hotelId={id}&amp;arrivalDate={arrivalDate}&amp;departureDate={departureDate}&amp;room1_numberOfAdults={adults}&amp;room1_numberOfChildren={children}">
       {l10n:app.module.search.hotels.list.book}
     </a>
     <div class="serp-hotel-availability serp-hotel-availability-{allotment}">{allotmentText}</div>

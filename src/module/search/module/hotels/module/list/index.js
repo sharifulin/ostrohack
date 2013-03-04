@@ -60,6 +60,7 @@ var list = new basis.ui.Node({
         return node.data.uid.substr(1);
       },
       name: 'data:',
+      type: 'data:',
       price: {
         events: 'update',
         getter: function(node){

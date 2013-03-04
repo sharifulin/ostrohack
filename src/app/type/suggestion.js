@@ -4,6 +4,11 @@
 
   var Hotel = resource('hotel.js').fetch();
 
+  var hotelType = {
+    'EXT': 'special',
+    'LAT': 'lite',
+  };
+
   var Suggestion = new basis.entity.EntityType({
     fields: {
       id: basis.entity.IntId,
@@ -11,6 +16,7 @@
       price: Number,
       allotment: Number,
       kind: String,
+      type: String,
       thumbnail_url: String,
       thumbnail_tmpl: String,
       thumbnail_url_220: String,
@@ -100,6 +106,7 @@
           var hasWiFi = false;
           var hasMeal = false;
           var allotment = 0;
+
           for (var i = 0, room; room = raw.rooms[i]; i++)
           {
             minPrice = Math.min(minPrice, raw.rooms[i].total_rate * rates[raw.rooms[i].currency]);
@@ -112,6 +119,7 @@
               }
           }
 
+          data.type = hotelType[raw.supplier_type] || 'global';
           data.price = minPrice;
           data.allotment = allotment;
 

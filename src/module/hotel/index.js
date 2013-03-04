@@ -1,4 +1,4 @@
 module.exports = {
-  router: '/hotel?*params',
+  router: '/hotel/:type/rooms?*params',
   lazyContent: resource('content.js')
 }

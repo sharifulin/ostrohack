@@ -216,9 +216,11 @@ var hotelView = new basis.ui.Node({
   }
 });
 
-basis.router.add('/hotel?*params', function(params){
+basis.router.add('/hotel/:type/rooms?*params', function(type, params){
   var params_pares = params.split('&');
-  var hotelData = {};
+  var hotelData = {
+    type: type
+  };
 
   for (var i = 0; i < params_pares.length; i++)
   {

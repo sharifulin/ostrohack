@@ -3,11 +3,17 @@ basis.require('basis.entity');
 var Destination = resource('destination.js').fetch();
 //var Hotel = resource('Hotel.js').fetch();
 
+var hotelType = {
+  'l': 'lite',
+  'x': 'special'
+};
+
 var DestinationSuggestion = new basis.entity.EntityType({
   name: 'DestinationSuggestion',
   fields: {
     query: String,
     type: String,
+    kind: String,
     targetId: Number,
     pretty_slug: String,
     name: String
@@ -48,6 +54,7 @@ DestinationSuggestion.byQuery = new basis.entity.Grouping({
           res.push({
             query: this.data.id,
             type: 'hotel',
+            kind: hotelType[hotel.hotel_uid.charAt(0)] || 'global',
             targetId: hotel.hotel_uid.slice(1),
             name: hotel.hotel_name + ', ' + hotel.region_name
           });
