@@ -223,6 +223,12 @@ var hotelView = new basis.ui.Node({
         return object.data.rating && object.data.rating.exists;
       }
     }
+  },
+  action: {
+    gotorooms: function(event){
+      rooms.element.scrollIntoView();
+      basis.dom.event.kill(event.event_);
+    }
   }
 });
 
