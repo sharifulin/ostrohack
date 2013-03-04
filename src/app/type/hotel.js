@@ -16,7 +16,8 @@
       rating: basis.fn.$self,
       stars: Number,
       nights: Number,
-      hotel_amenities: basis.array.from
+      hotel_amenities: basis.array.from,
+      universalId: String
     }
   });
 

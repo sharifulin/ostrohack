@@ -144,7 +144,7 @@ var hotelSlider = new app.ext.Slider({
   active: true,
   handler: {
     targetChanged: function(){
-      this.setDataSource(this.target ? app.type.HotelImage.byHotel.getSubset(this.target.getId(), true) : null);
+      this.setDataSource(this.target ? app.type.HotelImage.byHotel.getSubset(this.target.data.universalId, true) : null);
     }
   }  
 });

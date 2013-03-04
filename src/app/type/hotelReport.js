@@ -68,6 +68,7 @@
           data.hotel.id = this.data.hotelId;
           data.hotel.low_rate = data._hotelpage && data._hotelpage.lowRate || 0;
           data.hotel.stars = data._hotelpage && data._hotelpage.stars;
+          data.hotel.universalId = data._hotelpage && data._hotelpage.universalId;
           data.hotel.nights = data._meta && data._meta.nights;
           data.hotel.rating.stars = data.hotel.stars;
           

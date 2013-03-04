@@ -10,6 +10,7 @@
   };
 
   var Suggestion = new basis.entity.EntityType({
+    name: 'Suggestion',    
     fields: {
       id: basis.entity.IntId,
       name: String,
