@@ -23,18 +23,24 @@
   word-spacing: 1px;
   line-height: 1.1em;
   font-size: 19px;
+  color: #4d5f69;
 }
 .serp-hotel-price {
   display: block;
+  position: absolute;
+  left: 92px;
+  bottom: 5px;
   color: #6d6c6c;
-  font-size: 14px;
-  padding: 0 6px 6px 0;
+  font-size: 160%;
   text-transform: uppercase;
+  color: #f09179;
+  line-height: 1;
 }
 .serp-hotel-price-value {
   color: #000;
-  font-size: 24px;
+  font-size: 100%;
   font-weight: 400;
+  color: #f09179;
 }
 .serp-hotel-info {
   color: #798891;
@@ -47,47 +53,4 @@
   bottom:100%;
   margin-bottom:1px;
   right:0
-}
-
-.serp-hotel-stars {
-  margin-top: 5px;
-  float: left;
-}
-.serp-hotel .stars, .stars-val {
-  height: 10px;
-  display: inline-block;
-}
-.serp-hotel .stars {
-  position:relative;
-  width:50px;
-  height:9px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -393px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px
-}
-.serp-hotel .stars-val {
-  position:absolute;
-  top:0;
-  left:0;
-  width:50px;
-  height:9px;
-  background:transparent url("http://ostrovok.ru/st/gm/img/sprites/serp-507d28376ec383ea986be9dbfc1e14773b704fd0.png") no-repeat 0 -402px;
-  -webkit-background-size:196px 505px;
-  background-size:196px 505px;
-  width:auto
-}
-.serp-hotel .stars-val-10 .stars-val {
-  width: 10px
-}
-.serp-hotel .stars-val-20 .stars-val {
-  width: 20px
-}
-.serp-hotel .stars-val-30 .stars-val {
-  width: 30px
-}
-.serp-hotel .stars-val-40 .stars-val {
-  width: 40px
-}
-.serp-hotel .stars-val-50 .stars-val {
-  width: 50px
 }

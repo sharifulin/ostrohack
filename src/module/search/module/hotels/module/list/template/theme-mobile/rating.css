@@ -1,9 +1,14 @@
-.serp-hotel-rating {
-  margin-top: 5px;
-  font-size: 11px;
-  line-height: 13px
-  color: #484850
+.serp-hotel-userrating {
+  color: #E0E0E0;
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  line-height: 1.1;
+  font-size: 80%;
+  text-align: center;
 }
-.serp-hotel-rating-value {
-  font-weight:700
+.serp-hotel-userrating-value {
+  font-weight:700;
+  display: block;
+  font-size: 240%;
 }

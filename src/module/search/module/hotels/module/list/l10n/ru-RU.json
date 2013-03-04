@@ -21,6 +21,7 @@
     "parking": "Парковка"
   }, 
   "app.module.search.hotels.list.rating": {
-    "fromMax": "из 10"
+    "fromMax": "из 10",
+    "title": "рейтинг"
   }
 }

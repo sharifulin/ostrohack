@@ -6,7 +6,6 @@
 .page-content {
   margin:0 auto;
   position:relative;
-  width:960px
 }
 .clearfix:before, .clearfix:after {
   display:table;

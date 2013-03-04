@@ -25,7 +25,8 @@ basis.l10n.createDictionary(namespace, __dirname + 'l10n', {
 });
 
 basis.l10n.createDictionary(namespace + '.rating', __dirname + 'l10n', {
-  fromMax: 'from 10'
+  fromMax: 'from 10',
+  title: 'rating'
 });
 
 basis.l10n.createDictionary(namespace + '.amenity', __dirname + 'l10n', {
